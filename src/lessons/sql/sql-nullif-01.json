@@ -1,0 +1,25 @@
+{
+  "id": "sql-nullif-01",
+  "category": "SQL",
+  "topic": "NULLIF",
+  "level": 2,
+  "tags": [
+    "nullif",
+    "division",
+    "null"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, price, stock,",
+      "explain": "Choose the product columns"
+    },
+    {
+      "code": "  price / NULLIF(stock, 0) AS price_per_unit",
+      "explain": "NULLIF turns 0 into NULL, so no divide-by-zero error"
+    },
+    {
+      "code": "FROM products;",
+      "explain": "Read from the products table"
+    }
+  ]
+}

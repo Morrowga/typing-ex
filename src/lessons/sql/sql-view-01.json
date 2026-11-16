@@ -1,0 +1,28 @@
+{
+  "id": "sql-view-01",
+  "category": "SQL",
+  "topic": "Views",
+  "level": 1,
+  "tags": [
+    "view",
+    "create view"
+  ],
+  "chunks": [
+    {
+      "code": "CREATE VIEW in_stock AS",
+      "explain": "Save a query under the name in_stock"
+    },
+    {
+      "code": "SELECT name, price",
+      "explain": "Choose the name and price"
+    },
+    {
+      "code": "FROM products",
+      "explain": "Read from the products table"
+    },
+    {
+      "code": "WHERE stock > 0;",
+      "explain": "Only items that are available"
+    }
+  ]
+}

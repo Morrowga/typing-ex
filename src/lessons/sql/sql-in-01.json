@@ -1,0 +1,24 @@
+{
+  "id": "sql-in-01",
+  "category": "SQL",
+  "topic": "IN",
+  "level": 1,
+  "tags": [
+    "in",
+    "where"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, city",
+      "explain": "Choose the name and city"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Read from the customers table"
+    },
+    {
+      "code": "WHERE city IN ('London', 'Boston');",
+      "explain": "Match any city in the list"
+    }
+  ]
+}

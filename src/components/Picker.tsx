@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { LEVELS, type Level } from "@/lib/levels";
 import type { Lesson } from "@/lib/types";
@@ -13,11 +13,24 @@ interface Props {
   onStart: (stacks: string[], level: Level, random: boolean) => void;
 }
 
+/** Stacks shown as chips on the home page; the rest sit behind the "more" popup. */
+const VISIBLE = 4;
+const PREFERRED = ["Python", "JS / TS", "SQL", "Linux", "Git", "PHP", "Swift", "Kotlin"];
+const byPopularity = (a: string, b: string) => {
+  const rank = (x: string) => (PREFERRED.includes(x) ? PREFERRED.indexOf(x) : PREFERRED.length);
+  return rank(a) - rank(b) || a.localeCompare(b);
+};
+
 export default function Picker({ lessons, stacks, onStart }: Props) {
   // Selection order matters: stacks are played in the order they were picked.
   const [picked, setPicked] = useState<string[]>([]);
   const [random, setRandom] = useState(false);
   const [level, setLevel] = useState<Level>(1);
+  const [moreOpen, setMoreOpen] = useState(false);
+  // What was selected before "Random order" was switched on, so switching it off puts that back.
+  const beforeRandom = useRef<string[]>([]);
+  const moreButton = useRef<HTMLButtonElement>(null);
+  const dialog = useRef<HTMLDivElement>(null);
 
   const hasLessons = (s: string) => lessons.some((l) => l.category === s && l.level === level);
   const available = stacks.filter(hasLessons);
@@ -26,10 +39,56 @@ export default function Picker({ lessons, stacks, onStart }: Props) {
   const toggle = (s: string) =>
     setPicked((p) => (p.includes(s) ? p.filter((x) => x !== s) : [...p, s]));
 
-  // Turning random on selects every stack; the user can still deselect some.
+  // Turning random on selects every stack (you can still deselect some). Turning it off puts the
+  // selection back to what it was before, so the chips return to their default look.
   const onRandom = (on: boolean) => {
     setRandom(on);
-    if (on) setPicked(available);
+    if (on) {
+      beforeRandom.current = picked;
+      setPicked(available);
+    } else {
+      setPicked(beforeRandom.current);
+    }
+  };
+
+  const ordered = [...stacks].sort(byPopularity);
+  const shown = ordered.slice(0, VISIBLE);
+  const hidden = ordered.slice(VISIBLE);
+  const hiddenSelected = hidden.filter((s) => chosen.includes(s)).length;
+
+  const closeMore = () => {
+    setMoreOpen(false);
+    moreButton.current?.focus();
+  };
+  useEffect(() => {
+    if (!moreOpen) return;
+    dialog.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMoreOpen(false);
+        moreButton.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [moreOpen]);
+
+  const chip = (s: string) => {
+    const enabled = hasLessons(s);
+    const on = chosen.includes(s);
+    return (
+      <button
+        key={s}
+        type="button"
+        className={`pick${on ? " on" : ""}`}
+        aria-pressed={on}
+        disabled={!enabled}
+        onClick={() => toggle(s)}
+      >
+        {s}
+        {!enabled && <span className="pick-soon">soon</span>}
+      </button>
+    );
   };
 
   return (
@@ -84,23 +143,18 @@ export default function Picker({ lessons, stacks, onStart }: Props) {
         <div className="field">
           <h2 id="stacks-label">Stacks</h2>
           <div className="chip-row" role="group" aria-labelledby="stacks-label">
-            {stacks.map((s) => {
-              const enabled = hasLessons(s);
-              const on = chosen.includes(s);
-              return (
-                <button
-                  key={s}
-                  type="button"
-                  className={`pick${on ? " on" : ""}`}
-                  aria-pressed={on}
-                  disabled={!enabled}
-                  onClick={() => toggle(s)}
-                >
-                  {s}
-                  {!enabled && <span className="pick-soon">soon</span>}
-                </button>
-              );
-            })}
+            {shown.map(chip)}
+            {hidden.length > 0 && (
+              <button
+                ref={moreButton}
+                type="button"
+                className={`pick more${hiddenSelected > 0 ? " on" : ""}`}
+                aria-haspopup="dialog"
+                onClick={() => setMoreOpen(true)}
+              >
+                +{hidden.length} more{hiddenSelected > 0 && ` · ${hiddenSelected} selected`}
+              </button>
+            )}
           </div>
           <p className="muted small">
             {random ? "Lessons from the selected stacks are mixed." : "Pick one or more. They play in the order you pick them."}
@@ -122,6 +176,32 @@ export default function Picker({ lessons, stacks, onStart }: Props) {
           Start
         </button>
       </motion.section>
+
+      {moreOpen && (
+        <div className="modal-backdrop" onClick={closeMore}>
+          <div
+            className="modal stacks-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="all-stacks-title"
+            tabIndex={-1}
+            ref={dialog}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="report-head">
+              <h2 className="modal-title" id="all-stacks-title">All stacks</h2>
+              <button className="modal-close" onClick={closeMore} aria-label="Close">×</button>
+            </div>
+            <p className="muted small">
+              {random ? "Lessons from the selected stacks are mixed." : "Pick one or more. They play in the order you pick them."}
+            </p>
+            <div className="chip-row modal-chips">{ordered.map(chip)}</div>
+            <div className="cta-row">
+              <button className="btn solid" onClick={closeMore}>Done</button>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

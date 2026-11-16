@@ -1,0 +1,33 @@
+{
+  "id": "sql-pivot-01",
+  "category": "SQL",
+  "topic": "Conditional Aggregation",
+  "level": 2,
+  "tags": [
+    "case",
+    "pivot",
+    "sum"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT customer_id,",
+      "explain": "One row per customer"
+    },
+    {
+      "code": "  SUM(CASE WHEN status = 'delivered' THEN total ELSE 0 END) AS delivered,",
+      "explain": "Add totals of delivered orders"
+    },
+    {
+      "code": "  SUM(CASE WHEN status = 'pending' THEN total ELSE 0 END) AS pending",
+      "explain": "Add totals of pending orders"
+    },
+    {
+      "code": "FROM orders",
+      "explain": "Read from the orders table"
+    },
+    {
+      "code": "GROUP BY customer_id;",
+      "explain": "Group rows by customer"
+    }
+  ]
+}

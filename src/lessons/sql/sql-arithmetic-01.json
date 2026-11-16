@@ -1,0 +1,28 @@
+{
+  "id": "sql-arithmetic-01",
+  "category": "SQL",
+  "topic": "Arithmetic",
+  "level": 1,
+  "tags": [
+    "math",
+    "alias"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name,",
+      "explain": "Show the product name"
+    },
+    {
+      "code": "  price * 1.2 AS price_with_tax,",
+      "explain": "Multiply the price by 1.2"
+    },
+    {
+      "code": "  price * stock AS stock_value",
+      "explain": "Price times units in stock"
+    },
+    {
+      "code": "FROM products;",
+      "explain": "Read from the products table"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "sql-insert-select-01",
+  "category": "SQL",
+  "topic": "INSERT ... SELECT",
+  "level": 2,
+  "tags": [
+    "insert",
+    "select",
+    "archive"
+  ],
+  "chunks": [
+    {
+      "code": "CREATE TABLE big_orders (id INTEGER, total REAL);",
+      "explain": "Make an empty table for the copy"
+    },
+    {
+      "code": "INSERT INTO big_orders (id, total)",
+      "explain": "Insert into these two columns"
+    },
+    {
+      "code": "SELECT id, total",
+      "explain": "Take them from a query..."
+    },
+    {
+      "code": "FROM orders",
+      "explain": "...over the orders table"
+    },
+    {
+      "code": "WHERE total > 100;",
+      "explain": "Copy only the large orders"
+    }
+  ]
+}

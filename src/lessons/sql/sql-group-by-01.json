@@ -1,0 +1,24 @@
+{
+  "id": "sql-group-by-01",
+  "category": "SQL",
+  "topic": "GROUP BY",
+  "level": 1,
+  "tags": [
+    "group by",
+    "count"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT category, COUNT(*) AS items",
+      "explain": "Show each category with its row count"
+    },
+    {
+      "code": "FROM products",
+      "explain": "Read from the products table"
+    },
+    {
+      "code": "GROUP BY category;",
+      "explain": "Make one group per category"
+    }
+  ]
+}

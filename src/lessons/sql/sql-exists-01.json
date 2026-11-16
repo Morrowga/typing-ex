@@ -1,0 +1,36 @@
+{
+  "id": "sql-exists-01",
+  "category": "SQL",
+  "topic": "EXISTS",
+  "level": 2,
+  "tags": [
+    "exists",
+    "semi join"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT c.name",
+      "explain": "Choose the customer name"
+    },
+    {
+      "code": "FROM customers c",
+      "explain": "Read from customers as c"
+    },
+    {
+      "code": "WHERE EXISTS (",
+      "explain": "Keep rows where the inner query finds a row"
+    },
+    {
+      "code": "  SELECT 1 FROM orders o",
+      "explain": "Look inside orders"
+    },
+    {
+      "code": "  WHERE o.customer_id = c.id AND o.status = 'pending'",
+      "explain": "Same customer, pending status"
+    },
+    {
+      "code": ");",
+      "explain": "Close the subquery"
+    }
+  ]
+}

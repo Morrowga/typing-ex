@@ -1,0 +1,28 @@
+{
+  "id": "sql-having-01",
+  "category": "SQL",
+  "topic": "HAVING",
+  "level": 1,
+  "tags": [
+    "having",
+    "group by"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT customer_id, COUNT(*) AS orders_placed",
+      "explain": "Count orders for each customer"
+    },
+    {
+      "code": "FROM orders",
+      "explain": "Read from the orders table"
+    },
+    {
+      "code": "GROUP BY customer_id",
+      "explain": "One group per customer"
+    },
+    {
+      "code": "HAVING COUNT(*) >= 2;",
+      "explain": "Keep only groups with two or more orders"
+    }
+  ]
+}

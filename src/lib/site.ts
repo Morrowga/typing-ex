@@ -15,7 +15,7 @@ export const SITE = {
   name: "Typing Exe",
   title: "Typing Exe — Type code. Understand it.",
   description:
-    "Practice typing real JavaScript, TypeScript, Python, PHP, Linux, Git, Swift and Kotlin code while each line is explained as you type. Beginner and Pro levels. Free, no sign-up.",
+    "Practice typing real JavaScript, TypeScript, Python, SQL, PHP, Linux, Git, Swift and Kotlin code while each line is explained as you type. Beginner and Pro levels. Free, no sign-up.",
   url: siteUrl(),
   keywords: [
     "typing practice",
@@ -25,6 +25,7 @@ export const SITE = {
     "JavaScript",
     "TypeScript",
     "Python",
+    "SQL",
     "PHP",
     "Linux commands",
     "Git",

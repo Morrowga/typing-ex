@@ -1,0 +1,29 @@
+{
+  "id": "sql-upsert-01",
+  "category": "SQL",
+  "topic": "Upsert",
+  "level": 2,
+  "tags": [
+    "insert",
+    "on conflict",
+    "upsert"
+  ],
+  "chunks": [
+    {
+      "code": "INSERT INTO customers (id, name, email, city, country)",
+      "explain": "Try to insert a customer row"
+    },
+    {
+      "code": "VALUES (1, 'Ada King', 'ada@example.com', 'Leeds', 'UK')",
+      "explain": "Its id already exists"
+    },
+    {
+      "code": "ON CONFLICT (id) DO UPDATE",
+      "explain": "On an id clash, update instead"
+    },
+    {
+      "code": "SET name = excluded.name, city = excluded.city;",
+      "explain": "Copy the new values into the old row"
+    }
+  ]
+}

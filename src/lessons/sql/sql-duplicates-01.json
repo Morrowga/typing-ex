@@ -1,0 +1,29 @@
+{
+  "id": "sql-duplicates-01",
+  "category": "SQL",
+  "topic": "Find Duplicates",
+  "level": 2,
+  "tags": [
+    "group by",
+    "having",
+    "duplicates"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT city, COUNT(*) AS n",
+      "explain": "Count rows for each city"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Read from the customers table"
+    },
+    {
+      "code": "GROUP BY city",
+      "explain": "One group per city"
+    },
+    {
+      "code": "HAVING COUNT(*) > 1;",
+      "explain": "Keep only values that appear more than once"
+    }
+  ]
+}

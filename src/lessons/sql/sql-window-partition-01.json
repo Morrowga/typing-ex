@@ -1,0 +1,24 @@
+{
+  "id": "sql-window-partition-01",
+  "category": "SQL",
+  "topic": "PARTITION BY",
+  "level": 2,
+  "tags": [
+    "window",
+    "partition"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, department, salary,",
+      "explain": "Choose the employee columns"
+    },
+    {
+      "code": "  AVG(salary) OVER (PARTITION BY department) AS dept_avg",
+      "explain": "Department average beside each row"
+    },
+    {
+      "code": "FROM employees;",
+      "explain": "Rows are kept, not collapsed"
+    }
+  ]
+}

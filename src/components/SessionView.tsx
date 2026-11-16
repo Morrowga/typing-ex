@@ -58,9 +58,12 @@ export default function SessionView({ queue, onSectorStart, onExit, stacks, leve
   cb.current = { onSectorStart, onExit };
 
   const [report, setReport] = useState<{ results: SectorResult[]; complete: boolean } | null>(null);
-  const reportOpen = useRef(false);
-  reportOpen.current = report !== null;
+  const [confirmRestart, setConfirmRestart] = useState(false);
+  // While any dialog is open the session ignores typing.
+  const modalOpen = useRef(false);
+  modalOpen.current = report !== null || confirmRestart;
   const dialogRef = useRef<HTMLDivElement>(null);
+  const confirmRef = useRef<HTMLDivElement>(null);
 
   const collect = (): SectorResult[] =>
     live.current
@@ -71,6 +74,11 @@ export default function SessionView({ queue, onSectorStart, onExit, stacks, leve
     const all = live.current;
     const complete = all.length === queue.length && all[all.length - 1].finished;
     setReport({ results: collect(), complete });
+  };
+  // Restart = a brand new random set (same stacks, level and mode). Asks first if work would be lost.
+  const restart = () => {
+    if (collect().length === 0) return onStart(stacks, level, random);
+    setConfirmRestart(true);
   };
   const closeReport = () => {
     (document.activeElement as HTMLElement | null)?.blur();
@@ -97,9 +105,12 @@ export default function SessionView({ queue, onSectorStart, onExit, stacks, leve
       const cur = all[all.length - 1];
       const s = cur.session;
 
-      // While the report dialog is open the session ignores typing; Esc closes the dialog.
-      if (reportOpen.current) {
-        if (e.key === "Escape") setReport(null);
+      // While a dialog is open the session ignores typing; Esc closes the dialog.
+      if (modalOpen.current) {
+        if (e.key === "Escape") {
+          setReport(null);
+          setConfirmRestart(false);
+        }
         return;
       }
       if (e.key === "Escape") {
@@ -140,6 +151,9 @@ export default function SessionView({ queue, onSectorStart, onExit, stacks, leve
   useEffect(() => {
     if (report) dialogRef.current?.focus();
   }, [report]);
+  useEffect(() => {
+    if (confirmRestart) confirmRef.current?.focus();
+  }, [confirmRestart]);
 
   // The page never scrolls; everything scrolls inside this one card.
   const cardRef = useRef<HTMLDivElement>(null);
@@ -210,6 +224,21 @@ export default function SessionView({ queue, onSectorStart, onExit, stacks, leve
             <span className="muted">· {levelLabel(current.lesson.level)} · sector {sectors.length}/{queue.length}</span>
           </span>
           <span className="bar-live">{st.wpm} WPM · {st.accuracy}%</span>
+          <button
+            type="button"
+            className="icon-btn"
+            aria-label="Restart with a new set"
+            title="Restart with a new set"
+            onClick={(e) => {
+              e.currentTarget.blur(); // so the Space key keeps typing
+              restart();
+            }}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M20 12a8 8 0 1 1-2.6-5.9" />
+              <path d="M20 4v5h-5" />
+            </svg>
+          </button>
           <ThemeToggle />
           {started && (
             <button
@@ -269,6 +298,29 @@ export default function SessionView({ queue, onSectorStart, onExit, stacks, leve
           )}
         </p>
       </main>
+
+      {confirmRestart && (
+        <div className="modal-backdrop" onClick={() => setConfirmRestart(false)}>
+          <div
+            className="modal confirm-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="restart-title"
+            tabIndex={-1}
+            ref={confirmRef}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 className="modal-title" id="restart-title">Restart with a new set?</h2>
+            <p className="muted confirm-text">
+              You'll get fresh random lessons. What you've typed in this set won't be saved.
+            </p>
+            <div className="cta-row">
+              <button className="btn solid" onClick={() => onStart(stacks, level, random)}>Restart</button>
+              <button className="btn ghost" onClick={() => setConfirmRestart(false)}>Keep typing</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {report && (
         <div className="modal-backdrop" onClick={closeReport}>

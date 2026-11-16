@@ -1,0 +1,41 @@
+{
+  "id": "sql-delete-dupes-01",
+  "category": "SQL",
+  "topic": "Delete Duplicates",
+  "level": 2,
+  "tags": [
+    "duplicates",
+    "delete",
+    "subquery"
+  ],
+  "chunks": [
+    {
+      "code": "CREATE TABLE signups (id INTEGER PRIMARY KEY, email TEXT);",
+      "explain": "A scratch table that has no unique email rule"
+    },
+    {
+      "code": "INSERT INTO signups (email)",
+      "explain": "Add rows, filling the email column"
+    },
+    {
+      "code": "VALUES ('a@x.com'), ('b@x.com'), ('a@x.com');",
+      "explain": "Three rows; a@x.com appears twice"
+    },
+    {
+      "code": "DELETE FROM signups",
+      "explain": "Remove rows from signups"
+    },
+    {
+      "code": "WHERE id NOT IN (",
+      "explain": "Delete every row except the ones picked below"
+    },
+    {
+      "code": "  SELECT MIN(id) FROM signups GROUP BY email",
+      "explain": "Keep the lowest id for each email"
+    },
+    {
+      "code": ");",
+      "explain": "Close the subquery"
+    }
+  ]
+}

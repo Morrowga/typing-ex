@@ -1,0 +1,24 @@
+{
+  "id": "sql-order-02",
+  "category": "SQL",
+  "topic": "ORDER BY",
+  "level": 1,
+  "tags": [
+    "order by",
+    "multiple"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, department, salary",
+      "explain": "Choose three employee columns"
+    },
+    {
+      "code": "FROM employees",
+      "explain": "Read from the employees table"
+    },
+    {
+      "code": "ORDER BY department ASC, salary DESC;",
+      "explain": "Sort by department, then salary high to low"
+    }
+  ]
+}

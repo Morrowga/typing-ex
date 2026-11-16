@@ -1,0 +1,24 @@
+{
+  "id": "sql-distinct-01",
+  "category": "SQL",
+  "topic": "DISTINCT",
+  "level": 1,
+  "tags": [
+    "distinct",
+    "unique"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT DISTINCT country",
+      "explain": "Keep each country value only once"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Look in the customers table"
+    },
+    {
+      "code": "ORDER BY country;",
+      "explain": "Sort the unique countries A to Z"
+    }
+  ]
+}

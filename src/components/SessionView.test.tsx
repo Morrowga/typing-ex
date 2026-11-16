@@ -152,4 +152,53 @@ describe("SessionView", () => {
     fireEvent.click(screen.getByText("New set"));
     expect(onStart).toHaveBeenCalledWith(["Linux"], 1, false);
   });
+
+  describe("restart button", () => {
+    const restartBtn = () => screen.getByLabelText("Restart with a new set");
+
+    it("sits right before the theme toggle", () => {
+      setup();
+      const next = restartBtn().nextElementSibling;
+      expect(next?.getAttribute("aria-label")).toMatch(/switch to (light|dark) theme/i);
+    });
+
+    it("restarts at once when nothing has been typed yet", () => {
+      const { onStart } = setup();
+      fireEvent.click(restartBtn());
+      expect(onStart).toHaveBeenCalledWith(["Linux"], 1, false);
+      expect(screen.queryByRole("dialog")).toBeNull();
+    });
+
+    it("asks first once something was typed, and Keep typing carries on", () => {
+      const { onStart, container } = setup();
+      type("ls");
+      fireEvent.click(restartBtn());
+      expect(screen.getByRole("dialog").textContent).toMatch(/restart with a new set/i);
+      expect(onStart).not.toHaveBeenCalled();
+      type("zzz"); // typing is ignored while the question is open
+      fireEvent.click(screen.getByText("Keep typing"));
+      expect(screen.queryByRole("dialog")).toBeNull();
+      type(" -la");
+      expect(container.querySelectorAll("#sector-0 .ch.done").length).toBe("ls -la".length);
+      expect(onStart).not.toHaveBeenCalled();
+    });
+
+    it("Esc closes the question without restarting", () => {
+      const { onStart } = setup();
+      type("ls");
+      fireEvent.click(restartBtn());
+      press("Escape");
+      expect(screen.queryByRole("dialog")).toBeNull();
+      expect(onStart).not.toHaveBeenCalled();
+    });
+
+    it("confirming starts a new set with the same stacks, level and mode", () => {
+      const { onStart } = setup();
+      type("ls");
+      fireEvent.click(restartBtn());
+      fireEvent.click(screen.getByText("Restart"));
+      expect(onStart).toHaveBeenCalledTimes(1);
+      expect(onStart).toHaveBeenCalledWith(["Linux"], 1, false);
+    });
+  });
 });

@@ -1,0 +1,36 @@
+{
+  "id": "sql-subquery-correlated-01",
+  "category": "SQL",
+  "topic": "Correlated Subquery",
+  "level": 2,
+  "tags": [
+    "subquery",
+    "correlated"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT e.name, e.department, e.salary",
+      "explain": "Choose the employee columns"
+    },
+    {
+      "code": "FROM employees e",
+      "explain": "Read from employees as e"
+    },
+    {
+      "code": "WHERE e.salary > (",
+      "explain": "Salary must beat the inner value"
+    },
+    {
+      "code": "  SELECT AVG(x.salary) FROM employees x",
+      "explain": "Average salary of..."
+    },
+    {
+      "code": "  WHERE x.department = e.department",
+      "explain": "...the same department as this row"
+    },
+    {
+      "code": ");",
+      "explain": "Close the subquery"
+    }
+  ]
+}

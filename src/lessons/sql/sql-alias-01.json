@@ -1,0 +1,24 @@
+{
+  "id": "sql-alias-01",
+  "category": "SQL",
+  "topic": "Aliases",
+  "level": 1,
+  "tags": [
+    "as",
+    "alias"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name AS product_name,",
+      "explain": "Show name under the label product_name"
+    },
+    {
+      "code": "  price AS cost",
+      "explain": "Show price under the label cost"
+    },
+    {
+      "code": "FROM products;",
+      "explain": "Read from the products table"
+    }
+  ]
+}

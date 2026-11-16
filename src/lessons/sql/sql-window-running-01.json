@@ -1,0 +1,24 @@
+{
+  "id": "sql-window-running-01",
+  "category": "SQL",
+  "topic": "Running Total",
+  "level": 2,
+  "tags": [
+    "window",
+    "sum over"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT order_date, total,",
+      "explain": "Choose the date and total"
+    },
+    {
+      "code": "  SUM(total) OVER (ORDER BY order_date, id) AS running_total",
+      "explain": "Add up totals row by row in date order"
+    },
+    {
+      "code": "FROM orders;",
+      "explain": "Read from the orders table"
+    }
+  ]
+}

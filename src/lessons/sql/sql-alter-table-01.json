@@ -1,0 +1,20 @@
+{
+  "id": "sql-alter-table-01",
+  "category": "SQL",
+  "topic": "ALTER TABLE",
+  "level": 1,
+  "tags": [
+    "alter table",
+    "add column"
+  ],
+  "chunks": [
+    {
+      "code": "ALTER TABLE customers",
+      "explain": "Change the customers table"
+    },
+    {
+      "code": "ADD COLUMN phone TEXT;",
+      "explain": "Add a new text column called phone"
+    }
+  ]
+}

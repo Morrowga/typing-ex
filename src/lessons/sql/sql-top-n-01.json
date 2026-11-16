@@ -1,0 +1,36 @@
+{
+  "id": "sql-top-n-01",
+  "category": "SQL",
+  "topic": "Top N per Group",
+  "level": 2,
+  "tags": [
+    "window",
+    "top n"
+  ],
+  "chunks": [
+    {
+      "code": "WITH ranked AS (",
+      "explain": "Name a temporary result"
+    },
+    {
+      "code": "  SELECT name, department, salary,",
+      "explain": "Choose the employee columns"
+    },
+    {
+      "code": "    ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rn",
+      "explain": "Rank within each department"
+    },
+    {
+      "code": "  FROM employees",
+      "explain": "Read from employees"
+    },
+    {
+      "code": ")",
+      "explain": "End of the temporary result"
+    },
+    {
+      "code": "SELECT name, department, salary FROM ranked WHERE rn <= 2;",
+      "explain": "Keep the first two per department"
+    }
+  ]
+}

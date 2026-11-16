@@ -1,0 +1,24 @@
+{
+  "id": "sql-coalesce-01",
+  "category": "SQL",
+  "topic": "COALESCE",
+  "level": 1,
+  "tags": [
+    "coalesce",
+    "null"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name,",
+      "explain": "Show the customer name"
+    },
+    {
+      "code": "  COALESCE(email, 'no email') AS contact",
+      "explain": "Use the email, or the fallback if NULL"
+    },
+    {
+      "code": "FROM customers;",
+      "explain": "Read from the customers table"
+    }
+  ]
+}

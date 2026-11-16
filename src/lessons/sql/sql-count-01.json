@@ -1,0 +1,24 @@
+{
+  "id": "sql-count-01",
+  "category": "SQL",
+  "topic": "COUNT",
+  "level": 1,
+  "tags": [
+    "count",
+    "aggregate"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT COUNT(*) AS order_count",
+      "explain": "Count the rows and label the result"
+    },
+    {
+      "code": "FROM orders",
+      "explain": "Count rows of the orders table"
+    },
+    {
+      "code": "WHERE status = 'pending';",
+      "explain": "Only count the pending orders"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "sql-window-rank-01",
+  "category": "SQL",
+  "topic": "RANK and DENSE_RANK",
+  "level": 2,
+  "tags": [
+    "window",
+    "rank"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, department, salary,",
+      "explain": "Choose the employee columns"
+    },
+    {
+      "code": "  RANK() OVER (ORDER BY salary DESC) AS rnk,",
+      "explain": "Rank by salary, leaving gaps on ties"
+    },
+    {
+      "code": "  DENSE_RANK() OVER (ORDER BY salary DESC) AS dense",
+      "explain": "Same ranking but with no gaps"
+    },
+    {
+      "code": "FROM employees;",
+      "explain": "Read from the employees table"
+    }
+  ]
+}

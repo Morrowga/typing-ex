@@ -1,0 +1,29 @@
+{
+  "id": "sql-window-lag-01",
+  "category": "SQL",
+  "topic": "LAG and LEAD",
+  "level": 2,
+  "tags": [
+    "window",
+    "lag",
+    "lead"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT id, order_date, total,",
+      "explain": "Choose the order columns"
+    },
+    {
+      "code": "  LAG(total) OVER (ORDER BY order_date) AS previous_total,",
+      "explain": "Total from the previous row"
+    },
+    {
+      "code": "  LEAD(total) OVER (ORDER BY order_date) AS next_total",
+      "explain": "Total from the next row"
+    },
+    {
+      "code": "FROM orders;",
+      "explain": "Read from the orders table"
+    }
+  ]
+}

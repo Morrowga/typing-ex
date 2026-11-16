@@ -1,0 +1,24 @@
+{
+  "id": "sql-returning-01",
+  "category": "SQL",
+  "topic": "RETURNING",
+  "level": 2,
+  "tags": [
+    "insert",
+    "returning"
+  ],
+  "chunks": [
+    {
+      "code": "INSERT INTO products (name, category, price, stock)",
+      "explain": "Insert a new product"
+    },
+    {
+      "code": "VALUES ('Dock', 'Accessories', 79.0, 15)",
+      "explain": "Its column values"
+    },
+    {
+      "code": "RETURNING id, name;",
+      "explain": "Send back the new id and name"
+    }
+  ]
+}

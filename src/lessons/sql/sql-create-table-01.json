@@ -1,0 +1,36 @@
+{
+  "id": "sql-create-table-01",
+  "category": "SQL",
+  "topic": "CREATE TABLE",
+  "level": 1,
+  "tags": [
+    "create table",
+    "constraints"
+  ],
+  "chunks": [
+    {
+      "code": "CREATE TABLE tasks (",
+      "explain": "Start defining a new table named tasks"
+    },
+    {
+      "code": "  id INTEGER PRIMARY KEY,",
+      "explain": "A unique id that identifies each row"
+    },
+    {
+      "code": "  title TEXT NOT NULL,",
+      "explain": "Text that must always be provided"
+    },
+    {
+      "code": "  status TEXT DEFAULT 'todo',",
+      "explain": "Falls back to todo when not given"
+    },
+    {
+      "code": "  points INTEGER CHECK (points >= 0)",
+      "explain": "Rejects negative numbers"
+    },
+    {
+      "code": ");",
+      "explain": "Close the column list"
+    }
+  ]
+}

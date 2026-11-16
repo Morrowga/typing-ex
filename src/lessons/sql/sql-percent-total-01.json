@@ -1,0 +1,32 @@
+{
+  "id": "sql-percent-total-01",
+  "category": "SQL",
+  "topic": "Percent of Total",
+  "level": 2,
+  "tags": [
+    "window",
+    "percent"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT category,",
+      "explain": "Show each category"
+    },
+    {
+      "code": "  SUM(stock * price) AS value,",
+      "explain": "Stock value for the category"
+    },
+    {
+      "code": "  ROUND(100.0 * SUM(stock * price) / SUM(SUM(stock * price)) OVER (), 1) AS pct",
+      "explain": "Its share of the grand total"
+    },
+    {
+      "code": "FROM products",
+      "explain": "Read from the products table"
+    },
+    {
+      "code": "GROUP BY category;",
+      "explain": "One row per category"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sql-like-01",
+  "category": "SQL",
+  "topic": "LIKE Patterns",
+  "level": 1,
+  "tags": [
+    "like",
+    "wildcard"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name",
+      "explain": "Choose the customer name"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Read from the customers table"
+    },
+    {
+      "code": "WHERE name LIKE 'A%';",
+      "explain": "Names that start with A; % is any text"
+    }
+  ]
+}

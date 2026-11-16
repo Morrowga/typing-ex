@@ -1,0 +1,40 @@
+{
+  "id": "sql-cte-01",
+  "category": "SQL",
+  "topic": "CTE with WITH",
+  "level": 2,
+  "tags": [
+    "cte",
+    "with"
+  ],
+  "chunks": [
+    {
+      "code": "WITH customer_totals AS (",
+      "explain": "Name a temporary result set"
+    },
+    {
+      "code": "  SELECT customer_id, SUM(total) AS spent",
+      "explain": "Sum the totals per customer"
+    },
+    {
+      "code": "  FROM orders",
+      "explain": "Read from orders"
+    },
+    {
+      "code": "  GROUP BY customer_id",
+      "explain": "One row per customer"
+    },
+    {
+      "code": ")",
+      "explain": "End of the temporary result"
+    },
+    {
+      "code": "SELECT c.name, t.spent",
+      "explain": "Choose the name and amount spent"
+    },
+    {
+      "code": "FROM customer_totals t JOIN customers c ON c.id = t.customer_id;",
+      "explain": "Join the CTE back to customers"
+    }
+  ]
+}

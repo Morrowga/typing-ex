@@ -1,0 +1,33 @@
+{
+  "id": "sql-having-join-01",
+  "category": "SQL",
+  "topic": "GROUP BY with HAVING",
+  "level": 2,
+  "tags": [
+    "join",
+    "group by",
+    "having"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT c.country, COUNT(o.id) AS orders, SUM(o.total) AS revenue",
+      "explain": "Per-country order count and revenue"
+    },
+    {
+      "code": "FROM customers c",
+      "explain": "Start from customers"
+    },
+    {
+      "code": "JOIN orders o ON o.customer_id = c.id",
+      "explain": "Attach each customer's orders"
+    },
+    {
+      "code": "GROUP BY c.country",
+      "explain": "One group per country"
+    },
+    {
+      "code": "HAVING SUM(o.total) > 200;",
+      "explain": "Keep countries with revenue above 200"
+    }
+  ]
+}

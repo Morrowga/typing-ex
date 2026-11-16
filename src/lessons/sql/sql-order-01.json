@@ -1,0 +1,24 @@
+{
+  "id": "sql-order-01",
+  "category": "SQL",
+  "topic": "ORDER BY",
+  "level": 1,
+  "tags": [
+    "order by",
+    "desc"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, price",
+      "explain": "Choose the name and price"
+    },
+    {
+      "code": "FROM products",
+      "explain": "Read from the products table"
+    },
+    {
+      "code": "ORDER BY price DESC;",
+      "explain": "Sort from highest price to lowest"
+    }
+  ]
+}

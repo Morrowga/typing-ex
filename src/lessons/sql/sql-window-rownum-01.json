@@ -1,0 +1,24 @@
+{
+  "id": "sql-window-rownum-01",
+  "category": "SQL",
+  "topic": "ROW_NUMBER",
+  "level": 2,
+  "tags": [
+    "window",
+    "row_number"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, price,",
+      "explain": "Choose the name and price"
+    },
+    {
+      "code": "  ROW_NUMBER() OVER (ORDER BY price DESC) AS rn",
+      "explain": "Number rows from highest price down"
+    },
+    {
+      "code": "FROM products;",
+      "explain": "Read from the products table"
+    }
+  ]
+}

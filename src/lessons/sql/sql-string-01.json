@@ -1,0 +1,33 @@
+{
+  "id": "sql-string-01",
+  "category": "SQL",
+  "topic": "String Functions",
+  "level": 1,
+  "tags": [
+    "upper",
+    "length",
+    "concat"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT UPPER(name) AS shout,",
+      "explain": "Convert the name to capitals"
+    },
+    {
+      "code": "  LENGTH(name) AS chars,",
+      "explain": "Count the characters in the name"
+    },
+    {
+      "code": "  name || ' <' || email || '>' AS label",
+      "explain": "Join text pieces with the || operator"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Read from the customers table"
+    },
+    {
+      "code": "WHERE email IS NOT NULL;",
+      "explain": "Skip customers with no email"
+    }
+  ]
+}

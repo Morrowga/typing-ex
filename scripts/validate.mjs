@@ -23,6 +23,9 @@ const CHECKERS = {
   PHP: ["php", ["-l"], "--version"],
   Swift: ["swiftc", ["-typecheck"], "--version", "main.swift"],
   Kotlin: ["kotlinc", ["-script"], "-version", "main.kts"],
+  // SQL is not just parsed: it is run against the sample database in scripts/sql-schema.sql (a 5th
+  // entry prepends that file), in a fresh in-memory SQLite, so a lesson that fails to run is caught.
+  SQL: ["sqlite3", ["-bail", ":memory:"], "--version", null, "sql-schema.sql"],
   js: ["node", ["--check"], "--version", "main.js"],
   ts: [
     join(root, "..", "..", "node_modules", ".bin", "tsc"),
@@ -72,7 +75,16 @@ for (const file of files) {
   if (checker) {
     if (!available[key]) skipped.add(key);
     else {
-      const code = l.chunks.map((c) => c.code).join("\n") + "\n";
+      const lessonCode = l.chunks.map((c) => c.code).join("\n") + "\n";
+      const prelude = checker[4]
+        ? readFileSync(join(root, "..", "..", "scripts", checker[4]), "utf8").trimEnd() + "\n"
+        : "";
+      const preludeLines = prelude ? prelude.split("\n").length - 1 : 0;
+      const code = prelude + lessonCode;
+      if (key === "SQL" && !lessonCode.trimEnd().endsWith(";")) {
+        err(file, "SQL must end with a semicolon");
+        continue;
+      }
       let r;
       if (checker[3]) {
         const dir = mkdtempSync(join(tmpdir(), "lesson-"));
@@ -83,7 +95,12 @@ for (const file of files) {
       } else {
         r = spawnSync(checker[0], checker[1], { input: code, encoding: "utf8" });
       }
-      if (r.status !== 0) err(file, `${key} syntax check failed: ${(r.stderr || r.stdout).trim().split("\n")[0]}`);
+      if (r.status !== 0) {
+        let msg = (r.stderr || r.stdout).trim().split("\n")[0];
+        // report SQL errors by the lesson's own line number, not the prelude's
+        msg = msg.replace(/near line (\d+)/, (_, n) => `near lesson line ${Number(n) - preludeLines}`);
+        err(file, `${key} ${key === "SQL" ? "run" : "syntax"} check failed: ${msg}`);
+      }
     }
   }
   if (l.chunks.length > 10) err(file, `more than 10 chunks (keep snippets short)`);

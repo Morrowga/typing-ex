@@ -1,0 +1,28 @@
+{
+  "id": "sql-left-join-01",
+  "category": "SQL",
+  "topic": "LEFT JOIN",
+  "level": 1,
+  "tags": [
+    "join",
+    "left"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT c.name, o.id AS order_id",
+      "explain": "Pick the customer and order id"
+    },
+    {
+      "code": "FROM customers c",
+      "explain": "Start from every customer"
+    },
+    {
+      "code": "LEFT JOIN orders o",
+      "explain": "Bring in orders, if any exist"
+    },
+    {
+      "code": "  ON o.customer_id = c.id;",
+      "explain": "Customers without orders show NULL"
+    }
+  ]
+}

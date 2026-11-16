@@ -1,0 +1,32 @@
+{
+  "id": "sql-subquery-in-01",
+  "category": "SQL",
+  "topic": "IN Subquery",
+  "level": 2,
+  "tags": [
+    "subquery",
+    "in"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name",
+      "explain": "Choose the customer name"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Read from the customers table"
+    },
+    {
+      "code": "WHERE id IN (",
+      "explain": "Keep ids found in the inner result"
+    },
+    {
+      "code": "  SELECT customer_id FROM orders WHERE total > 100",
+      "explain": "Customers with an order over 100"
+    },
+    {
+      "code": ");",
+      "explain": "Close the subquery"
+    }
+  ]
+}

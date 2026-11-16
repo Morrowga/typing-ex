@@ -357,12 +357,29 @@ kbd.on-solid { color: var(--on-fg); border-color: color-mix(in srgb, var(--on-fg
 @media (prefers-reduced-motion: reduce) { .modal-backdrop, .modal { animation: none; } }
 
 /* ---------- theme toggle ---------- */
-.theme-toggle {
+.theme-toggle,
+.icon-btn {
   flex: none; width: 36px; height: 36px; display: grid; place-items: center;
   color: var(--dim); background: transparent; border: 1px solid var(--line); border-radius: 50%; cursor: pointer;
   transition: color 0.15s, border-color 0.15s;
 }
-.theme-toggle:hover { color: var(--fg); border-color: var(--fg); }
-.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle:hover,
+.icon-btn:hover { color: var(--fg); border-color: var(--fg); }
+.theme-toggle svg,
+.icon-btn svg { width: 18px; height: 18px; }
 .page.home { position: relative; }
 .home-theme { position: absolute; top: 22px; right: 24px; }
+
+/* ---------- "more stacks" popup ---------- */
+.pick.more { color: var(--dim); }
+.pick.more.on { color: var(--on-fg); }
+.stacks-modal { width: min(520px, 100%); }
+.modal-title { margin: 0; font: 700 22px var(--sans); letter-spacing: -0.02em; }
+.stacks-modal .small { margin: 8px 0 0; }
+.modal-chips { margin-top: 18px; }
+.stacks-modal .cta-row { margin-top: 24px; }
+
+/* ---------- restart confirm ---------- */
+.confirm-modal { width: min(440px, 100%); }
+.confirm-text { margin: 10px 0 0; }
+.confirm-modal .cta-row { margin-top: 24px; }

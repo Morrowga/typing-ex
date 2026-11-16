@@ -1,0 +1,36 @@
+{
+  "id": "sql-not-exists-01",
+  "category": "SQL",
+  "topic": "NOT EXISTS",
+  "level": 2,
+  "tags": [
+    "not exists",
+    "anti join"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT p.name",
+      "explain": "Choose the product name"
+    },
+    {
+      "code": "FROM products p",
+      "explain": "Read from products as p"
+    },
+    {
+      "code": "WHERE NOT EXISTS (",
+      "explain": "Keep rows where the inner query finds nothing"
+    },
+    {
+      "code": "  SELECT 1 FROM order_items oi",
+      "explain": "Look inside order_items"
+    },
+    {
+      "code": "  WHERE oi.product_id = p.id",
+      "explain": "Rows that mention this product"
+    },
+    {
+      "code": ");",
+      "explain": "Closes: products never ordered"
+    }
+  ]
+}

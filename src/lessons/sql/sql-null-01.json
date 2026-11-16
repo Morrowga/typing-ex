@@ -1,0 +1,24 @@
+{
+  "id": "sql-null-01",
+  "category": "SQL",
+  "topic": "NULL Checks",
+  "level": 1,
+  "tags": [
+    "null",
+    "is null"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name",
+      "explain": "Choose the customer name"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Read from the customers table"
+    },
+    {
+      "code": "WHERE email IS NULL;",
+      "explain": "Customers with no email stored"
+    }
+  ]
+}

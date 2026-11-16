@@ -1,0 +1,28 @@
+{
+  "id": "sql-limit-01",
+  "category": "SQL",
+  "topic": "LIMIT and OFFSET",
+  "level": 1,
+  "tags": [
+    "limit",
+    "offset"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, price",
+      "explain": "Choose the name and price"
+    },
+    {
+      "code": "FROM products",
+      "explain": "Read from the products table"
+    },
+    {
+      "code": "ORDER BY price DESC",
+      "explain": "Most expensive first"
+    },
+    {
+      "code": "LIMIT 3 OFFSET 2;",
+      "explain": "Skip 2 rows, then return the next 3"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "sql-and-or-01",
+  "category": "SQL",
+  "topic": "AND and OR",
+  "level": 1,
+  "tags": [
+    "and",
+    "or",
+    "where"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, country",
+      "explain": "Choose the name and country"
+    },
+    {
+      "code": "FROM customers",
+      "explain": "Read from the customers table"
+    },
+    {
+      "code": "WHERE country = 'USA'",
+      "explain": "First condition: country is USA"
+    },
+    {
+      "code": "  AND city = 'Boston';",
+      "explain": "AND: city must also be Boston"
+    }
+  ]
+}

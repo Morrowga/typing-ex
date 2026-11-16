@@ -1,0 +1,36 @@
+{
+  "id": "sql-window-frame-01",
+  "category": "SQL",
+  "topic": "Moving Average",
+  "level": 2,
+  "tags": [
+    "window",
+    "frame"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT order_date, total,",
+      "explain": "Choose the date and total"
+    },
+    {
+      "code": "  AVG(total) OVER (",
+      "explain": "Average over a sliding window"
+    },
+    {
+      "code": "    ORDER BY order_date, id",
+      "explain": "Order rows by date"
+    },
+    {
+      "code": "    ROWS BETWEEN 2 PRECEDING AND CURRENT ROW",
+      "explain": "This row and the two before it"
+    },
+    {
+      "code": "  ) AS moving_avg",
+      "explain": "Name the column"
+    },
+    {
+      "code": "FROM orders;",
+      "explain": "Read from the orders table"
+    }
+  ]
+}

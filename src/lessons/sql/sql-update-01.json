@@ -1,0 +1,24 @@
+{
+  "id": "sql-update-01",
+  "category": "SQL",
+  "topic": "UPDATE",
+  "level": 1,
+  "tags": [
+    "update",
+    "set"
+  ],
+  "chunks": [
+    {
+      "code": "UPDATE products",
+      "explain": "Change rows in the products table"
+    },
+    {
+      "code": "SET stock = stock + 50",
+      "explain": "Add 50 to the current stock"
+    },
+    {
+      "code": "WHERE name = 'Webcam';",
+      "explain": "Only for the row named Webcam"
+    }
+  ]
+}

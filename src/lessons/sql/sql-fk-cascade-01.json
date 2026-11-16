@@ -1,0 +1,36 @@
+{
+  "id": "sql-fk-cascade-01",
+  "category": "SQL",
+  "topic": "Foreign Keys and CASCADE",
+  "level": 2,
+  "tags": [
+    "foreign key",
+    "cascade"
+  ],
+  "chunks": [
+    {
+      "code": "CREATE TABLE reviews (",
+      "explain": "Start a new reviews table"
+    },
+    {
+      "code": "  id INTEGER PRIMARY KEY,",
+      "explain": "Unique id for each review"
+    },
+    {
+      "code": "  product_id INTEGER NOT NULL",
+      "explain": "Which product it belongs to"
+    },
+    {
+      "code": "    REFERENCES products(id) ON DELETE CASCADE,",
+      "explain": "Deleting a product deletes its reviews"
+    },
+    {
+      "code": "  body TEXT",
+      "explain": "The review text"
+    },
+    {
+      "code": ");",
+      "explain": "Close the column list"
+    }
+  ]
+}

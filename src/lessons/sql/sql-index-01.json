@@ -1,0 +1,24 @@
+{
+  "id": "sql-index-01",
+  "category": "SQL",
+  "topic": "Indexes",
+  "level": 2,
+  "tags": [
+    "index",
+    "explain"
+  ],
+  "chunks": [
+    {
+      "code": "CREATE INDEX idx_orders_customer ON orders (customer_id);",
+      "explain": "Speed up lookups by customer_id"
+    },
+    {
+      "code": "EXPLAIN",
+      "explain": "Show how the database plans to run the query"
+    },
+    {
+      "code": "SELECT * FROM orders WHERE customer_id = 3;",
+      "explain": "The query whose plan we ask for"
+    }
+  ]
+}

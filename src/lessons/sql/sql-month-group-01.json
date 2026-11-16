@@ -1,0 +1,33 @@
+{
+  "id": "sql-month-group-01",
+  "category": "SQL",
+  "topic": "Group by Month",
+  "level": 2,
+  "tags": [
+    "substr",
+    "group by",
+    "date"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT substr(order_date, 1, 7) AS month,",
+      "explain": "Cut the date down to YYYY-MM"
+    },
+    {
+      "code": "  COUNT(*) AS orders",
+      "explain": "Count orders in each month"
+    },
+    {
+      "code": "FROM orders",
+      "explain": "Read from the orders table"
+    },
+    {
+      "code": "GROUP BY month",
+      "explain": "One group per month"
+    },
+    {
+      "code": "ORDER BY month;",
+      "explain": "Oldest month first"
+    }
+  ]
+}

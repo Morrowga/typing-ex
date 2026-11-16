@@ -1,0 +1,24 @@
+{
+  "id": "sql-between-01",
+  "category": "SQL",
+  "topic": "BETWEEN",
+  "level": 1,
+  "tags": [
+    "between",
+    "range"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT id, order_date",
+      "explain": "Choose the order id and date"
+    },
+    {
+      "code": "FROM orders",
+      "explain": "Read from the orders table"
+    },
+    {
+      "code": "WHERE order_date BETWEEN '2024-02-01' AND '2024-02-29';",
+      "explain": "Dates in the range, both ends included"
+    }
+  ]
+}

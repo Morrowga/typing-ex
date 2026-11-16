@@ -1,0 +1,28 @@
+{
+  "id": "sql-inner-join-01",
+  "category": "SQL",
+  "topic": "INNER JOIN",
+  "level": 1,
+  "tags": [
+    "join",
+    "inner"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT o.id, c.name, o.total",
+      "explain": "Pick columns from both tables"
+    },
+    {
+      "code": "FROM orders o",
+      "explain": "Start from orders, nicknamed o"
+    },
+    {
+      "code": "INNER JOIN customers c",
+      "explain": "Join in customers, nicknamed c"
+    },
+    {
+      "code": "  ON o.customer_id = c.id;",
+      "explain": "Match each order to its customer"
+    }
+  ]
+}

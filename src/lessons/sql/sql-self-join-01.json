@@ -1,0 +1,32 @@
+{
+  "id": "sql-self-join-01",
+  "category": "SQL",
+  "topic": "Self Join",
+  "level": 2,
+  "tags": [
+    "self join",
+    "employees"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT e.name AS employee, m.name AS manager",
+      "explain": "Show each employee next to their manager"
+    },
+    {
+      "code": "FROM employees e",
+      "explain": "Use employees as the staff side"
+    },
+    {
+      "code": "LEFT JOIN employees m",
+      "explain": "Use employees again as the manager side"
+    },
+    {
+      "code": "  ON e.manager_id = m.id",
+      "explain": "Match manager_id to the manager's id"
+    },
+    {
+      "code": "ORDER BY m.name, e.name;",
+      "explain": "Group staff under each manager"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sql-where-01",
+  "category": "SQL",
+  "topic": "WHERE Comparisons",
+  "level": 1,
+  "tags": [
+    "where",
+    "comparison"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, price",
+      "explain": "Choose the name and price columns"
+    },
+    {
+      "code": "FROM products",
+      "explain": "Read from the products table"
+    },
+    {
+      "code": "WHERE price > 100;",
+      "explain": "Keep only rows with a price above 100"
+    }
+  ]
+}

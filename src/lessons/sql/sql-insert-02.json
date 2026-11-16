@@ -1,0 +1,28 @@
+{
+  "id": "sql-insert-02",
+  "category": "SQL",
+  "topic": "INSERT",
+  "level": 1,
+  "tags": [
+    "insert",
+    "multiple rows"
+  ],
+  "chunks": [
+    {
+      "code": "INSERT INTO products (name, category, price)",
+      "explain": "Add rows, filling these three columns"
+    },
+    {
+      "code": "VALUES ('Mousepad', 'Accessories', 9.5),",
+      "explain": "First new product"
+    },
+    {
+      "code": "  ('Hub', 'Accessories', 29.0),",
+      "explain": "Second new product"
+    },
+    {
+      "code": "  ('Stand', 'Office', 39.0);",
+      "explain": "Third new product"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sql-where-02",
+  "category": "SQL",
+  "topic": "WHERE Comparisons",
+  "level": 1,
+  "tags": [
+    "where",
+    "equals"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT id, total",
+      "explain": "Choose the order id and total"
+    },
+    {
+      "code": "FROM orders",
+      "explain": "Read from the orders table"
+    },
+    {
+      "code": "WHERE status <> 'cancelled';",
+      "explain": "Skip rows whose status is cancelled"
+    }
+  ]
+}

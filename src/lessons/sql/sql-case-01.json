@@ -1,0 +1,40 @@
+{
+  "id": "sql-case-01",
+  "category": "SQL",
+  "topic": "CASE WHEN",
+  "level": 1,
+  "tags": [
+    "case",
+    "when"
+  ],
+  "chunks": [
+    {
+      "code": "SELECT name, price,",
+      "explain": "Show the name and price"
+    },
+    {
+      "code": "  CASE",
+      "explain": "Start a multi-way choice"
+    },
+    {
+      "code": "    WHEN price >= 100 THEN 'premium'",
+      "explain": "Premium when the price is 100 or more"
+    },
+    {
+      "code": "    WHEN price >= 30 THEN 'standard'",
+      "explain": "Standard when the price is 30 or more"
+    },
+    {
+      "code": "    ELSE 'budget'",
+      "explain": "Budget for everything else"
+    },
+    {
+      "code": "  END AS tier",
+      "explain": "Finish the choice and name the column"
+    },
+    {
+      "code": "FROM products;",
+      "explain": "Read from the products table"
+    }
+  ]
+}
