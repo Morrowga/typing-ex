@@ -1,0 +1,32 @@
+{
+  "id": "linux-rm-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "rm",
+    "rmdir"
+  ],
+  "chunks": [
+    {
+      "code": "rm draft.txt",
+      "explain": "Delete a file"
+    },
+    {
+      "code": "rm -i old.log",
+      "explain": "Ask before deleting"
+    },
+    {
+      "code": "rm *.tmp",
+      "explain": "Delete all files ending in .tmp"
+    },
+    {
+      "code": "rmdir empty-dir",
+      "explain": "Remove an empty folder"
+    },
+    {
+      "code": "rm -r build",
+      "explain": "Delete a folder and its contents"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "git-ignore-01",
+  "category": "Git",
+  "topic": "Gitignore",
+  "level": 1,
+  "tags": [
+    "gitignore",
+    "untracked"
+  ],
+  "chunks": [
+    {
+      "code": "echo \"node_modules/\" >> .gitignore",
+      "explain": "Ignore the dependencies folder"
+    },
+    {
+      "code": "echo \"*.log\" >> .gitignore",
+      "explain": "Ignore all log files"
+    },
+    {
+      "code": "echo \".env\" >> .gitignore",
+      "explain": "Ignore the local secrets file"
+    },
+    {
+      "code": "git add .gitignore",
+      "explain": "Stage the ignore file"
+    },
+    {
+      "code": "git commit -m \"Add gitignore\"",
+      "explain": "Commit it"
+    }
+  ]
+}

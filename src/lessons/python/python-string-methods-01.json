@@ -1,0 +1,32 @@
+{
+  "id": "python-string-methods-01",
+  "category": "Python",
+  "topic": "String Methods",
+  "level": 1,
+  "tags": [
+    "strings",
+    "methods"
+  ],
+  "chunks": [
+    {
+      "code": "line = \"  Hello, World  \"",
+      "explain": "Text with extra spaces around it"
+    },
+    {
+      "code": "clean = line.strip()",
+      "explain": "Remove spaces at both ends"
+    },
+    {
+      "code": "print(clean.upper())",
+      "explain": "Make it uppercase"
+    },
+    {
+      "code": "print(clean.replace(\"World\", \"Python\"))",
+      "explain": "Swap one word for another"
+    },
+    {
+      "code": "print(clean.split(\", \"))",
+      "explain": "Split into a list at the comma"
+    }
+  ]
+}

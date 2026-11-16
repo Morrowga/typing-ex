@@ -1,0 +1,36 @@
+{
+  "id": "python-pathlib-01",
+  "category": "Python",
+  "topic": "pathlib",
+  "level": 2,
+  "tags": [
+    "pathlib",
+    "files"
+  ],
+  "chunks": [
+    {
+      "code": "from pathlib import Path",
+      "explain": "Import Path"
+    },
+    {
+      "code": "base = Path(\"data\")",
+      "explain": "Build a path object"
+    },
+    {
+      "code": "report = base / \"2024\" / \"report.txt\"",
+      "explain": "Join parts with the / operator"
+    },
+    {
+      "code": "print(report.suffix, report.stem)",
+      "explain": "Shows .txt and report"
+    },
+    {
+      "code": "report.parent.mkdir(parents=True, exist_ok=True)",
+      "explain": "Create the folders safely"
+    },
+    {
+      "code": "report.write_text(\"ok\")",
+      "explain": "Write text in one call"
+    }
+  ]
+}

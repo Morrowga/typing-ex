@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-null-01",
+  "category": "Kotlin",
+  "topic": "Null safety",
+  "level": 2,
+  "tags": [
+    "nullable",
+    "elvis"
+  ],
+  "chunks": [
+    {
+      "code": "fun parse(input: String?): Int? {",
+      "explain": "Takes a nullable String, returns a nullable Int"
+    },
+    {
+      "code": "    return input?.toIntOrNull()",
+      "explain": "?. runs only if not null, else gives null"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "val number = parse(\"42\") ?: 0",
+      "explain": "?: uses 0 when the left side is null"
+    },
+    {
+      "code": "println(number)",
+      "explain": "Show 42"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "linux-sort-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "sort",
+    "uniq"
+  ],
+  "chunks": [
+    {
+      "code": "sort names.txt",
+      "explain": "Sort lines alphabetically"
+    },
+    {
+      "code": "sort -r names.txt",
+      "explain": "Sort in reverse order"
+    },
+    {
+      "code": "sort -n numbers.txt",
+      "explain": "Sort numerically"
+    },
+    {
+      "code": "sort names.txt | uniq",
+      "explain": "Remove adjacent duplicates after sorting"
+    },
+    {
+      "code": "sort names.txt | uniq -c",
+      "explain": "Count how often each line occurs"
+    }
+  ]
+}

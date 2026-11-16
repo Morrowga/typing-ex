@@ -1,0 +1,32 @@
+{
+  "id": "linux-heredoc-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "heredoc"
+  ],
+  "chunks": [
+    {
+      "code": "cat > hello.sh <<'EOF'",
+      "explain": "Start a here-document written to a file"
+    },
+    {
+      "code": "#!/bin/sh",
+      "explain": "First line of the new script"
+    },
+    {
+      "code": "echo \"hello\"",
+      "explain": "Second line, kept literally"
+    },
+    {
+      "code": "EOF",
+      "explain": "End marker closes the here-doc"
+    },
+    {
+      "code": "chmod +x hello.sh",
+      "explain": "Make the new script executable"
+    }
+  ]
+}

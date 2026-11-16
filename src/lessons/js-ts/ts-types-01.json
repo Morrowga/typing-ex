@@ -1,0 +1,49 @@
+{
+  "id": "ts-types-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "TypeScript",
+  "level": 2,
+  "tags": [
+    "interface",
+    "types"
+  ],
+  "chunks": [
+    {
+      "code": "interface User {",
+      "explain": "A type describing the shape of a user"
+    },
+    {
+      "code": "  id: number;",
+      "explain": "id must be a number"
+    },
+    {
+      "code": "  name: string;",
+      "explain": "name must be a string"
+    },
+    {
+      "code": "  email?: string;",
+      "explain": "Optional: the ? means it may be missing"
+    },
+    {
+      "code": "}",
+      "explain": "End of the type"
+    },
+    {
+      "code": "function greet(user: User): string {",
+      "explain": "Takes a User, returns a string"
+    },
+    {
+      "code": "  return `Hi, ${user.name}`;",
+      "explain": "Build the greeting text"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "console.log(greet({ id: 1, name: \"Ada\" }));",
+      "explain": "Pass an object that matches User"
+    }
+  ]
+}

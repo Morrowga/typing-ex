@@ -1,0 +1,32 @@
+{
+  "id": "swift-optional-01",
+  "category": "Swift",
+  "topic": "Optionals",
+  "level": 2,
+  "tags": [
+    "optional",
+    "guard"
+  ],
+  "chunks": [
+    {
+      "code": "func parse(_ input: String?) -> Int? {",
+      "explain": "Takes an optional String, returns an optional Int"
+    },
+    {
+      "code": "    guard let text = input, let number = Int(text) else { return nil }",
+      "explain": "Unwrap both, or return nil"
+    },
+    {
+      "code": "    return number",
+      "explain": "Return the unwrapped number"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "print(parse(\"42\") ?? 0)",
+      "explain": "?? gives 0 if nil. Shows 42"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-interface-01",
+  "category": "Kotlin",
+  "topic": "Interfaces",
+  "level": 2,
+  "tags": [
+    "interface",
+    "override"
+  ],
+  "chunks": [
+    {
+      "code": "interface Greeter {",
+      "explain": "A contract with a default method"
+    },
+    {
+      "code": "    val name: String",
+      "explain": "Implementers must provide this"
+    },
+    {
+      "code": "    fun greet() = \"Hello, $name\"",
+      "explain": "Default implementation"
+    },
+    {
+      "code": "}",
+      "explain": "End of interface"
+    },
+    {
+      "code": "class Person(override val name: String) : Greeter",
+      "explain": "Implement the interface"
+    },
+    {
+      "code": "println(Person(\"Noor\").greet())",
+      "explain": "Prints Hello, Noor"
+    }
+  ]
+}

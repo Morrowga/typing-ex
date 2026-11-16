@@ -1,0 +1,32 @@
+{
+  "id": "python-walrus-01",
+  "category": "Python",
+  "topic": "Walrus Operator",
+  "level": 2,
+  "tags": [
+    "walrus",
+    "syntax"
+  ],
+  "chunks": [
+    {
+      "code": "data = [3, 8, 12, 5]",
+      "explain": "Some sample numbers"
+    },
+    {
+      "code": "if (n := len(data)) > 3:",
+      "explain": "Assign and test in one expression"
+    },
+    {
+      "code": "    print(f\"{n} items is a lot\")",
+      "explain": "n is available inside the block"
+    },
+    {
+      "code": "big = [y for x in data if (y := x * 2) > 10]",
+      "explain": "Reuse the computed value in a filter"
+    },
+    {
+      "code": "print(big)",
+      "explain": "Prints [16, 24]"
+    }
+  ]
+}

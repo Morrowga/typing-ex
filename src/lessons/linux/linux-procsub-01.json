@@ -1,0 +1,32 @@
+{
+  "id": "linux-procsub-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "process-substitution"
+  ],
+  "chunks": [
+    {
+      "code": "diff <(sort a.txt) <(sort b.txt)",
+      "explain": "Compare two sorted streams"
+    },
+    {
+      "code": "comm -12 <(sort a.txt) <(sort b.txt)",
+      "explain": "Lines common to both files"
+    },
+    {
+      "code": "while read -r l; do echo \"$l\"; done < <(ls)",
+      "explain": "Loop without a subshell"
+    },
+    {
+      "code": "paste <(cut -d, -f1 a.csv) <(cut -d, -f3 a.csv)",
+      "explain": "Combine two columns side by side"
+    },
+    {
+      "code": "wc -l <(grep error app.log)",
+      "explain": "Count lines from a command's output"
+    }
+  ]
+}

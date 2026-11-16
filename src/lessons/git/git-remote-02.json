@@ -1,0 +1,33 @@
+{
+  "id": "git-remote-02",
+  "category": "Git",
+  "topic": "Remotes",
+  "level": 1,
+  "tags": [
+    "fetch",
+    "pull",
+    "push"
+  ],
+  "chunks": [
+    {
+      "code": "git fetch origin",
+      "explain": "Download new commits without merging"
+    },
+    {
+      "code": "git pull origin main",
+      "explain": "Fetch and merge main"
+    },
+    {
+      "code": "git push origin feature/login",
+      "explain": "Push a branch to origin"
+    },
+    {
+      "code": "git status -sb",
+      "explain": "See if you are ahead or behind"
+    },
+    {
+      "code": "git remote show origin",
+      "explain": "Describe the remote and tracking"
+    }
+  ]
+}

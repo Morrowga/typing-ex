@@ -1,0 +1,32 @@
+{
+  "id": "php-print-01",
+  "category": "PHP",
+  "topic": "Print",
+  "level": 1,
+  "tags": [
+    "print",
+    "output"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "print \"Hello, PHP!\";",
+      "explain": "print outputs a string"
+    },
+    {
+      "code": "print(\"Line two\\n\");",
+      "explain": "Parentheses are optional; \\n is a newline"
+    },
+    {
+      "code": "$ok = print \"x\";",
+      "explain": "print returns 1, so it can be assigned"
+    },
+    {
+      "code": "echo $ok;",
+      "explain": "Shows 1"
+    }
+  ]
+}

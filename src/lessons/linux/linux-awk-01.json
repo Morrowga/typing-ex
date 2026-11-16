@@ -1,0 +1,32 @@
+{
+  "id": "linux-awk-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "awk",
+    "columns"
+  ],
+  "chunks": [
+    {
+      "code": "awk '{print $1}' access.log",
+      "explain": "Print the first column"
+    },
+    {
+      "code": "awk -F: '{print $1,$3}' /etc/passwd",
+      "explain": "Split on colon, print user and UID"
+    },
+    {
+      "code": "awk '$3 > 100' data.txt",
+      "explain": "Keep rows where column 3 exceeds 100"
+    },
+    {
+      "code": "awk '{s+=$2} END {print s}' sales.txt",
+      "explain": "Sum the second column"
+    },
+    {
+      "code": "awk 'NR==1,NR==5' file.txt",
+      "explain": "Print lines 1 to 5"
+    }
+  ]
+}

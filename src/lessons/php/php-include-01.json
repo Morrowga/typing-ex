@@ -1,0 +1,32 @@
+{
+  "id": "php-include-01",
+  "category": "PHP",
+  "topic": "Include Require",
+  "level": 1,
+  "tags": [
+    "include",
+    "files"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "require \"config.php\";",
+      "explain": "Load a file; fatal error if missing"
+    },
+    {
+      "code": "include \"header.php\";",
+      "explain": "Load a file; only a warning if missing"
+    },
+    {
+      "code": "require_once \"helpers.php\";",
+      "explain": "Load only once, even if called again"
+    },
+    {
+      "code": "echo \"Page body\";",
+      "explain": "Normal output after includes"
+    }
+  ]
+}

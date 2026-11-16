@@ -1,0 +1,32 @@
+{
+  "id": "linux-journal-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "journalctl",
+    "logs"
+  ],
+  "chunks": [
+    {
+      "code": "journalctl -u nginx",
+      "explain": "Logs for one service"
+    },
+    {
+      "code": "journalctl -u nginx -f",
+      "explain": "Follow a service's logs live"
+    },
+    {
+      "code": "journalctl --since '1 hour ago'",
+      "explain": "Logs from the last hour"
+    },
+    {
+      "code": "journalctl -p err -b",
+      "explain": "Errors since the current boot"
+    },
+    {
+      "code": "journalctl --disk-usage",
+      "explain": "How much space the journal uses"
+    }
+  ]
+}

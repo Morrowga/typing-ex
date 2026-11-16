@@ -1,0 +1,32 @@
+{
+  "id": "python-logging-01",
+  "category": "Python",
+  "topic": "logging",
+  "level": 2,
+  "tags": [
+    "logging",
+    "stdlib"
+  ],
+  "chunks": [
+    {
+      "code": "import logging",
+      "explain": "Import the logging module"
+    },
+    {
+      "code": "logging.basicConfig(level=logging.INFO)",
+      "explain": "Show INFO and above"
+    },
+    {
+      "code": "log = logging.getLogger(__name__)",
+      "explain": "Create a named logger"
+    },
+    {
+      "code": "log.info(\"started job %s\", 42)",
+      "explain": "Log a message with lazy formatting"
+    },
+    {
+      "code": "log.warning(\"disk at %d%%\", 91)",
+      "explain": "Log a warning"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "php-match-01",
+  "category": "PHP",
+  "topic": "Match Expression",
+  "level": 2,
+  "tags": [
+    "php8",
+    "match"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$code = 404;",
+      "explain": "Sample HTTP status"
+    },
+    {
+      "code": "$msg = match ($code) {",
+      "explain": "match returns a value, compares strictly"
+    },
+    {
+      "code": "    200 => 'OK',",
+      "explain": "Exact match for 200"
+    },
+    {
+      "code": "    404, 410 => 'Gone',",
+      "explain": "Several values in one arm"
+    },
+    {
+      "code": "    default => 'Unknown',",
+      "explain": "Fallback; no match throws an error"
+    },
+    {
+      "code": "};",
+      "explain": "End of match"
+    },
+    {
+      "code": "echo $msg;",
+      "explain": "Prints Gone"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "linux-grep-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "grep",
+    "search"
+  ],
+  "chunks": [
+    {
+      "code": "grep error app.log",
+      "explain": "Find lines containing error"
+    },
+    {
+      "code": "grep -i warning app.log",
+      "explain": "Search ignoring case"
+    },
+    {
+      "code": "grep -n TODO main.c",
+      "explain": "Show line numbers of matches"
+    },
+    {
+      "code": "grep -v debug app.log",
+      "explain": "Show lines that do NOT match"
+    },
+    {
+      "code": "grep -c error app.log",
+      "explain": "Count the matching lines"
+    }
+  ]
+}

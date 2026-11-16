@@ -1,0 +1,36 @@
+{
+  "id": "linux-env-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "env",
+    "variables"
+  ],
+  "chunks": [
+    {
+      "code": "echo $HOME",
+      "explain": "Print your home directory"
+    },
+    {
+      "code": "NAME=Ada",
+      "explain": "Set a shell variable"
+    },
+    {
+      "code": "echo \"Hello, $NAME\"",
+      "explain": "Use a variable inside a string"
+    },
+    {
+      "code": "export EDITOR=nano",
+      "explain": "Make a variable visible to child programs"
+    },
+    {
+      "code": "env | grep EDITOR",
+      "explain": "Check that the variable is exported"
+    },
+    {
+      "code": "unset NAME",
+      "explain": "Remove a variable"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "ts-interface-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Interfaces",
+  "level": 1,
+  "tags": [
+    "interface",
+    "object"
+  ],
+  "chunks": [
+    {
+      "code": "interface Car {",
+      "explain": "Describe a shape"
+    },
+    {
+      "code": "  make: string;",
+      "explain": "Required string"
+    },
+    {
+      "code": "  year: number;",
+      "explain": "Required number"
+    },
+    {
+      "code": "  electric?: boolean;",
+      "explain": "Optional property"
+    },
+    {
+      "code": "}",
+      "explain": "End of interface"
+    },
+    {
+      "code": "const car: Car = { make: \"Volvo\", year: 2022 };",
+      "explain": "Object matches Car"
+    },
+    {
+      "code": "console.log(car.make, car.electric);",
+      "explain": "Optional may be undefined"
+    }
+  ]
+}

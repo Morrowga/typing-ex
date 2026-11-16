@@ -1,0 +1,37 @@
+{
+  "id": "kotlin-reified-01",
+  "category": "Kotlin",
+  "topic": "Inline and Reified",
+  "level": 2,
+  "tags": [
+    "inline",
+    "reified",
+    "generics"
+  ],
+  "chunks": [
+    {
+      "code": "inline fun <reified T> countOf(items: List<Any>): Int {",
+      "explain": "reified keeps T at runtime"
+    },
+    {
+      "code": "    return items.count { it is T }",
+      "explain": "Type check against T"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "val mixed = listOf(1, \"a\", 2, \"b\", 3.0)",
+      "explain": "A list of mixed values"
+    },
+    {
+      "code": "println(countOf<Int>(mixed))",
+      "explain": "Prints 2"
+    },
+    {
+      "code": "println(countOf<String>(mixed))",
+      "explain": "Prints 2"
+    }
+  ]
+}

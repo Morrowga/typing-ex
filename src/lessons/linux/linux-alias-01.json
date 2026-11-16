@@ -1,0 +1,36 @@
+{
+  "id": "linux-alias-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "alias",
+    "bashrc"
+  ],
+  "chunks": [
+    {
+      "code": "alias ll='ls -lah'",
+      "explain": "Create a shortcut for a long command"
+    },
+    {
+      "code": "alias gs='git status'",
+      "explain": "Shortcut for git status"
+    },
+    {
+      "code": "alias",
+      "explain": "List all defined aliases"
+    },
+    {
+      "code": "unalias ll",
+      "explain": "Remove an alias"
+    },
+    {
+      "code": "echo \"alias ..='cd ..'\" >> ~/.bashrc",
+      "explain": "Save an alias for future shells"
+    },
+    {
+      "code": "source ~/.bashrc",
+      "explain": "Reload your shell config"
+    }
+  ]
+}

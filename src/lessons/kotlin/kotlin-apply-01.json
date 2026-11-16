@@ -1,0 +1,37 @@
+{
+  "id": "kotlin-apply-01",
+  "category": "Kotlin",
+  "topic": "apply and also",
+  "level": 2,
+  "tags": [
+    "scope",
+    "apply",
+    "also"
+  ],
+  "chunks": [
+    {
+      "code": "class Config { var host = \"\"; var port = 0 }",
+      "explain": "A small mutable class"
+    },
+    {
+      "code": "val cfg = Config().apply {",
+      "explain": "apply configures and returns the object"
+    },
+    {
+      "code": "    host = \"localhost\"",
+      "explain": "Set a property on this"
+    },
+    {
+      "code": "    port = 8080",
+      "explain": "Set another property"
+    },
+    {
+      "code": "}",
+      "explain": "End of apply"
+    },
+    {
+      "code": "val same = cfg.also { println(\"port ${it.port}\") }",
+      "explain": "also runs a side effect, returns cfg"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-mutmap-01",
+  "category": "Kotlin",
+  "topic": "Mutable Maps",
+  "level": 1,
+  "tags": [
+    "map",
+    "mutable"
+  ],
+  "chunks": [
+    {
+      "code": "val stock = mutableMapOf(\"tea\" to 4)",
+      "explain": "A map you can modify"
+    },
+    {
+      "code": "stock[\"coffee\"] = 9",
+      "explain": "Add a new key with a value"
+    },
+    {
+      "code": "stock[\"tea\"] = 5",
+      "explain": "Overwrite an existing value"
+    },
+    {
+      "code": "stock.remove(\"coffee\")",
+      "explain": "Delete a key"
+    },
+    {
+      "code": "for ((item, count) in stock) {",
+      "explain": "Loop over key and value pairs"
+    },
+    {
+      "code": "    println(\"$item: $count\")",
+      "explain": "Print each pair"
+    },
+    {
+      "code": "}",
+      "explain": "End of the loop"
+    }
+  ]
+}

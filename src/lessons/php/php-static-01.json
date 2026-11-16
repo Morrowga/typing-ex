@@ -1,0 +1,40 @@
+{
+  "id": "php-static-01",
+  "category": "PHP",
+  "topic": "Static Members",
+  "level": 2,
+  "tags": [
+    "static",
+    "oop"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "class Counter {",
+      "explain": "Class with shared state"
+    },
+    {
+      "code": "    private static int $n = 0;",
+      "explain": "One value shared by all instances"
+    },
+    {
+      "code": "    public static function next(): int { return ++self::$n; }",
+      "explain": "Call without creating an object"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "Counter::next();",
+      "explain": "First call returns 1"
+    },
+    {
+      "code": "echo Counter::next();",
+      "explain": "Prints 2"
+    }
+  ]
+}

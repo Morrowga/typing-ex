@@ -1,0 +1,36 @@
+{
+  "id": "php-default-args-01",
+  "category": "PHP",
+  "topic": "Default Arguments",
+  "level": 1,
+  "tags": [
+    "function",
+    "defaults"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "function greet($name = \"friend\") {",
+      "explain": "name defaults to friend"
+    },
+    {
+      "code": "    return \"Hello, $name!\";",
+      "explain": "Build the greeting"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "echo greet();",
+      "explain": "Uses default: Hello, friend!"
+    },
+    {
+      "code": "echo greet(\"Linus\");",
+      "explain": "Overrides default: Hello, Linus!"
+    }
+  ]
+}

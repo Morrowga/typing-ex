@@ -1,0 +1,32 @@
+{
+  "id": "git-clean-01",
+  "category": "Git",
+  "topic": "Clean",
+  "level": 2,
+  "tags": [
+    "clean",
+    "untracked"
+  ],
+  "chunks": [
+    {
+      "code": "git clean -n",
+      "explain": "Dry run: show what would be removed"
+    },
+    {
+      "code": "git clean -f",
+      "explain": "Delete untracked files; cannot be undone"
+    },
+    {
+      "code": "git clean -fd",
+      "explain": "Also delete untracked folders"
+    },
+    {
+      "code": "git clean -fdx",
+      "explain": "Also delete ignored files; destructive"
+    },
+    {
+      "code": "git clean -i",
+      "explain": "Choose interactively what to delete"
+    }
+  ]
+}

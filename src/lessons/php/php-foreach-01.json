@@ -1,0 +1,36 @@
+{
+  "id": "php-foreach-01",
+  "category": "PHP",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "array",
+    "loop"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$fruits = [\"apple\", \"banana\", \"cherry\"];",
+      "explain": "An array of three fruits"
+    },
+    {
+      "code": "foreach ($fruits as $fruit) {",
+      "explain": "Loop: once per fruit"
+    },
+    {
+      "code": "    echo $fruit . \"\\n\";",
+      "explain": "Print the fruit and a new line"
+    },
+    {
+      "code": "}",
+      "explain": "End of the loop"
+    },
+    {
+      "code": "echo count($fruits);",
+      "explain": "Show the item count: 3"
+    }
+  ]
+}

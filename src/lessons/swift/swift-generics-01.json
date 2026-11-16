@@ -1,0 +1,40 @@
+{
+  "id": "swift-generics-01",
+  "category": "Swift",
+  "topic": "Generic Functions",
+  "level": 2,
+  "tags": [
+    "generics",
+    "function"
+  ],
+  "chunks": [
+    {
+      "code": "func swapValues<T>(_ a: inout T, _ b: inout T) {",
+      "explain": "Works for any type T"
+    },
+    {
+      "code": "    let temp = a",
+      "explain": "Keep the first value"
+    },
+    {
+      "code": "    a = b",
+      "explain": "Copy the second into the first"
+    },
+    {
+      "code": "    b = temp",
+      "explain": "Restore the saved value"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "var x = 1, y = 2",
+      "explain": "Two integers"
+    },
+    {
+      "code": "swapValues(&x, &y)",
+      "explain": "Swap them"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "swift-optional-chain-01",
+  "category": "Swift",
+  "topic": "Optional Chaining",
+  "level": 2,
+  "tags": [
+    "optional",
+    "chaining",
+    "nil-coalescing"
+  ],
+  "chunks": [
+    {
+      "code": "struct Address { var city: String }",
+      "explain": "A simple address type"
+    },
+    {
+      "code": "struct User { var address: Address? }",
+      "explain": "The address may be missing"
+    },
+    {
+      "code": "let user = User(address: nil)",
+      "explain": "A user with no address"
+    },
+    {
+      "code": "let city = user.address?.city",
+      "explain": "Chain; result is nil if any link is nil"
+    },
+    {
+      "code": "let shown = city ?? \"Unknown\"",
+      "explain": "Provide a default"
+    },
+    {
+      "code": "print(shown)",
+      "explain": "Prints Unknown"
+    }
+  ]
+}

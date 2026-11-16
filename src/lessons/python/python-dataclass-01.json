@@ -1,0 +1,40 @@
+{
+  "id": "python-dataclass-01",
+  "category": "Python",
+  "topic": "Dataclasses",
+  "level": 2,
+  "tags": [
+    "dataclasses",
+    "classes"
+  ],
+  "chunks": [
+    {
+      "code": "from dataclasses import dataclass, field",
+      "explain": "Import the dataclass helpers"
+    },
+    {
+      "code": "@dataclass",
+      "explain": "Auto-generate init, repr and eq"
+    },
+    {
+      "code": "class Task:",
+      "explain": "A simple data container"
+    },
+    {
+      "code": "    title: str",
+      "explain": "A required field"
+    },
+    {
+      "code": "    done: bool = False",
+      "explain": "A field with a default"
+    },
+    {
+      "code": "    tags: list[str] = field(default_factory=list)",
+      "explain": "A safe mutable default"
+    },
+    {
+      "code": "print(Task(\"write docs\"))",
+      "explain": "The repr is generated for free"
+    }
+  ]
+}

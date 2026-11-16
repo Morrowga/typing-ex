@@ -1,0 +1,36 @@
+{
+  "id": "git-stash-02",
+  "category": "Git",
+  "topic": "Stash",
+  "level": 2,
+  "tags": [
+    "stash",
+    "advanced"
+  ],
+  "chunks": [
+    {
+      "code": "git stash push -m \"half-done login\" -- src/login.js",
+      "explain": "Stash one file with a name"
+    },
+    {
+      "code": "git stash push -u",
+      "explain": "Include untracked files"
+    },
+    {
+      "code": "git stash show -p stash@{1}",
+      "explain": "Show a stash as a patch"
+    },
+    {
+      "code": "git stash apply stash@{1}",
+      "explain": "Reapply but keep the stash"
+    },
+    {
+      "code": "git stash branch fix/from-stash stash@{0}",
+      "explain": "Branch from a stash and drop it"
+    },
+    {
+      "code": "git stash drop stash@{1}",
+      "explain": "Delete one stash"
+    }
+  ]
+}

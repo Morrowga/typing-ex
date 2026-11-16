@@ -1,0 +1,32 @@
+{
+  "id": "git-remote-01",
+  "category": "Git",
+  "topic": "Remotes",
+  "level": 1,
+  "tags": [
+    "remote",
+    "origin"
+  ],
+  "chunks": [
+    {
+      "code": "git remote add origin git@github.com:ada/notes.git",
+      "explain": "Register a remote called origin"
+    },
+    {
+      "code": "git remote -v",
+      "explain": "List remotes"
+    },
+    {
+      "code": "git push -u origin main",
+      "explain": "Push and set upstream tracking"
+    },
+    {
+      "code": "git remote rename origin upstream",
+      "explain": "Rename a remote"
+    },
+    {
+      "code": "git remote remove upstream",
+      "explain": "Remove a remote"
+    }
+  ]
+}

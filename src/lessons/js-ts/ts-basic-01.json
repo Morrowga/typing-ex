@@ -1,0 +1,37 @@
+{
+  "id": "ts-basic-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Basic Types",
+  "level": 1,
+  "tags": [
+    "types",
+    "annotations"
+  ],
+  "chunks": [
+    {
+      "code": "const title: string = \"Report\";",
+      "explain": "A string variable"
+    },
+    {
+      "code": "let pages: number = 12;",
+      "explain": "A number variable"
+    },
+    {
+      "code": "const published: boolean = true;",
+      "explain": "A boolean variable"
+    },
+    {
+      "code": "pages = pages + 1;",
+      "explain": "Numbers can be changed"
+    },
+    {
+      "code": "let anything: unknown = title;",
+      "explain": "Holds any value safely"
+    },
+    {
+      "code": "console.log(title, pages, published, anything);",
+      "explain": "Show them all"
+    }
+  ]
+}

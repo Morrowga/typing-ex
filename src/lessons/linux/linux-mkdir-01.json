@@ -1,0 +1,32 @@
+{
+  "id": "linux-mkdir-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "mkdir",
+    "touch"
+  ],
+  "chunks": [
+    {
+      "code": "mkdir project",
+      "explain": "Create a folder"
+    },
+    {
+      "code": "mkdir -p project/src/utils",
+      "explain": "Create nested folders in one go"
+    },
+    {
+      "code": "touch project/README.md",
+      "explain": "Create an empty file"
+    },
+    {
+      "code": "touch a.txt b.txt c.txt",
+      "explain": "Create several files at once"
+    },
+    {
+      "code": "ls project",
+      "explain": "Check what was created"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-generic-01",
+  "category": "Kotlin",
+  "topic": "Generic Functions",
+  "level": 2,
+  "tags": [
+    "generics",
+    "fun"
+  ],
+  "chunks": [
+    {
+      "code": "fun <T> firstOr(list: List<T>, default: T): T {",
+      "explain": "T is a type parameter"
+    },
+    {
+      "code": "    return if (list.isEmpty()) default else list[0]",
+      "explain": "First item or the default"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "println(firstOr(listOf(3, 4), 0))",
+      "explain": "T is Int: prints 3"
+    },
+    {
+      "code": "println(firstOr(emptyList<String>(), \"none\"))",
+      "explain": "T is String: prints none"
+    }
+  ]
+}

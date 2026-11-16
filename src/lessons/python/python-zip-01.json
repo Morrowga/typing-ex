@@ -1,0 +1,32 @@
+{
+  "id": "python-zip-01",
+  "category": "Python",
+  "topic": "Zip",
+  "level": 1,
+  "tags": [
+    "loops",
+    "zip"
+  ],
+  "chunks": [
+    {
+      "code": "cities = [\"Rome\", \"Lima\", \"Oslo\"]",
+      "explain": "First list"
+    },
+    {
+      "code": "pops = [2.8, 10.0, 0.7]",
+      "explain": "Second list, same length"
+    },
+    {
+      "code": "for city, pop in zip(cities, pops):",
+      "explain": "Walk both lists side by side"
+    },
+    {
+      "code": "    print(f\"{city}: {pop}M\")",
+      "explain": "Print each pair"
+    },
+    {
+      "code": "print(dict(zip(cities, pops)))",
+      "explain": "Turn two lists into a dict"
+    }
+  ]
+}

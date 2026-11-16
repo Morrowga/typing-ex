@@ -1,0 +1,28 @@
+{
+  "id": "python-function-01",
+  "category": "Python",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "function",
+    "return"
+  ],
+  "chunks": [
+    {
+      "code": "def add(a, b):",
+      "explain": "Define a function add with two inputs"
+    },
+    {
+      "code": "    return a + b",
+      "explain": "Give back their sum"
+    },
+    {
+      "code": "total = add(2, 3)",
+      "explain": "Call add(2, 3) and store 5"
+    },
+    {
+      "code": "print(total)",
+      "explain": "Show 5"
+    }
+  ]
+}

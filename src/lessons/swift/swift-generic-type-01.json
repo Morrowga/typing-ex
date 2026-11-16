@@ -1,0 +1,45 @@
+{
+  "id": "swift-generic-type-01",
+  "category": "Swift",
+  "topic": "Generic Types",
+  "level": 2,
+  "tags": [
+    "generics",
+    "struct",
+    "stack"
+  ],
+  "chunks": [
+    {
+      "code": "struct Stack<Element> {",
+      "explain": "A stack for any element type"
+    },
+    {
+      "code": "    private var items: [Element] = []",
+      "explain": "Hidden storage"
+    },
+    {
+      "code": "    mutating func push(_ item: Element) { items.append(item) }",
+      "explain": "Add on top"
+    },
+    {
+      "code": "    mutating func pop() -> Element? { items.popLast() }",
+      "explain": "Remove from top, if any"
+    },
+    {
+      "code": "}",
+      "explain": "End the struct"
+    },
+    {
+      "code": "var stack = Stack<String>()",
+      "explain": "A stack of strings"
+    },
+    {
+      "code": "stack.push(\"a\")",
+      "explain": "Push an item"
+    },
+    {
+      "code": "print(stack.pop() ?? \"none\")",
+      "explain": "Prints a"
+    }
+  ]
+}

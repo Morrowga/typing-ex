@@ -1,0 +1,31 @@
+{
+  "id": "git-submodule-01",
+  "category": "Git",
+  "topic": "Submodules",
+  "level": 2,
+  "tags": [
+    "submodule"
+  ],
+  "chunks": [
+    {
+      "code": "git submodule add https://github.com/acme/ui-kit.git libs/ui-kit",
+      "explain": "Embed another repo"
+    },
+    {
+      "code": "git submodule update --init --recursive",
+      "explain": "Fetch submodule content"
+    },
+    {
+      "code": "git clone --recurse-submodules https://github.com/acme/app.git",
+      "explain": "Clone with submodules"
+    },
+    {
+      "code": "git submodule update --remote",
+      "explain": "Pull latest from each submodule"
+    },
+    {
+      "code": "git submodule status",
+      "explain": "Show pinned submodule commits"
+    }
+  ]
+}

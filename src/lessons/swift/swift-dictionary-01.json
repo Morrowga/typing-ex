@@ -1,0 +1,36 @@
+{
+  "id": "swift-dictionary-01",
+  "category": "Swift",
+  "topic": "Dictionaries",
+  "level": 1,
+  "tags": [
+    "dictionary",
+    "collection"
+  ],
+  "chunks": [
+    {
+      "code": "var stock = [\"apples\": 4, \"pears\": 9]",
+      "explain": "A dictionary of String to Int"
+    },
+    {
+      "code": "stock[\"plums\"] = 12",
+      "explain": "Add a new key and value"
+    },
+    {
+      "code": "stock[\"apples\"] = 5",
+      "explain": "Update an existing value"
+    },
+    {
+      "code": "let pears = stock[\"pears\"] ?? 0",
+      "explain": "Lookups return optionals; give a default"
+    },
+    {
+      "code": "stock.removeValue(forKey: \"pears\")",
+      "explain": "Remove a key"
+    },
+    {
+      "code": "print(stock.count, pears)",
+      "explain": "Show the size and the old pear count"
+    }
+  ]
+}

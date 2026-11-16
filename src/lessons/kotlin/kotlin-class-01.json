@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-class-01",
+  "category": "Kotlin",
+  "topic": "Simple Class",
+  "level": 1,
+  "tags": [
+    "class",
+    "constructor"
+  ],
+  "chunks": [
+    {
+      "code": "class Dog(val name: String, var age: Int) {",
+      "explain": "Primary constructor makes two properties"
+    },
+    {
+      "code": "    fun bark() {",
+      "explain": "A member function"
+    },
+    {
+      "code": "        println(\"$name says woof\")",
+      "explain": "Use the property in a string"
+    },
+    {
+      "code": "    }",
+      "explain": "End of bark"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "val rex = Dog(\"Rex\", 3)",
+      "explain": "Create an instance"
+    },
+    {
+      "code": "rex.bark()",
+      "explain": "Call the member function"
+    }
+  ]
+}

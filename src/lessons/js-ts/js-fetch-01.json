@@ -1,0 +1,54 @@
+{
+  "id": "js-fetch-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Fetch Errors",
+  "level": 2,
+  "tags": [
+    "fetch",
+    "async",
+    "error-handling"
+  ],
+  "chunks": [
+    {
+      "code": "async function getUser(id) {",
+      "explain": "Load one user"
+    },
+    {
+      "code": "  try {",
+      "explain": "Guard against failures"
+    },
+    {
+      "code": "    const res = await fetch(`/api/users/${id}`);",
+      "explain": "Request the data"
+    },
+    {
+      "code": "    if (!res.ok) throw new Error(`HTTP ${res.status}`);",
+      "explain": "Treat bad status as error"
+    },
+    {
+      "code": "    return await res.json();",
+      "explain": "Parse the JSON body"
+    },
+    {
+      "code": "  } catch (err) {",
+      "explain": "Network or parse failure"
+    },
+    {
+      "code": "    console.error(\"Failed:\", err.message);",
+      "explain": "Log the problem"
+    },
+    {
+      "code": "    return null;",
+      "explain": "Safe fallback value"
+    },
+    {
+      "code": "  }",
+      "explain": "End of try/catch"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    }
+  ]
+}

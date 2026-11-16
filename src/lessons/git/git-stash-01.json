@@ -1,0 +1,32 @@
+{
+  "id": "git-stash-01",
+  "category": "Git",
+  "topic": "Stash",
+  "level": 1,
+  "tags": [
+    "stash",
+    "wip"
+  ],
+  "chunks": [
+    {
+      "code": "git stash",
+      "explain": "Shelve uncommitted changes"
+    },
+    {
+      "code": "git stash list",
+      "explain": "List saved stashes"
+    },
+    {
+      "code": "git switch hotfix/crash",
+      "explain": "Go fix something urgent"
+    },
+    {
+      "code": "git switch main",
+      "explain": "Return to your branch"
+    },
+    {
+      "code": "git stash pop",
+      "explain": "Reapply the latest stash and drop it"
+    }
+  ]
+}

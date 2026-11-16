@@ -1,0 +1,44 @@
+{
+  "id": "python-context-manager-01",
+  "category": "Python",
+  "topic": "Context Managers",
+  "level": 2,
+  "tags": [
+    "context",
+    "contextlib"
+  ],
+  "chunks": [
+    {
+      "code": "import time, contextlib",
+      "explain": "Import time and the contextlib module"
+    },
+    {
+      "code": "@contextlib.contextmanager",
+      "explain": "Make a generator usable in with"
+    },
+    {
+      "code": "def timer(label):",
+      "explain": "Name the timed section"
+    },
+    {
+      "code": "    start = time.time()",
+      "explain": "Record the start time"
+    },
+    {
+      "code": "    yield",
+      "explain": "The body runs here"
+    },
+    {
+      "code": "    print(label, time.time() - start)",
+      "explain": "Report the elapsed time"
+    },
+    {
+      "code": "with timer(\"sum\"):",
+      "explain": "Use it in a with statement"
+    },
+    {
+      "code": "    sum(range(100000))",
+      "explain": "The work being timed"
+    }
+  ]
+}

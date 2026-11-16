@@ -1,0 +1,36 @@
+{
+  "id": "git-merge-02",
+  "category": "Git",
+  "topic": "Merge",
+  "level": 1,
+  "tags": [
+    "merge",
+    "conflict"
+  ],
+  "chunks": [
+    {
+      "code": "git merge feature/footer",
+      "explain": "Start a merge that conflicts"
+    },
+    {
+      "code": "git status",
+      "explain": "See which files are conflicted"
+    },
+    {
+      "code": "git diff --name-only --diff-filter=U",
+      "explain": "List files with unresolved conflicts"
+    },
+    {
+      "code": "git add footer.html",
+      "explain": "Mark the conflict as resolved"
+    },
+    {
+      "code": "git commit",
+      "explain": "Finish the merge commit"
+    },
+    {
+      "code": "git merge --abort",
+      "explain": "Alternative: cancel the merge entirely"
+    }
+  ]
+}

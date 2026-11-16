@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-singlefun-01",
+  "category": "Kotlin",
+  "topic": "Single-expression Functions",
+  "level": 1,
+  "tags": [
+    "fun",
+    "expression"
+  ],
+  "chunks": [
+    {
+      "code": "fun square(x: Int) = x * x",
+      "explain": "Body is a single expression"
+    },
+    {
+      "code": "fun isEven(n: Int) = n % 2 == 0",
+      "explain": "Return type Boolean is inferred"
+    },
+    {
+      "code": "fun shout(s: String) = s.uppercase() + \"!\"",
+      "explain": "Inferred String return type"
+    },
+    {
+      "code": "println(square(6))",
+      "explain": "Prints 36"
+    },
+    {
+      "code": "println(isEven(7))",
+      "explain": "Prints false"
+    }
+  ]
+}

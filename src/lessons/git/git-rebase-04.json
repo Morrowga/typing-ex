@@ -1,0 +1,29 @@
+{
+  "id": "git-rebase-04",
+  "category": "Git",
+  "topic": "Rebase",
+  "level": 2,
+  "tags": [
+    "rebase",
+    "autosquash",
+    "fixup"
+  ],
+  "chunks": [
+    {
+      "code": "git commit --fixup a1b2c3d",
+      "explain": "Create a fixup for commit a1b2c3d"
+    },
+    {
+      "code": "git commit --squash b2c3d4e",
+      "explain": "Create a squash for commit b2c3d4e"
+    },
+    {
+      "code": "git rebase -i --autosquash main",
+      "explain": "Auto-order fixup and squash commits"
+    },
+    {
+      "code": "git config --global rebase.autoSquash true",
+      "explain": "Always autosquash on interactive rebase"
+    }
+  ]
+}

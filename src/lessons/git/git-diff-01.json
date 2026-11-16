@@ -1,0 +1,32 @@
+{
+  "id": "git-diff-01",
+  "category": "Git",
+  "topic": "Diff",
+  "level": 1,
+  "tags": [
+    "diff",
+    "review"
+  ],
+  "chunks": [
+    {
+      "code": "git diff",
+      "explain": "Unstaged changes versus the index"
+    },
+    {
+      "code": "git diff --staged",
+      "explain": "Staged changes versus last commit"
+    },
+    {
+      "code": "git diff HEAD",
+      "explain": "All changes since the last commit"
+    },
+    {
+      "code": "git diff --stat",
+      "explain": "Summary of files and line counts"
+    },
+    {
+      "code": "git diff main feature/login",
+      "explain": "Compare two branches"
+    }
+  ]
+}

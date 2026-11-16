@@ -1,0 +1,33 @@
+{
+  "id": "git-filter-01",
+  "category": "Git",
+  "topic": "Filtering",
+  "level": 2,
+  "tags": [
+    "log",
+    "author",
+    "date"
+  ],
+  "chunks": [
+    {
+      "code": "git log --author=\"ada@example.com\" --oneline",
+      "explain": "Filter by author email"
+    },
+    {
+      "code": "git log --since=2025-01-01 --until=2025-03-31",
+      "explain": "Commits in a date range"
+    },
+    {
+      "code": "git log --no-merges --since=\"1 month ago\" --stat",
+      "explain": "Recent non-merge work with stats"
+    },
+    {
+      "code": "git log --diff-filter=D --name-only",
+      "explain": "Show commits that deleted files"
+    },
+    {
+      "code": "git log --follow -- src/utils.js",
+      "explain": "History across renames"
+    }
+  ]
+}

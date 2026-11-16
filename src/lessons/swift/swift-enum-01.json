@@ -1,0 +1,44 @@
+{
+  "id": "swift-enum-01",
+  "category": "Swift",
+  "topic": "Enums",
+  "level": 1,
+  "tags": [
+    "enum",
+    "switch"
+  ],
+  "chunks": [
+    {
+      "code": "enum Direction {",
+      "explain": "Define a set of related cases"
+    },
+    {
+      "code": "    case north, south, east, west",
+      "explain": "Four possible cases"
+    },
+    {
+      "code": "}",
+      "explain": "End the enum"
+    },
+    {
+      "code": "let heading = Direction.east",
+      "explain": "Pick a case"
+    },
+    {
+      "code": "switch heading {",
+      "explain": "Switch over the enum"
+    },
+    {
+      "code": "case .north, .south: print(\"Vertical\")",
+      "explain": "Handle two cases together"
+    },
+    {
+      "code": "case .east, .west: print(\"Horizontal\")",
+      "explain": "Handle the other two"
+    },
+    {
+      "code": "}",
+      "explain": "End the switch"
+    }
+  ]
+}

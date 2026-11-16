@@ -1,0 +1,28 @@
+{
+  "id": "git-restore-01",
+  "category": "Git",
+  "topic": "Restore",
+  "level": 1,
+  "tags": [
+    "restore",
+    "undo"
+  ],
+  "chunks": [
+    {
+      "code": "git restore app.js",
+      "explain": "Discard edits to a file; cannot be undone"
+    },
+    {
+      "code": "git restore --staged app.js",
+      "explain": "Unstage but keep the edits"
+    },
+    {
+      "code": "git restore --source=HEAD~2 app.js",
+      "explain": "Restore file from two commits ago"
+    },
+    {
+      "code": "git status",
+      "explain": "Confirm the result"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "swift-keypath-01",
+  "category": "Swift",
+  "topic": "Key Paths",
+  "level": 2,
+  "tags": [
+    "keypath",
+    "map",
+    "sorted"
+  ],
+  "chunks": [
+    {
+      "code": "struct City { let name: String; let people: Int }",
+      "explain": "A simple city type"
+    },
+    {
+      "code": "let cities = [City(name: \"Oslo\", people: 700), City(name: \"Rome\", people: 2800)]",
+      "explain": "Two cities"
+    },
+    {
+      "code": "let key = \\City.people",
+      "explain": "A key path to a property"
+    },
+    {
+      "code": "let first = cities[0][keyPath: key]",
+      "explain": "Read through the key path"
+    },
+    {
+      "code": "let names = cities.map(\\.name)",
+      "explain": "Use a key path as a closure"
+    },
+    {
+      "code": "print(first, names)",
+      "explain": "Show the values"
+    }
+  ]
+}

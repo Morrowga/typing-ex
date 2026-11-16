@@ -1,0 +1,32 @@
+{
+  "id": "php-preg-replace-01",
+  "category": "PHP",
+  "topic": "Regex Replace",
+  "level": 2,
+  "tags": [
+    "regex",
+    "preg_replace"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$phone = '(555) 123-4567';",
+      "explain": "Formatted phone number"
+    },
+    {
+      "code": "$digits = preg_replace('/\\D+/', '', $phone);",
+      "explain": "Remove every non-digit"
+    },
+    {
+      "code": "echo $digits;",
+      "explain": "Prints 5551234567"
+    },
+    {
+      "code": "echo preg_match('/^\\d{10}$/', $digits);",
+      "explain": "Validate 10 digits: 1"
+    }
+  ]
+}

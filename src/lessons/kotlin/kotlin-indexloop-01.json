@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-indexloop-01",
+  "category": "Kotlin",
+  "topic": "Loops with Index",
+  "level": 1,
+  "tags": [
+    "for",
+    "index"
+  ],
+  "chunks": [
+    {
+      "code": "val colors = listOf(\"red\", \"blue\")",
+      "explain": "A list to walk through"
+    },
+    {
+      "code": "for (i in colors.indices) {",
+      "explain": "Loop over the valid indexes"
+    },
+    {
+      "code": "    println(\"$i: ${colors[i]}\")",
+      "explain": "Print index and item"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    },
+    {
+      "code": "for ((i, c) in colors.withIndex()) {",
+      "explain": "Get index and item together"
+    },
+    {
+      "code": "    println(\"$i=$c\")",
+      "explain": "Print them"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    }
+  ]
+}

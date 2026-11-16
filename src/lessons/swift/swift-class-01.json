@@ -1,0 +1,44 @@
+{
+  "id": "swift-class-01",
+  "category": "Swift",
+  "topic": "Simple Classes",
+  "level": 1,
+  "tags": [
+    "class",
+    "init"
+  ],
+  "chunks": [
+    {
+      "code": "class Counter {",
+      "explain": "Classes are reference types"
+    },
+    {
+      "code": "    var value = 0",
+      "explain": "A property with a default"
+    },
+    {
+      "code": "    func increment() {",
+      "explain": "A method that changes state"
+    },
+    {
+      "code": "        value += 1",
+      "explain": "Add one to the value"
+    },
+    {
+      "code": "    }",
+      "explain": "End the method"
+    },
+    {
+      "code": "}",
+      "explain": "End the class"
+    },
+    {
+      "code": "let counter = Counter()",
+      "explain": "Create an instance"
+    },
+    {
+      "code": "counter.increment()",
+      "explain": "Call the method"
+    }
+  ]
+}

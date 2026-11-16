@@ -1,0 +1,36 @@
+{
+  "id": "linux-proc-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "ps",
+    "kill"
+  ],
+  "chunks": [
+    {
+      "code": "ps aux | grep nginx",
+      "explain": "Find processes by name"
+    },
+    {
+      "code": "ps -ef --forest",
+      "explain": "Show processes as a tree"
+    },
+    {
+      "code": "pgrep -a sshd",
+      "explain": "List matching PIDs and commands"
+    },
+    {
+      "code": "kill 1234",
+      "explain": "Ask process 1234 to terminate"
+    },
+    {
+      "code": "kill -9 1234",
+      "explain": "Force kill a stuck process"
+    },
+    {
+      "code": "pkill -f 'python app.py'",
+      "explain": "Kill by matching the command line"
+    }
+  ]
+}

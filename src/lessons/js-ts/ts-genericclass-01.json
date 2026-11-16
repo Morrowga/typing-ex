@@ -1,0 +1,49 @@
+{
+  "id": "ts-genericclass-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Generic Classes",
+  "level": 2,
+  "tags": [
+    "generics",
+    "class"
+  ],
+  "chunks": [
+    {
+      "code": "class Stack<T> {",
+      "explain": "Stack of any type"
+    },
+    {
+      "code": "  private items: T[] = [];",
+      "explain": "Hidden storage"
+    },
+    {
+      "code": "  push(item: T): void { this.items.push(item); }",
+      "explain": "Add to the top"
+    },
+    {
+      "code": "  pop(): T | undefined { return this.items.pop(); }",
+      "explain": "Remove from the top"
+    },
+    {
+      "code": "  get size(): number { return this.items.length; }",
+      "explain": "Current count"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "const st = new Stack<number>();",
+      "explain": "Stack of numbers"
+    },
+    {
+      "code": "st.push(1);",
+      "explain": "Push a number"
+    },
+    {
+      "code": "console.log(st.pop(), st.size);",
+      "explain": "Prints 1 and 0"
+    }
+  ]
+}

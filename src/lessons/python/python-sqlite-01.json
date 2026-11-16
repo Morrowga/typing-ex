@@ -1,0 +1,32 @@
+{
+  "id": "python-sqlite-01",
+  "category": "Python",
+  "topic": "sqlite3",
+  "level": 2,
+  "tags": [
+    "sqlite",
+    "database"
+  ],
+  "chunks": [
+    {
+      "code": "import sqlite3",
+      "explain": "Import the sqlite3 module"
+    },
+    {
+      "code": "db = sqlite3.connect(\":memory:\")",
+      "explain": "Open a temporary in-memory database"
+    },
+    {
+      "code": "db.execute(\"CREATE TABLE t (id INTEGER, name TEXT)\")",
+      "explain": "Create a table"
+    },
+    {
+      "code": "db.execute(\"INSERT INTO t VALUES (?, ?)\", (1, \"ann\"))",
+      "explain": "Insert safely with placeholders"
+    },
+    {
+      "code": "print(db.execute(\"SELECT name FROM t\").fetchall())",
+      "explain": "Fetch rows: [('ann',)]"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "php-first-class-callable-01",
+  "category": "PHP",
+  "topic": "Callable Syntax",
+  "level": 2,
+  "tags": [
+    "php8",
+    "callable"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$len = strlen(...);",
+      "explain": "First-class callable from a function"
+    },
+    {
+      "code": "echo $len('hello');",
+      "explain": "Prints 5"
+    },
+    {
+      "code": "$words = ['a', 'bbb', 'cc'];",
+      "explain": "Sample words"
+    },
+    {
+      "code": "echo implode(',', array_map($len, $words));",
+      "explain": "Pass it as a callback: 1,3,2"
+    }
+  ]
+}

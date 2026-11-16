@@ -1,0 +1,32 @@
+{
+  "id": "python-nested-lists-01",
+  "category": "Python",
+  "topic": "Nested Lists",
+  "level": 1,
+  "tags": [
+    "lists",
+    "grid"
+  ],
+  "chunks": [
+    {
+      "code": "grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]",
+      "explain": "A list of rows makes a grid"
+    },
+    {
+      "code": "print(grid[1][2])",
+      "explain": "Row 1, column 2: 6"
+    },
+    {
+      "code": "for row in grid:",
+      "explain": "Loop over each row"
+    },
+    {
+      "code": "    print(sum(row))",
+      "explain": "Print each row total"
+    },
+    {
+      "code": "grid[0][0] = 99",
+      "explain": "Change one cell"
+    }
+  ]
+}

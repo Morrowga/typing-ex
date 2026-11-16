@@ -1,0 +1,36 @@
+{
+  "id": "python-enum-01",
+  "category": "Python",
+  "topic": "Enums",
+  "level": 2,
+  "tags": [
+    "enum",
+    "constants"
+  ],
+  "chunks": [
+    {
+      "code": "from enum import Enum",
+      "explain": "Import Enum"
+    },
+    {
+      "code": "class Status(Enum):",
+      "explain": "Define a set of named constants"
+    },
+    {
+      "code": "    PENDING = 1",
+      "explain": "First member"
+    },
+    {
+      "code": "    DONE = 2",
+      "explain": "Second member"
+    },
+    {
+      "code": "job = Status.DONE",
+      "explain": "Pick a member"
+    },
+    {
+      "code": "print(job.name, job.value, job is Status.DONE)",
+      "explain": "Shows DONE 2 True"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "python-numbers-01",
+  "category": "Python",
+  "topic": "Numbers and Math",
+  "level": 1,
+  "tags": [
+    "math",
+    "operators"
+  ],
+  "chunks": [
+    {
+      "code": "a = 17",
+      "explain": "Pick a first number"
+    },
+    {
+      "code": "b = 5",
+      "explain": "Pick a second number"
+    },
+    {
+      "code": "print(a // b, a % b)",
+      "explain": "Floor division and remainder: 3 2"
+    },
+    {
+      "code": "print(a ** 2)",
+      "explain": "Raise a to the power of 2: 289"
+    },
+    {
+      "code": "print(round(a / b, 1))",
+      "explain": "Divide and round to one decimal: 3.4"
+    }
+  ]
+}

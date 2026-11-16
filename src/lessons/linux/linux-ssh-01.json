@@ -1,0 +1,32 @@
+{
+  "id": "linux-ssh-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "ssh",
+    "remote"
+  ],
+  "chunks": [
+    {
+      "code": "ssh alice@server.example.com",
+      "explain": "Log in to a remote machine"
+    },
+    {
+      "code": "ssh -p 2222 alice@192.168.1.10",
+      "explain": "Connect using a custom port"
+    },
+    {
+      "code": "ssh alice@host 'uptime'",
+      "explain": "Run one command remotely"
+    },
+    {
+      "code": "scp report.pdf alice@host:/tmp/",
+      "explain": "Copy a file to the remote host"
+    },
+    {
+      "code": "scp alice@host:/var/log/syslog .",
+      "explain": "Copy a remote file here"
+    }
+  ]
+}

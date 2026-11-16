@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-list-01",
+  "category": "Kotlin",
+  "topic": "Read-only Lists",
+  "level": 1,
+  "tags": [
+    "list",
+    "collections"
+  ],
+  "chunks": [
+    {
+      "code": "val fruits = listOf(\"apple\", \"pear\", \"plum\")",
+      "explain": "Create a read-only list of strings"
+    },
+    {
+      "code": "println(fruits[0])",
+      "explain": "Get the first item by index"
+    },
+    {
+      "code": "println(fruits.size)",
+      "explain": "How many items: 3"
+    },
+    {
+      "code": "println(fruits.first())",
+      "explain": "The first element"
+    },
+    {
+      "code": "println(fruits.last())",
+      "explain": "The last element"
+    },
+    {
+      "code": "println(\"pear\" in fruits)",
+      "explain": "Check membership with in"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "swift-task-group-01",
+  "category": "Swift",
+  "topic": "Task Groups",
+  "level": 2,
+  "tags": [
+    "async",
+    "taskgroup",
+    "concurrency"
+  ],
+  "chunks": [
+    {
+      "code": "func square(_ n: Int) async -> Int { n * n }",
+      "explain": "An async helper"
+    },
+    {
+      "code": "func sumSquares() async -> Int {",
+      "explain": "Combine concurrent work"
+    },
+    {
+      "code": "    await withTaskGroup(of: Int.self) { group in",
+      "explain": "Create a group of child tasks"
+    },
+    {
+      "code": "        for n in 1...4 { group.addTask { await square(n) } }",
+      "explain": "Start four tasks"
+    },
+    {
+      "code": "        return await group.reduce(0, +)",
+      "explain": "Add up all results"
+    },
+    {
+      "code": "    }",
+      "explain": "End the group closure"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-mutlist-01",
+  "category": "Kotlin",
+  "topic": "Mutable Lists",
+  "level": 1,
+  "tags": [
+    "list",
+    "mutable"
+  ],
+  "chunks": [
+    {
+      "code": "val scores = mutableListOf(70, 85)",
+      "explain": "A list you can change"
+    },
+    {
+      "code": "scores.add(92)",
+      "explain": "Append a score at the end"
+    },
+    {
+      "code": "scores.remove(70)",
+      "explain": "Remove the value 70"
+    },
+    {
+      "code": "scores[0] = 88",
+      "explain": "Replace the item at index 0"
+    },
+    {
+      "code": "println(scores)",
+      "explain": "Prints [88, 92]"
+    },
+    {
+      "code": "println(scores.sum())",
+      "explain": "Add up all the scores"
+    }
+  ]
+}

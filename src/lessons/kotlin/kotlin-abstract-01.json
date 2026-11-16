@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-abstract-01",
+  "category": "Kotlin",
+  "topic": "Abstract Classes",
+  "level": 2,
+  "tags": [
+    "abstract",
+    "inheritance"
+  ],
+  "chunks": [
+    {
+      "code": "abstract class Animal(val name: String) {",
+      "explain": "Cannot be instantiated directly"
+    },
+    {
+      "code": "    abstract fun sound(): String",
+      "explain": "Subclasses must implement"
+    },
+    {
+      "code": "    fun intro() = \"$name says ${sound()}\"",
+      "explain": "Shared concrete method"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "class Cat(name: String) : Animal(name) {",
+      "explain": "Pass name to the parent"
+    },
+    {
+      "code": "    override fun sound() = \"meow\"",
+      "explain": "Implement the abstract method"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    }
+  ]
+}

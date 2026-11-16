@@ -1,0 +1,45 @@
+{
+  "id": "ts-mapped-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Mapped Types",
+  "level": 2,
+  "tags": [
+    "mapped",
+    "keyof"
+  ],
+  "chunks": [
+    {
+      "code": "type Flags<T> = { [K in keyof T]: boolean };",
+      "explain": "Boolean for every key"
+    },
+    {
+      "code": "type Getters<T> = {",
+      "explain": "Build getter names"
+    },
+    {
+      "code": "  [K in keyof T as `get${Capitalize<string & K>}`]: () => T[K];",
+      "explain": "Rename keys"
+    },
+    {
+      "code": "};",
+      "explain": "End of type"
+    },
+    {
+      "code": "interface Pt { x: number; y: number }",
+      "explain": "Sample shape"
+    },
+    {
+      "code": "const f: Flags<Pt> = { x: true, y: false };",
+      "explain": "Flags for Pt"
+    },
+    {
+      "code": "const g: Getters<Pt> = { getX: () => 1, getY: () => 2 };",
+      "explain": "Getter object"
+    },
+    {
+      "code": "console.log(f, g.getX());",
+      "explain": "Show results"
+    }
+  ]
+}

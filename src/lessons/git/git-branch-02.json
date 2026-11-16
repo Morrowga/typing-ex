@@ -1,0 +1,32 @@
+{
+  "id": "git-branch-02",
+  "category": "Git",
+  "topic": "Branches",
+  "level": 1,
+  "tags": [
+    "branch",
+    "switch"
+  ],
+  "chunks": [
+    {
+      "code": "git branch feature/login",
+      "explain": "Create a branch"
+    },
+    {
+      "code": "git switch feature/login",
+      "explain": "Move to that branch"
+    },
+    {
+      "code": "git switch -c bugfix/header",
+      "explain": "Create and switch in one step"
+    },
+    {
+      "code": "git branch",
+      "explain": "List local branches"
+    },
+    {
+      "code": "git switch -",
+      "explain": "Jump back to the previous branch"
+    }
+  ]
+}

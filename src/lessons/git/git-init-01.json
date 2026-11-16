@@ -1,0 +1,32 @@
+{
+  "id": "git-init-01",
+  "category": "Git",
+  "topic": "Init",
+  "level": 1,
+  "tags": [
+    "init",
+    "first-commit"
+  ],
+  "chunks": [
+    {
+      "code": "mkdir notes-app && cd notes-app",
+      "explain": "Create and enter a project folder"
+    },
+    {
+      "code": "git init",
+      "explain": "Turn the folder into a repository"
+    },
+    {
+      "code": "echo \"# Notes App\" > README.md",
+      "explain": "Create a README file"
+    },
+    {
+      "code": "git add README.md",
+      "explain": "Stage the README"
+    },
+    {
+      "code": "git commit -m \"Initial commit\"",
+      "explain": "Record the first commit"
+    }
+  ]
+}

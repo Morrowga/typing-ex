@@ -1,0 +1,32 @@
+{
+  "id": "linux-script-case-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "case"
+  ],
+  "chunks": [
+    {
+      "code": "case \"$1\" in",
+      "explain": "Branch on the first argument"
+    },
+    {
+      "code": "  start) echo \"starting\" ;;",
+      "explain": "Handle the start option"
+    },
+    {
+      "code": "  stop|halt) echo \"stopping\" ;;",
+      "explain": "Match either of two words"
+    },
+    {
+      "code": "  *) echo \"usage: $0 start|stop\" ;;",
+      "explain": "Default for anything else"
+    },
+    {
+      "code": "esac",
+      "explain": "End of the case block"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "swift-optionals-basic-01",
+  "category": "Swift",
+  "topic": "Optionals Basics",
+  "level": 1,
+  "tags": [
+    "optional",
+    "nil"
+  ],
+  "chunks": [
+    {
+      "code": "var nickname: String? = nil",
+      "explain": "An optional can hold nil"
+    },
+    {
+      "code": "print(nickname == nil)",
+      "explain": "Compare with nil"
+    },
+    {
+      "code": "nickname = \"Ace\"",
+      "explain": "Now it holds a value"
+    },
+    {
+      "code": "if let name = nickname {",
+      "explain": "Safely unwrap into name"
+    },
+    {
+      "code": "    print(\"Hello \\(name)\")",
+      "explain": "Runs only when there is a value"
+    },
+    {
+      "code": "}",
+      "explain": "End the if"
+    },
+    {
+      "code": "let shown = nickname ?? \"Guest\"",
+      "explain": "Use a default when nil"
+    }
+  ]
+}

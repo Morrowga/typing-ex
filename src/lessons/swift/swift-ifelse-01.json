@@ -1,0 +1,44 @@
+{
+  "id": "swift-ifelse-01",
+  "category": "Swift",
+  "topic": "If and Else",
+  "level": 1,
+  "tags": [
+    "if",
+    "condition"
+  ],
+  "chunks": [
+    {
+      "code": "let temperature = 24",
+      "explain": "A temperature in Celsius"
+    },
+    {
+      "code": "if temperature > 30 {",
+      "explain": "Check the hot case first"
+    },
+    {
+      "code": "    print(\"Hot\")",
+      "explain": "Runs when above 30"
+    },
+    {
+      "code": "} else if temperature > 15 {",
+      "explain": "Otherwise check the mild case"
+    },
+    {
+      "code": "    print(\"Mild\")",
+      "explain": "Runs for 16 to 30"
+    },
+    {
+      "code": "} else {",
+      "explain": "Everything else"
+    },
+    {
+      "code": "    print(\"Cold\")",
+      "explain": "Runs for 15 or below"
+    },
+    {
+      "code": "}",
+      "explain": "Close the chain"
+    }
+  ]
+}

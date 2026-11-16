@@ -1,0 +1,36 @@
+{
+  "id": "git-start-01",
+  "category": "Git",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "init",
+    "remote"
+  ],
+  "chunks": [
+    {
+      "code": "git init",
+      "explain": "Create a repository here"
+    },
+    {
+      "code": "git add README.md",
+      "explain": "Stage README.md"
+    },
+    {
+      "code": "git commit -m \"First commit\"",
+      "explain": "Make the first commit"
+    },
+    {
+      "code": "git branch -M main",
+      "explain": "Name the branch main"
+    },
+    {
+      "code": "git remote add origin https://github.com/you/app.git",
+      "explain": "Link the remote called origin"
+    },
+    {
+      "code": "git push -u origin main",
+      "explain": "Upload main and remember it"
+    }
+  ]
+}

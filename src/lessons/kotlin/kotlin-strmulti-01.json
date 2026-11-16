@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-strmulti-01",
+  "category": "Kotlin",
+  "topic": "Raw and Escaped Strings",
+  "level": 1,
+  "tags": [
+    "string",
+    "raw"
+  ],
+  "chunks": [
+    {
+      "code": "val tab = \"a\\tb\"",
+      "explain": "Escape sequence for a tab"
+    },
+    {
+      "code": "val path = \"C:\\\\temp\"",
+      "explain": "Double backslash makes one"
+    },
+    {
+      "code": "val ch = 'K'",
+      "explain": "A Char uses single quotes"
+    },
+    {
+      "code": "val line = \"-\".repeat(10)",
+      "explain": "Repeat a string ten times"
+    },
+    {
+      "code": "println(line)",
+      "explain": "Prints ten dashes"
+    },
+    {
+      "code": "println(\"Kotlin\"[0] == ch)",
+      "explain": "Index a string to get a Char"
+    }
+  ]
+}

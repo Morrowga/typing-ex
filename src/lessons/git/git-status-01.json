@@ -1,0 +1,28 @@
+{
+  "id": "git-status-01",
+  "category": "Git",
+  "topic": "Status",
+  "level": 1,
+  "tags": [
+    "status",
+    "short"
+  ],
+  "chunks": [
+    {
+      "code": "git status",
+      "explain": "Show staged, unstaged and untracked files"
+    },
+    {
+      "code": "git status -s",
+      "explain": "Short two-column status"
+    },
+    {
+      "code": "git status -sb",
+      "explain": "Short status with branch info"
+    },
+    {
+      "code": "git status --ignored",
+      "explain": "Also list ignored files"
+    }
+  ]
+}

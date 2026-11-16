@@ -1,0 +1,41 @@
+{
+  "id": "js-regex-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Regular Expressions",
+  "level": 2,
+  "tags": [
+    "regex",
+    "string"
+  ],
+  "chunks": [
+    {
+      "code": "const email = /^[\\w.]+@[\\w.]+\\.\\w+$/;",
+      "explain": "Simple email pattern"
+    },
+    {
+      "code": "console.log(email.test(\"a.b@site.com\"));",
+      "explain": "Test a match: true"
+    },
+    {
+      "code": "const text = \"Call 555-1234 or 555-9876\";",
+      "explain": "Sample text"
+    },
+    {
+      "code": "const phones = text.match(/\\d{3}-\\d{4}/g);",
+      "explain": "Find all matches"
+    },
+    {
+      "code": "const masked = text.replace(/\\d{3}-/g, \"***-\");",
+      "explain": "Replace every prefix"
+    },
+    {
+      "code": "const m = \"2025-06-01\".match(/(?<y>\\d{4})-(?<m>\\d{2})/);",
+      "explain": "Named capture groups"
+    },
+    {
+      "code": "console.log(phones, masked, m.groups.y);",
+      "explain": "Show the results"
+    }
+  ]
+}

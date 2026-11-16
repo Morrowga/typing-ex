@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-convert-01",
+  "category": "Kotlin",
+  "topic": "Type Conversion",
+  "level": 1,
+  "tags": [
+    "types",
+    "conversion"
+  ],
+  "chunks": [
+    {
+      "code": "val text = \"42\"",
+      "explain": "A String holding digits"
+    },
+    {
+      "code": "val n = text.toInt()",
+      "explain": "Convert String to Int"
+    },
+    {
+      "code": "val d = n.toDouble()",
+      "explain": "Convert Int to Double"
+    },
+    {
+      "code": "val bad = \"abc\".toIntOrNull()",
+      "explain": "Returns null instead of crashing"
+    },
+    {
+      "code": "println(bad)",
+      "explain": "Prints null"
+    },
+    {
+      "code": "println(n.toString() + \"!\")",
+      "explain": "Convert a number back to String"
+    }
+  ]
+}

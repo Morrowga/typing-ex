@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-object-01",
+  "category": "Kotlin",
+  "topic": "Object Singleton",
+  "level": 2,
+  "tags": [
+    "object",
+    "singleton"
+  ],
+  "chunks": [
+    {
+      "code": "object Counter {",
+      "explain": "A singleton declared with object"
+    },
+    {
+      "code": "    private var count = 0",
+      "explain": "Hidden state"
+    },
+    {
+      "code": "    fun next(): Int = ++count",
+      "explain": "Increment and return"
+    },
+    {
+      "code": "}",
+      "explain": "End of object"
+    },
+    {
+      "code": "println(Counter.next())",
+      "explain": "Prints 1"
+    },
+    {
+      "code": "println(Counter.next())",
+      "explain": "Prints 2"
+    }
+  ]
+}

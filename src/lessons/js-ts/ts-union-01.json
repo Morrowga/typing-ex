@@ -1,0 +1,45 @@
+{
+  "id": "ts-union-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Union Types",
+  "level": 1,
+  "tags": [
+    "union",
+    "literal"
+  ],
+  "chunks": [
+    {
+      "code": "type Size = \"small\" | \"medium\" | \"large\";",
+      "explain": "Only these strings"
+    },
+    {
+      "code": "let shirt: Size = \"medium\";",
+      "explain": "A valid size"
+    },
+    {
+      "code": "let code: string | number = 404;",
+      "explain": "Either type allowed"
+    },
+    {
+      "code": "code = \"NOT_FOUND\";",
+      "explain": "Now a string"
+    },
+    {
+      "code": "function show(v: string | number): string {",
+      "explain": "Accept either"
+    },
+    {
+      "code": "  return typeof v === \"string\" ? v : v.toFixed(0);",
+      "explain": "Narrow by typeof"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "console.log(shirt, show(code));",
+      "explain": "Print both"
+    }
+  ]
+}

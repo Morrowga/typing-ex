@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-while-01",
+  "category": "Kotlin",
+  "topic": "While Loops",
+  "level": 1,
+  "tags": [
+    "while",
+    "loop"
+  ],
+  "chunks": [
+    {
+      "code": "var fuel = 3",
+      "explain": "A counter we will change"
+    },
+    {
+      "code": "while (fuel > 0) {",
+      "explain": "Repeat while fuel is above zero"
+    },
+    {
+      "code": "    println(\"Fuel: $fuel\")",
+      "explain": "Show the current fuel"
+    },
+    {
+      "code": "    fuel--",
+      "explain": "Decrease fuel by one"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    },
+    {
+      "code": "println(\"Empty\")",
+      "explain": "Runs after the loop ends"
+    }
+  ]
+}

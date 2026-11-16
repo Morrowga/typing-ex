@@ -1,0 +1,36 @@
+{
+  "id": "linux-jobs-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "jobs",
+    "nohup"
+  ],
+  "chunks": [
+    {
+      "code": "sleep 300 &",
+      "explain": "Start a job in the background"
+    },
+    {
+      "code": "jobs",
+      "explain": "List background jobs"
+    },
+    {
+      "code": "fg %1",
+      "explain": "Bring job 1 to the foreground"
+    },
+    {
+      "code": "nohup ./backup.sh > backup.out 2>&1 &",
+      "explain": "Keep running after logout"
+    },
+    {
+      "code": "disown -h %1",
+      "explain": "Detach a job from the shell"
+    },
+    {
+      "code": "wait",
+      "explain": "Wait for background jobs to finish"
+    }
+  ]
+}

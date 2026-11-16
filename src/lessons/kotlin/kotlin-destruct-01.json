@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-destruct-01",
+  "category": "Kotlin",
+  "topic": "Destructuring",
+  "level": 2,
+  "tags": [
+    "destructuring",
+    "data"
+  ],
+  "chunks": [
+    {
+      "code": "data class Book(val title: String, val pages: Int)",
+      "explain": "Data classes support destructuring"
+    },
+    {
+      "code": "val book = Book(\"Dune\", 612)",
+      "explain": "Create a book"
+    },
+    {
+      "code": "val (title, pages) = book",
+      "explain": "Unpack into two variables"
+    },
+    {
+      "code": "println(\"$title has $pages pages\")",
+      "explain": "Use them directly"
+    },
+    {
+      "code": "val (q, r) = Pair(17 / 5, 17 % 5)",
+      "explain": "Destructure a Pair"
+    },
+    {
+      "code": "println(\"$q r$r\")",
+      "explain": "Prints 3 r2"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "linux-script-vars-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "variables"
+  ],
+  "chunks": [
+    {
+      "code": "#!/bin/bash",
+      "explain": "Shebang: run this script with bash"
+    },
+    {
+      "code": "name=\"Ada\"",
+      "explain": "Assign a variable with no spaces"
+    },
+    {
+      "code": "count=$((2 + 3))",
+      "explain": "Do arithmetic"
+    },
+    {
+      "code": "today=$(date +%F)",
+      "explain": "Capture command output"
+    },
+    {
+      "code": "echo \"Hi $name, $count items on $today\"",
+      "explain": "Expand variables in a string"
+    }
+  ]
+}

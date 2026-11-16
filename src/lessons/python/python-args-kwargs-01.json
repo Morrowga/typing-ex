@@ -1,0 +1,32 @@
+{
+  "id": "python-args-kwargs-01",
+  "category": "Python",
+  "topic": "args and kwargs",
+  "level": 2,
+  "tags": [
+    "functions",
+    "args"
+  ],
+  "chunks": [
+    {
+      "code": "def log(level, *args, **kwargs):",
+      "explain": "Collect extras into a tuple and a dict"
+    },
+    {
+      "code": "    msg = \" \".join(str(a) for a in args)",
+      "explain": "Join positional extras into text"
+    },
+    {
+      "code": "    extra = \", \".join(f\"{k}={v}\" for k, v in kwargs.items())",
+      "explain": "Format keyword extras"
+    },
+    {
+      "code": "    print(f\"[{level}] {msg} {extra}\")",
+      "explain": "Print the final line"
+    },
+    {
+      "code": "log(\"INFO\", \"user\", \"login\", id=7, ok=True)",
+      "explain": "Call with mixed arguments"
+    }
+  ]
+}

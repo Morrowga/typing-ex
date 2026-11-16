@@ -1,0 +1,37 @@
+{
+  "id": "swift-numbers-01",
+  "category": "Swift",
+  "topic": "Numbers and Math",
+  "level": 1,
+  "tags": [
+    "int",
+    "double",
+    "math"
+  ],
+  "chunks": [
+    {
+      "code": "let apples = 7",
+      "explain": "An integer"
+    },
+    {
+      "code": "let price = 1.25",
+      "explain": "A Double, inferred from the decimal"
+    },
+    {
+      "code": "let cost = Double(apples) * price",
+      "explain": "Convert Int to Double before multiplying"
+    },
+    {
+      "code": "let half = apples / 2",
+      "explain": "Int division drops the remainder"
+    },
+    {
+      "code": "let rest = apples % 2",
+      "explain": "Remainder operator gives 1"
+    },
+    {
+      "code": "print(cost, half, rest)",
+      "explain": "Show all three results"
+    }
+  ]
+}

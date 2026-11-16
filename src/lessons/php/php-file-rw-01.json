@@ -1,0 +1,36 @@
+{
+  "id": "php-file-rw-01",
+  "category": "PHP",
+  "topic": "File Handling",
+  "level": 2,
+  "tags": [
+    "files",
+    "io"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$path = sys_get_temp_dir() . '/note.txt';",
+      "explain": "A path in the temp directory"
+    },
+    {
+      "code": "file_put_contents($path, \"one\\ntwo\\n\", LOCK_EX);",
+      "explain": "Write the file with a lock"
+    },
+    {
+      "code": "$lines = file($path, FILE_IGNORE_NEW_LINES);",
+      "explain": "Read lines into an array"
+    },
+    {
+      "code": "echo count($lines);",
+      "explain": "Prints 2"
+    },
+    {
+      "code": "unlink($path);",
+      "explain": "Delete the file"
+    }
+  ]
+}

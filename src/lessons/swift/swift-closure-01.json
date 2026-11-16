@@ -1,0 +1,33 @@
+{
+  "id": "swift-closure-01",
+  "category": "Swift",
+  "topic": "Closures",
+  "level": 2,
+  "tags": [
+    "closure",
+    "map",
+    "filter"
+  ],
+  "chunks": [
+    {
+      "code": "let numbers = [1, 2, 3, 4, 5, 6]",
+      "explain": "An array of numbers"
+    },
+    {
+      "code": "let evens = numbers.filter { $0 % 2 == 0 }",
+      "explain": "Keep the evens; $0 is each item"
+    },
+    {
+      "code": "let doubled = evens.map { $0 * 2 }",
+      "explain": "Double each one: [4, 8, 12]"
+    },
+    {
+      "code": "let total = doubled.reduce(0, +)",
+      "explain": "Add them all up, starting at 0"
+    },
+    {
+      "code": "print(total)",
+      "explain": "Show 24"
+    }
+  ]
+}

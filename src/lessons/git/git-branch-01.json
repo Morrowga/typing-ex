@@ -1,0 +1,36 @@
+{
+  "id": "git-branch-01",
+  "category": "Git",
+  "topic": "Branches",
+  "level": 1,
+  "tags": [
+    "branch",
+    "merge"
+  ],
+  "chunks": [
+    {
+      "code": "git switch -c feature/login",
+      "explain": "Create and switch to a new branch"
+    },
+    {
+      "code": "git add .",
+      "explain": "Stage your changes"
+    },
+    {
+      "code": "git commit -m \"Add login form\"",
+      "explain": "Commit on the branch"
+    },
+    {
+      "code": "git switch main",
+      "explain": "Go back to main"
+    },
+    {
+      "code": "git merge feature/login",
+      "explain": "Merge the branch into main"
+    },
+    {
+      "code": "git branch -d feature/login",
+      "explain": "Delete the merged branch"
+    }
+  ]
+}

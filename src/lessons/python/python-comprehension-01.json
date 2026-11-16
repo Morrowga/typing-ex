@@ -1,0 +1,29 @@
+{
+  "id": "python-comprehension-01",
+  "category": "Python",
+  "topic": "Comprehensions",
+  "level": 2,
+  "tags": [
+    "list",
+    "dict",
+    "comprehension"
+  ],
+  "chunks": [
+    {
+      "code": "squares = [n * n for n in range(10)]",
+      "explain": "Squares of 0 to 9 in one line"
+    },
+    {
+      "code": "even = [n for n in squares if n % 2 == 0]",
+      "explain": "Keep only the even squares"
+    },
+    {
+      "code": "lookup = {n: n * n for n in range(5)}",
+      "explain": "A dict of each number and its square"
+    },
+    {
+      "code": "print(sum(even))",
+      "explain": "Show the sum of the even squares: 120"
+    }
+  ]
+}

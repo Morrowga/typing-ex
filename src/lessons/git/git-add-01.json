@@ -1,0 +1,32 @@
+{
+  "id": "git-add-01",
+  "category": "Git",
+  "topic": "Staging",
+  "level": 1,
+  "tags": [
+    "add",
+    "patterns"
+  ],
+  "chunks": [
+    {
+      "code": "git add src/app.js",
+      "explain": "Stage one file"
+    },
+    {
+      "code": "git add src/",
+      "explain": "Stage everything inside src"
+    },
+    {
+      "code": "git add '*.css'",
+      "explain": "Stage all CSS files via a pattern"
+    },
+    {
+      "code": "git add -A",
+      "explain": "Stage new, changed and deleted files"
+    },
+    {
+      "code": "git status -s",
+      "explain": "Check what is staged"
+    }
+  ]
+}

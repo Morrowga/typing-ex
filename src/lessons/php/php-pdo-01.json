@@ -1,0 +1,37 @@
+{
+  "id": "php-pdo-01",
+  "category": "PHP",
+  "topic": "Database",
+  "level": 2,
+  "tags": [
+    "pdo",
+    "sql",
+    "security"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$pdo = new PDO(\"sqlite:app.db\");",
+      "explain": "Connect to a SQLite database"
+    },
+    {
+      "code": "$stmt = $pdo->prepare(\"SELECT * FROM users WHERE id = ?\");",
+      "explain": "Prepare a query; ? is a safe placeholder"
+    },
+    {
+      "code": "$stmt->execute([$id]);",
+      "explain": "Run it with $id in place of ?"
+    },
+    {
+      "code": "$user = $stmt->fetch(PDO::FETCH_ASSOC);",
+      "explain": "Fetch one row as an array"
+    },
+    {
+      "code": "echo $user[\"name\"] ?? \"unknown\";",
+      "explain": "Print the name, or \"unknown\" if missing"
+    }
+  ]
+}

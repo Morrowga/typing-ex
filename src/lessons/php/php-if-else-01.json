@@ -1,0 +1,40 @@
+{
+  "id": "php-if-else-01",
+  "category": "PHP",
+  "topic": "If Else",
+  "level": 1,
+  "tags": [
+    "condition",
+    "if"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$age = 16;",
+      "explain": "Sample age"
+    },
+    {
+      "code": "if ($age >= 18) {",
+      "explain": "Check a condition"
+    },
+    {
+      "code": "    echo \"Adult\";",
+      "explain": "Runs when true"
+    },
+    {
+      "code": "} else {",
+      "explain": "Otherwise branch"
+    },
+    {
+      "code": "    echo \"Minor\";",
+      "explain": "Runs when false"
+    },
+    {
+      "code": "}",
+      "explain": "End of if"
+    }
+  ]
+}

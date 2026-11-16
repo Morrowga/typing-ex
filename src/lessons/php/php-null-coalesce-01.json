@@ -1,0 +1,32 @@
+{
+  "id": "php-null-coalesce-01",
+  "category": "PHP",
+  "topic": "Null Coalescing",
+  "level": 1,
+  "tags": [
+    "null",
+    "operators"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$user = [\"name\" => \"Mia\"];",
+      "explain": "Array without an age key"
+    },
+    {
+      "code": "$name = $user[\"name\"] ?? \"guest\";",
+      "explain": "Key exists, so Mia"
+    },
+    {
+      "code": "$age = $user[\"age\"] ?? 0;",
+      "explain": "Missing key falls back to 0"
+    },
+    {
+      "code": "echo \"$name $age\";",
+      "explain": "Prints Mia 0"
+    }
+  ]
+}

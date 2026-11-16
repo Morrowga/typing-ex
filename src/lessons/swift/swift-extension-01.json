@@ -1,0 +1,36 @@
+{
+  "id": "swift-extension-01",
+  "category": "Swift",
+  "topic": "Extensions",
+  "level": 2,
+  "tags": [
+    "extension",
+    "int"
+  ],
+  "chunks": [
+    {
+      "code": "extension Int {",
+      "explain": "Add features to an existing type"
+    },
+    {
+      "code": "    var isEven: Bool { self % 2 == 0 }",
+      "explain": "A computed property on Int"
+    },
+    {
+      "code": "    func squared() -> Int { self * self }",
+      "explain": "A new method on Int"
+    },
+    {
+      "code": "}",
+      "explain": "End the extension"
+    },
+    {
+      "code": "print(8.isEven)",
+      "explain": "Prints true"
+    },
+    {
+      "code": "print(5.squared())",
+      "explain": "Prints 25"
+    }
+  ]
+}

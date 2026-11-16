@@ -1,0 +1,37 @@
+{
+  "id": "swift-conversion-01",
+  "category": "Swift",
+  "topic": "Type Conversion",
+  "level": 1,
+  "tags": [
+    "conversion",
+    "int",
+    "string"
+  ],
+  "chunks": [
+    {
+      "code": "let text = \"42\"",
+      "explain": "A string of digits"
+    },
+    {
+      "code": "let number = Int(text)",
+      "explain": "Returns an Int? since it can fail"
+    },
+    {
+      "code": "let value = number ?? 0",
+      "explain": "Fallback when conversion fails"
+    },
+    {
+      "code": "let ratio = Double(value) / 8",
+      "explain": "Convert to Double for division"
+    },
+    {
+      "code": "let label = String(value)",
+      "explain": "Turn an Int into a String"
+    },
+    {
+      "code": "print(ratio, label)",
+      "explain": "Show the results"
+    }
+  ]
+}

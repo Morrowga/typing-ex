@@ -1,0 +1,33 @@
+{
+  "id": "swift-vars-01",
+  "category": "Swift",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "let",
+    "var",
+    "string"
+  ],
+  "chunks": [
+    {
+      "code": "let name = \"Ada\"",
+      "explain": "A constant: it cannot change"
+    },
+    {
+      "code": "var score = 0",
+      "explain": "A variable: it can change"
+    },
+    {
+      "code": "score += 10",
+      "explain": "Add 10 to score"
+    },
+    {
+      "code": "let message = \"\\(name) has \\(score) points\"",
+      "explain": "Put values inside text with \\( )"
+    },
+    {
+      "code": "print(message)",
+      "explain": "Show: Ada has 10 points"
+    }
+  ]
+}

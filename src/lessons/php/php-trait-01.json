@@ -1,0 +1,36 @@
+{
+  "id": "php-trait-01",
+  "category": "PHP",
+  "topic": "Traits",
+  "level": 2,
+  "tags": [
+    "trait",
+    "reuse"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "trait Greets {",
+      "explain": "A reusable bundle of methods"
+    },
+    {
+      "code": "    public function hello(): string { return 'Hi from ' . static::class; }",
+      "explain": "Uses the class name of the user"
+    },
+    {
+      "code": "}",
+      "explain": "End of trait"
+    },
+    {
+      "code": "class Robot { use Greets; }",
+      "explain": "use copies the trait methods into Robot"
+    },
+    {
+      "code": "echo (new Robot)->hello();",
+      "explain": "Prints Hi from Robot"
+    }
+  ]
+}

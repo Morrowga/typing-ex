@@ -1,0 +1,36 @@
+{
+  "id": "swift-interpolation-01",
+  "category": "Swift",
+  "topic": "String Interpolation",
+  "level": 1,
+  "tags": [
+    "string",
+    "interpolation"
+  ],
+  "chunks": [
+    {
+      "code": "let name = \"Mia\"",
+      "explain": "A constant holding a name"
+    },
+    {
+      "code": "let age = 27",
+      "explain": "A constant holding an age"
+    },
+    {
+      "code": "let intro = \"\\(name) is \\(age) years old\"",
+      "explain": "Insert values into a string with \\( )"
+    },
+    {
+      "code": "let next = \"Next year: \\(age + 1)\"",
+      "explain": "Interpolation can hold an expression"
+    },
+    {
+      "code": "print(intro)",
+      "explain": "Show the intro text"
+    },
+    {
+      "code": "print(next)",
+      "explain": "Show the next-year text"
+    }
+  ]
+}

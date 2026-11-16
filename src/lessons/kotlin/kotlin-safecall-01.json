@@ -1,0 +1,33 @@
+{
+  "id": "kotlin-safecall-01",
+  "category": "Kotlin",
+  "topic": "Safe Calls and Elvis",
+  "level": 2,
+  "tags": [
+    "null",
+    "safe-call",
+    "elvis"
+  ],
+  "chunks": [
+    {
+      "code": "class User(val name: String, val email: String?)",
+      "explain": "User may have no email"
+    },
+    {
+      "code": "val user: User? = User(\"Lia\", null)",
+      "explain": "The user itself is nullable"
+    },
+    {
+      "code": "val mail = user?.email",
+      "explain": "Safe call chain gives String?"
+    },
+    {
+      "code": "val domain = mail?.substringAfter(\"@\") ?: \"none\"",
+      "explain": "Fallback when mail is null"
+    },
+    {
+      "code": "println(domain)",
+      "explain": "Prints none"
+    }
+  ]
+}

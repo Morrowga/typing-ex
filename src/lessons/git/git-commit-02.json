@@ -1,0 +1,32 @@
+{
+  "id": "git-commit-02",
+  "category": "Git",
+  "topic": "Commit",
+  "level": 1,
+  "tags": [
+    "commit",
+    "amend"
+  ],
+  "chunks": [
+    {
+      "code": "git commit -m \"Add profile page\"",
+      "explain": "Make a commit"
+    },
+    {
+      "code": "git add profile.css",
+      "explain": "Stage a file you forgot"
+    },
+    {
+      "code": "git commit --amend --no-edit",
+      "explain": "Fold it into the last commit"
+    },
+    {
+      "code": "git commit --amend -m \"Add profile page with styles\"",
+      "explain": "Reword the last commit message"
+    },
+    {
+      "code": "git show --stat",
+      "explain": "Confirm the amended commit"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "linux-redirect-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "redirect",
+    "stdout"
+  ],
+  "chunks": [
+    {
+      "code": "echo hello > out.txt",
+      "explain": "Write output to a file, replacing it"
+    },
+    {
+      "code": "echo world >> out.txt",
+      "explain": "Append output to a file"
+    },
+    {
+      "code": "ls /nonexistent 2> err.txt",
+      "explain": "Send error messages to a file"
+    },
+    {
+      "code": "ls /etc > list.txt 2>&1",
+      "explain": "Send output and errors to one file"
+    },
+    {
+      "code": "sort < names.txt",
+      "explain": "Feed a file into a command as input"
+    }
+  ]
+}

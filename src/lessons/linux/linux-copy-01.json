@@ -1,0 +1,33 @@
+{
+  "id": "linux-copy-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "cp",
+    "mv",
+    "rm"
+  ],
+  "chunks": [
+    {
+      "code": "cp notes.txt backup.txt",
+      "explain": "Copy a file"
+    },
+    {
+      "code": "mv backup.txt old.txt",
+      "explain": "Rename a file"
+    },
+    {
+      "code": "rm old.txt",
+      "explain": "Delete a file for good"
+    },
+    {
+      "code": "mkdir -p logs/2024",
+      "explain": "Create nested folders"
+    },
+    {
+      "code": "cp -r logs logs-copy",
+      "explain": "Copy a folder and everything in it"
+    }
+  ]
+}

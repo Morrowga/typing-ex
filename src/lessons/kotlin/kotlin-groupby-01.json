@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-groupby-01",
+  "category": "Kotlin",
+  "topic": "groupBy",
+  "level": 2,
+  "tags": [
+    "collections",
+    "groupBy"
+  ],
+  "chunks": [
+    {
+      "code": "val words = listOf(\"apple\", \"avocado\", \"banana\", \"blueberry\", \"cherry\")",
+      "explain": "Words to group"
+    },
+    {
+      "code": "val byLetter = words.groupBy { it.first() }",
+      "explain": "Map from first letter to words"
+    },
+    {
+      "code": "println(byLetter['a'])",
+      "explain": "Prints [apple, avocado]"
+    },
+    {
+      "code": "val counts = byLetter.mapValues { it.value.size }",
+      "explain": "Count words per letter"
+    },
+    {
+      "code": "println(counts)",
+      "explain": "Prints {a=2, b=2, c=1}"
+    }
+  ]
+}

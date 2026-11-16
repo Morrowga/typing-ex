@@ -1,0 +1,36 @@
+{
+  "id": "swift-ranges-01",
+  "category": "Swift",
+  "topic": "Ranges",
+  "level": 1,
+  "tags": [
+    "range",
+    "loop"
+  ],
+  "chunks": [
+    {
+      "code": "let closed = 1...5",
+      "explain": "Closed range includes 5"
+    },
+    {
+      "code": "let half = 0..<5",
+      "explain": "Half-open range stops before 5"
+    },
+    {
+      "code": "print(closed.contains(5))",
+      "explain": "True: 5 is included"
+    },
+    {
+      "code": "print(half.contains(5))",
+      "explain": "False: 5 is excluded"
+    },
+    {
+      "code": "let letters = [\"a\", \"b\", \"c\", \"d\"]",
+      "explain": "An array to slice"
+    },
+    {
+      "code": "print(letters[1...2])",
+      "explain": "Slice using a range"
+    }
+  ]
+}

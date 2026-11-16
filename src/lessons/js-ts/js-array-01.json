@@ -1,0 +1,46 @@
+{
+  "id": "js-array-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "array",
+    "loop",
+    "if"
+  ],
+  "chunks": [
+    {
+      "code": "const scores = [72, 90, 85];",
+      "explain": "An array of numbers"
+    },
+    {
+      "code": "let best = 0;",
+      "explain": "Track the best score so far"
+    },
+    {
+      "code": "for (const score of scores) {",
+      "explain": "Loop over every score"
+    },
+    {
+      "code": "  if (score > best) {",
+      "explain": "Is this one higher?"
+    },
+    {
+      "code": "    best = score;",
+      "explain": "Remember it"
+    },
+    {
+      "code": "  }",
+      "explain": "End of the if"
+    },
+    {
+      "code": "}",
+      "explain": "End of the loop"
+    },
+    {
+      "code": "console.log(best);",
+      "explain": "Show 90"
+    }
+  ]
+}

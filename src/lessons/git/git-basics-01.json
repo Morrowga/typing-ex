@@ -1,0 +1,28 @@
+{
+  "id": "git-basics-01",
+  "category": "Git",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "git",
+    "commit"
+  ],
+  "chunks": [
+    {
+      "code": "git status",
+      "explain": "See what changed"
+    },
+    {
+      "code": "git add .",
+      "explain": "Stage all changes"
+    },
+    {
+      "code": "git commit -m \"Fix login bug\"",
+      "explain": "Commit with a message"
+    },
+    {
+      "code": "git push origin main",
+      "explain": "Upload commits to main on origin"
+    }
+  ]
+}

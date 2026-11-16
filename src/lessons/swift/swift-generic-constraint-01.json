@@ -1,0 +1,41 @@
+{
+  "id": "swift-generic-constraint-01",
+  "category": "Swift",
+  "topic": "Generic Constraints",
+  "level": 2,
+  "tags": [
+    "generics",
+    "constraint",
+    "comparable"
+  ],
+  "chunks": [
+    {
+      "code": "func largest<T: Comparable>(_ items: [T]) -> T? {",
+      "explain": "T must support comparison"
+    },
+    {
+      "code": "    guard var best = items.first else { return nil }",
+      "explain": "Empty arrays return nil"
+    },
+    {
+      "code": "    for item in items where item > best { best = item }",
+      "explain": "Track the biggest so far"
+    },
+    {
+      "code": "    return best",
+      "explain": "Return the winner"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "print(largest([3, 9, 4]) ?? 0)",
+      "explain": "Works with Int"
+    },
+    {
+      "code": "print(largest([\"pear\", \"fig\"]) ?? \"\")",
+      "explain": "Works with String"
+    }
+  ]
+}

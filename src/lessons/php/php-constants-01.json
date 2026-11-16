@@ -1,0 +1,32 @@
+{
+  "id": "php-constants-01",
+  "category": "PHP",
+  "topic": "Constants",
+  "level": 1,
+  "tags": [
+    "constants",
+    "define"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "define(\"SITE\", \"TypeFast\");",
+      "explain": "Define a constant at runtime"
+    },
+    {
+      "code": "const MAX_USERS = 100;",
+      "explain": "Define a constant at top level"
+    },
+    {
+      "code": "echo SITE . \" \" . MAX_USERS;",
+      "explain": "Constants need no $"
+    },
+    {
+      "code": "echo PHP_EOL;",
+      "explain": "Built-in newline constant"
+    }
+  ]
+}

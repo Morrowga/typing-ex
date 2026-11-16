@@ -1,0 +1,32 @@
+{
+  "id": "php-post-form-01",
+  "category": "PHP",
+  "topic": "Post Form",
+  "level": 1,
+  "tags": [
+    "post",
+    "forms"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "if ($_SERVER[\"REQUEST_METHOD\"] === \"POST\") {",
+      "explain": "Only handle form submissions"
+    },
+    {
+      "code": "    $email = trim($_POST[\"email\"] ?? \"\");",
+      "explain": "Read and clean the field"
+    },
+    {
+      "code": "    echo htmlspecialchars($email);",
+      "explain": "Escape before output"
+    },
+    {
+      "code": "}",
+      "explain": "End of if"
+    }
+  ]
+}

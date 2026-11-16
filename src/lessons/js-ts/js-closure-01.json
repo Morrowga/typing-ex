@@ -1,0 +1,41 @@
+{
+  "id": "js-closure-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Closures",
+  "level": 2,
+  "tags": [
+    "closure",
+    "function"
+  ],
+  "chunks": [
+    {
+      "code": "function makeCounter() {",
+      "explain": "Factory function"
+    },
+    {
+      "code": "  let count = 0;",
+      "explain": "Private state"
+    },
+    {
+      "code": "  return () => ++count;",
+      "explain": "Inner function remembers count"
+    },
+    {
+      "code": "}",
+      "explain": "End of factory"
+    },
+    {
+      "code": "const next = makeCounter();",
+      "explain": "Create a counter"
+    },
+    {
+      "code": "next();",
+      "explain": "Count becomes 1"
+    },
+    {
+      "code": "console.log(next());",
+      "explain": "Prints 2"
+    }
+  ]
+}

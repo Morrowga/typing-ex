@@ -1,0 +1,36 @@
+{
+  "id": "linux-history-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "history",
+    "shortcuts"
+  ],
+  "chunks": [
+    {
+      "code": "history",
+      "explain": "List previously typed commands"
+    },
+    {
+      "code": "history | grep ssh",
+      "explain": "Find old commands containing ssh"
+    },
+    {
+      "code": "!!",
+      "explain": "Repeat the last command"
+    },
+    {
+      "code": "!42",
+      "explain": "Repeat command number 42 from history"
+    },
+    {
+      "code": "sudo !!",
+      "explain": "Re-run the last command with sudo"
+    },
+    {
+      "code": "history -c",
+      "explain": "Clear this session's history"
+    }
+  ]
+}

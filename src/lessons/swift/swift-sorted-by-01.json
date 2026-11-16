@@ -1,0 +1,33 @@
+{
+  "id": "swift-sorted-by-01",
+  "category": "Swift",
+  "topic": "Sorting Custom Types",
+  "level": 2,
+  "tags": [
+    "sorted",
+    "closure",
+    "struct"
+  ],
+  "chunks": [
+    {
+      "code": "struct Player { let name: String; let score: Int }",
+      "explain": "A simple player type"
+    },
+    {
+      "code": "let players = [Player(name: \"A\", score: 5), Player(name: \"B\", score: 9)]",
+      "explain": "Two players"
+    },
+    {
+      "code": "let ranked = players.sorted { $0.score > $1.score }",
+      "explain": "Highest score first"
+    },
+    {
+      "code": "let names = ranked.map(\\.name)",
+      "explain": "Key path as a mapping function"
+    },
+    {
+      "code": "print(names)",
+      "explain": "Prints [\"B\", \"A\"]"
+    }
+  ]
+}

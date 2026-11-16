@@ -1,0 +1,32 @@
+{
+  "id": "python-sets-01",
+  "category": "Python",
+  "topic": "Sets",
+  "level": 1,
+  "tags": [
+    "sets",
+    "unique"
+  ],
+  "chunks": [
+    {
+      "code": "tags = {\"python\", \"code\", \"python\"}",
+      "explain": "Duplicates are dropped in a set"
+    },
+    {
+      "code": "tags.add(\"typing\")",
+      "explain": "Add a new element"
+    },
+    {
+      "code": "print(len(tags))",
+      "explain": "Count unique items: 3"
+    },
+    {
+      "code": "other = {\"code\", \"web\"}",
+      "explain": "Another set to compare"
+    },
+    {
+      "code": "print(tags & other)",
+      "explain": "Intersection: items in both sets"
+    }
+  ]
+}

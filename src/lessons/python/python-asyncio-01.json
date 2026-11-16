@@ -1,0 +1,40 @@
+{
+  "id": "python-asyncio-01",
+  "category": "Python",
+  "topic": "asyncio",
+  "level": 2,
+  "tags": [
+    "asyncio",
+    "concurrency"
+  ],
+  "chunks": [
+    {
+      "code": "import asyncio",
+      "explain": "Import asyncio"
+    },
+    {
+      "code": "async def fetch(n):",
+      "explain": "Define a coroutine"
+    },
+    {
+      "code": "    await asyncio.sleep(0.1)",
+      "explain": "Pause without blocking others"
+    },
+    {
+      "code": "    return n * 2",
+      "explain": "Return a result"
+    },
+    {
+      "code": "async def main():",
+      "explain": "The entry coroutine"
+    },
+    {
+      "code": "    print(await asyncio.gather(fetch(1), fetch(2)))",
+      "explain": "Run both at once: [2, 4]"
+    },
+    {
+      "code": "asyncio.run(main())",
+      "explain": "Start the event loop"
+    }
+  ]
+}

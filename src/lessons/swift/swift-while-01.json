@@ -1,0 +1,36 @@
+{
+  "id": "swift-while-01",
+  "category": "Swift",
+  "topic": "While Loops",
+  "level": 1,
+  "tags": [
+    "while",
+    "loop"
+  ],
+  "chunks": [
+    {
+      "code": "var countdown = 3",
+      "explain": "Start the counter"
+    },
+    {
+      "code": "while countdown > 0 {",
+      "explain": "Repeat while the condition holds"
+    },
+    {
+      "code": "    print(\"T-minus \\(countdown)\")",
+      "explain": "Show the number"
+    },
+    {
+      "code": "    countdown -= 1",
+      "explain": "Decrease the counter"
+    },
+    {
+      "code": "}",
+      "explain": "End the loop"
+    },
+    {
+      "code": "print(\"Liftoff\")",
+      "explain": "Runs after the loop ends"
+    }
+  ]
+}

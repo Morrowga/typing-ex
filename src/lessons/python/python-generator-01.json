@@ -1,0 +1,32 @@
+{
+  "id": "python-generator-01",
+  "category": "Python",
+  "topic": "Generators",
+  "level": 2,
+  "tags": [
+    "generators",
+    "yield"
+  ],
+  "chunks": [
+    {
+      "code": "def countdown(n):",
+      "explain": "A generator function"
+    },
+    {
+      "code": "    while n > 0:",
+      "explain": "Loop until n reaches zero"
+    },
+    {
+      "code": "        yield n",
+      "explain": "Hand back one value, then pause"
+    },
+    {
+      "code": "        n -= 1",
+      "explain": "Resume here on the next request"
+    },
+    {
+      "code": "print(list(countdown(4)))",
+      "explain": "Collect the values: [4, 3, 2, 1]"
+    }
+  ]
+}

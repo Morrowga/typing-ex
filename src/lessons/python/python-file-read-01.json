@@ -1,0 +1,32 @@
+{
+  "id": "python-file-read-01",
+  "category": "Python",
+  "topic": "Reading Files",
+  "level": 1,
+  "tags": [
+    "files",
+    "open"
+  ],
+  "chunks": [
+    {
+      "code": "with open(\"letters.txt\") as f:",
+      "explain": "Open the file for reading"
+    },
+    {
+      "code": "    text = f.read()",
+      "explain": "Read the whole file as one string"
+    },
+    {
+      "code": "words = text.split()",
+      "explain": "Split the text into words"
+    },
+    {
+      "code": "print(len(words))",
+      "explain": "Count the words"
+    },
+    {
+      "code": "print(words[0])",
+      "explain": "Show the first word"
+    }
+  ]
+}

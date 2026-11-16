@@ -1,0 +1,41 @@
+{
+  "id": "swift-assoc-enum-01",
+  "category": "Swift",
+  "topic": "Associated Values",
+  "level": 2,
+  "tags": [
+    "enum",
+    "associated-values",
+    "switch"
+  ],
+  "chunks": [
+    {
+      "code": "enum Shape { case circle(radius: Double), rect(width: Double, height: Double) }",
+      "explain": "Each case carries its own data"
+    },
+    {
+      "code": "func area(_ shape: Shape) -> Double {",
+      "explain": "Compute the area"
+    },
+    {
+      "code": "    switch shape {",
+      "explain": "Switch over the cases"
+    },
+    {
+      "code": "    case .circle(let r): return 3.14 * r * r",
+      "explain": "Bind the radius"
+    },
+    {
+      "code": "    case .rect(let w, let h): return w * h",
+      "explain": "Bind both sides"
+    },
+    {
+      "code": "    }",
+      "explain": "End the switch"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    }
+  ]
+}

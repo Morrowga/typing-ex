@@ -1,0 +1,40 @@
+{
+  "id": "python-for-loop-01",
+  "category": "Python",
+  "topic": "For Loops",
+  "level": 1,
+  "tags": [
+    "loops",
+    "for"
+  ],
+  "chunks": [
+    {
+      "code": "colors = [\"red\", \"green\", \"blue\"]",
+      "explain": "A list to loop over"
+    },
+    {
+      "code": "for color in colors:",
+      "explain": "Visit each item in turn"
+    },
+    {
+      "code": "    print(color.upper())",
+      "explain": "Print it in uppercase"
+    },
+    {
+      "code": "total = 0",
+      "explain": "Start a running total"
+    },
+    {
+      "code": "for n in [4, 8, 15]:",
+      "explain": "Loop over some numbers"
+    },
+    {
+      "code": "    total += n",
+      "explain": "Add each number to total"
+    },
+    {
+      "code": "print(total)",
+      "explain": "Show the sum: 27"
+    }
+  ]
+}

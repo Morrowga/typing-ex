@@ -1,0 +1,36 @@
+{
+  "id": "linux-apt-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "apt",
+    "packages"
+  ],
+  "chunks": [
+    {
+      "code": "sudo apt update",
+      "explain": "Refresh the package lists"
+    },
+    {
+      "code": "sudo apt install htop",
+      "explain": "Install a package"
+    },
+    {
+      "code": "apt search editor",
+      "explain": "Search available packages"
+    },
+    {
+      "code": "apt show curl",
+      "explain": "Show details about a package"
+    },
+    {
+      "code": "sudo apt upgrade",
+      "explain": "Upgrade installed packages"
+    },
+    {
+      "code": "sudo apt remove htop",
+      "explain": "Uninstall a package"
+    }
+  ]
+}

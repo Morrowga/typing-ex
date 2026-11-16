@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-operator-01",
+  "category": "Kotlin",
+  "topic": "Operator Overloading",
+  "level": 2,
+  "tags": [
+    "operator",
+    "class"
+  ],
+  "chunks": [
+    {
+      "code": "data class Vec(val x: Int, val y: Int) {",
+      "explain": "A 2D vector"
+    },
+    {
+      "code": "    operator fun plus(o: Vec) = Vec(x + o.x, y + o.y)",
+      "explain": "Defines the + operator"
+    },
+    {
+      "code": "    operator fun times(k: Int) = Vec(x * k, y * k)",
+      "explain": "Defines vec * number"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "println(Vec(1, 2) + Vec(3, 4))",
+      "explain": "Prints Vec(x=4, y=6)"
+    },
+    {
+      "code": "println(Vec(1, 2) * 3)",
+      "explain": "Prints Vec(x=3, y=6)"
+    }
+  ]
+}

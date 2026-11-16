@@ -1,0 +1,28 @@
+{
+  "id": "git-clone-02",
+  "category": "Git",
+  "topic": "Clone",
+  "level": 1,
+  "tags": [
+    "clone",
+    "depth"
+  ],
+  "chunks": [
+    {
+      "code": "git clone --depth 1 https://github.com/acme/docs.git",
+      "explain": "Clone only the latest commit"
+    },
+    {
+      "code": "git clone -b develop https://github.com/acme/api.git",
+      "explain": "Clone and check out the develop branch"
+    },
+    {
+      "code": "git clone git@github.com:acme/api.git api-dev",
+      "explain": "Clone over SSH into folder api-dev"
+    },
+    {
+      "code": "cd api-dev",
+      "explain": "Enter the cloned folder"
+    }
+  ]
+}

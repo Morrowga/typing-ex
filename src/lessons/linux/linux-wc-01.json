@@ -1,0 +1,32 @@
+{
+  "id": "linux-wc-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "wc",
+    "count"
+  ],
+  "chunks": [
+    {
+      "code": "wc notes.txt",
+      "explain": "Count lines, words and bytes"
+    },
+    {
+      "code": "wc -l notes.txt",
+      "explain": "Count lines only"
+    },
+    {
+      "code": "wc -w essay.txt",
+      "explain": "Count words only"
+    },
+    {
+      "code": "wc -c photo.jpg",
+      "explain": "Count bytes"
+    },
+    {
+      "code": "ls | wc -l",
+      "explain": "Count files in the current folder"
+    }
+  ]
+}

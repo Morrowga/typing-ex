@@ -1,0 +1,36 @@
+{
+  "id": "linux-nav-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "cd",
+    "pwd"
+  ],
+  "chunks": [
+    {
+      "code": "pwd",
+      "explain": "Print the current directory"
+    },
+    {
+      "code": "cd /var/log",
+      "explain": "Go to an absolute path"
+    },
+    {
+      "code": "cd ..",
+      "explain": "Go up one directory"
+    },
+    {
+      "code": "cd ~/projects",
+      "explain": "Go to projects in your home"
+    },
+    {
+      "code": "cd -",
+      "explain": "Jump back to the previous directory"
+    },
+    {
+      "code": "cd",
+      "explain": "Go straight to your home directory"
+    }
+  ]
+}

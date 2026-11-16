@@ -1,0 +1,33 @@
+{
+  "id": "linux-jq-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "jq",
+    "curl",
+    "json"
+  ],
+  "chunks": [
+    {
+      "code": "curl -s https://api.github.com/users/octocat | jq .",
+      "explain": "Pretty-print a JSON response"
+    },
+    {
+      "code": "curl -s https://api.example.com/items | jq '.[0].name'",
+      "explain": "First item's name"
+    },
+    {
+      "code": "curl -s https://api.example.com/items | jq -r '.[].id'",
+      "explain": "Raw list of every id"
+    },
+    {
+      "code": "jq '.[] | select(.price > 10)' items.json",
+      "explain": "Filter objects by a condition"
+    },
+    {
+      "code": "jq -n --arg n Ada '{name: $n}'",
+      "explain": "Build JSON from a variable"
+    }
+  ]
+}

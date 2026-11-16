@@ -1,0 +1,32 @@
+{
+  "id": "python-itertools-01",
+  "category": "Python",
+  "topic": "itertools",
+  "level": 2,
+  "tags": [
+    "itertools",
+    "iteration"
+  ],
+  "chunks": [
+    {
+      "code": "from itertools import chain, islice, product",
+      "explain": "Import three tools"
+    },
+    {
+      "code": "print(list(chain([1, 2], [3, 4])))",
+      "explain": "Join iterables: [1, 2, 3, 4]"
+    },
+    {
+      "code": "print(list(islice(range(100), 3)))",
+      "explain": "Take the first 3: [0, 1, 2]"
+    },
+    {
+      "code": "for a, b in product(\"ab\", [1, 2]):",
+      "explain": "Every combination of two inputs"
+    },
+    {
+      "code": "    print(a, b)",
+      "explain": "Prints a 1, a 2, b 1, b 2"
+    }
+  ]
+}

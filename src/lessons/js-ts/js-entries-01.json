@@ -1,0 +1,38 @@
+{
+  "id": "js-entries-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Object Utilities",
+  "level": 2,
+  "tags": [
+    "object",
+    "entries",
+    "fromEntries"
+  ],
+  "chunks": [
+    {
+      "code": "const prices = { tea: 3, cake: 5 };",
+      "explain": "Source object"
+    },
+    {
+      "code": "const pairs = Object.entries(prices);",
+      "explain": "Object to [key, value] list"
+    },
+    {
+      "code": "const doubled = Object.fromEntries(",
+      "explain": "Rebuild an object"
+    },
+    {
+      "code": "  pairs.map(([k, v]) => [k, v * 2])",
+      "explain": "Double every value"
+    },
+    {
+      "code": ");",
+      "explain": "End of call"
+    },
+    {
+      "code": "console.log(Object.keys(prices), doubled);",
+      "explain": "Show keys and result"
+    }
+  ]
+}

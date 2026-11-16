@@ -1,0 +1,36 @@
+{
+  "id": "php-assoc-array-01",
+  "category": "PHP",
+  "topic": "Associative Arrays",
+  "level": 1,
+  "tags": [
+    "array",
+    "keys"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$car = [\"make\" => \"Kia\", \"year\" => 2020];",
+      "explain": "Keys map to values with =>"
+    },
+    {
+      "code": "echo $car[\"make\"];",
+      "explain": "Look up a value by key"
+    },
+    {
+      "code": "$car[\"color\"] = \"red\";",
+      "explain": "Add a new key"
+    },
+    {
+      "code": "unset($car[\"year\"]);",
+      "explain": "Remove a key"
+    },
+    {
+      "code": "print_r($car);",
+      "explain": "Dump the array for debugging"
+    }
+  ]
+}

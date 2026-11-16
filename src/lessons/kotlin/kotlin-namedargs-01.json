@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-namedargs-01",
+  "category": "Kotlin",
+  "topic": "Named Arguments",
+  "level": 1,
+  "tags": [
+    "fun",
+    "named"
+  ],
+  "chunks": [
+    {
+      "code": "fun box(width: Int, height: Int, label: String): String {",
+      "explain": "A function with three parameters"
+    },
+    {
+      "code": "    return \"$label: ${width * height}\"",
+      "explain": "Build text with the area"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "val s = box(width = 4, height = 3, label = \"Area\")",
+      "explain": "Name each argument for clarity"
+    },
+    {
+      "code": "val t = box(label = \"Area\", height = 2, width = 5)",
+      "explain": "Named arguments can change order"
+    },
+    {
+      "code": "println(s)",
+      "explain": "Prints Area: 12"
+    }
+  ]
+}

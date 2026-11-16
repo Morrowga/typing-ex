@@ -1,0 +1,28 @@
+{
+  "id": "python-groupby-01",
+  "category": "Python",
+  "topic": "itertools groupby",
+  "level": 2,
+  "tags": [
+    "itertools",
+    "grouping"
+  ],
+  "chunks": [
+    {
+      "code": "from itertools import groupby",
+      "explain": "Import groupby"
+    },
+    {
+      "code": "rows = [(\"a\", 1), (\"a\", 2), (\"b\", 5)]",
+      "explain": "Rows already sorted by key"
+    },
+    {
+      "code": "for key, grp in groupby(rows, key=lambda r: r[0]):",
+      "explain": "Group consecutive rows by first field"
+    },
+    {
+      "code": "    print(key, sum(v for _, v in grp))",
+      "explain": "Total each group: a 3, b 5"
+    }
+  ]
+}

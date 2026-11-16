@@ -1,0 +1,32 @@
+{
+  "id": "git-shortlog-01",
+  "category": "Git",
+  "topic": "Shortlog",
+  "level": 2,
+  "tags": [
+    "shortlog",
+    "describe"
+  ],
+  "chunks": [
+    {
+      "code": "git shortlog -sn",
+      "explain": "Commit counts per author"
+    },
+    {
+      "code": "git shortlog -sn --since=\"1 year ago\"",
+      "explain": "Counts for the last year"
+    },
+    {
+      "code": "git describe --tags",
+      "explain": "Nearest tag plus commits since"
+    },
+    {
+      "code": "git describe --tags --abbrev=0",
+      "explain": "Name of the latest tag only"
+    },
+    {
+      "code": "git rev-list --count main",
+      "explain": "Count commits on main"
+    }
+  ]
+}

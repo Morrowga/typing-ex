@@ -1,0 +1,36 @@
+{
+  "id": "swift-booleans-01",
+  "category": "Swift",
+  "topic": "Booleans",
+  "level": 1,
+  "tags": [
+    "bool",
+    "logic"
+  ],
+  "chunks": [
+    {
+      "code": "let isMember = true",
+      "explain": "A Bool constant"
+    },
+    {
+      "code": "let hasCoupon = false",
+      "explain": "Another Bool"
+    },
+    {
+      "code": "let discount = isMember && hasCoupon",
+      "explain": "AND needs both to be true"
+    },
+    {
+      "code": "let anyPerk = isMember || hasCoupon",
+      "explain": "OR needs at least one"
+    },
+    {
+      "code": "let guest = !isMember",
+      "explain": "NOT flips the value"
+    },
+    {
+      "code": "print(discount, anyPerk, guest)",
+      "explain": "Show the three results"
+    }
+  ]
+}

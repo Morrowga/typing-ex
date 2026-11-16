@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-nullable-01",
+  "category": "Kotlin",
+  "topic": "Nullable Types",
+  "level": 1,
+  "tags": [
+    "null",
+    "types"
+  ],
+  "chunks": [
+    {
+      "code": "var nick: String? = null",
+      "explain": "The ? lets the String hold null"
+    },
+    {
+      "code": "println(nick)",
+      "explain": "Prints null"
+    },
+    {
+      "code": "nick = \"Zed\"",
+      "explain": "Assign a real value"
+    },
+    {
+      "code": "println(nick?.length)",
+      "explain": "Safe call: length or null"
+    },
+    {
+      "code": "val shown = nick ?: \"unknown\"",
+      "explain": "Elvis gives a fallback if null"
+    },
+    {
+      "code": "println(shown)",
+      "explain": "Prints Zed"
+    }
+  ]
+}

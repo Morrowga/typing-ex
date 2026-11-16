@@ -1,0 +1,38 @@
+{
+  "id": "swift-map-filter-01",
+  "category": "Swift",
+  "topic": "Map Filter Reduce",
+  "level": 2,
+  "tags": [
+    "map",
+    "filter",
+    "reduce",
+    "higher-order"
+  ],
+  "chunks": [
+    {
+      "code": "let prices = [4.5, 12.0, 7.25, 30.0]",
+      "explain": "Some prices"
+    },
+    {
+      "code": "let cheap = prices.filter { $0 < 10 }",
+      "explain": "Keep prices under 10"
+    },
+    {
+      "code": "let labels = cheap.map { \"$\\($0)\" }",
+      "explain": "Turn each into a label"
+    },
+    {
+      "code": "let total = prices.reduce(0, +)",
+      "explain": "Sum all prices"
+    },
+    {
+      "code": "let compact = [\"1\", \"x\", \"3\"].compactMap { Int($0) }",
+      "explain": "Drop values that fail to convert"
+    },
+    {
+      "code": "print(labels, total, compact)",
+      "explain": "Show the results"
+    }
+  ]
+}

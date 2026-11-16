@@ -1,0 +1,32 @@
+{
+  "id": "git-reflog-02",
+  "category": "Git",
+  "topic": "Reflog",
+  "level": 2,
+  "tags": [
+    "reflog",
+    "lost-commit"
+  ],
+  "chunks": [
+    {
+      "code": "git branch -D experiment",
+      "explain": "Oops, deleted a branch"
+    },
+    {
+      "code": "git reflog | grep experiment",
+      "explain": "Find its last commit in the reflog"
+    },
+    {
+      "code": "git branch experiment 4c5d6e7",
+      "explain": "Recreate the branch at that hash"
+    },
+    {
+      "code": "git fsck --lost-found",
+      "explain": "Find unreachable objects"
+    },
+    {
+      "code": "git show 4c5d6e7",
+      "explain": "Verify the recovered commit"
+    }
+  ]
+}

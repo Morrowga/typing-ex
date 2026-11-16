@@ -1,0 +1,50 @@
+{
+  "id": "ts-abstract-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Abstract Classes",
+  "level": 2,
+  "tags": [
+    "class",
+    "abstract",
+    "access"
+  ],
+  "chunks": [
+    {
+      "code": "abstract class Account {",
+      "explain": "Cannot be instantiated"
+    },
+    {
+      "code": "  protected balance = 0;",
+      "explain": "Visible to subclasses"
+    },
+    {
+      "code": "  constructor(public readonly owner: string) {}",
+      "explain": "Property shorthand"
+    },
+    {
+      "code": "  abstract fee(): number;",
+      "explain": "Subclasses must implement"
+    },
+    {
+      "code": "  deposit(n: number): void { this.balance += n - this.fee(); }",
+      "explain": "Deposit minus fee"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "class Basic extends Account {",
+      "explain": "Concrete subclass"
+    },
+    {
+      "code": "  fee(): number { return 1; }",
+      "explain": "Flat one unit fee"
+    },
+    {
+      "code": "}",
+      "explain": "End of subclass"
+    }
+  ]
+}

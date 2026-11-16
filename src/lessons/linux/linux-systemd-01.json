@@ -1,0 +1,32 @@
+{
+  "id": "linux-systemd-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "systemctl",
+    "services"
+  ],
+  "chunks": [
+    {
+      "code": "systemctl status nginx",
+      "explain": "Show a service's state"
+    },
+    {
+      "code": "sudo systemctl restart nginx",
+      "explain": "Restart a service"
+    },
+    {
+      "code": "sudo systemctl enable --now docker",
+      "explain": "Start now and at every boot"
+    },
+    {
+      "code": "systemctl list-units --type=service --state=failed",
+      "explain": "List failed services"
+    },
+    {
+      "code": "systemctl is-active sshd",
+      "explain": "Print whether a service is active"
+    }
+  ]
+}

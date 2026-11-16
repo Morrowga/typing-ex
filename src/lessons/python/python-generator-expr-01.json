@@ -1,0 +1,32 @@
+{
+  "id": "python-generator-expr-01",
+  "category": "Python",
+  "topic": "Generator Expressions",
+  "level": 2,
+  "tags": [
+    "generators",
+    "memory"
+  ],
+  "chunks": [
+    {
+      "code": "nums = range(1_000_000)",
+      "explain": "A lazy range of a million numbers"
+    },
+    {
+      "code": "squares = (n * n for n in nums)",
+      "explain": "Parentheses make a lazy generator"
+    },
+    {
+      "code": "total = sum(squares)",
+      "explain": "Consume it without building a list"
+    },
+    {
+      "code": "print(total)",
+      "explain": "Show the sum of squares"
+    },
+    {
+      "code": "print(next(n for n in nums if n > 10))",
+      "explain": "Find the first match: 11"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "ts-template-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Template Literal Types",
+  "level": 2,
+  "tags": [
+    "template-literal",
+    "string"
+  ],
+  "chunks": [
+    {
+      "code": "type Axis = \"x\" | \"y\";",
+      "explain": "Two axes"
+    },
+    {
+      "code": "type Side = \"left\" | \"right\";",
+      "explain": "Two sides"
+    },
+    {
+      "code": "type Prop = `${Axis}-${Side}`;",
+      "explain": "Four combined strings"
+    },
+    {
+      "code": "type EventName<T extends string> = `on${Capitalize<T>}`;",
+      "explain": "Build handler names"
+    },
+    {
+      "code": "const p: Prop = \"x-left\";",
+      "explain": "A valid combination"
+    },
+    {
+      "code": "const e: EventName<\"click\"> = \"onClick\";",
+      "explain": "Typed handler name"
+    },
+    {
+      "code": "console.log(p, e);",
+      "explain": "Show values"
+    }
+  ]
+}

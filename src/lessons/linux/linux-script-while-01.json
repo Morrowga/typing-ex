@@ -1,0 +1,33 @@
+{
+  "id": "linux-script-while-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "while",
+    "read"
+  ],
+  "chunks": [
+    {
+      "code": "while read -r line; do",
+      "explain": "Read input one line at a time"
+    },
+    {
+      "code": "  echo \"> $line\"",
+      "explain": "Use the current line"
+    },
+    {
+      "code": "done < servers.txt",
+      "explain": "Feed the loop from a file"
+    },
+    {
+      "code": "i=0",
+      "explain": "Counter for a second loop"
+    },
+    {
+      "code": "while [ \"$i\" -lt 3 ]; do i=$((i+1)); echo $i; done",
+      "explain": "Count from 1 to 3"
+    }
+  ]
+}

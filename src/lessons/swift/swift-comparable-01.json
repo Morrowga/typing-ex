@@ -1,0 +1,40 @@
+{
+  "id": "swift-comparable-01",
+  "category": "Swift",
+  "topic": "Comparable",
+  "level": 2,
+  "tags": [
+    "comparable",
+    "sorted"
+  ],
+  "chunks": [
+    {
+      "code": "struct Version: Comparable {",
+      "explain": "Needs only the < operator"
+    },
+    {
+      "code": "    let major: Int, minor: Int",
+      "explain": "Two numeric parts"
+    },
+    {
+      "code": "    static func < (l: Version, r: Version) -> Bool {",
+      "explain": "Define ordering"
+    },
+    {
+      "code": "        (l.major, l.minor) < (r.major, r.minor)",
+      "explain": "Tuples compare in order"
+    },
+    {
+      "code": "    }",
+      "explain": "End the operator"
+    },
+    {
+      "code": "}",
+      "explain": "End the struct"
+    },
+    {
+      "code": "print(Version(major: 1, minor: 2) < Version(major: 1, minor: 10))",
+      "explain": "Prints true"
+    }
+  ]
+}

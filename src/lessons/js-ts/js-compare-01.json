@@ -1,0 +1,37 @@
+{
+  "id": "js-compare-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Equality",
+  "level": 1,
+  "tags": [
+    "equality",
+    "comparison"
+  ],
+  "chunks": [
+    {
+      "code": "console.log(5 === 5);",
+      "explain": "Strict equal: true"
+    },
+    {
+      "code": "console.log(\"5\" === 5);",
+      "explain": "Different types: false"
+    },
+    {
+      "code": "console.log(\"5\" == 5);",
+      "explain": "Loose equal converts: true"
+    },
+    {
+      "code": "console.log(3 !== 4);",
+      "explain": "Strict not equal: true"
+    },
+    {
+      "code": "console.log(null === undefined);",
+      "explain": "Different values: false"
+    },
+    {
+      "code": "console.log(Number.isNaN(NaN));",
+      "explain": "Safe NaN check: true"
+    }
+  ]
+}

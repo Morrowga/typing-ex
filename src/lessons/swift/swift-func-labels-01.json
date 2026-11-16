@@ -1,0 +1,36 @@
+{
+  "id": "swift-func-labels-01",
+  "category": "Swift",
+  "topic": "Argument Labels",
+  "level": 1,
+  "tags": [
+    "function",
+    "labels"
+  ],
+  "chunks": [
+    {
+      "code": "func greet(person name: String, from town: String) -> String {",
+      "explain": "Labels differ from parameter names"
+    },
+    {
+      "code": "    return \"Hi \\(name) from \\(town)\"",
+      "explain": "Use the parameter names inside"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "let msg = greet(person: \"Sam\", from: \"Leeds\")",
+      "explain": "Call using the external labels"
+    },
+    {
+      "code": "func square(_ n: Int) -> Int { n * n }",
+      "explain": "An underscore hides the label"
+    },
+    {
+      "code": "print(msg, square(6))",
+      "explain": "Call square without a label"
+    }
+  ]
+}

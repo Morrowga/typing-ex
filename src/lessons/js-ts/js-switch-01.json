@@ -1,0 +1,49 @@
+{
+  "id": "js-switch-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Conditionals",
+  "level": 1,
+  "tags": [
+    "switch",
+    "if"
+  ],
+  "chunks": [
+    {
+      "code": "const day = \"Sat\";",
+      "explain": "Pick a day"
+    },
+    {
+      "code": "switch (day) {",
+      "explain": "Compare day to cases"
+    },
+    {
+      "code": "  case \"Sat\":",
+      "explain": "Matches Saturday"
+    },
+    {
+      "code": "  case \"Sun\":",
+      "explain": "Falls through to Sunday"
+    },
+    {
+      "code": "    console.log(\"Weekend\");",
+      "explain": "Runs for both"
+    },
+    {
+      "code": "    break;",
+      "explain": "Leave the switch"
+    },
+    {
+      "code": "  default:",
+      "explain": "Anything else"
+    },
+    {
+      "code": "    console.log(\"Weekday\");",
+      "explain": "Fallback message"
+    },
+    {
+      "code": "}",
+      "explain": "End of the switch"
+    }
+  ]
+}

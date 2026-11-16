@@ -1,0 +1,32 @@
+{
+  "id": "php-json-decode-01",
+  "category": "PHP",
+  "topic": "JSON Decode",
+  "level": 2,
+  "tags": [
+    "json",
+    "decode"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$raw = '{\"name\":\"Ada\",\"langs\":[\"PHP\",\"C\"]}';",
+      "explain": "A JSON string"
+    },
+    {
+      "code": "$d = json_decode($raw, true, 512, JSON_THROW_ON_ERROR);",
+      "explain": "Decode to an array; throw on bad JSON"
+    },
+    {
+      "code": "echo $d['name'];",
+      "explain": "Prints Ada"
+    },
+    {
+      "code": "echo $d['langs'][1];",
+      "explain": "Prints C"
+    }
+  ]
+}

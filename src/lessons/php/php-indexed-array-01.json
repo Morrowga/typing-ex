@@ -1,0 +1,32 @@
+{
+  "id": "php-indexed-array-01",
+  "category": "PHP",
+  "topic": "Indexed Arrays",
+  "level": 1,
+  "tags": [
+    "array",
+    "index"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$fruits = [\"apple\", \"pear\", \"plum\"];",
+      "explain": "Create an indexed array"
+    },
+    {
+      "code": "echo $fruits[1];",
+      "explain": "Indexes start at 0, so this prints pear"
+    },
+    {
+      "code": "$fruits[] = \"kiwi\";",
+      "explain": "Append a new element"
+    },
+    {
+      "code": "echo count($fruits);",
+      "explain": "count gives the length: 4"
+    }
+  ]
+}

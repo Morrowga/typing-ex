@@ -1,0 +1,36 @@
+{
+  "id": "swift-string-methods-01",
+  "category": "Swift",
+  "topic": "String Methods",
+  "level": 1,
+  "tags": [
+    "string",
+    "methods"
+  ],
+  "chunks": [
+    {
+      "code": "let title = \"Swift Typing Practice\"",
+      "explain": "A sample string"
+    },
+    {
+      "code": "print(title.count)",
+      "explain": "Count the characters"
+    },
+    {
+      "code": "print(title.uppercased())",
+      "explain": "Convert to upper case"
+    },
+    {
+      "code": "print(title.lowercased())",
+      "explain": "Convert to lower case"
+    },
+    {
+      "code": "print(title.hasPrefix(\"Swift\"))",
+      "explain": "Does it start with Swift?"
+    },
+    {
+      "code": "print(title.contains(\"Type\"))",
+      "explain": "Does it contain Type?"
+    }
+  ]
+}

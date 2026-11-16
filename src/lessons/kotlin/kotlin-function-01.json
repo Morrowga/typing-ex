@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-function-01",
+  "category": "Kotlin",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "fun",
+    "return"
+  ],
+  "chunks": [
+    {
+      "code": "fun add(a: Int, b: Int): Int {",
+      "explain": "A function: two Ints in, an Int out"
+    },
+    {
+      "code": "    return a + b",
+      "explain": "Give back the sum"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "val total = add(2, 3)",
+      "explain": "Call it: total is 5"
+    },
+    {
+      "code": "println(total)",
+      "explain": "Show 5"
+    }
+  ]
+}

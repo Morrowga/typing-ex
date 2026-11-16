@@ -1,0 +1,37 @@
+{
+  "id": "php-pdo-select-01",
+  "category": "PHP",
+  "topic": "PDO Select",
+  "level": 2,
+  "tags": [
+    "pdo",
+    "sql",
+    "security"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$pdo = new PDO('sqlite:app.db');",
+      "explain": "Connect to a SQLite database"
+    },
+    {
+      "code": "$st = $pdo->prepare('SELECT * FROM users WHERE id = ?');",
+      "explain": "Prepared statement with a placeholder"
+    },
+    {
+      "code": "$st->execute([$_GET['id'] ?? 0]);",
+      "explain": "Bind input safely; stops SQL injection"
+    },
+    {
+      "code": "$user = $st->fetch(PDO::FETCH_ASSOC);",
+      "explain": "Fetch one row as an array"
+    },
+    {
+      "code": "echo htmlspecialchars($user['name'] ?? 'none');",
+      "explain": "Escape output"
+    }
+  ]
+}

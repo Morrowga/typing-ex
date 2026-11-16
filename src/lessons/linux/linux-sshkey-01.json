@@ -1,0 +1,32 @@
+{
+  "id": "linux-sshkey-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "ssh",
+    "keys"
+  ],
+  "chunks": [
+    {
+      "code": "ssh-keygen -t ed25519 -C \"alice@laptop\"",
+      "explain": "Generate a new ed25519 key pair"
+    },
+    {
+      "code": "ssh-copy-id alice@server.example.com",
+      "explain": "Install your public key on the server"
+    },
+    {
+      "code": "ssh-add ~/.ssh/id_ed25519",
+      "explain": "Load the key into ssh-agent"
+    },
+    {
+      "code": "chmod 600 ~/.ssh/id_ed25519",
+      "explain": "Private key must be owner-only"
+    },
+    {
+      "code": "ssh -i ~/.ssh/id_ed25519 alice@server.example.com",
+      "explain": "Log in with a specific key"
+    }
+  ]
+}

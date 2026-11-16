@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-extfun-01",
+  "category": "Kotlin",
+  "topic": "Extension Functions",
+  "level": 2,
+  "tags": [
+    "extension",
+    "fun"
+  ],
+  "chunks": [
+    {
+      "code": "fun String.isPalindrome(): Boolean {",
+      "explain": "Add a function to String"
+    },
+    {
+      "code": "    val s = this.lowercase()",
+      "explain": "this is the receiver string"
+    },
+    {
+      "code": "    return s == s.reversed()",
+      "explain": "Compare with its reverse"
+    },
+    {
+      "code": "}",
+      "explain": "End of extension"
+    },
+    {
+      "code": "val Int.double: Int get() = this * 2",
+      "explain": "An extension property"
+    },
+    {
+      "code": "println(\"Level\".isPalindrome())",
+      "explain": "Prints true"
+    },
+    {
+      "code": "println(21.double)",
+      "explain": "Prints 42"
+    }
+  ]
+}

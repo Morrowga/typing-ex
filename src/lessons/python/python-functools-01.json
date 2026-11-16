@@ -1,0 +1,32 @@
+{
+  "id": "python-functools-01",
+  "category": "Python",
+  "topic": "functools",
+  "level": 2,
+  "tags": [
+    "functools",
+    "caching"
+  ],
+  "chunks": [
+    {
+      "code": "from functools import lru_cache",
+      "explain": "Import the cache decorator"
+    },
+    {
+      "code": "@lru_cache(maxsize=None)",
+      "explain": "Remember results of past calls"
+    },
+    {
+      "code": "def fib(n):",
+      "explain": "A recursive Fibonacci function"
+    },
+    {
+      "code": "    return n if n < 2 else fib(n - 1) + fib(n - 2)",
+      "explain": "Without the cache this is very slow"
+    },
+    {
+      "code": "print(fib(80))",
+      "explain": "Fast thanks to caching"
+    }
+  ]
+}

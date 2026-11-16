@@ -1,0 +1,37 @@
+{
+  "id": "js-types-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Types",
+  "level": 1,
+  "tags": [
+    "typeof",
+    "primitives"
+  ],
+  "chunks": [
+    {
+      "code": "const count = 42;",
+      "explain": "A number"
+    },
+    {
+      "code": "const label = \"hello\";",
+      "explain": "A string"
+    },
+    {
+      "code": "const done = false;",
+      "explain": "A boolean"
+    },
+    {
+      "code": "console.log(typeof count);",
+      "explain": "Prints number"
+    },
+    {
+      "code": "console.log(typeof label, typeof done);",
+      "explain": "Prints string boolean"
+    },
+    {
+      "code": "console.log(typeof undefined);",
+      "explain": "Prints undefined"
+    }
+  ]
+}

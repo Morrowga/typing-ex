@@ -1,0 +1,32 @@
+{
+  "id": "php-array-filter-01",
+  "category": "PHP",
+  "topic": "Array Filter",
+  "level": 2,
+  "tags": [
+    "array_filter",
+    "functional"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$ages = [12, 25, 17, 40];",
+      "explain": "Sample ages"
+    },
+    {
+      "code": "$adults = array_filter($ages, fn($a) => $a >= 18);",
+      "explain": "Keep values that pass the test"
+    },
+    {
+      "code": "print_r(array_values($adults));",
+      "explain": "Reindex keys: 25 and 40"
+    },
+    {
+      "code": "echo array_sum($adults);",
+      "explain": "Sum of adults: 65"
+    }
+  ]
+}

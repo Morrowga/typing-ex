@@ -1,0 +1,32 @@
+{
+  "id": "python-comparison-01",
+  "category": "Python",
+  "topic": "Comparison and Logic",
+  "level": 1,
+  "tags": [
+    "operators",
+    "booleans"
+  ],
+  "chunks": [
+    {
+      "code": "temp = 22",
+      "explain": "Current temperature"
+    },
+    {
+      "code": "raining = False",
+      "explain": "Is it raining?"
+    },
+    {
+      "code": "warm = temp > 20 and temp < 30",
+      "explain": "Both conditions must be true"
+    },
+    {
+      "code": "go_out = warm and not raining",
+      "explain": "Combine with not"
+    },
+    {
+      "code": "print(go_out, temp == 22, temp != 22)",
+      "explain": "Show True True False"
+    }
+  ]
+}

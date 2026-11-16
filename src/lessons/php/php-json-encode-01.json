@@ -1,0 +1,32 @@
+{
+  "id": "php-json-encode-01",
+  "category": "PHP",
+  "topic": "JSON Encode",
+  "level": 2,
+  "tags": [
+    "json",
+    "encode"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$data = ['id' => 7, 'tags' => ['a', 'b'], 'ok' => true];",
+      "explain": "Nested PHP array"
+    },
+    {
+      "code": "$json = json_encode($data, JSON_PRETTY_PRINT);",
+      "explain": "Convert to a formatted JSON string"
+    },
+    {
+      "code": "header('Content-Type: application/json');",
+      "explain": "Tell the client it is JSON"
+    },
+    {
+      "code": "echo $json;",
+      "explain": "Send the JSON"
+    }
+  ]
+}

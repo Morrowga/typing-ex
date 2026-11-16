@@ -1,0 +1,32 @@
+{
+  "id": "git-bundle-01",
+  "category": "Git",
+  "topic": "Bundle",
+  "level": 2,
+  "tags": [
+    "bundle",
+    "offline"
+  ],
+  "chunks": [
+    {
+      "code": "git bundle create repo.bundle --all",
+      "explain": "Pack all refs into a single file"
+    },
+    {
+      "code": "git bundle verify repo.bundle",
+      "explain": "Check that the bundle is valid"
+    },
+    {
+      "code": "git clone repo.bundle restored",
+      "explain": "Clone from the bundle file"
+    },
+    {
+      "code": "git bundle create last.bundle main~5..main",
+      "explain": "Bundle only recent commits"
+    },
+    {
+      "code": "git pull ../last.bundle main",
+      "explain": "Fetch from a bundle file"
+    }
+  ]
+}

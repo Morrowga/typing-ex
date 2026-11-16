@@ -1,0 +1,36 @@
+{
+  "id": "python-try-except-01",
+  "category": "Python",
+  "topic": "Try and Except",
+  "level": 1,
+  "tags": [
+    "errors",
+    "try"
+  ],
+  "chunks": [
+    {
+      "code": "raw = \"forty\"",
+      "explain": "A value that is not a number"
+    },
+    {
+      "code": "try:",
+      "explain": "Start a block that may fail"
+    },
+    {
+      "code": "    number = int(raw)",
+      "explain": "This raises ValueError"
+    },
+    {
+      "code": "except ValueError:",
+      "explain": "Catch that specific error"
+    },
+    {
+      "code": "    number = 0",
+      "explain": "Use a safe default instead"
+    },
+    {
+      "code": "print(number)",
+      "explain": "Show the result: 0"
+    }
+  ]
+}

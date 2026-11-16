@@ -1,0 +1,37 @@
+{
+  "id": "swift-codable-01",
+  "category": "Swift",
+  "topic": "Codable",
+  "level": 2,
+  "tags": [
+    "codable",
+    "json",
+    "foundation"
+  ],
+  "chunks": [
+    {
+      "code": "import Foundation",
+      "explain": "JSONEncoder comes from Foundation"
+    },
+    {
+      "code": "struct Song: Codable { let title: String; let year: Int }",
+      "explain": "Codable gives free JSON support"
+    },
+    {
+      "code": "let song = Song(title: \"Echo\", year: 1999)",
+      "explain": "Make a value"
+    },
+    {
+      "code": "let data = try JSONEncoder().encode(song)",
+      "explain": "Encode into JSON data"
+    },
+    {
+      "code": "let back = try JSONDecoder().decode(Song.self, from: data)",
+      "explain": "Decode it again"
+    },
+    {
+      "code": "print(back.title)",
+      "explain": "Prints Echo"
+    }
+  ]
+}

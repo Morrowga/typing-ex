@@ -1,0 +1,33 @@
+{
+  "id": "linux-loganalysis-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "logs",
+    "awk",
+    "sort"
+  ],
+  "chunks": [
+    {
+      "code": "awk '{print $1}' access.log | sort | uniq -c | sort -rn | head",
+      "explain": "Top client IPs"
+    },
+    {
+      "code": "awk '{print $9}' access.log | sort | uniq -c",
+      "explain": "Count HTTP status codes"
+    },
+    {
+      "code": "grep ' 500 ' access.log | wc -l",
+      "explain": "How many server errors"
+    },
+    {
+      "code": "awk '$9 == 404 {print $7}' access.log | sort -u",
+      "explain": "Distinct missing URLs"
+    },
+    {
+      "code": "cut -d' ' -f4 access.log | cut -c2-15 | uniq -c",
+      "explain": "Requests per hour"
+    }
+  ]
+}

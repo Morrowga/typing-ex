@@ -1,0 +1,28 @@
+{
+  "id": "php-cookies-01",
+  "category": "PHP",
+  "topic": "Cookies",
+  "level": 1,
+  "tags": [
+    "cookie",
+    "state"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "setcookie(\"theme\", \"dark\", time() + 3600);",
+      "explain": "Set a cookie valid for one hour"
+    },
+    {
+      "code": "$theme = $_COOKIE[\"theme\"] ?? \"light\";",
+      "explain": "Read it on later requests"
+    },
+    {
+      "code": "echo $theme;",
+      "explain": "Prints the theme"
+    }
+  ]
+}

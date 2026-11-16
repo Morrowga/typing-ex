@@ -1,0 +1,37 @@
+{
+  "id": "php-attributes-01",
+  "category": "PHP",
+  "topic": "Attributes",
+  "level": 2,
+  "tags": [
+    "php8",
+    "attributes",
+    "reflection"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "#[Attribute]",
+      "explain": "Marks the class below as an attribute"
+    },
+    {
+      "code": "class Route { public function __construct(public string $path) {} }",
+      "explain": "Attribute holding a path"
+    },
+    {
+      "code": "#[Route('/home')]",
+      "explain": "Attach metadata to a class"
+    },
+    {
+      "code": "class HomeCtl {}",
+      "explain": "The annotated class"
+    },
+    {
+      "code": "echo (new ReflectionClass('HomeCtl'))->getAttributes()[0]->newInstance()->path;",
+      "explain": "Read via reflection: /home"
+    }
+  ]
+}

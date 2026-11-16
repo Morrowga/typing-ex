@@ -1,0 +1,36 @@
+{
+  "id": "php-array-push-01",
+  "category": "PHP",
+  "topic": "Array Push Pop",
+  "level": 1,
+  "tags": [
+    "array",
+    "stack"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$stack = [\"a\", \"b\"];",
+      "explain": "Start with two items"
+    },
+    {
+      "code": "array_push($stack, \"c\");",
+      "explain": "Add to the end"
+    },
+    {
+      "code": "$last = array_pop($stack);",
+      "explain": "Remove and return the last item"
+    },
+    {
+      "code": "array_unshift($stack, \"z\");",
+      "explain": "Add to the front"
+    },
+    {
+      "code": "echo implode(\",\", $stack);",
+      "explain": "Prints z,a,b"
+    }
+  ]
+}

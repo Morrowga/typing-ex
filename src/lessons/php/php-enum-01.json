@@ -1,0 +1,40 @@
+{
+  "id": "php-enum-01",
+  "category": "PHP",
+  "topic": "Enums",
+  "level": 2,
+  "tags": [
+    "php8",
+    "enum"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "enum Suit: string {",
+      "explain": "A backed enum with string values"
+    },
+    {
+      "code": "    case Hearts = 'H';",
+      "explain": "One case and its value"
+    },
+    {
+      "code": "    case Spades = 'S';",
+      "explain": "Another case"
+    },
+    {
+      "code": "}",
+      "explain": "End of enum"
+    },
+    {
+      "code": "echo Suit::from('S')->name;",
+      "explain": "Look up by value: Spades"
+    },
+    {
+      "code": "var_dump(Suit::tryFrom('X'));",
+      "explain": "tryFrom returns null if missing"
+    }
+  ]
+}

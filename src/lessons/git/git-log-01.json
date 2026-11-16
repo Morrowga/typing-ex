@@ -1,0 +1,32 @@
+{
+  "id": "git-log-01",
+  "category": "Git",
+  "topic": "Log",
+  "level": 1,
+  "tags": [
+    "log",
+    "history"
+  ],
+  "chunks": [
+    {
+      "code": "git log",
+      "explain": "Full history, newest first"
+    },
+    {
+      "code": "git log --oneline",
+      "explain": "One line per commit"
+    },
+    {
+      "code": "git log --oneline --graph --all",
+      "explain": "Draw branches as an ASCII graph"
+    },
+    {
+      "code": "git log -n 3",
+      "explain": "Show only three commits"
+    },
+    {
+      "code": "git log --stat",
+      "explain": "Show changed files per commit"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "swift-result-01",
+  "category": "Swift",
+  "topic": "Result Type",
+  "level": 2,
+  "tags": [
+    "result",
+    "error",
+    "switch"
+  ],
+  "chunks": [
+    {
+      "code": "enum ParseError: Error { case notANumber }",
+      "explain": "A simple error"
+    },
+    {
+      "code": "func parse(_ s: String) -> Result<Int, ParseError> {",
+      "explain": "Returns success or failure"
+    },
+    {
+      "code": "    if let n = Int(s) { return .success(n) } else { return .failure(.notANumber) }",
+      "explain": "Succeed or fail"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "switch parse(\"12\") {",
+      "explain": "Inspect the result"
+    },
+    {
+      "code": "case .success(let n): print(n)",
+      "explain": "Use the value"
+    },
+    {
+      "code": "case .failure(let e): print(e)",
+      "explain": "Handle the error"
+    },
+    {
+      "code": "}",
+      "explain": "End the switch"
+    }
+  ]
+}

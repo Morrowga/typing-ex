@@ -1,0 +1,32 @@
+{
+  "id": "linux-curl-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "curl",
+    "wget"
+  ],
+  "chunks": [
+    {
+      "code": "curl https://example.com",
+      "explain": "Fetch a page and print it"
+    },
+    {
+      "code": "curl -O https://example.com/file.zip",
+      "explain": "Download keeping the remote file name"
+    },
+    {
+      "code": "curl -I https://example.com",
+      "explain": "Show only the response headers"
+    },
+    {
+      "code": "curl -o page.html https://example.com",
+      "explain": "Save output to a chosen file"
+    },
+    {
+      "code": "wget https://example.com/data.csv",
+      "explain": "Download a file with wget"
+    }
+  ]
+}

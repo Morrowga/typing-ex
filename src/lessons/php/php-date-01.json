@@ -1,0 +1,32 @@
+{
+  "id": "php-date-01",
+  "category": "PHP",
+  "topic": "Date",
+  "level": 1,
+  "tags": [
+    "date",
+    "time"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "echo date(\"Y-m-d\");",
+      "explain": "Today as 2026-11-16 style"
+    },
+    {
+      "code": "echo date(\"H:i\");",
+      "explain": "Current time, 24-hour"
+    },
+    {
+      "code": "$ts = strtotime(\"2024-03-15\");",
+      "explain": "Parse a date into a timestamp"
+    },
+    {
+      "code": "echo date(\"D, d M Y\", $ts);",
+      "explain": "Prints Fri, 15 Mar 2024"
+    }
+  ]
+}

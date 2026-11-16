@@ -1,0 +1,28 @@
+{
+  "id": "php-sessions-01",
+  "category": "PHP",
+  "topic": "Sessions",
+  "level": 1,
+  "tags": [
+    "session",
+    "state"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "session_start();",
+      "explain": "Start or resume the session"
+    },
+    {
+      "code": "$_SESSION[\"visits\"] = ($_SESSION[\"visits\"] ?? 0) + 1;",
+      "explain": "Count page visits"
+    },
+    {
+      "code": "echo \"Visits: \" . $_SESSION[\"visits\"];",
+      "explain": "Show the stored count"
+    }
+  ]
+}

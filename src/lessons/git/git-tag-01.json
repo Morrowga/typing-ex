@@ -1,0 +1,32 @@
+{
+  "id": "git-tag-01",
+  "category": "Git",
+  "topic": "Tags",
+  "level": 1,
+  "tags": [
+    "tag",
+    "release"
+  ],
+  "chunks": [
+    {
+      "code": "git tag v1.0.0",
+      "explain": "Lightweight tag at HEAD"
+    },
+    {
+      "code": "git tag -a v1.1.0 -m \"Release 1.1.0\"",
+      "explain": "Annotated tag with a message"
+    },
+    {
+      "code": "git tag",
+      "explain": "List all tags"
+    },
+    {
+      "code": "git push origin v1.1.0",
+      "explain": "Push one tag to origin"
+    },
+    {
+      "code": "git tag -d v1.0.0",
+      "explain": "Delete a local tag"
+    }
+  ]
+}

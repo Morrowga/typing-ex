@@ -1,0 +1,32 @@
+{
+  "id": "python-imports-01",
+  "category": "Python",
+  "topic": "Imports",
+  "level": 1,
+  "tags": [
+    "modules",
+    "import"
+  ],
+  "chunks": [
+    {
+      "code": "import math",
+      "explain": "Load the math module"
+    },
+    {
+      "code": "from random import randint",
+      "explain": "Import one function from random"
+    },
+    {
+      "code": "print(math.sqrt(81))",
+      "explain": "Square root: 9.0"
+    },
+    {
+      "code": "print(math.pi)",
+      "explain": "The constant pi"
+    },
+    {
+      "code": "print(randint(1, 6))",
+      "explain": "Roll a die with a random number"
+    }
+  ]
+}

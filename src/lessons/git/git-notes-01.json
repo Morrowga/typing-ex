@@ -1,0 +1,32 @@
+{
+  "id": "git-notes-01",
+  "category": "Git",
+  "topic": "Notes",
+  "level": 2,
+  "tags": [
+    "notes",
+    "metadata"
+  ],
+  "chunks": [
+    {
+      "code": "git notes add -m \"Reviewed by Sam\" HEAD",
+      "explain": "Attach a note to a commit"
+    },
+    {
+      "code": "git notes show HEAD",
+      "explain": "Print the note"
+    },
+    {
+      "code": "git log --show-notes",
+      "explain": "Show notes in the log"
+    },
+    {
+      "code": "git push origin refs/notes/commits",
+      "explain": "Notes are not pushed by default"
+    },
+    {
+      "code": "git notes remove HEAD",
+      "explain": "Delete the note"
+    }
+  ]
+}

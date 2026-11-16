@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-map-01",
+  "category": "Kotlin",
+  "topic": "Maps",
+  "level": 1,
+  "tags": [
+    "map",
+    "collections"
+  ],
+  "chunks": [
+    {
+      "code": "val ages = mapOf(\"Ann\" to 31, \"Bob\" to 25)",
+      "explain": "Create a map from key to value pairs"
+    },
+    {
+      "code": "println(ages[\"Ann\"])",
+      "explain": "Look up a value by key"
+    },
+    {
+      "code": "println(ages.getOrDefault(\"Zed\", 0))",
+      "explain": "Use a default when the key is missing"
+    },
+    {
+      "code": "println(ages.keys)",
+      "explain": "All the keys"
+    },
+    {
+      "code": "println(ages.values)",
+      "explain": "All the values"
+    },
+    {
+      "code": "println(ages.containsKey(\"Bob\"))",
+      "explain": "Does the key exist?"
+    }
+  ]
+}

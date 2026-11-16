@@ -1,0 +1,32 @@
+{
+  "id": "git-add-02",
+  "category": "Git",
+  "topic": "Staging",
+  "level": 1,
+  "tags": [
+    "add",
+    "patch"
+  ],
+  "chunks": [
+    {
+      "code": "git add -p",
+      "explain": "Pick changes hunk by hunk"
+    },
+    {
+      "code": "git add -u",
+      "explain": "Stage only tracked files that changed"
+    },
+    {
+      "code": "git add -N newfile.txt",
+      "explain": "Mark a new file as intent-to-add"
+    },
+    {
+      "code": "git diff --staged",
+      "explain": "Review what is staged"
+    },
+    {
+      "code": "git restore --staged newfile.txt",
+      "explain": "Unstage the file again"
+    }
+  ]
+}

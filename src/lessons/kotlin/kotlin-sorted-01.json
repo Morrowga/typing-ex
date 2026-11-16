@@ -1,0 +1,37 @@
+{
+  "id": "kotlin-sorted-01",
+  "category": "Kotlin",
+  "topic": "Sorting and Partition",
+  "level": 2,
+  "tags": [
+    "collections",
+    "sort",
+    "partition"
+  ],
+  "chunks": [
+    {
+      "code": "data class Item(val name: String, val price: Int)",
+      "explain": "A simple data class"
+    },
+    {
+      "code": "val items = listOf(Item(\"pen\", 3), Item(\"book\", 12), Item(\"cup\", 7))",
+      "explain": "Sample items"
+    },
+    {
+      "code": "val cheap = items.sortedBy { it.price }",
+      "explain": "Ascending by price"
+    },
+    {
+      "code": "val dear = items.sortedByDescending { it.price }",
+      "explain": "Descending by price"
+    },
+    {
+      "code": "val (low, high) = items.partition { it.price < 8 }",
+      "explain": "Split into two lists"
+    },
+    {
+      "code": "println(low.map { it.name })",
+      "explain": "Prints [pen, cup]"
+    }
+  ]
+}

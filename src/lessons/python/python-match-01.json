@@ -1,0 +1,44 @@
+{
+  "id": "python-match-01",
+  "category": "Python",
+  "topic": "match Statement",
+  "level": 2,
+  "tags": [
+    "match",
+    "patterns"
+  ],
+  "chunks": [
+    {
+      "code": "def describe(cmd):",
+      "explain": "Describe a command value"
+    },
+    {
+      "code": "    match cmd:",
+      "explain": "Match against patterns"
+    },
+    {
+      "code": "        case [\"go\", direction]:",
+      "explain": "A two-item list starting with go"
+    },
+    {
+      "code": "            return f\"moving {direction}\"",
+      "explain": "Use the captured value"
+    },
+    {
+      "code": "        case {\"quit\": True}:",
+      "explain": "A dict containing quit: True"
+    },
+    {
+      "code": "            return \"bye\"",
+      "explain": "Leave the program"
+    },
+    {
+      "code": "        case _:",
+      "explain": "The wildcard fallback"
+    },
+    {
+      "code": "            return \"unknown\"",
+      "explain": "Nothing matched"
+    }
+  ]
+}

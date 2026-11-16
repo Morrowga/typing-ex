@@ -1,0 +1,32 @@
+{
+  "id": "git-rebase-02",
+  "category": "Git",
+  "topic": "Rebase",
+  "level": 2,
+  "tags": [
+    "rebase",
+    "onto"
+  ],
+  "chunks": [
+    {
+      "code": "git switch feature/search",
+      "explain": "Go to the feature branch"
+    },
+    {
+      "code": "git fetch origin",
+      "explain": "Get the latest remote commits"
+    },
+    {
+      "code": "git rebase origin/main",
+      "explain": "Replay your commits on top of main"
+    },
+    {
+      "code": "git rebase --continue",
+      "explain": "Resume after fixing a conflict"
+    },
+    {
+      "code": "git rebase --abort",
+      "explain": "Give up and restore the original state"
+    }
+  ]
+}

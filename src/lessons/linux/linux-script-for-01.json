@@ -1,0 +1,28 @@
+{
+  "id": "linux-script-for-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "for"
+  ],
+  "chunks": [
+    {
+      "code": "for f in *.txt; do",
+      "explain": "Loop over every .txt file"
+    },
+    {
+      "code": "  echo \"Processing $f\"",
+      "explain": "Quote variables to keep spaces safe"
+    },
+    {
+      "code": "  wc -l \"$f\"",
+      "explain": "Count lines in each file"
+    },
+    {
+      "code": "done",
+      "explain": "End of the loop"
+    }
+  ]
+}

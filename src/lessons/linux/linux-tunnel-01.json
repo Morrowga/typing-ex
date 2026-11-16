@@ -1,0 +1,32 @@
+{
+  "id": "linux-tunnel-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "ssh",
+    "tunnel"
+  ],
+  "chunks": [
+    {
+      "code": "ssh -L 5433:localhost:5432 alice@db-host",
+      "explain": "Forward local 5433 to remote Postgres"
+    },
+    {
+      "code": "ssh -N -f -L 8080:localhost:80 alice@web",
+      "explain": "Tunnel in the background, no shell"
+    },
+    {
+      "code": "ssh -R 9000:localhost:3000 alice@vps",
+      "explain": "Expose local port 3000 on the server"
+    },
+    {
+      "code": "ssh -D 1080 alice@vps",
+      "explain": "Open a SOCKS proxy on port 1080"
+    },
+    {
+      "code": "ssh -J jump@bastion alice@internal",
+      "explain": "Hop through a bastion host"
+    }
+  ]
+}

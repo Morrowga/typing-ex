@@ -1,0 +1,40 @@
+{
+  "id": "swift-protocol-01",
+  "category": "Swift",
+  "topic": "Protocols",
+  "level": 2,
+  "tags": [
+    "protocol",
+    "polymorphism"
+  ],
+  "chunks": [
+    {
+      "code": "protocol Speaker {",
+      "explain": "Declare a requirement"
+    },
+    {
+      "code": "    func speak() -> String",
+      "explain": "Types must provide this method"
+    },
+    {
+      "code": "}",
+      "explain": "End the protocol"
+    },
+    {
+      "code": "struct Dog: Speaker { func speak() -> String { \"Woof\" } }",
+      "explain": "Dog conforms to Speaker"
+    },
+    {
+      "code": "struct Cat: Speaker { func speak() -> String { \"Meow\" } }",
+      "explain": "Cat conforms too"
+    },
+    {
+      "code": "let pets: [any Speaker] = [Dog(), Cat()]",
+      "explain": "Store different types together"
+    },
+    {
+      "code": "for pet in pets { print(pet.speak()) }",
+      "explain": "Call through the protocol"
+    }
+  ]
+}

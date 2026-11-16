@@ -1,0 +1,40 @@
+{
+  "id": "swift-struct-01",
+  "category": "Swift",
+  "topic": "Structs",
+  "level": 1,
+  "tags": [
+    "struct",
+    "type"
+  ],
+  "chunks": [
+    {
+      "code": "struct Book {",
+      "explain": "Define a value type"
+    },
+    {
+      "code": "    var title: String",
+      "explain": "A stored property"
+    },
+    {
+      "code": "    var pages: Int",
+      "explain": "Another stored property"
+    },
+    {
+      "code": "}",
+      "explain": "End the struct"
+    },
+    {
+      "code": "var novel = Book(title: \"Dune\", pages: 412)",
+      "explain": "Free memberwise initializer"
+    },
+    {
+      "code": "novel.pages = 500",
+      "explain": "Change a property"
+    },
+    {
+      "code": "print(novel.title, novel.pages)",
+      "explain": "Show both properties"
+    }
+  ]
+}

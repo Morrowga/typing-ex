@@ -1,0 +1,32 @@
+{
+  "id": "python-tuples-01",
+  "category": "Python",
+  "topic": "Tuples",
+  "level": 1,
+  "tags": [
+    "tuples",
+    "unpacking"
+  ],
+  "chunks": [
+    {
+      "code": "point = (10, 20)",
+      "explain": "A tuple is a fixed group of values"
+    },
+    {
+      "code": "x, y = point",
+      "explain": "Unpack the tuple into two variables"
+    },
+    {
+      "code": "print(x, y)",
+      "explain": "Show the unpacked values: 10 20"
+    },
+    {
+      "code": "print(point[0])",
+      "explain": "Access a tuple item by index"
+    },
+    {
+      "code": "single = (5,)",
+      "explain": "A one-item tuple needs a trailing comma"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "git-log-02",
+  "category": "Git",
+  "topic": "Log",
+  "level": 1,
+  "tags": [
+    "log",
+    "filter"
+  ],
+  "chunks": [
+    {
+      "code": "git log --author=\"Ada\"",
+      "explain": "Commits by an author"
+    },
+    {
+      "code": "git log --since=\"2 weeks ago\"",
+      "explain": "Commits from the last two weeks"
+    },
+    {
+      "code": "git log --grep=\"fix\"",
+      "explain": "Commits whose message mentions fix"
+    },
+    {
+      "code": "git log -- src/app.js",
+      "explain": "History of a single file"
+    },
+    {
+      "code": "git log -p -1",
+      "explain": "Last commit with its full patch"
+    }
+  ]
+}

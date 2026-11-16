@@ -1,0 +1,32 @@
+{
+  "id": "git-commit-01",
+  "category": "Git",
+  "topic": "Commit",
+  "level": 1,
+  "tags": [
+    "commit",
+    "message"
+  ],
+  "chunks": [
+    {
+      "code": "git commit -m \"Add search bar\"",
+      "explain": "Commit staged changes with a message"
+    },
+    {
+      "code": "git commit -am \"Fix typo in header\"",
+      "explain": "Stage tracked changes and commit"
+    },
+    {
+      "code": "git commit -m \"Add cart\" -m \"Includes quantity update\"",
+      "explain": "Add a subject and a body paragraph"
+    },
+    {
+      "code": "git commit --allow-empty -m \"Trigger CI\"",
+      "explain": "Make a commit with no changes"
+    },
+    {
+      "code": "git log --oneline -3",
+      "explain": "Verify the new commits"
+    }
+  ]
+}

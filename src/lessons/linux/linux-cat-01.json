@@ -1,0 +1,32 @@
+{
+  "id": "linux-cat-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "cat",
+    "echo"
+  ],
+  "chunks": [
+    {
+      "code": "cat hosts.txt",
+      "explain": "Print a file to the screen"
+    },
+    {
+      "code": "cat -n app.py",
+      "explain": "Print with line numbers"
+    },
+    {
+      "code": "cat a.txt b.txt",
+      "explain": "Print two files one after another"
+    },
+    {
+      "code": "cat a.txt b.txt > all.txt",
+      "explain": "Join two files into all.txt"
+    },
+    {
+      "code": "cat > todo.txt",
+      "explain": "Write typed text into a file; end with Ctrl-D"
+    }
+  ]
+}

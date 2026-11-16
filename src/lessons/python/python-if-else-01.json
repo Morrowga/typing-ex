@@ -1,0 +1,44 @@
+{
+  "id": "python-if-else-01",
+  "category": "Python",
+  "topic": "If Elif Else",
+  "level": 1,
+  "tags": [
+    "conditions",
+    "if"
+  ],
+  "chunks": [
+    {
+      "code": "score = 82",
+      "explain": "The score to grade"
+    },
+    {
+      "code": "if score >= 90:",
+      "explain": "Check the top grade first"
+    },
+    {
+      "code": "    grade = \"A\"",
+      "explain": "Runs when score is 90 or more"
+    },
+    {
+      "code": "elif score >= 80:",
+      "explain": "Otherwise check for 80 or more"
+    },
+    {
+      "code": "    grade = \"B\"",
+      "explain": "Runs for scores from 80 to 89"
+    },
+    {
+      "code": "else:",
+      "explain": "Everything else"
+    },
+    {
+      "code": "    grade = \"C\"",
+      "explain": "Fallback grade"
+    },
+    {
+      "code": "print(grade)",
+      "explain": "Show the result: B"
+    }
+  ]
+}

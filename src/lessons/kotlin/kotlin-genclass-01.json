@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-genclass-01",
+  "category": "Kotlin",
+  "topic": "Generic Classes",
+  "level": 2,
+  "tags": [
+    "generics",
+    "class"
+  ],
+  "chunks": [
+    {
+      "code": "class Box<T>(private var value: T) {",
+      "explain": "A box of any type T"
+    },
+    {
+      "code": "    fun get(): T = value",
+      "explain": "Read the value"
+    },
+    {
+      "code": "    fun set(v: T) { value = v }",
+      "explain": "Replace the value"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "val b = Box(10)",
+      "explain": "T is inferred as Int"
+    },
+    {
+      "code": "b.set(11)",
+      "explain": "Store a new Int"
+    },
+    {
+      "code": "println(b.get())",
+      "explain": "Prints 11"
+    }
+  ]
+}

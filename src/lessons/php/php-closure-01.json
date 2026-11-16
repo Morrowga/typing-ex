@@ -1,0 +1,40 @@
+{
+  "id": "php-closure-01",
+  "category": "PHP",
+  "topic": "Closures",
+  "level": 2,
+  "tags": [
+    "closure",
+    "scope"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$count = 0;",
+      "explain": "State outside the closure"
+    },
+    {
+      "code": "$inc = function () use (&$count) {",
+      "explain": "use (&$count) captures by reference"
+    },
+    {
+      "code": "    $count++;",
+      "explain": "Changes the outer variable"
+    },
+    {
+      "code": "};",
+      "explain": "End of closure"
+    },
+    {
+      "code": "$inc(); $inc();",
+      "explain": "Call it twice"
+    },
+    {
+      "code": "echo $count;",
+      "explain": "Prints 2"
+    }
+  ]
+}

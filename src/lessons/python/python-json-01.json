@@ -1,0 +1,32 @@
+{
+  "id": "python-json-01",
+  "category": "Python",
+  "topic": "JSON",
+  "level": 2,
+  "tags": [
+    "json",
+    "serialization"
+  ],
+  "chunks": [
+    {
+      "code": "import json",
+      "explain": "Import the json module"
+    },
+    {
+      "code": "config = {\"debug\": True, \"ports\": [80, 443]}",
+      "explain": "A Python dict to save"
+    },
+    {
+      "code": "text = json.dumps(config, indent=2)",
+      "explain": "Convert it to a JSON string"
+    },
+    {
+      "code": "back = json.loads(text)",
+      "explain": "Parse the string back into a dict"
+    },
+    {
+      "code": "print(back[\"ports\"][1])",
+      "explain": "Prints 443"
+    }
+  ]
+}

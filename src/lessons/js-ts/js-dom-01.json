@@ -1,0 +1,37 @@
+{
+  "id": "js-dom-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "DOM Basics",
+  "level": 1,
+  "tags": [
+    "dom",
+    "events"
+  ],
+  "chunks": [
+    {
+      "code": "const btn = document.querySelector(\"#save\");",
+      "explain": "Find the button"
+    },
+    {
+      "code": "const out = document.querySelector(\".output\");",
+      "explain": "Find the output box"
+    },
+    {
+      "code": "btn.addEventListener(\"click\", () => {",
+      "explain": "Run code on click"
+    },
+    {
+      "code": "  out.textContent = \"Saved!\";",
+      "explain": "Change the text"
+    },
+    {
+      "code": "  out.classList.add(\"visible\");",
+      "explain": "Add a CSS class"
+    },
+    {
+      "code": "});",
+      "explain": "End of the handler"
+    }
+  ]
+}

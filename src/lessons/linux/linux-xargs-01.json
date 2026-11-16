@@ -1,0 +1,32 @@
+{
+  "id": "linux-xargs-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "xargs",
+    "find"
+  ],
+  "chunks": [
+    {
+      "code": "find . -name '*.tmp' | xargs ls -l",
+      "explain": "Pass found files to ls"
+    },
+    {
+      "code": "find . -name '*.log' -print0 | xargs -0 wc -l",
+      "explain": "Handle odd filenames safely"
+    },
+    {
+      "code": "echo a b c | xargs -n 1 echo",
+      "explain": "Run the command once per argument"
+    },
+    {
+      "code": "cat urls.txt | xargs -P 4 -n 1 curl -sO",
+      "explain": "Download 4 files in parallel"
+    },
+    {
+      "code": "grep -rl TODO src | xargs sed -i 's/TODO/DONE/'",
+      "explain": "Edit every matching file"
+    }
+  ]
+}

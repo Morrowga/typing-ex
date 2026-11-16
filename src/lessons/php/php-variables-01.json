@@ -1,0 +1,36 @@
+{
+  "id": "php-variables-01",
+  "category": "PHP",
+  "topic": "Variables",
+  "level": 1,
+  "tags": [
+    "variables",
+    "types"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$city = \"Paris\";",
+      "explain": "Variables start with $; this holds a string"
+    },
+    {
+      "code": "$year = 2024;",
+      "explain": "An integer variable"
+    },
+    {
+      "code": "$temp = 18.5;",
+      "explain": "A float variable"
+    },
+    {
+      "code": "$open = true;",
+      "explain": "A boolean variable"
+    },
+    {
+      "code": "echo \"$city $year\";",
+      "explain": "Variables expand inside double quotes"
+    }
+  ]
+}

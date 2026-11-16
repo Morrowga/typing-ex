@@ -1,0 +1,41 @@
+{
+  "id": "swift-actor-01",
+  "category": "Swift",
+  "topic": "Actors",
+  "level": 2,
+  "tags": [
+    "actor",
+    "concurrency",
+    "isolation"
+  ],
+  "chunks": [
+    {
+      "code": "actor Bank {",
+      "explain": "Actors protect their own state"
+    },
+    {
+      "code": "    private var balance = 0",
+      "explain": "Only accessible through the actor"
+    },
+    {
+      "code": "    func deposit(_ amount: Int) { balance += amount }",
+      "explain": "Safe state change"
+    },
+    {
+      "code": "    func current() -> Int { balance }",
+      "explain": "Read the balance"
+    },
+    {
+      "code": "}",
+      "explain": "End the actor"
+    },
+    {
+      "code": "let bank = Bank()",
+      "explain": "Create an actor"
+    },
+    {
+      "code": "Task { await bank.deposit(50) }",
+      "explain": "Calls into an actor need await"
+    }
+  ]
+}

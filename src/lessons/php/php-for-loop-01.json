@@ -1,0 +1,28 @@
+{
+  "id": "php-for-loop-01",
+  "category": "PHP",
+  "topic": "For Loop",
+  "level": 1,
+  "tags": [
+    "loop",
+    "for"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "for ($i = 1; $i <= 5; $i++) {",
+      "explain": "Start at 1, run while i <= 5, add 1 each time"
+    },
+    {
+      "code": "    echo $i * $i . \" \";",
+      "explain": "Print the square of i"
+    },
+    {
+      "code": "}",
+      "explain": "Output: 1 4 9 16 25"
+    }
+  ]
+}

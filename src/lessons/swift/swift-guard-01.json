@@ -1,0 +1,41 @@
+{
+  "id": "swift-guard-01",
+  "category": "Swift",
+  "topic": "Guard and If Let",
+  "level": 2,
+  "tags": [
+    "guard",
+    "optional",
+    "early-exit"
+  ],
+  "chunks": [
+    {
+      "code": "func describe(_ input: String?) -> String {",
+      "explain": "Takes an optional string"
+    },
+    {
+      "code": "    guard let text = input, !text.isEmpty else {",
+      "explain": "Unwrap and check, or exit early"
+    },
+    {
+      "code": "        return \"empty\"",
+      "explain": "Leave when the guard fails"
+    },
+    {
+      "code": "    }",
+      "explain": "End the guard"
+    },
+    {
+      "code": "    return \"got \\(text)\"",
+      "explain": "text is usable here"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "print(describe(nil), describe(\"hi\"))",
+      "explain": "Try both cases"
+    }
+  ]
+}

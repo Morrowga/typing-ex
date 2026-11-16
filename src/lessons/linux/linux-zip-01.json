@@ -1,0 +1,36 @@
+{
+  "id": "linux-zip-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "zip",
+    "unzip"
+  ],
+  "chunks": [
+    {
+      "code": "zip photos.zip a.jpg b.jpg",
+      "explain": "Zip two files together"
+    },
+    {
+      "code": "zip -r project.zip project",
+      "explain": "Zip a whole folder"
+    },
+    {
+      "code": "unzip -l project.zip",
+      "explain": "List the zip contents"
+    },
+    {
+      "code": "unzip project.zip -d out",
+      "explain": "Extract into the out folder"
+    },
+    {
+      "code": "gzip notes.txt",
+      "explain": "Compress a file to notes.txt.gz"
+    },
+    {
+      "code": "gunzip notes.txt.gz",
+      "explain": "Decompress it again"
+    }
+  ]
+}

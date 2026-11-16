@@ -1,0 +1,41 @@
+{
+  "id": "swift-closure-capture-01",
+  "category": "Swift",
+  "topic": "Capture Lists",
+  "level": 2,
+  "tags": [
+    "closure",
+    "capture",
+    "weak"
+  ],
+  "chunks": [
+    {
+      "code": "class Timer {",
+      "explain": "A class that stores a callback"
+    },
+    {
+      "code": "    var onTick: (() -> Void)?",
+      "explain": "An optional closure property"
+    },
+    {
+      "code": "    var ticks = 0",
+      "explain": "Count of ticks"
+    },
+    {
+      "code": "    func start() {",
+      "explain": "Install the callback"
+    },
+    {
+      "code": "        onTick = { [weak self] in self?.ticks += 1 }",
+      "explain": "Weak capture prevents a cycle"
+    },
+    {
+      "code": "    }",
+      "explain": "End the method"
+    },
+    {
+      "code": "}",
+      "explain": "End the class"
+    }
+  ]
+}

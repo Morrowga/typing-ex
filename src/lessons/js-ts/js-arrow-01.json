@@ -1,0 +1,37 @@
+{
+  "id": "js-arrow-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Arrow Functions",
+  "level": 1,
+  "tags": [
+    "arrow",
+    "function"
+  ],
+  "chunks": [
+    {
+      "code": "const double = (n) => n * 2;",
+      "explain": "Arrow with implicit return"
+    },
+    {
+      "code": "const greet = name => `Hi ${name}`;",
+      "explain": "One parameter, no parens"
+    },
+    {
+      "code": "const add = (a, b) => {",
+      "explain": "Arrow with a body"
+    },
+    {
+      "code": "  return a + b;",
+      "explain": "Return the sum"
+    },
+    {
+      "code": "};",
+      "explain": "End of the arrow"
+    },
+    {
+      "code": "console.log(double(4), add(2, 3));",
+      "explain": "Prints 8 and 5"
+    }
+  ]
+}

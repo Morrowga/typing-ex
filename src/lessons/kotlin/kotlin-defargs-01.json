@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-defargs-01",
+  "category": "Kotlin",
+  "topic": "Default Arguments",
+  "level": 1,
+  "tags": [
+    "fun",
+    "defaults"
+  ],
+  "chunks": [
+    {
+      "code": "fun greet(name: String, greeting: String = \"Hello\") {",
+      "explain": "greeting has a default value"
+    },
+    {
+      "code": "    println(\"$greeting, $name!\")",
+      "explain": "Print the message"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "greet(\"Ana\")",
+      "explain": "Uses the default greeting"
+    },
+    {
+      "code": "greet(\"Ana\", \"Hey\")",
+      "explain": "Overrides the default"
+    }
+  ]
+}

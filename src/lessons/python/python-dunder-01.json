@@ -1,0 +1,44 @@
+{
+  "id": "python-dunder-01",
+  "category": "Python",
+  "topic": "Dunder Methods",
+  "level": 2,
+  "tags": [
+    "classes",
+    "dunder"
+  ],
+  "chunks": [
+    {
+      "code": "class Vec:",
+      "explain": "A 2D vector class"
+    },
+    {
+      "code": "    def __init__(self, x, y):",
+      "explain": "Store both coordinates"
+    },
+    {
+      "code": "        self.x, self.y = x, y",
+      "explain": "Assign in one line"
+    },
+    {
+      "code": "    def __add__(self, o):",
+      "explain": "Define the + operator"
+    },
+    {
+      "code": "        return Vec(self.x + o.x, self.y + o.y)",
+      "explain": "Add component by component"
+    },
+    {
+      "code": "    def __repr__(self):",
+      "explain": "Control how it prints"
+    },
+    {
+      "code": "        return f\"Vec({self.x}, {self.y})\"",
+      "explain": "A readable debug string"
+    },
+    {
+      "code": "print(Vec(1, 2) + Vec(3, 4))",
+      "explain": "Prints Vec(4, 6)"
+    }
+  ]
+}

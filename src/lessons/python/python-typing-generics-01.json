@@ -1,0 +1,32 @@
+{
+  "id": "python-typing-generics-01",
+  "category": "Python",
+  "topic": "Generics",
+  "level": 2,
+  "tags": [
+    "typing",
+    "generics"
+  ],
+  "chunks": [
+    {
+      "code": "from typing import TypeVar",
+      "explain": "Import TypeVar"
+    },
+    {
+      "code": "T = TypeVar(\"T\")",
+      "explain": "A placeholder for any type"
+    },
+    {
+      "code": "def first(items: list[T]) -> T:",
+      "explain": "Return the same type that goes in"
+    },
+    {
+      "code": "    return items[0]",
+      "explain": "Take the first element"
+    },
+    {
+      "code": "print(first([\"a\", \"b\"]), first([1, 2]))",
+      "explain": "Works for str and int: a 1"
+    }
+  ]
+}

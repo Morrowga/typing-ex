@@ -1,0 +1,37 @@
+{
+  "id": "swift-protocol-ext-01",
+  "category": "Swift",
+  "topic": "Protocol Extensions",
+  "level": 2,
+  "tags": [
+    "protocol",
+    "extension",
+    "default"
+  ],
+  "chunks": [
+    {
+      "code": "protocol Named { var name: String { get } }",
+      "explain": "Requires a readable name"
+    },
+    {
+      "code": "extension Named {",
+      "explain": "Give every Named type new behavior"
+    },
+    {
+      "code": "    func greeting() -> String { \"Hello, \\(name)!\" }",
+      "explain": "A default implementation"
+    },
+    {
+      "code": "}",
+      "explain": "End the extension"
+    },
+    {
+      "code": "struct Person: Named { let name: String }",
+      "explain": "Person gets greeting for free"
+    },
+    {
+      "code": "print(Person(name: \"Lee\").greeting())",
+      "explain": "Prints Hello, Lee!"
+    }
+  ]
+}

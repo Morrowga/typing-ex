@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-lazy-01",
+  "category": "Kotlin",
+  "topic": "Lazy Properties",
+  "level": 2,
+  "tags": [
+    "delegation",
+    "lazy"
+  ],
+  "chunks": [
+    {
+      "code": "class Report {",
+      "explain": "A class with an expensive value"
+    },
+    {
+      "code": "    val body: String by lazy {",
+      "explain": "Computed on first access only"
+    },
+    {
+      "code": "        println(\"building\")",
+      "explain": "Runs once"
+    },
+    {
+      "code": "        \"report text\"",
+      "explain": "Last expression is the value"
+    },
+    {
+      "code": "    }",
+      "explain": "End of lazy block"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    }
+  ]
+}

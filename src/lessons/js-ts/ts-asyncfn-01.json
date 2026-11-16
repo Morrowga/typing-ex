@@ -1,0 +1,42 @@
+{
+  "id": "ts-asyncfn-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Typed Async",
+  "level": 2,
+  "tags": [
+    "async",
+    "promise",
+    "fetch"
+  ],
+  "chunks": [
+    {
+      "code": "interface Todo { id: number; title: string; done: boolean }",
+      "explain": "Response shape"
+    },
+    {
+      "code": "async function loadTodo(id: number): Promise<Todo> {",
+      "explain": "Returns a Promise of Todo"
+    },
+    {
+      "code": "  const res = await fetch(`/todos/${id}`);",
+      "explain": "Request the todo"
+    },
+    {
+      "code": "  if (!res.ok) throw new Error(`HTTP ${res.status}`);",
+      "explain": "Fail on bad status"
+    },
+    {
+      "code": "  return (await res.json()) as Todo;",
+      "explain": "Assert the JSON type"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "loadTodo(1).then((t) => console.log(t.title));",
+      "explain": "Use the typed result"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-companion-01",
+  "category": "Kotlin",
+  "topic": "Companion Objects",
+  "level": 2,
+  "tags": [
+    "companion",
+    "class"
+  ],
+  "chunks": [
+    {
+      "code": "class Temperature private constructor(val celsius: Double) {",
+      "explain": "Constructor is private"
+    },
+    {
+      "code": "    companion object {",
+      "explain": "Static-like members live here"
+    },
+    {
+      "code": "        fun ofFahrenheit(f: Double) = Temperature((f - 32) / 1.8)",
+      "explain": "Factory function"
+    },
+    {
+      "code": "    }",
+      "explain": "End of companion"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "val t = Temperature.ofFahrenheit(212.0)",
+      "explain": "Call through the class name"
+    },
+    {
+      "code": "println(t.celsius)",
+      "explain": "Prints 100.0"
+    }
+  ]
+}

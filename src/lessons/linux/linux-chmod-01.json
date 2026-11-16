@@ -1,0 +1,32 @@
+{
+  "id": "linux-chmod-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "chmod",
+    "permissions"
+  ],
+  "chunks": [
+    {
+      "code": "chmod +x deploy.sh",
+      "explain": "Make a script executable"
+    },
+    {
+      "code": "chmod 644 notes.txt",
+      "explain": "Owner read/write, others read only"
+    },
+    {
+      "code": "chmod 755 run.sh",
+      "explain": "Owner full access, others read and run"
+    },
+    {
+      "code": "chmod u+w,g-w report.txt",
+      "explain": "Add owner write, remove group write"
+    },
+    {
+      "code": "ls -l run.sh",
+      "explain": "Check the permission string"
+    }
+  ]
+}

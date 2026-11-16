@@ -1,0 +1,32 @@
+{
+  "id": "git-sparse-01",
+  "category": "Git",
+  "topic": "Sparse checkout",
+  "level": 2,
+  "tags": [
+    "sparse-checkout",
+    "monorepo"
+  ],
+  "chunks": [
+    {
+      "code": "git clone --filter=blob:none --no-checkout https://github.com/acme/mono.git",
+      "explain": "Clone without file contents"
+    },
+    {
+      "code": "cd mono",
+      "explain": "Enter the repository"
+    },
+    {
+      "code": "git sparse-checkout set services/api",
+      "explain": "Only check out one folder"
+    },
+    {
+      "code": "git checkout main",
+      "explain": "Populate the working tree"
+    },
+    {
+      "code": "git sparse-checkout disable",
+      "explain": "Restore the full checkout"
+    }
+  ]
+}

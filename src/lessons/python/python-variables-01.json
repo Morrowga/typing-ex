@@ -1,0 +1,32 @@
+{
+  "id": "python-variables-01",
+  "category": "Python",
+  "topic": "Variables",
+  "level": 1,
+  "tags": [
+    "variables",
+    "assignment"
+  ],
+  "chunks": [
+    {
+      "code": "name = \"Ada\"",
+      "explain": "Store a string in the variable name"
+    },
+    {
+      "code": "age = 36",
+      "explain": "Store an integer in age"
+    },
+    {
+      "code": "age = age + 1",
+      "explain": "Update age to a new value"
+    },
+    {
+      "code": "x, y = 3, 4",
+      "explain": "Assign two variables in one line"
+    },
+    {
+      "code": "print(name, age, x + y)",
+      "explain": "Print the stored values: Ada 37 7"
+    }
+  ]
+}

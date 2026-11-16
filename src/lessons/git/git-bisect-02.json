@@ -1,0 +1,33 @@
+{
+  "id": "git-bisect-02",
+  "category": "Git",
+  "topic": "Bisect",
+  "level": 2,
+  "tags": [
+    "bisect",
+    "run",
+    "automation"
+  ],
+  "chunks": [
+    {
+      "code": "git bisect start HEAD v1.0.0",
+      "explain": "Start with bad HEAD and good v1.0.0"
+    },
+    {
+      "code": "git bisect run npm test",
+      "explain": "Let a command decide good or bad"
+    },
+    {
+      "code": "git bisect log",
+      "explain": "Show the steps taken so far"
+    },
+    {
+      "code": "git bisect skip",
+      "explain": "Skip a commit that cannot be tested"
+    },
+    {
+      "code": "git bisect reset",
+      "explain": "Leave bisect mode"
+    }
+  ]
+}

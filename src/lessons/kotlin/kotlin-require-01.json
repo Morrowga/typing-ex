@@ -1,0 +1,41 @@
+{
+  "id": "kotlin-require-01",
+  "category": "Kotlin",
+  "topic": "require and check",
+  "level": 2,
+  "tags": [
+    "require",
+    "check",
+    "errors"
+  ],
+  "chunks": [
+    {
+      "code": "class Account(private var balance: Int) {",
+      "explain": "A tiny bank account"
+    },
+    {
+      "code": "    fun withdraw(amount: Int) {",
+      "explain": "Take money out"
+    },
+    {
+      "code": "        require(amount > 0) { \"Amount must be positive\" }",
+      "explain": "Validate the argument"
+    },
+    {
+      "code": "        check(balance >= amount) { \"Not enough funds\" }",
+      "explain": "Validate the object state"
+    },
+    {
+      "code": "        balance -= amount",
+      "explain": "Subtract the amount"
+    },
+    {
+      "code": "    }",
+      "explain": "End of function"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    }
+  ]
+}

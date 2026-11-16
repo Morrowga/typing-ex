@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-classdeleg-01",
+  "category": "Kotlin",
+  "topic": "Class Delegation",
+  "level": 2,
+  "tags": [
+    "delegation",
+    "interface"
+  ],
+  "chunks": [
+    {
+      "code": "interface Logger { fun log(msg: String) }",
+      "explain": "A tiny interface"
+    },
+    {
+      "code": "class ConsoleLogger : Logger {",
+      "explain": "One implementation"
+    },
+    {
+      "code": "    override fun log(msg: String) = println(\"[log] $msg\")",
+      "explain": "Print with a prefix"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "class Service(logger: Logger) : Logger by logger",
+      "explain": "Delegate all calls to logger"
+    },
+    {
+      "code": "Service(ConsoleLogger()).log(\"started\")",
+      "explain": "Prints [log] started"
+    }
+  ]
+}

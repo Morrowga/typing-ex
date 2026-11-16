@@ -1,0 +1,32 @@
+{
+  "id": "linux-less-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "less",
+    "pager"
+  ],
+  "chunks": [
+    {
+      "code": "less /etc/services",
+      "explain": "Open a file in a pager"
+    },
+    {
+      "code": "less -N app.log",
+      "explain": "Show line numbers while paging"
+    },
+    {
+      "code": "less +G app.log",
+      "explain": "Open the file at its end"
+    },
+    {
+      "code": "man less",
+      "explain": "Read the manual; q quits the pager"
+    },
+    {
+      "code": "ls -l /etc | less",
+      "explain": "Page through any command output"
+    }
+  ]
+}

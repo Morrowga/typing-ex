@@ -1,0 +1,49 @@
+{
+  "id": "ts-guard-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Type Guards",
+  "level": 2,
+  "tags": [
+    "narrowing",
+    "guard"
+  ],
+  "chunks": [
+    {
+      "code": "interface Cat { meow(): void }",
+      "explain": "Cat shape"
+    },
+    {
+      "code": "interface Dog { bark(): void }",
+      "explain": "Dog shape"
+    },
+    {
+      "code": "function isCat(a: Cat | Dog): a is Cat {",
+      "explain": "Type predicate"
+    },
+    {
+      "code": "  return \"meow\" in a;",
+      "explain": "Check for meow"
+    },
+    {
+      "code": "}",
+      "explain": "End of guard"
+    },
+    {
+      "code": "function talk(a: Cat | Dog): void {",
+      "explain": "Accept either"
+    },
+    {
+      "code": "  if (isCat(a)) a.meow();",
+      "explain": "Narrowed to Cat"
+    },
+    {
+      "code": "  else a.bark();",
+      "explain": "Narrowed to Dog"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    }
+  ]
+}

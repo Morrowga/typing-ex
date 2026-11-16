@@ -1,0 +1,32 @@
+{
+  "id": "git-range-01",
+  "category": "Git",
+  "topic": "Ranges",
+  "level": 2,
+  "tags": [
+    "range",
+    "log"
+  ],
+  "chunks": [
+    {
+      "code": "git log main..feature/login",
+      "explain": "Commits on feature, not on main"
+    },
+    {
+      "code": "git log main...feature/login",
+      "explain": "Commits unique to either side"
+    },
+    {
+      "code": "git log --left-right --oneline main...feature/login",
+      "explain": "Mark which side each commit is on"
+    },
+    {
+      "code": "git diff main...feature/login",
+      "explain": "Changes since the merge base"
+    },
+    {
+      "code": "git merge-base main feature/login",
+      "explain": "Find the common ancestor"
+    }
+  ]
+}

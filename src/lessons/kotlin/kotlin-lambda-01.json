@@ -1,0 +1,33 @@
+{
+  "id": "kotlin-lambda-01",
+  "category": "Kotlin",
+  "topic": "Lambdas",
+  "level": 2,
+  "tags": [
+    "lambda",
+    "map",
+    "filter"
+  ],
+  "chunks": [
+    {
+      "code": "val numbers = listOf(1, 2, 3, 4, 5, 6)",
+      "explain": "A list of numbers"
+    },
+    {
+      "code": "val evens = numbers.filter { it % 2 == 0 }",
+      "explain": "Keep the evens; it is each item"
+    },
+    {
+      "code": "val doubled = evens.map { it * 2 }",
+      "explain": "Double each one: [4, 8, 12]"
+    },
+    {
+      "code": "val total = doubled.sum()",
+      "explain": "Add them all up: 24"
+    },
+    {
+      "code": "println(total)",
+      "explain": "Show 24"
+    }
+  ]
+}

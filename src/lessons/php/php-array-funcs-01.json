@@ -1,0 +1,36 @@
+{
+  "id": "php-array-funcs-01",
+  "category": "PHP",
+  "topic": "Array Functions",
+  "level": 1,
+  "tags": [
+    "array",
+    "functions"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$nums = [4, 9, 2, 7];",
+      "explain": "Sample numbers"
+    },
+    {
+      "code": "sort($nums);",
+      "explain": "Sort ascending in place"
+    },
+    {
+      "code": "echo max($nums);",
+      "explain": "Largest value: 9"
+    },
+    {
+      "code": "echo array_sum($nums);",
+      "explain": "Sum: 22"
+    },
+    {
+      "code": "echo in_array(7, $nums) ? \"yes\" : \"no\";",
+      "explain": "Check membership: yes"
+    }
+  ]
+}

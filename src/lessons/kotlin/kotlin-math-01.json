@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-math-01",
+  "category": "Kotlin",
+  "topic": "Numbers and Math",
+  "level": 1,
+  "tags": [
+    "math",
+    "numbers"
+  ],
+  "chunks": [
+    {
+      "code": "val a = 17",
+      "explain": "An Int value"
+    },
+    {
+      "code": "val b = 5",
+      "explain": "Another Int value"
+    },
+    {
+      "code": "println(a / b)",
+      "explain": "Int division drops the fraction: 3"
+    },
+    {
+      "code": "println(a % b)",
+      "explain": "Remainder after dividing: 2"
+    },
+    {
+      "code": "println(a.toDouble() / b)",
+      "explain": "Convert first to keep decimals: 3.4"
+    },
+    {
+      "code": "println(maxOf(a, b))",
+      "explain": "The larger of the two numbers"
+    }
+  ]
+}

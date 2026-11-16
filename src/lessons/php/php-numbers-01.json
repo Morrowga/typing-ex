@@ -1,0 +1,36 @@
+{
+  "id": "php-numbers-01",
+  "category": "PHP",
+  "topic": "Numbers",
+  "level": 1,
+  "tags": [
+    "math",
+    "operators"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$a = 17;",
+      "explain": "An integer"
+    },
+    {
+      "code": "$b = 5;",
+      "explain": "Another integer"
+    },
+    {
+      "code": "echo $a % $b;",
+      "explain": "Modulo gives remainder: 2"
+    },
+    {
+      "code": "echo intdiv($a, $b);",
+      "explain": "Integer division: 3"
+    },
+    {
+      "code": "echo $a ** 2;",
+      "explain": "Exponent: 289"
+    }
+  ]
+}

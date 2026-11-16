@@ -1,0 +1,28 @@
+{
+  "id": "git-force-01",
+  "category": "Git",
+  "topic": "Force push",
+  "level": 2,
+  "tags": [
+    "push",
+    "force-with-lease"
+  ],
+  "chunks": [
+    {
+      "code": "git rebase origin/main",
+      "explain": "Rewrite your local branch"
+    },
+    {
+      "code": "git push --force-with-lease",
+      "explain": "Force push unless remote moved"
+    },
+    {
+      "code": "git push --force-with-lease=feature/ui:a1b2c3d",
+      "explain": "Require the remote to be at a1b2c3d"
+    },
+    {
+      "code": "git push --force-if-includes",
+      "explain": "Extra check that you saw remote changes"
+    }
+  ]
+}

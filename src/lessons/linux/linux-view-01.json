@@ -1,0 +1,32 @@
+{
+  "id": "linux-view-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "cat",
+    "grep"
+  ],
+  "chunks": [
+    {
+      "code": "cat notes.txt",
+      "explain": "Print the whole file"
+    },
+    {
+      "code": "head -n 5 notes.txt",
+      "explain": "Show the first 5 lines"
+    },
+    {
+      "code": "tail -n 5 notes.txt",
+      "explain": "Show the last 5 lines"
+    },
+    {
+      "code": "grep \"error\" notes.txt",
+      "explain": "Show lines containing error"
+    },
+    {
+      "code": "wc -l notes.txt",
+      "explain": "Count the lines"
+    }
+  ]
+}

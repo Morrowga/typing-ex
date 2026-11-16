@@ -1,0 +1,48 @@
+{
+  "id": "python-decorator-01",
+  "category": "Python",
+  "topic": "Functions",
+  "level": 2,
+  "tags": [
+    "decorator",
+    "function"
+  ],
+  "chunks": [
+    {
+      "code": "def log(fn):",
+      "explain": "A decorator takes a function (fn)"
+    },
+    {
+      "code": "    def wrapper(*args):",
+      "explain": "Inner function that accepts any arguments"
+    },
+    {
+      "code": "        print(\"calling\", fn.__name__)",
+      "explain": "Print the wrapped function's name"
+    },
+    {
+      "code": "        return fn(*args)",
+      "explain": "Call the original and return its result"
+    },
+    {
+      "code": "    return wrapper",
+      "explain": "Return the wrapper to replace fn"
+    },
+    {
+      "code": "@log",
+      "explain": "Apply the decorator to add"
+    },
+    {
+      "code": "def add(a, b):",
+      "explain": "Define add as usual"
+    },
+    {
+      "code": "    return a + b",
+      "explain": "Return the sum"
+    },
+    {
+      "code": "print(add(2, 3))",
+      "explain": "Prints \"calling add\", then 5"
+    }
+  ]
+}

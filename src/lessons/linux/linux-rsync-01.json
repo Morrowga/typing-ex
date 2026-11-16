@@ -1,0 +1,32 @@
+{
+  "id": "linux-rsync-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "rsync",
+    "backup"
+  ],
+  "chunks": [
+    {
+      "code": "rsync -av src/ backup/",
+      "explain": "Archive-copy, keeping permissions"
+    },
+    {
+      "code": "rsync -av --delete src/ backup/",
+      "explain": "Mirror and remove extra files"
+    },
+    {
+      "code": "rsync -avz docs/ alice@host:/srv/docs/",
+      "explain": "Sync to a remote host with compression"
+    },
+    {
+      "code": "rsync -avn src/ backup/",
+      "explain": "Dry run, show what would change"
+    },
+    {
+      "code": "rsync -a --exclude='*.log' src/ backup/",
+      "explain": "Skip log files"
+    }
+  ]
+}

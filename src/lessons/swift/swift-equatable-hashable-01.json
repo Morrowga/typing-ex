@@ -1,0 +1,45 @@
+{
+  "id": "swift-equatable-hashable-01",
+  "category": "Swift",
+  "topic": "Equatable and Hashable",
+  "level": 2,
+  "tags": [
+    "equatable",
+    "hashable",
+    "set"
+  ],
+  "chunks": [
+    {
+      "code": "struct Tag: Hashable {",
+      "explain": "Hashable also implies Equatable"
+    },
+    {
+      "code": "    let label: String",
+      "explain": "Compared and hashed automatically"
+    },
+    {
+      "code": "}",
+      "explain": "End the struct"
+    },
+    {
+      "code": "let a = Tag(label: \"swift\")",
+      "explain": "A tag"
+    },
+    {
+      "code": "let b = Tag(label: \"swift\")",
+      "explain": "An equal tag"
+    },
+    {
+      "code": "print(a == b)",
+      "explain": "Prints true"
+    },
+    {
+      "code": "let unique: Set<Tag> = [a, b]",
+      "explain": "Equal values collapse in a set"
+    },
+    {
+      "code": "print(unique.count)",
+      "explain": "Prints 1"
+    }
+  ]
+}

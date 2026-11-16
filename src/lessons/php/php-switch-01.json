@@ -1,0 +1,44 @@
+{
+  "id": "php-switch-01",
+  "category": "PHP",
+  "topic": "Switch",
+  "level": 1,
+  "tags": [
+    "switch",
+    "condition"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$day = \"Sat\";",
+      "explain": "Value to test"
+    },
+    {
+      "code": "switch ($day) {",
+      "explain": "Compare $day with each case"
+    },
+    {
+      "code": "    case \"Sat\":",
+      "explain": "Matches Sat"
+    },
+    {
+      "code": "    case \"Sun\":",
+      "explain": "Falls through to share the same code"
+    },
+    {
+      "code": "        echo \"Weekend\";",
+      "explain": "Prints Weekend"
+    },
+    {
+      "code": "        break;",
+      "explain": "Stop so later cases do not run"
+    },
+    {
+      "code": "}",
+      "explain": "End of switch"
+    }
+  ]
+}

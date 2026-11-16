@@ -1,0 +1,32 @@
+{
+  "id": "git-patch-01",
+  "category": "Git",
+  "topic": "Patches",
+  "level": 2,
+  "tags": [
+    "format-patch",
+    "am"
+  ],
+  "chunks": [
+    {
+      "code": "git format-patch -3",
+      "explain": "Make patch files for the last 3 commits"
+    },
+    {
+      "code": "git format-patch origin/main..HEAD -o patches/",
+      "explain": "Write patches into a folder"
+    },
+    {
+      "code": "git am patches/*.patch",
+      "explain": "Apply patches as commits"
+    },
+    {
+      "code": "git am --abort",
+      "explain": "Cancel an in-progress am"
+    },
+    {
+      "code": "git apply --check fix.diff",
+      "explain": "Test whether a diff applies cleanly"
+    }
+  ]
+}

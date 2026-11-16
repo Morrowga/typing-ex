@@ -1,0 +1,47 @@
+{
+  "id": "ts-utility-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Utility Types",
+  "level": 2,
+  "tags": [
+    "utility",
+    "Partial",
+    "Pick",
+    "Omit"
+  ],
+  "chunks": [
+    {
+      "code": "interface User { id: number; name: string; email: string }",
+      "explain": "Base shape"
+    },
+    {
+      "code": "type Draft = Partial<User>;",
+      "explain": "All fields optional"
+    },
+    {
+      "code": "type Preview = Pick<User, \"id\" | \"name\">;",
+      "explain": "Keep two fields"
+    },
+    {
+      "code": "type NoEmail = Omit<User, \"email\">;",
+      "explain": "Drop one field"
+    },
+    {
+      "code": "const d: Draft = { name: \"Li\" };",
+      "explain": "Valid partial object"
+    },
+    {
+      "code": "const p: Preview = { id: 1, name: \"Li\" };",
+      "explain": "Only picked fields"
+    },
+    {
+      "code": "const n: NoEmail = { id: 2, name: \"Bo\" };",
+      "explain": "Email not needed"
+    },
+    {
+      "code": "console.log(d, p, n);",
+      "explain": "Show them"
+    }
+  ]
+}

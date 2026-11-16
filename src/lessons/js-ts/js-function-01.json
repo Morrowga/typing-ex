@@ -1,0 +1,33 @@
+{
+  "id": "js-function-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "function",
+    "return"
+  ],
+  "chunks": [
+    {
+      "code": "function add(a, b) {",
+      "explain": "A function with two inputs"
+    },
+    {
+      "code": "  return a + b;",
+      "explain": "Give back the sum"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "const total = add(2, 3);",
+      "explain": "Call it: total is 5"
+    },
+    {
+      "code": "console.log(total);",
+      "explain": "Show 5"
+    }
+  ]
+}

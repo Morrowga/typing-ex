@@ -1,0 +1,32 @@
+{
+  "id": "python-strings-01",
+  "category": "Python",
+  "topic": "Strings",
+  "level": 1,
+  "tags": [
+    "strings",
+    "concatenation"
+  ],
+  "chunks": [
+    {
+      "code": "first = \"grace\"",
+      "explain": "A lowercase first name"
+    },
+    {
+      "code": "last = \"hopper\"",
+      "explain": "A lowercase last name"
+    },
+    {
+      "code": "full = first + \" \" + last",
+      "explain": "Join strings with +"
+    },
+    {
+      "code": "print(full.title())",
+      "explain": "Capitalize each word: Grace Hopper"
+    },
+    {
+      "code": "print(len(full))",
+      "explain": "Count the characters: 12"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "linux-pipe-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "pipe",
+    "ls"
+  ],
+  "chunks": [
+    {
+      "code": "ls /usr/bin | wc -l",
+      "explain": "Count the programs in /usr/bin"
+    },
+    {
+      "code": "ls -l | head -n 5",
+      "explain": "Show only the first 5 entries"
+    },
+    {
+      "code": "cat app.log | grep error",
+      "explain": "Filter a file with grep"
+    },
+    {
+      "code": "ps aux | grep nginx",
+      "explain": "Look for nginx among processes"
+    },
+    {
+      "code": "history | tail -n 10",
+      "explain": "Show your last 10 commands"
+    }
+  ]
+}

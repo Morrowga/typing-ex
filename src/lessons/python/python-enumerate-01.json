@@ -1,0 +1,24 @@
+{
+  "id": "python-enumerate-01",
+  "category": "Python",
+  "topic": "Enumerate",
+  "level": 1,
+  "tags": [
+    "loops",
+    "enumerate"
+  ],
+  "chunks": [
+    {
+      "code": "books = [\"Dune\", \"Emma\", \"Ulysses\"]",
+      "explain": "A list of titles"
+    },
+    {
+      "code": "for pos, title in enumerate(books, start=1):",
+      "explain": "Get a counter and the item together"
+    },
+    {
+      "code": "    print(f\"{pos}. {title}\")",
+      "explain": "Print a numbered list"
+    }
+  ]
+}

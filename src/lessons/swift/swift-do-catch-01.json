@@ -1,0 +1,45 @@
+{
+  "id": "swift-do-catch-01",
+  "category": "Swift",
+  "topic": "Do-Catch",
+  "level": 2,
+  "tags": [
+    "error",
+    "catch",
+    "do"
+  ],
+  "chunks": [
+    {
+      "code": "enum LoginError: Error { case emptyName, shortPassword(Int) }",
+      "explain": "Errors can carry values"
+    },
+    {
+      "code": "func login(_ name: String, _ pass: String) throws {",
+      "explain": "A throwing function"
+    },
+    {
+      "code": "    if name.isEmpty { throw LoginError.emptyName }",
+      "explain": "Reject empty names"
+    },
+    {
+      "code": "    if pass.count < 8 { throw LoginError.shortPassword(pass.count) }",
+      "explain": "Reject short passwords"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "do { try login(\"ann\", \"abc\") }",
+      "explain": "Attempt the call"
+    },
+    {
+      "code": "catch LoginError.shortPassword(let n) { print(\"short: \\(n)\") }",
+      "explain": "Match a specific error"
+    },
+    {
+      "code": "catch { print(\"other: \\(error)\") }",
+      "explain": "Catch anything else"
+    }
+  ]
+}

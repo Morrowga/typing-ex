@@ -1,0 +1,31 @@
+{
+  "id": "git-cherry-01",
+  "category": "Git",
+  "topic": "Cherry-pick",
+  "level": 2,
+  "tags": [
+    "cherry-pick"
+  ],
+  "chunks": [
+    {
+      "code": "git switch release/2.0",
+      "explain": "Go to the target branch"
+    },
+    {
+      "code": "git cherry-pick 9f3c2ab",
+      "explain": "Apply one commit here"
+    },
+    {
+      "code": "git cherry-pick a1b2c3d..e4f5a6b",
+      "explain": "Apply a range (excluding first)"
+    },
+    {
+      "code": "git cherry-pick -x 9f3c2ab",
+      "explain": "Record the source hash in the message"
+    },
+    {
+      "code": "git cherry-pick --continue",
+      "explain": "Resume after resolving conflicts"
+    }
+  ]
+}

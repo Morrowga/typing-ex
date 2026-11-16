@@ -1,0 +1,32 @@
+{
+  "id": "git-revert-01",
+  "category": "Git",
+  "topic": "Revert",
+  "level": 2,
+  "tags": [
+    "revert",
+    "undo"
+  ],
+  "chunks": [
+    {
+      "code": "git revert HEAD",
+      "explain": "New commit that undoes the last one"
+    },
+    {
+      "code": "git revert a1b2c3d --no-edit",
+      "explain": "Revert by hash, keep default message"
+    },
+    {
+      "code": "git revert -n HEAD~3..HEAD",
+      "explain": "Revert three commits without committing"
+    },
+    {
+      "code": "git revert -m 1 7d8e9f0",
+      "explain": "Revert a merge commit, keep parent 1"
+    },
+    {
+      "code": "git push origin main",
+      "explain": "Share the revert safely"
+    }
+  ]
+}

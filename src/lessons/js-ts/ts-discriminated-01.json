@@ -1,0 +1,50 @@
+{
+  "id": "ts-discriminated-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Discriminated Unions",
+  "level": 2,
+  "tags": [
+    "union",
+    "narrowing",
+    "switch"
+  ],
+  "chunks": [
+    {
+      "code": "type Shape =",
+      "explain": "Union of shapes"
+    },
+    {
+      "code": "  | { kind: \"circle\"; r: number }",
+      "explain": "Circle has radius"
+    },
+    {
+      "code": "  | { kind: \"rect\"; w: number; h: number };",
+      "explain": "Rect has size"
+    },
+    {
+      "code": "function area(s: Shape): number {",
+      "explain": "Compute area"
+    },
+    {
+      "code": "  switch (s.kind) {",
+      "explain": "Switch on the tag"
+    },
+    {
+      "code": "    case \"circle\": return Math.PI * s.r ** 2;",
+      "explain": "Narrowed to circle"
+    },
+    {
+      "code": "    case \"rect\": return s.w * s.h;",
+      "explain": "Narrowed to rect"
+    },
+    {
+      "code": "  }",
+      "explain": "End of switch"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    }
+  ]
+}

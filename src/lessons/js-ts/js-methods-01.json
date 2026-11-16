@@ -1,0 +1,38 @@
+{
+  "id": "js-methods-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Array Methods",
+  "level": 1,
+  "tags": [
+    "map",
+    "filter",
+    "find"
+  ],
+  "chunks": [
+    {
+      "code": "const nums = [1, 2, 3, 4, 5, 6];",
+      "explain": "A list of numbers"
+    },
+    {
+      "code": "const evens = nums.filter((n) => n % 2 === 0);",
+      "explain": "Keep even numbers"
+    },
+    {
+      "code": "const squares = nums.map((n) => n * n);",
+      "explain": "Square every number"
+    },
+    {
+      "code": "const firstBig = nums.find((n) => n > 3);",
+      "explain": "First one above 3"
+    },
+    {
+      "code": "console.log(nums.includes(4));",
+      "explain": "Check membership: true"
+    },
+    {
+      "code": "console.log(evens, squares, firstBig);",
+      "explain": "Show the results"
+    }
+  ]
+}

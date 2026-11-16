@@ -1,0 +1,32 @@
+{
+  "id": "python-lists-01",
+  "category": "Python",
+  "topic": "Lists",
+  "level": 1,
+  "tags": [
+    "lists",
+    "append"
+  ],
+  "chunks": [
+    {
+      "code": "fruits = [\"apple\", \"banana\"]",
+      "explain": "Create a list with two items"
+    },
+    {
+      "code": "fruits.append(\"cherry\")",
+      "explain": "Add an item to the end"
+    },
+    {
+      "code": "fruits.insert(0, \"mango\")",
+      "explain": "Insert an item at the front"
+    },
+    {
+      "code": "fruits.remove(\"banana\")",
+      "explain": "Delete an item by value"
+    },
+    {
+      "code": "print(fruits, len(fruits))",
+      "explain": "Show the list and its size"
+    }
+  ]
+}

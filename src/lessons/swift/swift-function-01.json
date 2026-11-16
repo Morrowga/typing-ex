@@ -1,0 +1,32 @@
+{
+  "id": "swift-function-01",
+  "category": "Swift",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "func",
+    "return"
+  ],
+  "chunks": [
+    {
+      "code": "func add(_ a: Int, _ b: Int) -> Int {",
+      "explain": "A function: two Ints in, an Int out"
+    },
+    {
+      "code": "    return a + b",
+      "explain": "Give back the sum"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "let total = add(2, 3)",
+      "explain": "Call it: total is 5"
+    },
+    {
+      "code": "print(total)",
+      "explain": "Show 5"
+    }
+  ]
+}

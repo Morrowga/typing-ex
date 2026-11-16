@@ -1,0 +1,45 @@
+{
+  "id": "kotlin-loop-01",
+  "category": "Kotlin",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "list",
+    "loop",
+    "if"
+  ],
+  "chunks": [
+    {
+      "code": "val scores = listOf(72, 90, 85)",
+      "explain": "A read-only list of Ints"
+    },
+    {
+      "code": "var best = 0",
+      "explain": "Track the best score so far"
+    },
+    {
+      "code": "for (score in scores) {",
+      "explain": "Loop over every score"
+    },
+    {
+      "code": "    if (score > best) {",
+      "explain": "Is this one higher?"
+    },
+    {
+      "code": "        best = score",
+      "explain": "Remember it"
+    },
+    {
+      "code": "    }",
+      "explain": "End of the if"
+    },
+    {
+      "code": "}",
+      "explain": "End of the loop"
+    },
+    {
+      "code": "println(best)",
+      "explain": "Show 90"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "swift-computed-01",
+  "category": "Swift",
+  "topic": "Computed Properties",
+  "level": 1,
+  "tags": [
+    "property",
+    "struct"
+  ],
+  "chunks": [
+    {
+      "code": "struct Rectangle {",
+      "explain": "A rectangle value type"
+    },
+    {
+      "code": "    var width: Double",
+      "explain": "Stored width"
+    },
+    {
+      "code": "    var height: Double",
+      "explain": "Stored height"
+    },
+    {
+      "code": "    var area: Double { width * height }",
+      "explain": "Computed each time it is read"
+    },
+    {
+      "code": "}",
+      "explain": "End the struct"
+    },
+    {
+      "code": "let box = Rectangle(width: 3, height: 4.5)",
+      "explain": "Create a rectangle"
+    },
+    {
+      "code": "print(box.area)",
+      "explain": "Prints 13.5"
+    }
+  ]
+}

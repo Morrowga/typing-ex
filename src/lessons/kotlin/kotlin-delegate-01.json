@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-delegate-01",
+  "category": "Kotlin",
+  "topic": "Observable Delegation",
+  "level": 2,
+  "tags": [
+    "delegation",
+    "observable"
+  ],
+  "chunks": [
+    {
+      "code": "import kotlin.properties.Delegates",
+      "explain": "Import the Delegates helper"
+    },
+    {
+      "code": "class Player {",
+      "explain": "A class with an observed property"
+    },
+    {
+      "code": "    var hp: Int by Delegates.observable(100) { _, old, new ->",
+      "explain": "Callback on every change"
+    },
+    {
+      "code": "        println(\"hp $old -> $new\")",
+      "explain": "Show the change"
+    },
+    {
+      "code": "    }",
+      "explain": "End of observable"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    }
+  ]
+}

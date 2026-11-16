@@ -1,0 +1,45 @@
+{
+  "id": "ts-index-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Index Signatures",
+  "level": 2,
+  "tags": [
+    "index-signature",
+    "object"
+  ],
+  "chunks": [
+    {
+      "code": "interface Scores {",
+      "explain": "Dynamic keys"
+    },
+    {
+      "code": "  [player: string]: number;",
+      "explain": "Any string key, number value"
+    },
+    {
+      "code": "}",
+      "explain": "End of interface"
+    },
+    {
+      "code": "const board: Scores = { ann: 10 };",
+      "explain": "Start with one"
+    },
+    {
+      "code": "board[\"bo\"] = 7;",
+      "explain": "Add another key"
+    },
+    {
+      "code": "for (const name of Object.keys(board)) {",
+      "explain": "Loop over keys"
+    },
+    {
+      "code": "  console.log(name, board[name]);",
+      "explain": "Read each score"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    }
+  ]
+}

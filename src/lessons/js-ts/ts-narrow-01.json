@@ -1,0 +1,41 @@
+{
+  "id": "ts-narrow-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Null Checks",
+  "level": 1,
+  "tags": [
+    "null",
+    "strict"
+  ],
+  "chunks": [
+    {
+      "code": "function firstChar(s: string | null): string {",
+      "explain": "May receive null"
+    },
+    {
+      "code": "  if (s === null) {",
+      "explain": "Check for null first"
+    },
+    {
+      "code": "    return \"\";",
+      "explain": "Safe fallback"
+    },
+    {
+      "code": "  }",
+      "explain": "End of check"
+    },
+    {
+      "code": "  return s.charAt(0);",
+      "explain": "Now s is a string"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "console.log(firstChar(null), firstChar(\"TS\"));",
+      "explain": "Prints empty then T"
+    }
+  ]
+}

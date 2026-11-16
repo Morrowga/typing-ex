@@ -1,0 +1,32 @@
+{
+  "id": "linux-files-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "navigation",
+    "files"
+  ],
+  "chunks": [
+    {
+      "code": "pwd",
+      "explain": "Print the current folder"
+    },
+    {
+      "code": "ls -la",
+      "explain": "List all files with details"
+    },
+    {
+      "code": "mkdir project",
+      "explain": "Create a folder named project"
+    },
+    {
+      "code": "cd project",
+      "explain": "Go into project"
+    },
+    {
+      "code": "touch notes.txt",
+      "explain": "Create an empty file"
+    }
+  ]
+}

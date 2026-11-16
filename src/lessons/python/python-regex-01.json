@@ -1,0 +1,32 @@
+{
+  "id": "python-regex-01",
+  "category": "Python",
+  "topic": "Regular Expressions",
+  "level": 2,
+  "tags": [
+    "regex",
+    "re"
+  ],
+  "chunks": [
+    {
+      "code": "import re",
+      "explain": "Import the regex module"
+    },
+    {
+      "code": "log = \"user=ana id=4021 ok\"",
+      "explain": "A sample log line"
+    },
+    {
+      "code": "m = re.search(r\"id=(\\d+)\", log)",
+      "explain": "Find id= followed by digits"
+    },
+    {
+      "code": "print(m.group(1))",
+      "explain": "Prints the captured digits: 4021"
+    },
+    {
+      "code": "print(re.findall(r\"[a-z]+\", log))",
+      "explain": "All lowercase words in the line"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "linux-man-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "man",
+    "help"
+  ],
+  "chunks": [
+    {
+      "code": "man ls",
+      "explain": "Open the manual page for ls"
+    },
+    {
+      "code": "ls --help",
+      "explain": "Show quick usage for a command"
+    },
+    {
+      "code": "man -k copy",
+      "explain": "Search manual pages by keyword"
+    },
+    {
+      "code": "whatis grep",
+      "explain": "Show a one-line description"
+    },
+    {
+      "code": "help cd",
+      "explain": "Show help for a bash builtin"
+    }
+  ]
+}

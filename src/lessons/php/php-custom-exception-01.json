@@ -1,0 +1,44 @@
+{
+  "id": "php-custom-exception-01",
+  "category": "PHP",
+  "topic": "Custom Exceptions",
+  "level": 2,
+  "tags": [
+    "exceptions",
+    "oop"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "class NotFound extends RuntimeException {}",
+      "explain": "Own exception type"
+    },
+    {
+      "code": "function find(array $a, string $k) {",
+      "explain": "Lookup helper"
+    },
+    {
+      "code": "    return $a[$k] ?? throw new NotFound(\"No $k\");",
+      "explain": "Throw if the key is missing"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "try { find([], 'id'); } catch (NotFound $e) {",
+      "explain": "Catch only NotFound"
+    },
+    {
+      "code": "    echo $e->getMessage();",
+      "explain": "Prints No id"
+    },
+    {
+      "code": "}",
+      "explain": "End of try"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ts-enum-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Enums",
+  "level": 1,
+  "tags": [
+    "enum"
+  ],
+  "chunks": [
+    {
+      "code": "enum Direction {",
+      "explain": "Named set of constants"
+    },
+    {
+      "code": "  Up,",
+      "explain": "Value 0"
+    },
+    {
+      "code": "  Down,",
+      "explain": "Value 1"
+    },
+    {
+      "code": "  Left = 10,",
+      "explain": "Explicit value 10"
+    },
+    {
+      "code": "}",
+      "explain": "End of enum"
+    },
+    {
+      "code": "const dir: Direction = Direction.Down;",
+      "explain": "Use an enum member"
+    },
+    {
+      "code": "console.log(dir, Direction[10]);",
+      "explain": "Prints 1 and Left"
+    }
+  ]
+}

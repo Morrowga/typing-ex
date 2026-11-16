@@ -1,0 +1,32 @@
+{
+  "id": "git-bisect-01",
+  "category": "Git",
+  "topic": "Bisect",
+  "level": 2,
+  "tags": [
+    "bisect",
+    "debug"
+  ],
+  "chunks": [
+    {
+      "code": "git bisect start",
+      "explain": "Begin a binary search for a bug"
+    },
+    {
+      "code": "git bisect bad",
+      "explain": "Mark the current commit as broken"
+    },
+    {
+      "code": "git bisect good v1.2.0",
+      "explain": "Mark a known good commit"
+    },
+    {
+      "code": "git bisect good",
+      "explain": "Test passed; Git picks the next commit"
+    },
+    {
+      "code": "git bisect reset",
+      "explain": "Finish and return to your branch"
+    }
+  ]
+}

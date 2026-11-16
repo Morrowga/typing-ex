@@ -1,0 +1,32 @@
+{
+  "id": "git-rebase-03",
+  "category": "Git",
+  "topic": "Rebase",
+  "level": 2,
+  "tags": [
+    "rebase",
+    "interactive"
+  ],
+  "chunks": [
+    {
+      "code": "git rebase -i HEAD~4",
+      "explain": "Edit the last four commits"
+    },
+    {
+      "code": "git rebase -i --root",
+      "explain": "Edit history from the first commit"
+    },
+    {
+      "code": "git rebase --edit-todo",
+      "explain": "Re-open the todo list mid-rebase"
+    },
+    {
+      "code": "git rebase --skip",
+      "explain": "Drop the commit that is failing"
+    },
+    {
+      "code": "git log --oneline",
+      "explain": "Check the rewritten history"
+    }
+  ]
+}

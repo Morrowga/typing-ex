@@ -1,0 +1,37 @@
+{
+  "id": "python-filter-01",
+  "category": "Python",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "loop",
+    "condition",
+    "list"
+  ],
+  "chunks": [
+    {
+      "code": "numbers = [3, 8, 12, 5]",
+      "explain": "A list of numbers"
+    },
+    {
+      "code": "big = []",
+      "explain": "An empty list to collect results"
+    },
+    {
+      "code": "for n in numbers:",
+      "explain": "Loop: go through each number"
+    },
+    {
+      "code": "    if n > 5:",
+      "explain": "Only continue if n is greater than 5"
+    },
+    {
+      "code": "        big.append(n)",
+      "explain": "Add n to the big list"
+    },
+    {
+      "code": "print(big)",
+      "explain": "Show the result: [8, 12]"
+    }
+  ]
+}

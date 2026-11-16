@@ -1,0 +1,28 @@
+{
+  "id": "python-fstrings-01",
+  "category": "Python",
+  "topic": "f-strings",
+  "level": 1,
+  "tags": [
+    "strings",
+    "formatting"
+  ],
+  "chunks": [
+    {
+      "code": "item = \"coffee\"",
+      "explain": "The product name"
+    },
+    {
+      "code": "price = 3.5",
+      "explain": "The product price"
+    },
+    {
+      "code": "qty = 4",
+      "explain": "How many were bought"
+    },
+    {
+      "code": "print(f\"{qty} x {item} = ${price * qty:.2f}\")",
+      "explain": "Embed values and format to 2 decimals"
+    }
+  ]
+}

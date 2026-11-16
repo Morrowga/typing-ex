@@ -1,0 +1,37 @@
+{
+  "id": "ts-arrays-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Arrays and Tuples",
+  "level": 1,
+  "tags": [
+    "array",
+    "tuple"
+  ],
+  "chunks": [
+    {
+      "code": "const names: string[] = [\"Ann\", \"Bo\"];",
+      "explain": "Array of strings"
+    },
+    {
+      "code": "const scores: Array<number> = [90, 80];",
+      "explain": "Same idea, generic form"
+    },
+    {
+      "code": "names.push(\"Cy\");",
+      "explain": "Add an item"
+    },
+    {
+      "code": "const entry: [string, number] = [\"Ann\", 90];",
+      "explain": "Tuple: fixed shape"
+    },
+    {
+      "code": "const [who, score] = entry;",
+      "explain": "Destructure the tuple"
+    },
+    {
+      "code": "console.log(names.length, who, score, scores);",
+      "explain": "Show the values"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "php-get-params-01",
+  "category": "PHP",
+  "topic": "Query Params",
+  "level": 1,
+  "tags": [
+    "get",
+    "forms"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$name = $_GET[\"name\"] ?? \"stranger\";",
+      "explain": "Read ?name= from the URL"
+    },
+    {
+      "code": "$safe = htmlspecialchars($name);",
+      "explain": "Escape HTML to prevent XSS"
+    },
+    {
+      "code": "echo \"Hello, $safe\";",
+      "explain": "Print the escaped name"
+    }
+  ]
+}

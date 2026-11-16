@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-enum-01",
+  "category": "Kotlin",
+  "topic": "Enum Classes",
+  "level": 1,
+  "tags": [
+    "enum",
+    "class"
+  ],
+  "chunks": [
+    {
+      "code": "enum class Color { RED, GREEN, BLUE }",
+      "explain": "A fixed set of constants"
+    },
+    {
+      "code": "val c = Color.GREEN",
+      "explain": "Pick one constant"
+    },
+    {
+      "code": "println(c)",
+      "explain": "Prints GREEN"
+    },
+    {
+      "code": "println(c.ordinal)",
+      "explain": "Position in the list: 1"
+    },
+    {
+      "code": "println(Color.values().size)",
+      "explain": "Number of constants: 3"
+    }
+  ]
+}

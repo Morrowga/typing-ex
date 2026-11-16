@@ -1,0 +1,32 @@
+{
+  "id": "python-namedtuple-01",
+  "category": "Python",
+  "topic": "namedtuple",
+  "level": 2,
+  "tags": [
+    "collections",
+    "tuples"
+  ],
+  "chunks": [
+    {
+      "code": "from collections import namedtuple",
+      "explain": "Import namedtuple"
+    },
+    {
+      "code": "Point = namedtuple(\"Point\", [\"x\", \"y\"])",
+      "explain": "Define a tuple type with named fields"
+    },
+    {
+      "code": "p = Point(3, 4)",
+      "explain": "Create an instance"
+    },
+    {
+      "code": "print(p.x, p[1])",
+      "explain": "Access by name or by index"
+    },
+    {
+      "code": "print(p._replace(x=10))",
+      "explain": "Make a modified copy"
+    }
+  ]
+}

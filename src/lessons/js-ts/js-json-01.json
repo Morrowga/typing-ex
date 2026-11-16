@@ -1,0 +1,37 @@
+{
+  "id": "js-json-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "JSON",
+  "level": 1,
+  "tags": [
+    "json",
+    "parse"
+  ],
+  "chunks": [
+    {
+      "code": "const book = { title: \"Dune\", year: 1965 };",
+      "explain": "A plain object"
+    },
+    {
+      "code": "const text = JSON.stringify(book);",
+      "explain": "Object to JSON string"
+    },
+    {
+      "code": "console.log(text);",
+      "explain": "Prints the JSON text"
+    },
+    {
+      "code": "const copy = JSON.parse(text);",
+      "explain": "JSON string to object"
+    },
+    {
+      "code": "console.log(copy.title);",
+      "explain": "Prints Dune"
+    },
+    {
+      "code": "console.log(JSON.stringify(book, null, 2));",
+      "explain": "Pretty print with indent"
+    }
+  ]
+}

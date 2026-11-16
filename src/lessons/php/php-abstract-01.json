@@ -1,0 +1,44 @@
+{
+  "id": "php-abstract-01",
+  "category": "PHP",
+  "topic": "Abstract Classes",
+  "level": 2,
+  "tags": [
+    "abstract",
+    "oop"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "abstract class Animal {",
+      "explain": "Cannot be instantiated directly"
+    },
+    {
+      "code": "    abstract public function sound(): string;",
+      "explain": "Subclasses must implement this"
+    },
+    {
+      "code": "    public function speak(): string { return $this->sound() . '!'; }",
+      "explain": "Shared logic calls the abstract method"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "class Dog extends Animal {",
+      "explain": "Dog inherits from Animal"
+    },
+    {
+      "code": "    public function sound(): string { return 'Woof'; }",
+      "explain": "Provide the missing method"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    }
+  ]
+}

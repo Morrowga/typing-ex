@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-when-01",
+  "category": "Kotlin",
+  "topic": "When Expression",
+  "level": 1,
+  "tags": [
+    "when",
+    "branching"
+  ],
+  "chunks": [
+    {
+      "code": "val day = 3",
+      "explain": "A day number"
+    },
+    {
+      "code": "val name = when (day) {",
+      "explain": "when picks a branch for day"
+    },
+    {
+      "code": "    1 -> \"Mon\"",
+      "explain": "If day is 1"
+    },
+    {
+      "code": "    2 -> \"Tue\"",
+      "explain": "If day is 2"
+    },
+    {
+      "code": "    3 -> \"Wed\"",
+      "explain": "If day is 3"
+    },
+    {
+      "code": "    else -> \"Other\"",
+      "explain": "Fallback for everything else"
+    },
+    {
+      "code": "}",
+      "explain": "End of when"
+    }
+  ]
+}

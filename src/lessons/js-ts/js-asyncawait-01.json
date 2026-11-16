@@ -1,0 +1,42 @@
+{
+  "id": "js-asyncawait-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Async/Await",
+  "level": 2,
+  "tags": [
+    "async",
+    "await",
+    "promise"
+  ],
+  "chunks": [
+    {
+      "code": "const sleep = (ms) => new Promise((r) => setTimeout(r, ms));",
+      "explain": "Delay helper"
+    },
+    {
+      "code": "async function run() {",
+      "explain": "Async function returns a promise"
+    },
+    {
+      "code": "  await sleep(100);",
+      "explain": "Pause until resolved"
+    },
+    {
+      "code": "  const [a, b] = await Promise.all([sleep(10), sleep(20)]);",
+      "explain": "Run both in parallel"
+    },
+    {
+      "code": "  return \"finished\";",
+      "explain": "Resolves the promise"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "run().then(console.log);",
+      "explain": "Print when finished"
+    }
+  ]
+}

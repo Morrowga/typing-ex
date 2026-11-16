@@ -1,0 +1,45 @@
+{
+  "id": "ts-optional-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Optional and Defaults",
+  "level": 1,
+  "tags": [
+    "optional",
+    "default"
+  ],
+  "chunks": [
+    {
+      "code": "interface Options {",
+      "explain": "Settings shape"
+    },
+    {
+      "code": "  retries?: number;",
+      "explain": "May be missing"
+    },
+    {
+      "code": "}",
+      "explain": "End of interface"
+    },
+    {
+      "code": "function connect(host: string, port = 80, opts?: Options): string {",
+      "explain": "Default and optional params"
+    },
+    {
+      "code": "  const tries = opts?.retries ?? 3;",
+      "explain": "Fallback to 3"
+    },
+    {
+      "code": "  return `${host}:${port} x${tries}`;",
+      "explain": "Build a summary string"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "console.log(connect(\"example.com\"));",
+      "explain": "Call with defaults"
+    }
+  ]
+}

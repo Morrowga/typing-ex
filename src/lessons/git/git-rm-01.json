@@ -1,0 +1,32 @@
+{
+  "id": "git-rm-01",
+  "category": "Git",
+  "topic": "Rm and mv",
+  "level": 1,
+  "tags": [
+    "rm",
+    "mv"
+  ],
+  "chunks": [
+    {
+      "code": "git mv old.txt docs/new.txt",
+      "explain": "Move or rename and stage it"
+    },
+    {
+      "code": "git rm obsolete.js",
+      "explain": "Delete a file and stage the removal"
+    },
+    {
+      "code": "git rm -r --cached build/",
+      "explain": "Untrack a folder, keep the files"
+    },
+    {
+      "code": "git status -s",
+      "explain": "See renames and deletions"
+    },
+    {
+      "code": "git commit -m \"Reorganize files\"",
+      "explain": "Commit the changes"
+    }
+  ]
+}

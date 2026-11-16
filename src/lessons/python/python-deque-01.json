@@ -1,0 +1,32 @@
+{
+  "id": "python-deque-01",
+  "category": "Python",
+  "topic": "Deque",
+  "level": 2,
+  "tags": [
+    "collections",
+    "queue"
+  ],
+  "chunks": [
+    {
+      "code": "from collections import deque",
+      "explain": "Import deque"
+    },
+    {
+      "code": "recent = deque(maxlen=3)",
+      "explain": "Keep only the latest 3 items"
+    },
+    {
+      "code": "for page in [\"a\", \"b\", \"c\", \"d\"]:",
+      "explain": "Visit four pages"
+    },
+    {
+      "code": "    recent.append(page)",
+      "explain": "Old items fall off automatically"
+    },
+    {
+      "code": "print(list(recent))",
+      "explain": "Shows ['b', 'c', 'd']"
+    }
+  ]
+}

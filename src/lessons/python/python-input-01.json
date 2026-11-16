@@ -1,0 +1,28 @@
+{
+  "id": "python-input-01",
+  "category": "Python",
+  "topic": "Reading Input",
+  "level": 1,
+  "tags": [
+    "input",
+    "casting"
+  ],
+  "chunks": [
+    {
+      "code": "name = input(\"Your name: \")",
+      "explain": "Ask the user to type text"
+    },
+    {
+      "code": "age = int(input(\"Your age: \"))",
+      "explain": "Convert the typed text to an int"
+    },
+    {
+      "code": "years_left = 65 - age",
+      "explain": "Do math with the number"
+    },
+    {
+      "code": "print(f\"{name}, {years_left} years to 65\")",
+      "explain": "Show a personal message"
+    }
+  ]
+}

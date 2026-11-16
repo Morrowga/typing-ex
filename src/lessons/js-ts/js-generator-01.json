@@ -1,0 +1,45 @@
+{
+  "id": "js-generator-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Generators",
+  "level": 2,
+  "tags": [
+    "generator",
+    "iterator"
+  ],
+  "chunks": [
+    {
+      "code": "function* range(start, end) {",
+      "explain": "Generator function"
+    },
+    {
+      "code": "  for (let i = start; i < end; i++) {",
+      "explain": "Loop through range"
+    },
+    {
+      "code": "    yield i;",
+      "explain": "Pause and emit value"
+    },
+    {
+      "code": "  }",
+      "explain": "End of loop"
+    },
+    {
+      "code": "}",
+      "explain": "End of generator"
+    },
+    {
+      "code": "console.log([...range(0, 4)]);",
+      "explain": "Spread yields: 0,1,2,3"
+    },
+    {
+      "code": "const it = range(5, 7);",
+      "explain": "Get an iterator"
+    },
+    {
+      "code": "console.log(it.next().value);",
+      "explain": "Prints 5"
+    }
+  ]
+}

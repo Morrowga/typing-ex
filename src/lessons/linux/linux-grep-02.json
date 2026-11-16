@@ -1,0 +1,32 @@
+{
+  "id": "linux-grep-02",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "grep",
+    "recursive"
+  ],
+  "chunks": [
+    {
+      "code": "grep -r TODO src",
+      "explain": "Search all files under src"
+    },
+    {
+      "code": "grep -rl password config",
+      "explain": "List only names of matching files"
+    },
+    {
+      "code": "grep -w cat pets.txt",
+      "explain": "Match whole word cat only"
+    },
+    {
+      "code": "grep -A 2 Exception app.log",
+      "explain": "Show 2 lines after each match"
+    },
+    {
+      "code": "grep -E 'cat|dog' pets.txt",
+      "explain": "Match cat or dog with a regex"
+    }
+  ]
+}

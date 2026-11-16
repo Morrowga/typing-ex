@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-step-01",
+  "category": "Kotlin",
+  "topic": "Range Step and Until",
+  "level": 1,
+  "tags": [
+    "range",
+    "step"
+  ],
+  "chunks": [
+    {
+      "code": "for (i in 0 until 3) {",
+      "explain": "until stops before 3: 0, 1, 2"
+    },
+    {
+      "code": "    print(i)",
+      "explain": "Print without a new line"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    },
+    {
+      "code": "for (n in 0..10 step 5) {",
+      "explain": "step skips by 5: 0, 5, 10"
+    },
+    {
+      "code": "    print(\" $n\")",
+      "explain": "Print each stepped value"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    },
+    {
+      "code": "println()",
+      "explain": "Finish with a new line"
+    }
+  ]
+}

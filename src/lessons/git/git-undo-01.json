@@ -1,0 +1,41 @@
+{
+  "id": "git-undo-01",
+  "category": "Git",
+  "topic": "Undo",
+  "level": 2,
+  "tags": [
+    "restore",
+    "reset",
+    "stash"
+  ],
+  "chunks": [
+    {
+      "code": "git restore notes.txt",
+      "explain": "Discard unstaged changes (cannot undo)"
+    },
+    {
+      "code": "git restore --staged notes.txt",
+      "explain": "Unstage but keep your edits"
+    },
+    {
+      "code": "git revert HEAD",
+      "explain": "Undo the last commit with a new commit"
+    },
+    {
+      "code": "git reset --soft HEAD~1",
+      "explain": "Undo the last commit, keep changes staged"
+    },
+    {
+      "code": "git stash",
+      "explain": "Set changes aside for now"
+    },
+    {
+      "code": "git stash pop",
+      "explain": "Bring the stashed changes back"
+    },
+    {
+      "code": "git reflog",
+      "explain": "Show past HEAD positions to recover commits"
+    }
+  ]
+}

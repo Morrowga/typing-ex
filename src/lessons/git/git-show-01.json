@@ -1,0 +1,32 @@
+{
+  "id": "git-show-01",
+  "category": "Git",
+  "topic": "Show",
+  "level": 1,
+  "tags": [
+    "show",
+    "inspect"
+  ],
+  "chunks": [
+    {
+      "code": "git show",
+      "explain": "Show the latest commit and its diff"
+    },
+    {
+      "code": "git show HEAD~2",
+      "explain": "Show the commit two before HEAD"
+    },
+    {
+      "code": "git show a1b2c3d --stat",
+      "explain": "Show a commit by hash, files only"
+    },
+    {
+      "code": "git show main:README.md",
+      "explain": "Print a file as it is on main"
+    },
+    {
+      "code": "git show v1.0.0",
+      "explain": "Show a tag and what it points to"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "php-ctor-promotion-01",
+  "category": "PHP",
+  "topic": "Constructor Promotion",
+  "level": 2,
+  "tags": [
+    "php8",
+    "constructor"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "class Point {",
+      "explain": "A small value class"
+    },
+    {
+      "code": "    public function __construct(public int $x = 0, public int $y = 0) {}",
+      "explain": "Declare and assign properties in one go"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "$p = new Point(y: 5);",
+      "explain": "Named argument; x keeps its default"
+    },
+    {
+      "code": "echo $p->x . ',' . $p->y;",
+      "explain": "Prints 0,5"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "git-pretty-01",
+  "category": "Git",
+  "topic": "Log formats",
+  "level": 2,
+  "tags": [
+    "log",
+    "pretty",
+    "graph"
+  ],
+  "chunks": [
+    {
+      "code": "git log --graph --oneline --decorate --all",
+      "explain": "Graph with branch and tag names"
+    },
+    {
+      "code": "git log --pretty=format:\"%h %an %s\"",
+      "explain": "Custom hash, author, subject"
+    },
+    {
+      "code": "git log --pretty=format:\"%h %ad\" --date=short",
+      "explain": "Hash with short date"
+    },
+    {
+      "code": "git log --first-parent --oneline",
+      "explain": "Follow only the mainline"
+    },
+    {
+      "code": "git log --no-merges --oneline",
+      "explain": "Hide merge commits"
+    }
+  ]
+}

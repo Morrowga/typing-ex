@@ -1,0 +1,32 @@
+{
+  "id": "php-datetime-01",
+  "category": "PHP",
+  "topic": "DateTime",
+  "level": 2,
+  "tags": [
+    "datetime",
+    "time"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$d = new DateTimeImmutable('2024-01-31');",
+      "explain": "An immutable date"
+    },
+    {
+      "code": "$next = $d->modify('+1 month');",
+      "explain": "Returns a new object"
+    },
+    {
+      "code": "echo $next->format('Y-m-d');",
+      "explain": "Formats the new date"
+    },
+    {
+      "code": "echo $d->diff($next)->days;",
+      "explain": "Days between the two dates"
+    }
+  ]
+}

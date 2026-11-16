@@ -1,0 +1,32 @@
+{
+  "id": "git-config-01",
+  "category": "Git",
+  "topic": "Config",
+  "level": 1,
+  "tags": [
+    "config",
+    "identity"
+  ],
+  "chunks": [
+    {
+      "code": "git config --global user.name \"Ada Lovelace\"",
+      "explain": "Set your commit author name"
+    },
+    {
+      "code": "git config --global user.email \"ada@example.com\"",
+      "explain": "Set your commit author email"
+    },
+    {
+      "code": "git config --global init.defaultBranch main",
+      "explain": "New repos start on main"
+    },
+    {
+      "code": "git config --global core.editor \"code --wait\"",
+      "explain": "Use VS Code for commit messages"
+    },
+    {
+      "code": "git config --list",
+      "explain": "Show all current settings"
+    }
+  ]
+}

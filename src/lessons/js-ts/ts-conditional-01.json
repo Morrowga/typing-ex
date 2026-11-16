@@ -1,0 +1,41 @@
+{
+  "id": "ts-conditional-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Conditional Types",
+  "level": 2,
+  "tags": [
+    "conditional",
+    "infer"
+  ],
+  "chunks": [
+    {
+      "code": "type IsString<T> = T extends string ? \"yes\" : \"no\";",
+      "explain": "Branch on a type"
+    },
+    {
+      "code": "type A = IsString<\"hi\">;",
+      "explain": "Resolves to yes"
+    },
+    {
+      "code": "type Unwrap<T> = T extends Promise<infer U> ? U : T;",
+      "explain": "Extract promise value"
+    },
+    {
+      "code": "type B = Unwrap<Promise<number>>;",
+      "explain": "Resolves to number"
+    },
+    {
+      "code": "const a: A = \"yes\";",
+      "explain": "Matches the type"
+    },
+    {
+      "code": "const b: B = 42;",
+      "explain": "A number fits"
+    },
+    {
+      "code": "console.log(a, b);",
+      "explain": "Show values"
+    }
+  ]
+}

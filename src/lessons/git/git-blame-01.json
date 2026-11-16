@@ -1,0 +1,32 @@
+{
+  "id": "git-blame-01",
+  "category": "Git",
+  "topic": "Blame",
+  "level": 2,
+  "tags": [
+    "blame",
+    "search"
+  ],
+  "chunks": [
+    {
+      "code": "git blame src/app.js",
+      "explain": "Show who last changed each line"
+    },
+    {
+      "code": "git blame -L 10,20 src/app.js",
+      "explain": "Limit blame to lines 10 to 20"
+    },
+    {
+      "code": "git blame -w -C src/app.js",
+      "explain": "Ignore whitespace, follow moved code"
+    },
+    {
+      "code": "git log -S\"parseConfig\" --oneline",
+      "explain": "Commits that add or remove that string"
+    },
+    {
+      "code": "git log -G\"timeout\\s*=\" --oneline",
+      "explain": "Commits whose diff matches a regex"
+    }
+  ]
+}

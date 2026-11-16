@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-hof-01",
+  "category": "Kotlin",
+  "topic": "Higher-order Functions",
+  "level": 2,
+  "tags": [
+    "lambda",
+    "function-type"
+  ],
+  "chunks": [
+    {
+      "code": "fun negate(n: Int) = -n",
+      "explain": "A plain function to reference"
+    },
+    {
+      "code": "fun apply2(x: Int, f: (Int) -> Int): Int = f(f(x))",
+      "explain": "Takes a function and applies it twice"
+    },
+    {
+      "code": "val inc = { n: Int -> n + 1 }",
+      "explain": "A lambda stored in a val"
+    },
+    {
+      "code": "println(apply2(5, inc))",
+      "explain": "Prints 7"
+    },
+    {
+      "code": "println(apply2(3) { it * 2 })",
+      "explain": "Trailing lambda syntax: prints 12"
+    },
+    {
+      "code": "println(apply2(2, ::negate))",
+      "explain": "Pass a function reference: prints 2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "swift-switch-01",
+  "category": "Swift",
+  "topic": "Switch",
+  "level": 1,
+  "tags": [
+    "switch",
+    "control-flow"
+  ],
+  "chunks": [
+    {
+      "code": "let day = 3",
+      "explain": "A day number"
+    },
+    {
+      "code": "switch day {",
+      "explain": "Switch over the value"
+    },
+    {
+      "code": "case 1, 7: print(\"Weekend\")",
+      "explain": "Match more than one value"
+    },
+    {
+      "code": "case 2...6: print(\"Weekday\")",
+      "explain": "Match a range"
+    },
+    {
+      "code": "default: print(\"Invalid\")",
+      "explain": "Switches must be exhaustive"
+    },
+    {
+      "code": "}",
+      "explain": "End the switch"
+    }
+  ]
+}

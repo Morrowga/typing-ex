@@ -1,0 +1,36 @@
+{
+  "id": "php-while-loop-01",
+  "category": "PHP",
+  "topic": "While Loop",
+  "level": 1,
+  "tags": [
+    "loop",
+    "while"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$n = 10;",
+      "explain": "Starting value"
+    },
+    {
+      "code": "while ($n > 0) {",
+      "explain": "Repeat while n is positive"
+    },
+    {
+      "code": "    echo $n . \" \";",
+      "explain": "Print the current value"
+    },
+    {
+      "code": "    $n -= 3;",
+      "explain": "Subtract 3 each time"
+    },
+    {
+      "code": "}",
+      "explain": "Output: 10 7 4 1"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "git-worktree-01",
+  "category": "Git",
+  "topic": "Worktree",
+  "level": 2,
+  "tags": [
+    "worktree"
+  ],
+  "chunks": [
+    {
+      "code": "git worktree add ../hotfix hotfix/crash",
+      "explain": "Check out a branch in a new folder"
+    },
+    {
+      "code": "git worktree add -b feature/ui ../ui main",
+      "explain": "New branch in a new worktree"
+    },
+    {
+      "code": "git worktree list",
+      "explain": "List all worktrees"
+    },
+    {
+      "code": "git worktree remove ../hotfix",
+      "explain": "Delete a worktree"
+    },
+    {
+      "code": "git worktree prune",
+      "explain": "Clean up stale worktree records"
+    }
+  ]
+}

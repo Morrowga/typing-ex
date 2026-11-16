@@ -1,0 +1,36 @@
+{
+  "id": "php-strict-types-01",
+  "category": "PHP",
+  "topic": "Strict Types",
+  "level": 2,
+  "tags": [
+    "types",
+    "strict"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "declare(strict_types=1);",
+      "explain": "Disable loose type juggling in this file"
+    },
+    {
+      "code": "function half(int $n): float { return $n / 2; }",
+      "explain": "Typed function"
+    },
+    {
+      "code": "try { echo half('8'); } catch (TypeError $e) {",
+      "explain": "A string is rejected in strict mode"
+    },
+    {
+      "code": "    echo 'TypeError';",
+      "explain": "Prints TypeError"
+    },
+    {
+      "code": "}",
+      "explain": "End of try"
+    }
+  ]
+}

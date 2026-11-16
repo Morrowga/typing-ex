@@ -1,0 +1,45 @@
+{
+  "id": "ts-func-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Typed Functions",
+  "level": 1,
+  "tags": [
+    "function",
+    "annotations"
+  ],
+  "chunks": [
+    {
+      "code": "function add(a: number, b: number): number {",
+      "explain": "Typed params and return"
+    },
+    {
+      "code": "  return a + b;",
+      "explain": "Return the sum"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "const shout = (s: string): string => s.toUpperCase();",
+      "explain": "Typed arrow function"
+    },
+    {
+      "code": "function log(msg: string): void {",
+      "explain": "Returns nothing"
+    },
+    {
+      "code": "  console.log(msg);",
+      "explain": "Print the message"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "log(shout(\"hi\") + add(1, 2));",
+      "explain": "Call them together"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "git-alias-01",
+  "category": "Git",
+  "topic": "Aliases",
+  "level": 1,
+  "tags": [
+    "alias",
+    "config"
+  ],
+  "chunks": [
+    {
+      "code": "git config --global alias.st status",
+      "explain": "Make git st run status"
+    },
+    {
+      "code": "git config --global alias.co switch",
+      "explain": "Make git co run switch"
+    },
+    {
+      "code": "git config --global alias.lg \"log --oneline --graph --all\"",
+      "explain": "Short alias for a graph log"
+    },
+    {
+      "code": "git lg",
+      "explain": "Use the new alias"
+    },
+    {
+      "code": "git config --get-regexp alias",
+      "explain": "List your aliases"
+    }
+  ]
+}

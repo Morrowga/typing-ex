@@ -1,0 +1,33 @@
+{
+  "id": "linux-text-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "cut",
+    "tr",
+    "paste"
+  ],
+  "chunks": [
+    {
+      "code": "cut -d, -f1,3 users.csv",
+      "explain": "Columns 1 and 3 from a CSV"
+    },
+    {
+      "code": "cut -c1-8 file.txt",
+      "explain": "First eight characters of each line"
+    },
+    {
+      "code": "tr 'a-z' 'A-Z' < in.txt",
+      "explain": "Convert to uppercase"
+    },
+    {
+      "code": "tr -d '\\r' < dos.txt > unix.txt",
+      "explain": "Strip Windows carriage returns"
+    },
+    {
+      "code": "paste -d, names.txt ages.txt",
+      "explain": "Merge two files as columns"
+    }
+  ]
+}

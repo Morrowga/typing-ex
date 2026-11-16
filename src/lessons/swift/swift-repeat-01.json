@@ -1,0 +1,36 @@
+{
+  "id": "swift-repeat-01",
+  "category": "Swift",
+  "topic": "Repeat-While",
+  "level": 1,
+  "tags": [
+    "repeat",
+    "loop"
+  ],
+  "chunks": [
+    {
+      "code": "var attempts = 0",
+      "explain": "Count the attempts"
+    },
+    {
+      "code": "repeat {",
+      "explain": "Body always runs at least once"
+    },
+    {
+      "code": "    attempts += 1",
+      "explain": "Add one attempt"
+    },
+    {
+      "code": "    print(\"Attempt \\(attempts)\")",
+      "explain": "Show the attempt number"
+    },
+    {
+      "code": "} while attempts < 3",
+      "explain": "Check the condition after the body"
+    },
+    {
+      "code": "print(\"Done after \\(attempts)\")",
+      "explain": "Show the final count"
+    }
+  ]
+}

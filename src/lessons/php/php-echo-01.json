@@ -1,0 +1,32 @@
+{
+  "id": "php-echo-01",
+  "category": "PHP",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "variable",
+    "echo"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$name = \"Ada\";",
+      "explain": "A variable (always starts with $)"
+    },
+    {
+      "code": "$age = 36;",
+      "explain": "A number variable"
+    },
+    {
+      "code": "echo \"Hello, \" . $name . \"!\";",
+      "explain": "Print text; the dot joins strings"
+    },
+    {
+      "code": "echo \" You are \" . $age;",
+      "explain": "Join text with the number and print"
+    }
+  ]
+}

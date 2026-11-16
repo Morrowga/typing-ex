@@ -1,0 +1,32 @@
+{
+  "id": "linux-tee-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "tee",
+    "logging"
+  ],
+  "chunks": [
+    {
+      "code": "make 2>&1 | tee build.log",
+      "explain": "Show output and save it to a file"
+    },
+    {
+      "code": "echo \"line\" | tee -a notes.txt",
+      "explain": "Append to a file and print"
+    },
+    {
+      "code": "echo \"127.0.0.1 dev\" | sudo tee -a /etc/hosts",
+      "explain": "Append to a root-owned file"
+    },
+    {
+      "code": "ls | tee list.txt | wc -l",
+      "explain": "Save the listing and count it"
+    },
+    {
+      "code": "echo hi | tee a.txt b.txt >/dev/null",
+      "explain": "Write to two files silently"
+    }
+  ]
+}

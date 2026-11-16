@@ -1,0 +1,36 @@
+{
+  "id": "swift-defer-01",
+  "category": "Swift",
+  "topic": "Defer",
+  "level": 2,
+  "tags": [
+    "defer",
+    "cleanup"
+  ],
+  "chunks": [
+    {
+      "code": "func process() {",
+      "explain": "A function with cleanup"
+    },
+    {
+      "code": "    print(\"open\")",
+      "explain": "Acquire a resource"
+    },
+    {
+      "code": "    defer { print(\"close\") }",
+      "explain": "Runs when the scope exits"
+    },
+    {
+      "code": "    print(\"work\")",
+      "explain": "Do the work"
+    },
+    {
+      "code": "}",
+      "explain": "Defer fires here"
+    },
+    {
+      "code": "process()",
+      "explain": "Prints open, work, close"
+    }
+  ]
+}

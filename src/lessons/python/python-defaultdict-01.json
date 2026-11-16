@@ -1,0 +1,36 @@
+{
+  "id": "python-defaultdict-01",
+  "category": "Python",
+  "topic": "defaultdict",
+  "level": 2,
+  "tags": [
+    "collections",
+    "dict"
+  ],
+  "chunks": [
+    {
+      "code": "from collections import defaultdict",
+      "explain": "Import defaultdict"
+    },
+    {
+      "code": "pairs = [(\"fruit\", \"fig\"), (\"veg\", \"kale\"), (\"fruit\", \"plum\")]",
+      "explain": "Category and item pairs"
+    },
+    {
+      "code": "groups = defaultdict(list)",
+      "explain": "Missing keys start as empty lists"
+    },
+    {
+      "code": "for kind, name in pairs:",
+      "explain": "Walk through the pairs"
+    },
+    {
+      "code": "    groups[kind].append(name)",
+      "explain": "Append without checking the key"
+    },
+    {
+      "code": "print(dict(groups))",
+      "explain": "Show the grouped result"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "js-mapset-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Map and Set",
+  "level": 2,
+  "tags": [
+    "map",
+    "set",
+    "collections"
+  ],
+  "chunks": [
+    {
+      "code": "const seen = new Set([1, 2, 2, 3]);",
+      "explain": "Duplicates are dropped"
+    },
+    {
+      "code": "seen.add(4);",
+      "explain": "Add a value"
+    },
+    {
+      "code": "console.log(seen.has(2), seen.size);",
+      "explain": "true and 4"
+    },
+    {
+      "code": "const ages = new Map();",
+      "explain": "Key-value collection"
+    },
+    {
+      "code": "ages.set(\"ann\", 31).set(\"bob\", 27);",
+      "explain": "Chain set calls"
+    },
+    {
+      "code": "for (const [name, age] of ages) {",
+      "explain": "Iterate entries"
+    },
+    {
+      "code": "  console.log(name, age);",
+      "explain": "Print each pair"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    }
+  ]
+}

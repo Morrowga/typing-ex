@@ -1,0 +1,36 @@
+{
+  "id": "php-concat-01",
+  "category": "PHP",
+  "topic": "Concatenation",
+  "level": 1,
+  "tags": [
+    "strings",
+    "concat"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$first = \"Grace\";",
+      "explain": "First name string"
+    },
+    {
+      "code": "$last = \"Hopper\";",
+      "explain": "Last name string"
+    },
+    {
+      "code": "$full = $first . \" \" . $last;",
+      "explain": "The dot joins strings"
+    },
+    {
+      "code": "$full .= \"!\";",
+      "explain": "The .= operator appends to a string"
+    },
+    {
+      "code": "echo $full;",
+      "explain": "Prints Grace Hopper!"
+    }
+  ]
+}

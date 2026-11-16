@@ -1,0 +1,32 @@
+{
+  "id": "python-slicing-01",
+  "category": "Python",
+  "topic": "Slicing",
+  "level": 1,
+  "tags": [
+    "strings",
+    "slicing"
+  ],
+  "chunks": [
+    {
+      "code": "word = \"programming\"",
+      "explain": "The string to slice"
+    },
+    {
+      "code": "print(word[0])",
+      "explain": "First character: p"
+    },
+    {
+      "code": "print(word[-1])",
+      "explain": "Last character: g"
+    },
+    {
+      "code": "print(word[0:7])",
+      "explain": "Characters 0 to 6: program"
+    },
+    {
+      "code": "print(word[::-1])",
+      "explain": "Reverse the whole string"
+    }
+  ]
+}

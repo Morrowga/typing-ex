@@ -1,0 +1,40 @@
+{
+  "id": "swift-enum-raw-01",
+  "category": "Swift",
+  "topic": "Raw Value Enums",
+  "level": 1,
+  "tags": [
+    "enum",
+    "rawvalue"
+  ],
+  "chunks": [
+    {
+      "code": "enum Planet: Int {",
+      "explain": "An enum backed by Int values"
+    },
+    {
+      "code": "    case mercury = 1, venus, earth",
+      "explain": "Later cases count up from 1"
+    },
+    {
+      "code": "}",
+      "explain": "End the enum"
+    },
+    {
+      "code": "let home = Planet.earth",
+      "explain": "Pick a case"
+    },
+    {
+      "code": "print(home.rawValue)",
+      "explain": "Prints 3"
+    },
+    {
+      "code": "let found = Planet(rawValue: 2)",
+      "explain": "Returns Planet? from a raw value"
+    },
+    {
+      "code": "print(found == .venus)",
+      "explain": "Prints true"
+    }
+  ]
+}

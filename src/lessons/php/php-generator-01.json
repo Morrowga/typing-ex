@@ -1,0 +1,32 @@
+{
+  "id": "php-generator-01",
+  "category": "PHP",
+  "topic": "Generators",
+  "level": 2,
+  "tags": [
+    "generator",
+    "yield"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "function evens(int $max) {",
+      "explain": "Function that yields values lazily"
+    },
+    {
+      "code": "    for ($i = 0; $i <= $max; $i += 2) yield $i;",
+      "explain": "yield pauses and hands out a value"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "foreach (evens(8) as $n) echo $n, ' ';",
+      "explain": "Loop pulls one value at a time; 0 2 4 6 8"
+    }
+  ]
+}

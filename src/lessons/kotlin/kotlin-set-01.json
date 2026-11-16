@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-set-01",
+  "category": "Kotlin",
+  "topic": "Sets",
+  "level": 1,
+  "tags": [
+    "set",
+    "collections"
+  ],
+  "chunks": [
+    {
+      "code": "val tags = mutableSetOf(\"a\", \"b\")",
+      "explain": "A set holds unique values"
+    },
+    {
+      "code": "tags.add(\"b\")",
+      "explain": "Adding a duplicate changes nothing"
+    },
+    {
+      "code": "tags.add(\"c\")",
+      "explain": "Adding a new value works"
+    },
+    {
+      "code": "println(tags.size)",
+      "explain": "Prints 3"
+    },
+    {
+      "code": "println(\"a\" in tags)",
+      "explain": "Check if a value is in the set"
+    },
+    {
+      "code": "val unique = listOf(1, 1, 2, 3, 3).toSet()",
+      "explain": "Convert a list to a set to drop duplicates"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-strfun-01",
+  "category": "Kotlin",
+  "topic": "String Functions",
+  "level": 1,
+  "tags": [
+    "string",
+    "functions"
+  ],
+  "chunks": [
+    {
+      "code": "val title = \"  Kotlin Rocks  \"",
+      "explain": "A string with spaces around it"
+    },
+    {
+      "code": "val clean = title.trim()",
+      "explain": "trim removes the outer spaces"
+    },
+    {
+      "code": "println(clean.uppercase())",
+      "explain": "Print it in capital letters"
+    },
+    {
+      "code": "println(clean.lowercase())",
+      "explain": "Print it in small letters"
+    },
+    {
+      "code": "println(clean.replace(\"Rocks\", \"Works\"))",
+      "explain": "Swap one piece of text for another"
+    },
+    {
+      "code": "println(clean.contains(\"Kot\"))",
+      "explain": "Check if the text has Kot inside"
+    }
+  ]
+}

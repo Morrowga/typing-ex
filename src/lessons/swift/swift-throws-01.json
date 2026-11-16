@@ -1,0 +1,41 @@
+{
+  "id": "swift-throws-01",
+  "category": "Swift",
+  "topic": "Throwing Functions",
+  "level": 2,
+  "tags": [
+    "error",
+    "throws",
+    "try"
+  ],
+  "chunks": [
+    {
+      "code": "enum AgeError: Error { case negative, tooBig }",
+      "explain": "Our own error type"
+    },
+    {
+      "code": "func check(age: Int) throws -> Int {",
+      "explain": "This function can throw"
+    },
+    {
+      "code": "    if age < 0 { throw AgeError.negative }",
+      "explain": "Throw for bad input"
+    },
+    {
+      "code": "    if age > 150 { throw AgeError.tooBig }",
+      "explain": "Throw for unlikely input"
+    },
+    {
+      "code": "    return age",
+      "explain": "Otherwise return the age"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "let result = try? check(age: -3)",
+      "explain": "try? turns an error into nil"
+    }
+  ]
+}

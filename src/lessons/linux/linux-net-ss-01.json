@@ -1,0 +1,32 @@
+{
+  "id": "linux-net-ss-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "ss",
+    "lsof"
+  ],
+  "chunks": [
+    {
+      "code": "ss -tulpn",
+      "explain": "Listening TCP/UDP ports with processes"
+    },
+    {
+      "code": "ss -tn state established",
+      "explain": "Established TCP connections"
+    },
+    {
+      "code": "sudo lsof -i :80",
+      "explain": "Which process uses port 80"
+    },
+    {
+      "code": "lsof -p 1234",
+      "explain": "Files opened by process 1234"
+    },
+    {
+      "code": "ip addr show",
+      "explain": "Show network interfaces and IPs"
+    }
+  ]
+}

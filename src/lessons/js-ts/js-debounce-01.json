@@ -1,0 +1,46 @@
+{
+  "id": "js-debounce-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Debounce",
+  "level": 2,
+  "tags": [
+    "debounce",
+    "timer",
+    "closure"
+  ],
+  "chunks": [
+    {
+      "code": "function debounce(fn, delay) {",
+      "explain": "Wrap a function"
+    },
+    {
+      "code": "  let timer;",
+      "explain": "Remember the timer"
+    },
+    {
+      "code": "  return (...args) => {",
+      "explain": "Returned wrapper"
+    },
+    {
+      "code": "    clearTimeout(timer);",
+      "explain": "Cancel the pending call"
+    },
+    {
+      "code": "    timer = setTimeout(() => fn(...args), delay);",
+      "explain": "Schedule a fresh call"
+    },
+    {
+      "code": "  };",
+      "explain": "End of wrapper"
+    },
+    {
+      "code": "}",
+      "explain": "End of debounce"
+    },
+    {
+      "code": "const onType = debounce((q) => console.log(q), 300);",
+      "explain": "Fire after typing stops"
+    }
+  ]
+}

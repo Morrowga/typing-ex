@@ -1,0 +1,32 @@
+{
+  "id": "linux-find-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "find",
+    "search"
+  ],
+  "chunks": [
+    {
+      "code": "find . -name notes.txt",
+      "explain": "Find a file by exact name"
+    },
+    {
+      "code": "find . -name '*.log'",
+      "explain": "Find all .log files"
+    },
+    {
+      "code": "find /etc -type d",
+      "explain": "Find only directories"
+    },
+    {
+      "code": "find . -type f -size +10M",
+      "explain": "Find files bigger than 10 MB"
+    },
+    {
+      "code": "find . -mtime -1",
+      "explain": "Find files changed in the last day"
+    }
+  ]
+}

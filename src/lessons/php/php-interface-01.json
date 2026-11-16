@@ -1,0 +1,44 @@
+{
+  "id": "php-interface-01",
+  "category": "PHP",
+  "topic": "Interfaces",
+  "level": 2,
+  "tags": [
+    "interface",
+    "oop"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "interface Shape {",
+      "explain": "A contract for classes"
+    },
+    {
+      "code": "    public function area(): float;",
+      "explain": "Implementers must define area"
+    },
+    {
+      "code": "}",
+      "explain": "End of interface"
+    },
+    {
+      "code": "class Square implements Shape {",
+      "explain": "Square promises to follow Shape"
+    },
+    {
+      "code": "    public function __construct(private float $s) {}",
+      "explain": "Promoted property for the side"
+    },
+    {
+      "code": "    public function area(): float { return $this->s ** 2; }",
+      "explain": "Implements the required method"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    }
+  ]
+}

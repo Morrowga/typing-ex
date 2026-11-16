@@ -1,0 +1,28 @@
+{
+  "id": "python-functions-01",
+  "category": "Python",
+  "topic": "Defining Functions",
+  "level": 1,
+  "tags": [
+    "functions",
+    "return"
+  ],
+  "chunks": [
+    {
+      "code": "def area(width, height):",
+      "explain": "Define a function with two parameters"
+    },
+    {
+      "code": "    return width * height",
+      "explain": "Send the result back to the caller"
+    },
+    {
+      "code": "room = area(4, 5)",
+      "explain": "Call the function with arguments"
+    },
+    {
+      "code": "print(room)",
+      "explain": "Show the area: 20"
+    }
+  ]
+}

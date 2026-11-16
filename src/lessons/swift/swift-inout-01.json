@@ -1,0 +1,36 @@
+{
+  "id": "swift-inout-01",
+  "category": "Swift",
+  "topic": "In-Out Parameters",
+  "level": 1,
+  "tags": [
+    "function",
+    "inout"
+  ],
+  "chunks": [
+    {
+      "code": "func addTax(_ price: inout Double) {",
+      "explain": "inout lets the function modify the caller"
+    },
+    {
+      "code": "    price *= 1.2",
+      "explain": "Add twenty percent"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "var total = 50.0",
+      "explain": "A mutable value"
+    },
+    {
+      "code": "addTax(&total)",
+      "explain": "Pass with an ampersand"
+    },
+    {
+      "code": "print(total)",
+      "explain": "Prints 60.0"
+    }
+  ]
+}

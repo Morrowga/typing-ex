@@ -1,0 +1,44 @@
+{
+  "id": "php-readonly-01",
+  "category": "PHP",
+  "topic": "Readonly Properties",
+  "level": 2,
+  "tags": [
+    "php8",
+    "immutability"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "final class Money {",
+      "explain": "final: cannot be extended"
+    },
+    {
+      "code": "    public function __construct(public readonly int $cents) {}",
+      "explain": "Set once, never changed"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "$m = new Money(500);",
+      "explain": "Create an immutable object"
+    },
+    {
+      "code": "try { $m->cents = 1; } catch (Error $e) {",
+      "explain": "Modifying a readonly property throws"
+    },
+    {
+      "code": "    echo $e->getMessage();",
+      "explain": "Prints the error message"
+    },
+    {
+      "code": "}",
+      "explain": "End of try"
+    }
+  ]
+}

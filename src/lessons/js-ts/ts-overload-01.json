@@ -1,0 +1,45 @@
+{
+  "id": "ts-overload-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Overloads",
+  "level": 2,
+  "tags": [
+    "function",
+    "overload"
+  ],
+  "chunks": [
+    {
+      "code": "function parse(v: string): number;",
+      "explain": "Overload: string in"
+    },
+    {
+      "code": "function parse(v: number): string;",
+      "explain": "Overload: number in"
+    },
+    {
+      "code": "function parse(v: string | number): number | string {",
+      "explain": "Implementation signature"
+    },
+    {
+      "code": "  return typeof v === \"string\" ? Number(v) : String(v);",
+      "explain": "Convert the other way"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "const n = parse(\"42\");",
+      "explain": "Typed as number"
+    },
+    {
+      "code": "const s = parse(42);",
+      "explain": "Typed as string"
+    },
+    {
+      "code": "console.log(n + 1, s.length);",
+      "explain": "Both safe to use"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-template-01",
+  "category": "Kotlin",
+  "topic": "String Templates",
+  "level": 1,
+  "tags": [
+    "string",
+    "template"
+  ],
+  "chunks": [
+    {
+      "code": "val name = \"Mia\"",
+      "explain": "Store a name in a read-only val"
+    },
+    {
+      "code": "val age = 29",
+      "explain": "Store an age as an Int"
+    },
+    {
+      "code": "println(\"Hi, $name!\")",
+      "explain": "Insert a variable with a dollar sign"
+    },
+    {
+      "code": "println(\"Next year: ${age + 1}\")",
+      "explain": "Use braces to embed an expression"
+    },
+    {
+      "code": "println(\"Name length: ${name.length}\")",
+      "explain": "Braces also work for properties"
+    }
+  ]
+}

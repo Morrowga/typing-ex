@@ -1,0 +1,41 @@
+{
+  "id": "js-date-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Date",
+  "level": 1,
+  "tags": [
+    "date",
+    "time"
+  ],
+  "chunks": [
+    {
+      "code": "const now = new Date();",
+      "explain": "Current date and time"
+    },
+    {
+      "code": "const xmas = new Date(2025, 11, 25);",
+      "explain": "Month is zero-based"
+    },
+    {
+      "code": "console.log(now.getFullYear());",
+      "explain": "Show the year"
+    },
+    {
+      "code": "console.log(xmas.getMonth());",
+      "explain": "Prints 11 for December"
+    },
+    {
+      "code": "const diff = xmas - now;",
+      "explain": "Difference in milliseconds"
+    },
+    {
+      "code": "console.log(Math.ceil(diff / 86400000));",
+      "explain": "Days until Christmas"
+    },
+    {
+      "code": "console.log(xmas.toISOString());",
+      "explain": "Standard date string"
+    }
+  ]
+}

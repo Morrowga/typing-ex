@@ -1,0 +1,46 @@
+{
+  "id": "ts-unknown-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "unknown vs any",
+  "level": 2,
+  "tags": [
+    "unknown",
+    "any",
+    "narrowing"
+  ],
+  "chunks": [
+    {
+      "code": "function describe(v: unknown): string {",
+      "explain": "Must check before use"
+    },
+    {
+      "code": "  if (typeof v === \"string\") return v.toUpperCase();",
+      "explain": "Narrowed to string"
+    },
+    {
+      "code": "  if (typeof v === \"number\") return v.toFixed(2);",
+      "explain": "Narrowed to number"
+    },
+    {
+      "code": "  if (Array.isArray(v)) return `list of ${v.length}`;",
+      "explain": "Narrowed to array"
+    },
+    {
+      "code": "  return \"unknown\";",
+      "explain": "Fallback"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "const parsed: unknown = JSON.parse(\"[1,2]\");",
+      "explain": "Safe parse result"
+    },
+    {
+      "code": "console.log(describe(parsed));",
+      "explain": "Prints list of 2"
+    }
+  ]
+}

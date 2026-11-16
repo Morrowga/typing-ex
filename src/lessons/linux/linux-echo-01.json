@@ -1,0 +1,32 @@
+{
+  "id": "linux-echo-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "echo",
+    "printf"
+  ],
+  "chunks": [
+    {
+      "code": "echo Hello World",
+      "explain": "Print text"
+    },
+    {
+      "code": "echo -n 'no newline'",
+      "explain": "Print without a trailing newline"
+    },
+    {
+      "code": "echo -e 'a\\tb'",
+      "explain": "Interpret escapes like tab"
+    },
+    {
+      "code": "printf '%s is %d\\n' age 30",
+      "explain": "Print with a format string"
+    },
+    {
+      "code": "printf '%05.1f\\n' 3.14159",
+      "explain": "Format a number with padding"
+    }
+  ]
+}

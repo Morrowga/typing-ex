@@ -1,0 +1,33 @@
+{
+  "id": "linux-pipes-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "pipe",
+    "grep",
+    "find"
+  ],
+  "chunks": [
+    {
+      "code": "grep \" 500 \" access.log | wc -l",
+      "explain": "Count lines with status 500"
+    },
+    {
+      "code": "cut -d' ' -f1 access.log | sort | uniq -c | sort -rn | head -n 5",
+      "explain": "Top 5 IP addresses by request count"
+    },
+    {
+      "code": "find . -name \"*.log\" -mtime +7",
+      "explain": "Find .log files older than 7 days"
+    },
+    {
+      "code": "find . -name \"*.log\" | xargs grep -l \"error\"",
+      "explain": "List log files that mention error"
+    },
+    {
+      "code": "ls /nope 2> errors.txt",
+      "explain": "Send error messages to a file"
+    }
+  ]
+}

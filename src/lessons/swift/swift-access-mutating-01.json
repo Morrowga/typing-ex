@@ -1,0 +1,45 @@
+{
+  "id": "swift-access-mutating-01",
+  "category": "Swift",
+  "topic": "Access Control and Mutating",
+  "level": 2,
+  "tags": [
+    "access-control",
+    "mutating",
+    "struct"
+  ],
+  "chunks": [
+    {
+      "code": "struct Wallet {",
+      "explain": "A struct hiding its state"
+    },
+    {
+      "code": "    private(set) var cents = 0",
+      "explain": "Readable outside, writable inside"
+    },
+    {
+      "code": "    mutating func add(_ amount: Int) {",
+      "explain": "Structs need mutating to change self"
+    },
+    {
+      "code": "        cents += amount",
+      "explain": "Update the balance"
+    },
+    {
+      "code": "    }",
+      "explain": "End the method"
+    },
+    {
+      "code": "}",
+      "explain": "End the struct"
+    },
+    {
+      "code": "var wallet = Wallet()",
+      "explain": "Must be var to mutate"
+    },
+    {
+      "code": "wallet.add(250)",
+      "explain": "Call the mutating method"
+    }
+  ]
+}

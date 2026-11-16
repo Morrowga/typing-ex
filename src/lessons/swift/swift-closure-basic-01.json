@@ -1,0 +1,32 @@
+{
+  "id": "swift-closure-basic-01",
+  "category": "Swift",
+  "topic": "Closure Basics",
+  "level": 1,
+  "tags": [
+    "closure",
+    "function"
+  ],
+  "chunks": [
+    {
+      "code": "let add = { (a: Int, b: Int) -> Int in a + b }",
+      "explain": "Store a closure in a constant"
+    },
+    {
+      "code": "print(add(2, 3))",
+      "explain": "Call it like a function"
+    },
+    {
+      "code": "let names = [\"Zoe\", \"Al\", \"Max\"]",
+      "explain": "Some names"
+    },
+    {
+      "code": "let byLength = names.sorted { $0.count < $1.count }",
+      "explain": "Trailing closure compares lengths"
+    },
+    {
+      "code": "print(byLength)",
+      "explain": "Shortest names come first"
+    }
+  ]
+}

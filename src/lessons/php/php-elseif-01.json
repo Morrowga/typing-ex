@@ -1,0 +1,40 @@
+{
+  "id": "php-elseif-01",
+  "category": "PHP",
+  "topic": "Elseif",
+  "level": 1,
+  "tags": [
+    "condition",
+    "elseif"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$score = 72;",
+      "explain": "Sample score"
+    },
+    {
+      "code": "if ($score >= 90) {",
+      "explain": "Highest grade check"
+    },
+    {
+      "code": "    echo \"A\";",
+      "explain": "Score 90 or more"
+    },
+    {
+      "code": "} elseif ($score >= 70) {",
+      "explain": "Checked only if the first failed"
+    },
+    {
+      "code": "    echo \"B\";",
+      "explain": "Prints B for 72"
+    },
+    {
+      "code": "}",
+      "explain": "End of chain"
+    }
+  ]
+}

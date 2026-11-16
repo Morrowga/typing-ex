@@ -1,0 +1,32 @@
+{
+  "id": "php-preg-match-01",
+  "category": "PHP",
+  "topic": "Regex Match",
+  "level": 2,
+  "tags": [
+    "regex",
+    "preg_match"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$s = 'Order #4821 shipped';",
+      "explain": "Sample text"
+    },
+    {
+      "code": "if (preg_match('/#(\\d+)/', $s, $m)) {",
+      "explain": "Find a # followed by digits"
+    },
+    {
+      "code": "    echo $m[1];",
+      "explain": "Capture group 1: 4821"
+    },
+    {
+      "code": "}",
+      "explain": "End of if"
+    }
+  ]
+}

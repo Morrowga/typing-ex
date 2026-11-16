@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-dataclass-01",
+  "category": "Kotlin",
+  "topic": "Data Classes",
+  "level": 1,
+  "tags": [
+    "class",
+    "data"
+  ],
+  "chunks": [
+    {
+      "code": "data class Point(val x: Int, val y: Int)",
+      "explain": "Data class gets toString and equals"
+    },
+    {
+      "code": "val p = Point(2, 5)",
+      "explain": "Create a point"
+    },
+    {
+      "code": "println(p)",
+      "explain": "Prints Point(x=2, y=5)"
+    },
+    {
+      "code": "val q = p.copy(y = 9)",
+      "explain": "Copy with one field changed"
+    },
+    {
+      "code": "println(p == q)",
+      "explain": "Compares by values: false"
+    }
+  ]
+}

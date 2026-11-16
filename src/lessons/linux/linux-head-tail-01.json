@@ -1,0 +1,32 @@
+{
+  "id": "linux-head-tail-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "head",
+    "tail"
+  ],
+  "chunks": [
+    {
+      "code": "head data.csv",
+      "explain": "Show the first 10 lines"
+    },
+    {
+      "code": "head -n 3 data.csv",
+      "explain": "Show the first 3 lines"
+    },
+    {
+      "code": "tail data.csv",
+      "explain": "Show the last 10 lines"
+    },
+    {
+      "code": "tail -n 20 server.log",
+      "explain": "Show the last 20 lines"
+    },
+    {
+      "code": "tail -f server.log",
+      "explain": "Follow a file as new lines arrive"
+    }
+  ]
+}

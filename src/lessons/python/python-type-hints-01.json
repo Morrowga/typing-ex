@@ -1,0 +1,32 @@
+{
+  "id": "python-type-hints-01",
+  "category": "Python",
+  "topic": "Type Hints",
+  "level": 2,
+  "tags": [
+    "typing",
+    "functions"
+  ],
+  "chunks": [
+    {
+      "code": "def mean(values: list[float]) -> float:",
+      "explain": "Annotate input and return types"
+    },
+    {
+      "code": "    return sum(values) / len(values)",
+      "explain": "Compute the average"
+    },
+    {
+      "code": "def label(n: int | None = None) -> str:",
+      "explain": "A union type with a default"
+    },
+    {
+      "code": "    return \"none\" if n is None else str(n)",
+      "explain": "Handle the None case"
+    },
+    {
+      "code": "print(mean([1.5, 2.5]), label())",
+      "explain": "Show 2.0 and none"
+    }
+  ]
+}

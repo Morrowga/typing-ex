@@ -1,0 +1,33 @@
+{
+  "id": "js-template-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Template Literals",
+  "level": 1,
+  "tags": [
+    "string",
+    "template"
+  ],
+  "chunks": [
+    {
+      "code": "const name = \"Ada\";",
+      "explain": "Store a name string"
+    },
+    {
+      "code": "const age = 36;",
+      "explain": "Store an age number"
+    },
+    {
+      "code": "const msg = `${name} is ${age} years old`;",
+      "explain": "Embed values with ${}"
+    },
+    {
+      "code": "console.log(msg);",
+      "explain": "Print the message"
+    },
+    {
+      "code": "const multi = `line one\\nline two`;",
+      "explain": "Escape sequence makes a line break"
+    }
+  ]
+}

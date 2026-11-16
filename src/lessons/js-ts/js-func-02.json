@@ -1,0 +1,37 @@
+{
+  "id": "js-func-02",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Functions",
+  "level": 1,
+  "tags": [
+    "function",
+    "default-params"
+  ],
+  "chunks": [
+    {
+      "code": "function greet(name = \"friend\") {",
+      "explain": "Default parameter value"
+    },
+    {
+      "code": "  return \"Hello, \" + name + \"!\";",
+      "explain": "Build the greeting"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "console.log(greet());",
+      "explain": "Uses the default"
+    },
+    {
+      "code": "console.log(greet(\"Sam\"));",
+      "explain": "Uses the argument"
+    },
+    {
+      "code": "const shout = function (s) { return s.toUpperCase(); };",
+      "explain": "Function expression"
+    }
+  ]
+}

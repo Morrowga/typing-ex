@@ -1,0 +1,32 @@
+{
+  "id": "linux-disk-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "df",
+    "du"
+  ],
+  "chunks": [
+    {
+      "code": "df -h",
+      "explain": "Show free disk space per filesystem"
+    },
+    {
+      "code": "du -sh ~/Downloads",
+      "explain": "Total size of a folder"
+    },
+    {
+      "code": "du -h --max-depth=1 .",
+      "explain": "Size of each subfolder"
+    },
+    {
+      "code": "du -sh * | sort -h",
+      "explain": "Sort items by size"
+    },
+    {
+      "code": "free -h",
+      "explain": "Show memory usage"
+    }
+  ]
+}

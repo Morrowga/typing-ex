@@ -1,0 +1,36 @@
+{
+  "id": "php-function-01",
+  "category": "PHP",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "function",
+    "return"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "function add($a, $b) {",
+      "explain": "Define add with two inputs"
+    },
+    {
+      "code": "    return $a + $b;",
+      "explain": "Give back their sum"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "$total = add(2, 3);",
+      "explain": "Call add and store 5"
+    },
+    {
+      "code": "echo $total;",
+      "explain": "Print 5"
+    }
+  ]
+}

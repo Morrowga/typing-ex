@@ -1,0 +1,36 @@
+{
+  "id": "php-string-funcs-01",
+  "category": "PHP",
+  "topic": "String Functions",
+  "level": 1,
+  "tags": [
+    "strings",
+    "functions"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$s = \"  Hello World  \";",
+      "explain": "String with spaces"
+    },
+    {
+      "code": "$t = trim($s);",
+      "explain": "Remove outer whitespace"
+    },
+    {
+      "code": "echo strlen($t);",
+      "explain": "Length: 11"
+    },
+    {
+      "code": "echo strtoupper($t);",
+      "explain": "HELLO WORLD"
+    },
+    {
+      "code": "echo str_replace(\"World\", \"PHP\", $t);",
+      "explain": "Hello PHP"
+    }
+  ]
+}

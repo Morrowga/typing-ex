@@ -1,0 +1,36 @@
+{
+  "id": "python-argparse-01",
+  "category": "Python",
+  "topic": "argparse",
+  "level": 2,
+  "tags": [
+    "cli",
+    "argparse"
+  ],
+  "chunks": [
+    {
+      "code": "import argparse",
+      "explain": "Import argparse"
+    },
+    {
+      "code": "parser = argparse.ArgumentParser(description=\"Greeter\")",
+      "explain": "Create the parser"
+    },
+    {
+      "code": "parser.add_argument(\"name\")",
+      "explain": "A required positional argument"
+    },
+    {
+      "code": "parser.add_argument(\"--shout\", action=\"store_true\")",
+      "explain": "An optional on/off flag"
+    },
+    {
+      "code": "args = parser.parse_args()",
+      "explain": "Read the command line"
+    },
+    {
+      "code": "print(args.name.upper() if args.shout else args.name)",
+      "explain": "Use the parsed values"
+    }
+  ]
+}

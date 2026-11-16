@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-ifexpr-01",
+  "category": "Kotlin",
+  "topic": "If as Expression",
+  "level": 1,
+  "tags": [
+    "if",
+    "expression"
+  ],
+  "chunks": [
+    {
+      "code": "val temp = 24",
+      "explain": "A temperature in degrees"
+    },
+    {
+      "code": "val label = if (temp > 30) \"hot\" else \"mild\"",
+      "explain": "if returns a value you can store"
+    },
+    {
+      "code": "println(label)",
+      "explain": "Prints mild"
+    },
+    {
+      "code": "val bigger = if (temp > 10) temp else 10",
+      "explain": "Pick one of two numbers"
+    },
+    {
+      "code": "println(bigger)",
+      "explain": "Prints 24"
+    }
+  ]
+}

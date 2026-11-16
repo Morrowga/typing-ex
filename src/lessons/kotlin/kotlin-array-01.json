@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-array-01",
+  "category": "Kotlin",
+  "topic": "Arrays",
+  "level": 1,
+  "tags": [
+    "array",
+    "collections"
+  ],
+  "chunks": [
+    {
+      "code": "val nums = arrayOf(4, 8, 15)",
+      "explain": "Create an array of Ints"
+    },
+    {
+      "code": "nums[1] = 16",
+      "explain": "Arrays are changeable by index"
+    },
+    {
+      "code": "println(nums.size)",
+      "explain": "Prints 3"
+    },
+    {
+      "code": "println(nums.joinToString())",
+      "explain": "Prints 4, 16, 15"
+    },
+    {
+      "code": "val zeros = IntArray(3)",
+      "explain": "Primitive array filled with zeros"
+    }
+  ]
+}

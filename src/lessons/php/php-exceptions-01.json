@@ -1,0 +1,40 @@
+{
+  "id": "php-exceptions-01",
+  "category": "PHP",
+  "topic": "Exceptions",
+  "level": 2,
+  "tags": [
+    "exceptions",
+    "error-handling"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "function div(int $a, int $b): int {",
+      "explain": "Division helper"
+    },
+    {
+      "code": "    return $b === 0 ? throw new DomainException('b is 0') : intdiv($a, $b);",
+      "explain": "throw works as an expression in PHP 8"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "try { echo div(8, 0); } catch (DomainException $e) {",
+      "explain": "Catch the specific exception"
+    },
+    {
+      "code": "    echo 'Error: ' . $e->getMessage();",
+      "explain": "Prints Error: b is 0"
+    },
+    {
+      "code": "} finally { echo ' done'; }",
+      "explain": "finally always runs"
+    }
+  ]
+}

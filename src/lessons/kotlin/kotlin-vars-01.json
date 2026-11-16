@@ -1,0 +1,33 @@
+{
+  "id": "kotlin-vars-01",
+  "category": "Kotlin",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "val",
+    "var",
+    "string"
+  ],
+  "chunks": [
+    {
+      "code": "val name = \"Ada\"",
+      "explain": "A read-only value (val)"
+    },
+    {
+      "code": "var score = 0",
+      "explain": "A variable (var) that can change"
+    },
+    {
+      "code": "score += 10",
+      "explain": "Add 10 to score"
+    },
+    {
+      "code": "val message = \"$name has $score points\"",
+      "explain": "Put values inside text with $"
+    },
+    {
+      "code": "println(message)",
+      "explain": "Show: Ada has 10 points"
+    }
+  ]
+}

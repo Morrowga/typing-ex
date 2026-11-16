@@ -1,0 +1,24 @@
+{
+  "id": "python-loop-01",
+  "category": "Python",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "loop",
+    "print"
+  ],
+  "chunks": [
+    {
+      "code": "rows = [\"a\", \"b\", \"c\"]",
+      "explain": "A list called rows with three texts"
+    },
+    {
+      "code": "for row in rows:",
+      "explain": "Loop: repeat for every item in rows"
+    },
+    {
+      "code": "    print(row)",
+      "explain": "Show the current item"
+    }
+  ]
+}

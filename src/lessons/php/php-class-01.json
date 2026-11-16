@@ -1,0 +1,45 @@
+{
+  "id": "php-class-01",
+  "category": "PHP",
+  "topic": "Objects",
+  "level": 2,
+  "tags": [
+    "class",
+    "method",
+    "types"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "class User {",
+      "explain": "A class: blueprint for User objects"
+    },
+    {
+      "code": "    public function __construct(private string $name) {}",
+      "explain": "Constructor that stores $name as a private property"
+    },
+    {
+      "code": "    public function greet(): string {",
+      "explain": "A method that returns a string"
+    },
+    {
+      "code": "        return \"Hi, \" . $this->name;",
+      "explain": "Read this object's name with $this->"
+    },
+    {
+      "code": "    }",
+      "explain": "End of the method"
+    },
+    {
+      "code": "}",
+      "explain": "End of the class"
+    },
+    {
+      "code": "echo (new User(\"Ada\"))->greet();",
+      "explain": "Create a User and call greet: Hi, Ada"
+    }
+  ]
+}

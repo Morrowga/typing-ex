@@ -1,0 +1,32 @@
+{
+  "id": "linux-script-func-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "functions"
+  ],
+  "chunks": [
+    {
+      "code": "greet() {",
+      "explain": "Define a function"
+    },
+    {
+      "code": "  local who=\"${1:-world}\"",
+      "explain": "Local variable with default value"
+    },
+    {
+      "code": "  echo \"Hello, $who\"",
+      "explain": "Print the greeting"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "greet Linus",
+      "explain": "Call with the first argument"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "swift-sets-01",
+  "category": "Swift",
+  "topic": "Sets",
+  "level": 1,
+  "tags": [
+    "set",
+    "collection"
+  ],
+  "chunks": [
+    {
+      "code": "var tags: Set<String> = [\"swift\", \"ios\"]",
+      "explain": "A set holds unique values"
+    },
+    {
+      "code": "tags.insert(\"swift\")",
+      "explain": "Inserting a duplicate does nothing"
+    },
+    {
+      "code": "tags.insert(\"mac\")",
+      "explain": "Add a new unique value"
+    },
+    {
+      "code": "let other: Set = [\"ios\", \"web\"]",
+      "explain": "Another set, type inferred"
+    },
+    {
+      "code": "let shared = tags.intersection(other)",
+      "explain": "Values found in both sets"
+    },
+    {
+      "code": "print(tags.count, shared)",
+      "explain": "Show the count and the overlap"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-builder-01",
+  "category": "Kotlin",
+  "topic": "StringBuilder",
+  "level": 2,
+  "tags": [
+    "string",
+    "builder"
+  ],
+  "chunks": [
+    {
+      "code": "val csv = buildString {",
+      "explain": "buildString returns the final text"
+    },
+    {
+      "code": "    append(\"id,name\")",
+      "explain": "Add the header"
+    },
+    {
+      "code": "    appendLine()",
+      "explain": "Add a line break"
+    },
+    {
+      "code": "    append(\"1,Ann\")",
+      "explain": "Add a row"
+    },
+    {
+      "code": "}",
+      "explain": "End of builder"
+    },
+    {
+      "code": "val sb = StringBuilder(\"abc\")",
+      "explain": "A classic mutable builder"
+    },
+    {
+      "code": "println(sb.reverse())",
+      "explain": "Prints cba"
+    }
+  ]
+}

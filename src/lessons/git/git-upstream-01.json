@@ -1,0 +1,37 @@
+{
+  "id": "git-upstream-01",
+  "category": "Git",
+  "topic": "Upstream",
+  "level": 2,
+  "tags": [
+    "upstream",
+    "tracking",
+    "prune"
+  ],
+  "chunks": [
+    {
+      "code": "git branch -u origin/main",
+      "explain": "Set upstream of current branch"
+    },
+    {
+      "code": "git push --set-upstream origin feature/api",
+      "explain": "Push and track in one step"
+    },
+    {
+      "code": "git branch -vv",
+      "explain": "Show branches with tracking info"
+    },
+    {
+      "code": "git fetch --prune",
+      "explain": "Drop refs to deleted remote branches"
+    },
+    {
+      "code": "git config --global fetch.prune true",
+      "explain": "Always prune on fetch"
+    },
+    {
+      "code": "git pull --rebase",
+      "explain": "Fetch and rebase instead of merge"
+    }
+  ]
+}

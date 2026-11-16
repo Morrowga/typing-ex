@@ -1,0 +1,36 @@
+{
+  "id": "linux-expansion-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "expansion"
+  ],
+  "chunks": [
+    {
+      "code": "file=\"/home/alice/report.tar.gz\"",
+      "explain": "Sample path to work with"
+    },
+    {
+      "code": "echo \"${file##*/}\"",
+      "explain": "Strip the directory, keep the name"
+    },
+    {
+      "code": "echo \"${file%.gz}\"",
+      "explain": "Remove the .gz suffix"
+    },
+    {
+      "code": "echo \"${file/alice/bob}\"",
+      "explain": "Replace the first match"
+    },
+    {
+      "code": "echo \"${#file} ${file^^}\"",
+      "explain": "Length and uppercase version"
+    },
+    {
+      "code": "echo \"${undefined:-fallback}\"",
+      "explain": "Default value when unset"
+    }
+  ]
+}

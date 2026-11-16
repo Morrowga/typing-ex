@@ -1,0 +1,37 @@
+{
+  "id": "js-string-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "String Methods",
+  "level": 1,
+  "tags": [
+    "string",
+    "methods"
+  ],
+  "chunks": [
+    {
+      "code": "const title = \"  Learn JavaScript  \";",
+      "explain": "A padded string"
+    },
+    {
+      "code": "const clean = title.trim();",
+      "explain": "Remove outer spaces"
+    },
+    {
+      "code": "console.log(clean.toUpperCase());",
+      "explain": "Make all capitals"
+    },
+    {
+      "code": "console.log(clean.length);",
+      "explain": "Count the characters"
+    },
+    {
+      "code": "console.log(clean.includes(\"Java\"));",
+      "explain": "Check for a substring"
+    },
+    {
+      "code": "console.log(clean.split(\" \"));",
+      "explain": "Split into words"
+    }
+  ]
+}

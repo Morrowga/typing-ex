@@ -1,0 +1,40 @@
+{
+  "id": "linux-script-if-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "if"
+  ],
+  "chunks": [
+    {
+      "code": "if [ -f config.yml ]; then",
+      "explain": "Test that a regular file exists"
+    },
+    {
+      "code": "  echo \"found\"",
+      "explain": "Runs when the test is true"
+    },
+    {
+      "code": "elif [ -d config ]; then",
+      "explain": "Otherwise test for a directory"
+    },
+    {
+      "code": "  echo \"dir\"",
+      "explain": "Runs for the directory case"
+    },
+    {
+      "code": "else",
+      "explain": "Fallback branch"
+    },
+    {
+      "code": "  echo \"missing\"",
+      "explain": "Runs when neither exists"
+    },
+    {
+      "code": "fi",
+      "explain": "End of the if block"
+    }
+  ]
+}

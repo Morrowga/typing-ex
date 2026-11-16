@@ -1,0 +1,41 @@
+{
+  "id": "js-promise-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Promises",
+  "level": 2,
+  "tags": [
+    "promise",
+    "then"
+  ],
+  "chunks": [
+    {
+      "code": "const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));",
+      "explain": "Promise that resolves later"
+    },
+    {
+      "code": "const task = new Promise((resolve, reject) => {",
+      "explain": "Wrap an async result"
+    },
+    {
+      "code": "  Math.random() > 0.5 ? resolve(\"ok\") : reject(new Error(\"fail\"));",
+      "explain": "Settle randomly"
+    },
+    {
+      "code": "});",
+      "explain": "End of the promise"
+    },
+    {
+      "code": "task.then((v) => console.log(v))",
+      "explain": "Handle success"
+    },
+    {
+      "code": "  .catch((e) => console.error(e.message))",
+      "explain": "Handle failure"
+    },
+    {
+      "code": "  .finally(() => console.log(\"done\"));",
+      "explain": "Always runs last"
+    }
+  ]
+}

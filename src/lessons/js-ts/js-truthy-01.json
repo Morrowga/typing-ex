@@ -1,0 +1,42 @@
+{
+  "id": "js-truthy-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Truthy and Falsy",
+  "level": 1,
+  "tags": [
+    "truthy",
+    "ternary",
+    "optional-chaining"
+  ],
+  "chunks": [
+    {
+      "code": "const name = \"\";",
+      "explain": "An empty string is falsy"
+    },
+    {
+      "code": "const shown = name || \"Guest\";",
+      "explain": "Fallback if falsy"
+    },
+    {
+      "code": "const qty = 0;",
+      "explain": "Zero is falsy too"
+    },
+    {
+      "code": "const safe = qty ?? 10;",
+      "explain": "Fallback only if null"
+    },
+    {
+      "code": "const label = qty > 0 ? \"in stock\" : \"sold out\";",
+      "explain": "Ternary picks one"
+    },
+    {
+      "code": "const user = { profile: null };",
+      "explain": "Missing profile"
+    },
+    {
+      "code": "console.log(user.profile?.email);",
+      "explain": "Optional chaining: undefined"
+    }
+  ]
+}

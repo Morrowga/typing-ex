@@ -1,0 +1,36 @@
+{
+  "id": "swift-variadic-01",
+  "category": "Swift",
+  "topic": "Variadic Functions",
+  "level": 1,
+  "tags": [
+    "function",
+    "variadic"
+  ],
+  "chunks": [
+    {
+      "code": "func average(_ nums: Double...) -> Double {",
+      "explain": "Accept any number of Doubles"
+    },
+    {
+      "code": "    if nums.isEmpty { return 0 }",
+      "explain": "Avoid dividing by zero"
+    },
+    {
+      "code": "    return nums.reduce(0, +) / Double(nums.count)",
+      "explain": "Sum divided by count"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "print(average(4, 8, 6))",
+      "explain": "Pass three values"
+    },
+    {
+      "code": "print(average())",
+      "explain": "Pass none"
+    }
+  ]
+}

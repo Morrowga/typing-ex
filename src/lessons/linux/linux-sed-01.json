@@ -1,0 +1,32 @@
+{
+  "id": "linux-sed-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "sed",
+    "substitute"
+  ],
+  "chunks": [
+    {
+      "code": "sed 's/foo/bar/' file.txt",
+      "explain": "Replace first foo per line"
+    },
+    {
+      "code": "sed 's/foo/bar/g' file.txt",
+      "explain": "Replace every foo on each line"
+    },
+    {
+      "code": "sed -i 's/http:/https:/' urls.txt",
+      "explain": "Edit the file in place"
+    },
+    {
+      "code": "sed -n '5,10p' file.txt",
+      "explain": "Print only lines 5 to 10"
+    },
+    {
+      "code": "sed '/^#/d' config.conf",
+      "explain": "Delete comment lines"
+    }
+  ]
+}

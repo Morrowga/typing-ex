@@ -1,0 +1,28 @@
+{
+  "id": "python-csv-01",
+  "category": "Python",
+  "topic": "CSV",
+  "level": 2,
+  "tags": [
+    "csv",
+    "files"
+  ],
+  "chunks": [
+    {
+      "code": "import csv",
+      "explain": "Import the csv module"
+    },
+    {
+      "code": "with open(\"people.csv\", newline=\"\") as f:",
+      "explain": "Open the file for csv reading"
+    },
+    {
+      "code": "    for row in csv.DictReader(f):",
+      "explain": "Each row becomes a dict"
+    },
+    {
+      "code": "        print(row[\"name\"], row[\"age\"])",
+      "explain": "Access columns by header name"
+    }
+  ]
+}

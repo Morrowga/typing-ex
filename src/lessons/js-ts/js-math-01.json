@@ -1,0 +1,37 @@
+{
+  "id": "js-math-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Numbers and Math",
+  "level": 1,
+  "tags": [
+    "math",
+    "numbers"
+  ],
+  "chunks": [
+    {
+      "code": "const price = 19.99;",
+      "explain": "A decimal number"
+    },
+    {
+      "code": "console.log(Math.round(price));",
+      "explain": "Round to nearest: 20"
+    },
+    {
+      "code": "console.log(Math.floor(price));",
+      "explain": "Round down: 19"
+    },
+    {
+      "code": "console.log(Math.max(3, 9, 5));",
+      "explain": "Largest value: 9"
+    },
+    {
+      "code": "const dice = Math.floor(Math.random() * 6) + 1;",
+      "explain": "Random roll from 1 to 6"
+    },
+    {
+      "code": "console.log(price.toFixed(1));",
+      "explain": "Format with one decimal"
+    }
+  ]
+}

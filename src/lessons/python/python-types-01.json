@@ -1,0 +1,32 @@
+{
+  "id": "python-types-01",
+  "category": "Python",
+  "topic": "Basic Types",
+  "level": 1,
+  "tags": [
+    "types",
+    "type"
+  ],
+  "chunks": [
+    {
+      "code": "count = 12",
+      "explain": "An int is a whole number"
+    },
+    {
+      "code": "price = 4.99",
+      "explain": "A float has a decimal point"
+    },
+    {
+      "code": "active = True",
+      "explain": "A bool is True or False"
+    },
+    {
+      "code": "title = \"Report\"",
+      "explain": "A str holds text"
+    },
+    {
+      "code": "print(type(price), type(active))",
+      "explain": "Show the types of two values"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "git-signing-01",
+  "category": "Git",
+  "topic": "Signing",
+  "level": 2,
+  "tags": [
+    "gpg",
+    "signing",
+    "security"
+  ],
+  "chunks": [
+    {
+      "code": "git config --global user.signingkey 3AA5C34371567BD2",
+      "explain": "Choose your signing key"
+    },
+    {
+      "code": "git config --global commit.gpgsign true",
+      "explain": "Sign every commit"
+    },
+    {
+      "code": "git commit -S -m \"Release prep\"",
+      "explain": "Sign a single commit"
+    },
+    {
+      "code": "git tag -s v2.0.0 -m \"Version 2.0.0\"",
+      "explain": "Create a signed tag"
+    },
+    {
+      "code": "git verify-commit HEAD",
+      "explain": "Check the signature of a commit"
+    }
+  ]
+}

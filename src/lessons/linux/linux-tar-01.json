@@ -1,0 +1,32 @@
+{
+  "id": "linux-tar-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "tar",
+    "archive"
+  ],
+  "chunks": [
+    {
+      "code": "tar -cvf backup.tar docs",
+      "explain": "Create an archive from docs"
+    },
+    {
+      "code": "tar -tf backup.tar",
+      "explain": "List the archive contents"
+    },
+    {
+      "code": "tar -xvf backup.tar",
+      "explain": "Extract an archive"
+    },
+    {
+      "code": "tar -czvf site.tar.gz public",
+      "explain": "Create a gzip-compressed archive"
+    },
+    {
+      "code": "tar -xzvf site.tar.gz -C /tmp",
+      "explain": "Extract into /tmp"
+    }
+  ]
+}

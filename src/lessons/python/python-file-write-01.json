@@ -1,0 +1,32 @@
+{
+  "id": "python-file-write-01",
+  "category": "Python",
+  "topic": "Writing Files",
+  "level": 1,
+  "tags": [
+    "files",
+    "open"
+  ],
+  "chunks": [
+    {
+      "code": "lines = [\"alpha\", \"beta\", \"gamma\"]",
+      "explain": "Data to save"
+    },
+    {
+      "code": "with open(\"letters.txt\", \"w\") as f:",
+      "explain": "Open a file for writing safely"
+    },
+    {
+      "code": "    for line in lines:",
+      "explain": "Go through each line"
+    },
+    {
+      "code": "        f.write(line + \"\\n\")",
+      "explain": "Write the line plus a newline"
+    },
+    {
+      "code": "print(\"saved\")",
+      "explain": "Confirm after the file is closed"
+    }
+  ]
+}

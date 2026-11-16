@@ -1,0 +1,32 @@
+{
+  "id": "kotlin-letnull-01",
+  "category": "Kotlin",
+  "topic": "let for Null Checks",
+  "level": 2,
+  "tags": [
+    "null",
+    "let"
+  ],
+  "chunks": [
+    {
+      "code": "val input: String? = readLine()",
+      "explain": "Console input may be null"
+    },
+    {
+      "code": "input?.let {",
+      "explain": "Run the block only if non-null"
+    },
+    {
+      "code": "    println(\"Got ${it.trim()}\")",
+      "explain": "it is a non-null String here"
+    },
+    {
+      "code": "}",
+      "explain": "End of let"
+    },
+    {
+      "code": "val size = input?.length ?: 0",
+      "explain": "Length or zero when null"
+    }
+  ]
+}

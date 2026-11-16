@@ -1,0 +1,45 @@
+{
+  "id": "swift-arc-01",
+  "category": "Swift",
+  "topic": "ARC and Weak References",
+  "level": 2,
+  "tags": [
+    "class",
+    "arc",
+    "weak"
+  ],
+  "chunks": [
+    {
+      "code": "class Owner {",
+      "explain": "The owning side"
+    },
+    {
+      "code": "    var pet: Pet?",
+      "explain": "Strong reference to a pet"
+    },
+    {
+      "code": "}",
+      "explain": "End the class"
+    },
+    {
+      "code": "class Pet {",
+      "explain": "The owned side"
+    },
+    {
+      "code": "    weak var owner: Owner?",
+      "explain": "Weak avoids a retain cycle"
+    },
+    {
+      "code": "}",
+      "explain": "End the class"
+    },
+    {
+      "code": "let owner = Owner()",
+      "explain": "Create an owner"
+    },
+    {
+      "code": "owner.pet = Pet()",
+      "explain": "Link a new pet"
+    }
+  ]
+}

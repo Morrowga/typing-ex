@@ -1,0 +1,32 @@
+{
+  "id": "swift-func-defaults-01",
+  "category": "Swift",
+  "topic": "Default Parameters",
+  "level": 1,
+  "tags": [
+    "function",
+    "defaults"
+  ],
+  "chunks": [
+    {
+      "code": "func makeTag(_ text: String, bold: Bool = false) -> String {",
+      "explain": "bold defaults to false"
+    },
+    {
+      "code": "    return bold ? \"<b>\\(text)</b>\" : \"<i>\\(text)</i>\"",
+      "explain": "Ternary picks the tag"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "print(makeTag(\"Hi\"))",
+      "explain": "Uses the default value"
+    },
+    {
+      "code": "print(makeTag(\"Hi\", bold: true))",
+      "explain": "Overrides the default"
+    }
+  ]
+}

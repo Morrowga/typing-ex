@@ -1,0 +1,32 @@
+{
+  "id": "git-rebase-01",
+  "category": "Git",
+  "topic": "History",
+  "level": 2,
+  "tags": [
+    "rebase",
+    "push"
+  ],
+  "chunks": [
+    {
+      "code": "git fetch origin",
+      "explain": "Download new commits from origin"
+    },
+    {
+      "code": "git rebase origin/main",
+      "explain": "Replay your commits on top of origin/main"
+    },
+    {
+      "code": "git rebase -i HEAD~3",
+      "explain": "Edit the last 3 commits"
+    },
+    {
+      "code": "git rebase --abort",
+      "explain": "Cancel the rebase"
+    },
+    {
+      "code": "git push --force-with-lease",
+      "explain": "Force-push safely after rewriting history"
+    }
+  ]
+}

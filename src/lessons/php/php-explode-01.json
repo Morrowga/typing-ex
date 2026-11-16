@@ -1,0 +1,32 @@
+{
+  "id": "php-explode-01",
+  "category": "PHP",
+  "topic": "Explode Implode",
+  "level": 1,
+  "tags": [
+    "strings",
+    "array"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$csv = \"red,green,blue\";",
+      "explain": "Comma separated text"
+    },
+    {
+      "code": "$parts = explode(\",\", $csv);",
+      "explain": "Split into an array"
+    },
+    {
+      "code": "echo $parts[2];",
+      "explain": "Prints blue"
+    },
+    {
+      "code": "echo implode(\" | \", $parts);",
+      "explain": "Join: red | green | blue"
+    }
+  ]
+}

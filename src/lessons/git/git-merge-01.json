@@ -1,0 +1,32 @@
+{
+  "id": "git-merge-01",
+  "category": "Git",
+  "topic": "Merge",
+  "level": 1,
+  "tags": [
+    "merge",
+    "feature"
+  ],
+  "chunks": [
+    {
+      "code": "git switch main",
+      "explain": "Go to the branch that receives changes"
+    },
+    {
+      "code": "git pull",
+      "explain": "Update main first"
+    },
+    {
+      "code": "git merge feature/search",
+      "explain": "Merge the feature into main"
+    },
+    {
+      "code": "git merge --no-ff feature/search",
+      "explain": "Always create a merge commit"
+    },
+    {
+      "code": "git branch -d feature/search",
+      "explain": "Delete the merged branch"
+    }
+  ]
+}

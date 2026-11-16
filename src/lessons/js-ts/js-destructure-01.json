@@ -1,0 +1,38 @@
+{
+  "id": "js-destructure-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Destructuring",
+  "level": 1,
+  "tags": [
+    "destructuring",
+    "array",
+    "object"
+  ],
+  "chunks": [
+    {
+      "code": "const point = { x: 10, y: 20 };",
+      "explain": "An object"
+    },
+    {
+      "code": "const { x, y } = point;",
+      "explain": "Pull out properties"
+    },
+    {
+      "code": "const colors = [\"red\", \"green\", \"blue\"];",
+      "explain": "An array"
+    },
+    {
+      "code": "const [first, second] = colors;",
+      "explain": "Pull out by position"
+    },
+    {
+      "code": "const { x: px = 0 } = point;",
+      "explain": "Rename and set a default"
+    },
+    {
+      "code": "console.log(x, y, first, second, px);",
+      "explain": "Show the values"
+    }
+  ]
+}

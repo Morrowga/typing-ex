@@ -1,0 +1,32 @@
+{
+  "id": "git-reflog-01",
+  "category": "Git",
+  "topic": "Reflog",
+  "level": 2,
+  "tags": [
+    "reflog",
+    "recovery"
+  ],
+  "chunks": [
+    {
+      "code": "git reflog",
+      "explain": "List where HEAD has been"
+    },
+    {
+      "code": "git reflog show feature/login",
+      "explain": "Reflog of one branch"
+    },
+    {
+      "code": "git switch -c rescued HEAD@{2}",
+      "explain": "Branch from an earlier HEAD position"
+    },
+    {
+      "code": "git reset --hard HEAD@{1}",
+      "explain": "Jump back one step; discards edits"
+    },
+    {
+      "code": "git reflog expire --expire=now --all",
+      "explain": "Delete reflog entries; hurts recovery"
+    }
+  ]
+}

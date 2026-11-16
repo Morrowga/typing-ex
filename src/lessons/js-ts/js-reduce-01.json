@@ -1,0 +1,41 @@
+{
+  "id": "js-reduce-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Reduce",
+  "level": 2,
+  "tags": [
+    "reduce",
+    "array"
+  ],
+  "chunks": [
+    {
+      "code": "const cart = [{ n: \"pen\", p: 2 }, { n: \"book\", p: 12 }];",
+      "explain": "Items with prices"
+    },
+    {
+      "code": "const total = cart.reduce((sum, i) => sum + i.p, 0);",
+      "explain": "Add up prices"
+    },
+    {
+      "code": "const byName = cart.reduce((acc, i) => {",
+      "explain": "Build a lookup object"
+    },
+    {
+      "code": "  acc[i.n] = i.p;",
+      "explain": "Name maps to price"
+    },
+    {
+      "code": "  return acc;",
+      "explain": "Pass the accumulator on"
+    },
+    {
+      "code": "}, {});",
+      "explain": "Start from empty object"
+    },
+    {
+      "code": "console.log(total, byName);",
+      "explain": "Show both results"
+    }
+  ]
+}

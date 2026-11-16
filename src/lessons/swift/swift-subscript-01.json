@@ -1,0 +1,44 @@
+{
+  "id": "swift-subscript-01",
+  "category": "Swift",
+  "topic": "Subscripts",
+  "level": 2,
+  "tags": [
+    "subscript",
+    "struct"
+  ],
+  "chunks": [
+    {
+      "code": "struct Grid {",
+      "explain": "A small 2D grid"
+    },
+    {
+      "code": "    var cells = Array(repeating: 0, count: 9)",
+      "explain": "Nine cells, stored flat"
+    },
+    {
+      "code": "    subscript(row: Int, col: Int) -> Int {",
+      "explain": "Index with two numbers"
+    },
+    {
+      "code": "        get { cells[row * 3 + col] }",
+      "explain": "Read a cell"
+    },
+    {
+      "code": "        set { cells[row * 3 + col] = newValue }",
+      "explain": "Write a cell"
+    },
+    {
+      "code": "    }",
+      "explain": "End the subscript"
+    },
+    {
+      "code": "}",
+      "explain": "End the struct"
+    },
+    {
+      "code": "var grid = Grid(); grid[1, 2] = 7",
+      "explain": "Set the cell at row 1, col 2"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "linux-perm-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "chmod",
+    "process",
+    "permissions"
+  ],
+  "chunks": [
+    {
+      "code": "ls -l deploy.sh",
+      "explain": "Show permissions and owner"
+    },
+    {
+      "code": "chmod +x deploy.sh",
+      "explain": "Make the script executable"
+    },
+    {
+      "code": "chmod 640 secrets.env",
+      "explain": "Owner read/write, group read, others none"
+    },
+    {
+      "code": "sudo chown ada:dev app.log",
+      "explain": "Change owner to ada, group to dev"
+    },
+    {
+      "code": "ps aux | grep nginx",
+      "explain": "Find running nginx processes"
+    },
+    {
+      "code": "kill 1234",
+      "explain": "Stop process 1234"
+    }
+  ]
+}

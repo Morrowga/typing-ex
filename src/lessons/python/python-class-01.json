@@ -1,0 +1,40 @@
+{
+  "id": "python-class-01",
+  "category": "Python",
+  "topic": "Simple Classes",
+  "level": 1,
+  "tags": [
+    "classes",
+    "oop"
+  ],
+  "chunks": [
+    {
+      "code": "class Dog:",
+      "explain": "Define a new class"
+    },
+    {
+      "code": "    def __init__(self, name):",
+      "explain": "Constructor runs on creation"
+    },
+    {
+      "code": "        self.name = name",
+      "explain": "Store the name on the object"
+    },
+    {
+      "code": "    def bark(self):",
+      "explain": "A method of the class"
+    },
+    {
+      "code": "        return f\"{self.name} says woof\"",
+      "explain": "Build a message using the stored name"
+    },
+    {
+      "code": "rex = Dog(\"Rex\")",
+      "explain": "Create an object"
+    },
+    {
+      "code": "print(rex.bark())",
+      "explain": "Call the method: Rex says woof"
+    }
+  ]
+}

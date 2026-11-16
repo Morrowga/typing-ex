@@ -1,0 +1,40 @@
+{
+  "id": "swift-forin-01",
+  "category": "Swift",
+  "topic": "For-In Loops",
+  "level": 1,
+  "tags": [
+    "for",
+    "loop"
+  ],
+  "chunks": [
+    {
+      "code": "let colors = [\"red\", \"green\", \"blue\"]",
+      "explain": "An array to loop over"
+    },
+    {
+      "code": "for color in colors {",
+      "explain": "Visit each item in turn"
+    },
+    {
+      "code": "    print(color)",
+      "explain": "Print the item"
+    },
+    {
+      "code": "}",
+      "explain": "End the loop"
+    },
+    {
+      "code": "for i in 1...3 {",
+      "explain": "Loop over a number range"
+    },
+    {
+      "code": "    print(\"Round \\(i)\")",
+      "explain": "Show the round number"
+    },
+    {
+      "code": "}",
+      "explain": "End the loop"
+    }
+  ]
+}

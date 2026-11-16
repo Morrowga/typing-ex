@@ -1,0 +1,33 @@
+{
+  "id": "php-foreach-assoc-01",
+  "category": "PHP",
+  "topic": "Foreach Keys",
+  "level": 1,
+  "tags": [
+    "loop",
+    "foreach",
+    "array"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$stock = [\"pens\" => 12, \"ink\" => 4];",
+      "explain": "Associative array"
+    },
+    {
+      "code": "foreach ($stock as $item => $qty) {",
+      "explain": "Get both key and value"
+    },
+    {
+      "code": "    echo \"$item: $qty\\n\";",
+      "explain": "Prints pens: 12 then ink: 4"
+    },
+    {
+      "code": "}",
+      "explain": "End of loop"
+    }
+  ]
+}

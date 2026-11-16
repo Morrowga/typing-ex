@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-vararg-01",
+  "category": "Kotlin",
+  "topic": "Vararg Parameters",
+  "level": 1,
+  "tags": [
+    "fun",
+    "vararg"
+  ],
+  "chunks": [
+    {
+      "code": "fun total(vararg nums: Int): Int {",
+      "explain": "vararg accepts many Ints"
+    },
+    {
+      "code": "    var sum = 0",
+      "explain": "Start the sum at zero"
+    },
+    {
+      "code": "    for (n in nums) sum += n",
+      "explain": "Add each number"
+    },
+    {
+      "code": "    return sum",
+      "explain": "Give back the sum"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "println(total(1, 2, 3, 4))",
+      "explain": "Prints 10"
+    }
+  ]
+}

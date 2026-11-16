@@ -1,0 +1,50 @@
+{
+  "id": "js-getset-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Getters and Setters",
+  "level": 2,
+  "tags": [
+    "class",
+    "getter",
+    "setter"
+  ],
+  "chunks": [
+    {
+      "code": "class Temp {",
+      "explain": "Temperature class"
+    },
+    {
+      "code": "  constructor(c) { this.celsius = c; }",
+      "explain": "Store degrees Celsius"
+    },
+    {
+      "code": "  get fahrenheit() { return this.celsius * 1.8 + 32; }",
+      "explain": "Computed property"
+    },
+    {
+      "code": "  set fahrenheit(f) { this.celsius = (f - 32) / 1.8; }",
+      "explain": "Convert back on assign"
+    },
+    {
+      "code": "}",
+      "explain": "End of class"
+    },
+    {
+      "code": "const t = new Temp(100);",
+      "explain": "Boiling point"
+    },
+    {
+      "code": "console.log(t.fahrenheit);",
+      "explain": "Prints 212"
+    },
+    {
+      "code": "t.fahrenheit = 32;",
+      "explain": "Setter runs"
+    },
+    {
+      "code": "console.log(t.celsius);",
+      "explain": "Prints 0"
+    }
+  ]
+}

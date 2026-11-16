@@ -1,0 +1,32 @@
+{
+  "id": "python-dicts-01",
+  "category": "Python",
+  "topic": "Dictionaries",
+  "level": 1,
+  "tags": [
+    "dict",
+    "keys"
+  ],
+  "chunks": [
+    {
+      "code": "user = {\"name\": \"Sam\", \"age\": 28}",
+      "explain": "A dict maps keys to values"
+    },
+    {
+      "code": "user[\"city\"] = \"Oslo\"",
+      "explain": "Add a new key"
+    },
+    {
+      "code": "print(user[\"name\"])",
+      "explain": "Read a value by key"
+    },
+    {
+      "code": "print(user.get(\"email\", \"none\"))",
+      "explain": "Safe lookup with a fallback value"
+    },
+    {
+      "code": "print(list(user.keys()))",
+      "explain": "List all the keys"
+    }
+  ]
+}

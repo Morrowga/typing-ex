@@ -1,0 +1,32 @@
+{
+  "id": "linux-script-args-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "bash",
+    "arguments"
+  ],
+  "chunks": [
+    {
+      "code": "echo \"script: $0\"",
+      "explain": "Name of the script"
+    },
+    {
+      "code": "echo \"first: $1, second: $2\"",
+      "explain": "Positional arguments"
+    },
+    {
+      "code": "echo \"count: $#\"",
+      "explain": "Number of arguments"
+    },
+    {
+      "code": "for a in \"$@\"; do echo \"$a\"; done",
+      "explain": "Loop over all arguments safely"
+    },
+    {
+      "code": "[ $# -ge 1 ] || { echo \"need an arg\"; exit 1; }",
+      "explain": "Exit if no argument was given"
+    }
+  ]
+}

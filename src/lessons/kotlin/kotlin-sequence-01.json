@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-sequence-01",
+  "category": "Kotlin",
+  "topic": "Sequences",
+  "level": 2,
+  "tags": [
+    "sequence",
+    "lazy"
+  ],
+  "chunks": [
+    {
+      "code": "val result = generateSequence(1) { it + 1 }",
+      "explain": "An endless sequence 1, 2, 3..."
+    },
+    {
+      "code": "    .filter { it % 3 == 0 }",
+      "explain": "Lazily keep multiples of 3"
+    },
+    {
+      "code": "    .map { it * it }",
+      "explain": "Square each one"
+    },
+    {
+      "code": "    .take(3)",
+      "explain": "Only the first three"
+    },
+    {
+      "code": "    .toList()",
+      "explain": "Run the pipeline now"
+    },
+    {
+      "code": "println(result)",
+      "explain": "Prints [9, 36, 81]"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "git-hooks-01",
+  "category": "Git",
+  "topic": "Hooks",
+  "level": 2,
+  "tags": [
+    "hooks",
+    "automation"
+  ],
+  "chunks": [
+    {
+      "code": "ls .git/hooks",
+      "explain": "See the sample hook scripts"
+    },
+    {
+      "code": "echo 'npm test' > .git/hooks/pre-push",
+      "explain": "Create a pre-push hook"
+    },
+    {
+      "code": "chmod +x .git/hooks/pre-push",
+      "explain": "Make the hook executable"
+    },
+    {
+      "code": "git config core.hooksPath .githooks",
+      "explain": "Use a shared hooks folder"
+    },
+    {
+      "code": "git commit --no-verify -m \"WIP\"",
+      "explain": "Skip pre-commit hooks; use sparingly"
+    }
+  ]
+}

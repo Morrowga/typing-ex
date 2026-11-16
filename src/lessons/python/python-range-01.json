@@ -1,0 +1,32 @@
+{
+  "id": "python-range-01",
+  "category": "Python",
+  "topic": "Range",
+  "level": 1,
+  "tags": [
+    "loops",
+    "range"
+  ],
+  "chunks": [
+    {
+      "code": "for i in range(3):",
+      "explain": "range(3) gives 0, 1, 2"
+    },
+    {
+      "code": "    print(i)",
+      "explain": "Print each number"
+    },
+    {
+      "code": "for i in range(2, 10, 3):",
+      "explain": "Start 2, stop before 10, step 3"
+    },
+    {
+      "code": "    print(i)",
+      "explain": "Prints 2, 5, 8"
+    },
+    {
+      "code": "print(list(range(5, 0, -2)))",
+      "explain": "Count down: [5, 3, 1]"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "kotlin-result-01",
+  "category": "Kotlin",
+  "topic": "Result and runCatching",
+  "level": 2,
+  "tags": [
+    "result",
+    "errors"
+  ],
+  "chunks": [
+    {
+      "code": "fun parse(s: String): Result<Int> = runCatching { s.toInt() }",
+      "explain": "Wrap a throwing call in Result"
+    },
+    {
+      "code": "val ok = parse(\"12\")",
+      "explain": "Succeeds"
+    },
+    {
+      "code": "val bad = parse(\"x\")",
+      "explain": "Fails with an exception"
+    },
+    {
+      "code": "println(ok.getOrNull())",
+      "explain": "Prints 12"
+    },
+    {
+      "code": "println(bad.getOrDefault(-1))",
+      "explain": "Prints -1"
+    },
+    {
+      "code": "println(bad.isFailure)",
+      "explain": "Prints true"
+    }
+  ]
+}

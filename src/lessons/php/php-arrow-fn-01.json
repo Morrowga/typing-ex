@@ -1,0 +1,32 @@
+{
+  "id": "php-arrow-fn-01",
+  "category": "PHP",
+  "topic": "Arrow Functions",
+  "level": 2,
+  "tags": [
+    "closure",
+    "array_map"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$rate = 1.2;",
+      "explain": "Outer variable"
+    },
+    {
+      "code": "$prices = [10, 20, 30];",
+      "explain": "Input data"
+    },
+    {
+      "code": "$out = array_map(fn($p) => $p * $rate, $prices);",
+      "explain": "Arrow fn captures $rate automatically"
+    },
+    {
+      "code": "echo implode(', ', $out);",
+      "explain": "Prints 12, 24, 36"
+    }
+  ]
+}

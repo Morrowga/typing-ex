@@ -1,0 +1,28 @@
+{
+  "id": "kotlin-tailrec-01",
+  "category": "Kotlin",
+  "topic": "Tailrec Functions",
+  "level": 2,
+  "tags": [
+    "tailrec",
+    "recursion"
+  ],
+  "chunks": [
+    {
+      "code": "tailrec fun gcd(a: Int, b: Int): Int {",
+      "explain": "Compiler turns this into a loop"
+    },
+    {
+      "code": "    return if (b == 0) a else gcd(b, a % b)",
+      "explain": "Recursive call is the last step"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "println(gcd(48, 18))",
+      "explain": "Prints 6"
+    }
+  ]
+}

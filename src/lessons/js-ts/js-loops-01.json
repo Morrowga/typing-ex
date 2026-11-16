@@ -1,0 +1,41 @@
+{
+  "id": "js-loops-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Loops",
+  "level": 1,
+  "tags": [
+    "for",
+    "while"
+  ],
+  "chunks": [
+    {
+      "code": "for (let i = 1; i <= 3; i++) {",
+      "explain": "Count from 1 to 3"
+    },
+    {
+      "code": "  console.log(\"Step\", i);",
+      "explain": "Print each step"
+    },
+    {
+      "code": "}",
+      "explain": "End of for loop"
+    },
+    {
+      "code": "let n = 3;",
+      "explain": "Start a countdown"
+    },
+    {
+      "code": "while (n > 0) {",
+      "explain": "Repeat while positive"
+    },
+    {
+      "code": "  n--;",
+      "explain": "Decrease by one"
+    },
+    {
+      "code": "}",
+      "explain": "End of while loop"
+    }
+  ]
+}

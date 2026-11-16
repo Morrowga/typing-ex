@@ -1,0 +1,32 @@
+{
+  "id": "git-rerere-01",
+  "category": "Git",
+  "topic": "Rerere",
+  "level": 2,
+  "tags": [
+    "rerere",
+    "conflict"
+  ],
+  "chunks": [
+    {
+      "code": "git config --global rerere.enabled true",
+      "explain": "Remember conflict resolutions"
+    },
+    {
+      "code": "git merge feature/legacy",
+      "explain": "Hit a conflict and fix it once"
+    },
+    {
+      "code": "git rerere status",
+      "explain": "Files rerere is tracking"
+    },
+    {
+      "code": "git rerere diff",
+      "explain": "Show the recorded resolution"
+    },
+    {
+      "code": "git rerere forget config.yml",
+      "explain": "Drop a bad recorded resolution"
+    }
+  ]
+}

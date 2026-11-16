@@ -1,0 +1,38 @@
+{
+  "id": "js-async-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Async",
+  "level": 2,
+  "tags": [
+    "async",
+    "await",
+    "fetch"
+  ],
+  "chunks": [
+    {
+      "code": "async function getUser(id) {",
+      "explain": "An async function: it returns a Promise"
+    },
+    {
+      "code": "  const res = await fetch(`/api/users/${id}`);",
+      "explain": "Wait for the HTTP response"
+    },
+    {
+      "code": "  if (!res.ok) throw new Error(\"Request failed\");",
+      "explain": "Throw an error on a bad status"
+    },
+    {
+      "code": "  return res.json();",
+      "explain": "Read the body as JSON"
+    },
+    {
+      "code": "}",
+      "explain": "End of the function"
+    },
+    {
+      "code": "getUser(1).then(console.log).catch(console.error);",
+      "explain": "Log the user, or the error"
+    }
+  ]
+}

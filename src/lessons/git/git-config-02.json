@@ -1,0 +1,32 @@
+{
+  "id": "git-config-02",
+  "category": "Git",
+  "topic": "Config",
+  "level": 1,
+  "tags": [
+    "config",
+    "local"
+  ],
+  "chunks": [
+    {
+      "code": "git config user.email \"ada@work.example.com\"",
+      "explain": "Set email for this repo only"
+    },
+    {
+      "code": "git config --local --get user.email",
+      "explain": "Read the repo-level email"
+    },
+    {
+      "code": "git config --global pull.rebase false",
+      "explain": "Pull merges instead of rebasing"
+    },
+    {
+      "code": "git config --global --unset core.editor",
+      "explain": "Remove the editor setting"
+    },
+    {
+      "code": "git config --global --edit",
+      "explain": "Open the global config in an editor"
+    }
+  ]
+}

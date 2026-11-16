@@ -1,0 +1,28 @@
+{
+  "id": "git-init-02",
+  "category": "Git",
+  "topic": "Init",
+  "level": 1,
+  "tags": [
+    "init",
+    "branch"
+  ],
+  "chunks": [
+    {
+      "code": "git init -b main blog",
+      "explain": "Create repo blog with main branch"
+    },
+    {
+      "code": "cd blog",
+      "explain": "Enter the new repository"
+    },
+    {
+      "code": "git branch --show-current",
+      "explain": "Print the current branch name"
+    },
+    {
+      "code": "git status",
+      "explain": "Show the state of the working tree"
+    }
+  ]
+}

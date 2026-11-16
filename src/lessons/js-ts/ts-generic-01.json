@@ -1,0 +1,49 @@
+{
+  "id": "ts-generic-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Generics",
+  "level": 2,
+  "tags": [
+    "generics",
+    "function"
+  ],
+  "chunks": [
+    {
+      "code": "function first<T>(items: T[]): T | undefined {",
+      "explain": "Generic over type T"
+    },
+    {
+      "code": "  return items[0];",
+      "explain": "Return first item"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "const n = first([10, 20]);",
+      "explain": "T inferred as number"
+    },
+    {
+      "code": "const s = first<string>([\"a\", \"b\"]);",
+      "explain": "T given explicitly"
+    },
+    {
+      "code": "function pair<A, B>(a: A, b: B): [A, B] {",
+      "explain": "Two type parameters"
+    },
+    {
+      "code": "  return [a, b];",
+      "explain": "Build a tuple"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "console.log(n, s, pair(1, \"x\"));",
+      "explain": "Show results"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "swift-property-wrapper-01",
+  "category": "Swift",
+  "topic": "Property Wrappers",
+  "level": 2,
+  "tags": [
+    "property-wrapper",
+    "attribute"
+  ],
+  "chunks": [
+    {
+      "code": "@propertyWrapper struct Clamped {",
+      "explain": "Define a wrapper type"
+    },
+    {
+      "code": "    private var value: Int",
+      "explain": "Hidden storage"
+    },
+    {
+      "code": "    init(wrappedValue: Int) { value = min(max(wrappedValue, 0), 100) }",
+      "explain": "Clamp the starting value"
+    },
+    {
+      "code": "    var wrappedValue: Int {",
+      "explain": "The value users read and write"
+    },
+    {
+      "code": "        get { value }",
+      "explain": "Return the stored value"
+    },
+    {
+      "code": "        set { value = min(max(newValue, 0), 100) }",
+      "explain": "Clamp every new value"
+    },
+    {
+      "code": "    }",
+      "explain": "End the property"
+    },
+    {
+      "code": "}",
+      "explain": "End the wrapper"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "js-objects-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Objects",
+  "level": 1,
+  "tags": [
+    "object",
+    "properties"
+  ],
+  "chunks": [
+    {
+      "code": "const user = {",
+      "explain": "Start an object literal"
+    },
+    {
+      "code": "  name: \"Mia\",",
+      "explain": "A string property"
+    },
+    {
+      "code": "  age: 28,",
+      "explain": "A number property"
+    },
+    {
+      "code": "};",
+      "explain": "End of the object"
+    },
+    {
+      "code": "user.city = \"Oslo\";",
+      "explain": "Add a new property"
+    },
+    {
+      "code": "console.log(user.name, user[\"age\"]);",
+      "explain": "Read with dot and brackets"
+    },
+    {
+      "code": "delete user.age;",
+      "explain": "Remove a property"
+    }
+  ]
+}

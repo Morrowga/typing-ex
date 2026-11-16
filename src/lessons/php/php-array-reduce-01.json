@@ -1,0 +1,36 @@
+{
+  "id": "php-array-reduce-01",
+  "category": "PHP",
+  "topic": "Array Reduce",
+  "level": 2,
+  "tags": [
+    "array_reduce",
+    "functional"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$cart = [['p' => 9.5, 'q' => 2], ['p' => 4, 'q' => 3]];",
+      "explain": "Cart lines with price and qty"
+    },
+    {
+      "code": "$total = array_reduce(",
+      "explain": "Fold the list to one value"
+    },
+    {
+      "code": "    $cart, fn($c, $i) => $c + $i['p'] * $i['q'], 0",
+      "explain": "Add each line total, start at 0"
+    },
+    {
+      "code": ");",
+      "explain": "End of call"
+    },
+    {
+      "code": "echo $total;",
+      "explain": "Prints 31"
+    }
+  ]
+}

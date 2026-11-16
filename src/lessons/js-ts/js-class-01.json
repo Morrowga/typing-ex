@@ -1,0 +1,50 @@
+{
+  "id": "js-class-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Classes",
+  "level": 2,
+  "tags": [
+    "class",
+    "inheritance",
+    "private"
+  ],
+  "chunks": [
+    {
+      "code": "class Animal {",
+      "explain": "Base class"
+    },
+    {
+      "code": "  #name;",
+      "explain": "Private field"
+    },
+    {
+      "code": "  constructor(name) { this.#name = name; }",
+      "explain": "Store the private name"
+    },
+    {
+      "code": "  speak() { return `${this.#name} makes a sound`; }",
+      "explain": "Shared method"
+    },
+    {
+      "code": "}",
+      "explain": "End of Animal"
+    },
+    {
+      "code": "class Dog extends Animal {",
+      "explain": "Inherit from Animal"
+    },
+    {
+      "code": "  speak() { return super.speak() + \" (woof)\"; }",
+      "explain": "Extend parent method"
+    },
+    {
+      "code": "}",
+      "explain": "End of Dog"
+    },
+    {
+      "code": "console.log(new Dog(\"Rex\").speak());",
+      "explain": "Create and call"
+    }
+  ]
+}

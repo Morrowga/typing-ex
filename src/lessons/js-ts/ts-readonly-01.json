@@ -1,0 +1,45 @@
+{
+  "id": "ts-readonly-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Readonly and Objects",
+  "level": 1,
+  "tags": [
+    "readonly",
+    "interface"
+  ],
+  "chunks": [
+    {
+      "code": "interface Config {",
+      "explain": "Config shape"
+    },
+    {
+      "code": "  readonly id: number;",
+      "explain": "Cannot be reassigned"
+    },
+    {
+      "code": "  name: string;",
+      "explain": "Can be changed"
+    },
+    {
+      "code": "}",
+      "explain": "End of interface"
+    },
+    {
+      "code": "const cfg: Config = { id: 1, name: \"dev\" };",
+      "explain": "Create a config"
+    },
+    {
+      "code": "cfg.name = \"prod\";",
+      "explain": "Allowed change"
+    },
+    {
+      "code": "const nums: readonly number[] = [1, 2, 3];",
+      "explain": "Read-only array"
+    },
+    {
+      "code": "console.log(cfg, nums.length);",
+      "explain": "Show both"
+    }
+  ]
+}

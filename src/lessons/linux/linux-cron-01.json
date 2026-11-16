@@ -1,0 +1,32 @@
+{
+  "id": "linux-cron-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "cron",
+    "crontab"
+  ],
+  "chunks": [
+    {
+      "code": "crontab -l",
+      "explain": "List your scheduled jobs"
+    },
+    {
+      "code": "crontab -e",
+      "explain": "Edit your crontab"
+    },
+    {
+      "code": "0 2 * * * /home/alice/backup.sh",
+      "explain": "Run daily at 02:00"
+    },
+    {
+      "code": "*/15 * * * * /usr/bin/php cron.php",
+      "explain": "Run every 15 minutes"
+    },
+    {
+      "code": "30 6 * * 1 /opt/report.sh >> /tmp/report.log 2>&1",
+      "explain": "Mondays at 06:30, log output"
+    }
+  ]
+}

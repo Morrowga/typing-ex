@@ -1,0 +1,35 @@
+{
+  "id": "linux-ls-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "ls"
+  ],
+  "chunks": [
+    {
+      "code": "ls",
+      "explain": "List files in the current folder"
+    },
+    {
+      "code": "ls -l",
+      "explain": "Long listing with sizes and dates"
+    },
+    {
+      "code": "ls -a",
+      "explain": "Include hidden files"
+    },
+    {
+      "code": "ls -lh",
+      "explain": "Long listing with readable sizes"
+    },
+    {
+      "code": "ls -lt",
+      "explain": "Sort by modification time, newest first"
+    },
+    {
+      "code": "ls -R src",
+      "explain": "List a folder and all its subfolders"
+    }
+  ]
+}

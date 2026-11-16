@@ -1,0 +1,32 @@
+{
+  "id": "git-reset-01",
+  "category": "Git",
+  "topic": "Reset",
+  "level": 2,
+  "tags": [
+    "reset",
+    "modes"
+  ],
+  "chunks": [
+    {
+      "code": "git reset --soft HEAD~1",
+      "explain": "Undo commit, keep changes staged"
+    },
+    {
+      "code": "git reset HEAD~1",
+      "explain": "Undo commit, keep changes unstaged"
+    },
+    {
+      "code": "git reset --hard HEAD~1",
+      "explain": "Undo commit and edits; cannot be undone easily"
+    },
+    {
+      "code": "git reset --hard origin/main",
+      "explain": "Match the remote exactly; loses local work"
+    },
+    {
+      "code": "git reset -- config.yml",
+      "explain": "Unstage a single file"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "swift-async-01",
+  "category": "Swift",
+  "topic": "Async Await",
+  "level": 2,
+  "tags": [
+    "async",
+    "await",
+    "task"
+  ],
+  "chunks": [
+    {
+      "code": "func fetchNumber() async -> Int {",
+      "explain": "An async function"
+    },
+    {
+      "code": "    return 42",
+      "explain": "Pretend this took a while"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "func run() async {",
+      "explain": "Another async function"
+    },
+    {
+      "code": "    let value = await fetchNumber()",
+      "explain": "await pauses until the result"
+    },
+    {
+      "code": "    print(value)",
+      "explain": "Prints 42"
+    },
+    {
+      "code": "}",
+      "explain": "End the function"
+    },
+    {
+      "code": "Task { await run() }",
+      "explain": "Start async work from sync code"
+    }
+  ]
+}

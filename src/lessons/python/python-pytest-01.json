@@ -1,0 +1,44 @@
+{
+  "id": "python-pytest-01",
+  "category": "Python",
+  "topic": "pytest",
+  "level": 2,
+  "tags": [
+    "testing",
+    "pytest"
+  ],
+  "chunks": [
+    {
+      "code": "import pytest",
+      "explain": "Import pytest"
+    },
+    {
+      "code": "def add(a, b):",
+      "explain": "The function under test"
+    },
+    {
+      "code": "    return a + b",
+      "explain": "Return the sum"
+    },
+    {
+      "code": "def test_add():",
+      "explain": "Test functions start with test_"
+    },
+    {
+      "code": "    assert add(2, 3) == 5",
+      "explain": "Fail if the result is wrong"
+    },
+    {
+      "code": "def test_type_error():",
+      "explain": "A test for an error"
+    },
+    {
+      "code": "    with pytest.raises(TypeError):",
+      "explain": "Expect an exception inside"
+    },
+    {
+      "code": "        add(1, None)",
+      "explain": "This call should raise TypeError"
+    }
+  ]
+}

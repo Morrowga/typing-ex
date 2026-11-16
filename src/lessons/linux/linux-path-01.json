@@ -1,0 +1,32 @@
+{
+  "id": "linux-path-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 1,
+  "tags": [
+    "PATH",
+    "which"
+  ],
+  "chunks": [
+    {
+      "code": "echo $PATH",
+      "explain": "Show where the shell looks for programs"
+    },
+    {
+      "code": "which python3",
+      "explain": "Show the path of a command"
+    },
+    {
+      "code": "type cd",
+      "explain": "Show how bash interprets a command"
+    },
+    {
+      "code": "export PATH=\"$HOME/bin:$PATH\"",
+      "explain": "Add ~/bin to the front of PATH"
+    },
+    {
+      "code": "command -v git",
+      "explain": "Check whether a command exists"
+    }
+  ]
+}

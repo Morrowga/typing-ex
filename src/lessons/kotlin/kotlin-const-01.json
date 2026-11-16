@@ -1,0 +1,37 @@
+{
+  "id": "kotlin-const-01",
+  "category": "Kotlin",
+  "topic": "Val, Var and Const",
+  "level": 1,
+  "tags": [
+    "val",
+    "var",
+    "const"
+  ],
+  "chunks": [
+    {
+      "code": "const val MAX = 10",
+      "explain": "Compile-time constant at top level"
+    },
+    {
+      "code": "val city = \"Oslo\"",
+      "explain": "val cannot be reassigned"
+    },
+    {
+      "code": "var visits = 0",
+      "explain": "var can change later"
+    },
+    {
+      "code": "visits += 1",
+      "explain": "Add one to visits"
+    },
+    {
+      "code": "val ratio: Double = 0.5",
+      "explain": "Explicit type written out"
+    },
+    {
+      "code": "println(\"$city $visits $ratio\")",
+      "explain": "Print all three"
+    }
+  ]
+}

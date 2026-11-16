@@ -1,0 +1,32 @@
+{
+  "id": "git-clone-01",
+  "category": "Git",
+  "topic": "Clone",
+  "level": 1,
+  "tags": [
+    "clone",
+    "remote"
+  ],
+  "chunks": [
+    {
+      "code": "git clone https://github.com/acme/webapp.git",
+      "explain": "Copy a remote repo locally"
+    },
+    {
+      "code": "cd webapp",
+      "explain": "Enter the cloned folder"
+    },
+    {
+      "code": "git remote -v",
+      "explain": "List remotes with their URLs"
+    },
+    {
+      "code": "git log --oneline -5",
+      "explain": "Show the last five commits"
+    },
+    {
+      "code": "git branch -a",
+      "explain": "List local and remote branches"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "linux-ufw-01",
+  "category": "Linux",
+  "topic": "Command line",
+  "level": 2,
+  "tags": [
+    "ufw",
+    "firewall"
+  ],
+  "chunks": [
+    {
+      "code": "sudo ufw status verbose",
+      "explain": "Show firewall rules"
+    },
+    {
+      "code": "sudo ufw default deny incoming",
+      "explain": "Block incoming by default"
+    },
+    {
+      "code": "sudo ufw allow 22/tcp",
+      "explain": "Allow SSH"
+    },
+    {
+      "code": "sudo ufw allow from 10.0.0.0/24 to any port 5432",
+      "explain": "Allow Postgres from one subnet"
+    },
+    {
+      "code": "sudo ufw enable",
+      "explain": "Turn the firewall on"
+    }
+  ]
+}

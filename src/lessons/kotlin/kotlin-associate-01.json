@@ -1,0 +1,37 @@
+{
+  "id": "kotlin-associate-01",
+  "category": "Kotlin",
+  "topic": "associate and zip",
+  "level": 2,
+  "tags": [
+    "collections",
+    "associate",
+    "zip"
+  ],
+  "chunks": [
+    {
+      "code": "val names = listOf(\"Ann\", \"Bob\", \"Cy\")",
+      "explain": "Three names"
+    },
+    {
+      "code": "val lengths = names.associateWith { it.length }",
+      "explain": "Name to its length"
+    },
+    {
+      "code": "val ids = listOf(1, 2, 3)",
+      "explain": "Three ids"
+    },
+    {
+      "code": "val pairs = names.zip(ids)",
+      "explain": "Pair up items by position"
+    },
+    {
+      "code": "val byId = pairs.associate { (n, i) -> i to n }",
+      "explain": "Build a map id to name"
+    },
+    {
+      "code": "println(byId[2])",
+      "explain": "Prints Bob"
+    }
+  ]
+}

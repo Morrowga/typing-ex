@@ -1,0 +1,33 @@
+{
+  "id": "git-branch-03",
+  "category": "Git",
+  "topic": "Branches",
+  "level": 1,
+  "tags": [
+    "branch",
+    "delete",
+    "rename"
+  ],
+  "chunks": [
+    {
+      "code": "git branch -m old-name new-name",
+      "explain": "Rename a branch"
+    },
+    {
+      "code": "git branch -d feature/login",
+      "explain": "Delete a merged branch"
+    },
+    {
+      "code": "git branch -D experiment",
+      "explain": "Force delete; unmerged work is lost"
+    },
+    {
+      "code": "git push origin --delete feature/login",
+      "explain": "Delete the remote branch"
+    },
+    {
+      "code": "git branch --merged",
+      "explain": "List branches already merged"
+    }
+  ]
+}

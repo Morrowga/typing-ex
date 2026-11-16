@@ -1,0 +1,32 @@
+{
+  "id": "python-while-loop-01",
+  "category": "Python",
+  "topic": "While Loops",
+  "level": 1,
+  "tags": [
+    "loops",
+    "while"
+  ],
+  "chunks": [
+    {
+      "code": "countdown = 3",
+      "explain": "Start the counter"
+    },
+    {
+      "code": "while countdown > 0:",
+      "explain": "Repeat while the counter is positive"
+    },
+    {
+      "code": "    print(countdown)",
+      "explain": "Show the current value"
+    },
+    {
+      "code": "    countdown -= 1",
+      "explain": "Decrease it so the loop ends"
+    },
+    {
+      "code": "print(\"Liftoff!\")",
+      "explain": "Runs after the loop finishes"
+    }
+  ]
+}

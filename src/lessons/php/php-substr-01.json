@@ -1,0 +1,36 @@
+{
+  "id": "php-substr-01",
+  "category": "PHP",
+  "topic": "Substrings",
+  "level": 1,
+  "tags": [
+    "strings",
+    "search"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "$file = \"report-2024.pdf\";",
+      "explain": "A file name"
+    },
+    {
+      "code": "echo substr($file, 0, 6);",
+      "explain": "First 6 characters: report"
+    },
+    {
+      "code": "echo strpos($file, \"-\");",
+      "explain": "Position of the dash: 6"
+    },
+    {
+      "code": "echo str_contains($file, \".pdf\");",
+      "explain": "True check; prints 1"
+    },
+    {
+      "code": "echo ucfirst($file);",
+      "explain": "Capitalize first letter"
+    }
+  ]
+}

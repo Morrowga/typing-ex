@@ -1,0 +1,37 @@
+{
+  "id": "php-spread-named-01",
+  "category": "PHP",
+  "topic": "Spread Named Args",
+  "level": 2,
+  "tags": [
+    "php8",
+    "arguments",
+    "spread"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "function box(int $w, int $h, string $c = 'x') {",
+      "explain": "Function with a default"
+    },
+    {
+      "code": "    return \"$w x $h in $c\";",
+      "explain": "Build the description"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "echo box(h: 2, w: 3);",
+      "explain": "Named args in any order"
+    },
+    {
+      "code": "echo box(...[4, 5, 'red']);",
+      "explain": "Spread an array into arguments"
+    }
+  ]
+}

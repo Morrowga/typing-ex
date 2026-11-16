@@ -1,0 +1,36 @@
+{
+  "id": "swift-array-methods-01",
+  "category": "Swift",
+  "topic": "Array Methods",
+  "level": 1,
+  "tags": [
+    "array",
+    "sort"
+  ],
+  "chunks": [
+    {
+      "code": "let scores = [42, 7, 19, 88, 3]",
+      "explain": "Some scores"
+    },
+    {
+      "code": "let sorted = scores.sorted()",
+      "explain": "A new array in ascending order"
+    },
+    {
+      "code": "let biggest = scores.max() ?? 0",
+      "explain": "Largest value, or 0 if empty"
+    },
+    {
+      "code": "let total = scores.reduce(0, +)",
+      "explain": "Sum every score"
+    },
+    {
+      "code": "print(scores.contains(19))",
+      "explain": "Check whether 19 is present"
+    },
+    {
+      "code": "print(sorted, biggest, total)",
+      "explain": "Show the results"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ts-const-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "as const and satisfies",
+  "level": 2,
+  "tags": [
+    "const",
+    "satisfies"
+  ],
+  "chunks": [
+    {
+      "code": "const ROLES = [\"admin\", \"editor\", \"viewer\"] as const;",
+      "explain": "Literal readonly tuple"
+    },
+    {
+      "code": "type Role = (typeof ROLES)[number];",
+      "explain": "Union from the array"
+    },
+    {
+      "code": "const palette = {",
+      "explain": "Color settings"
+    },
+    {
+      "code": "  red: [255, 0, 0],",
+      "explain": "RGB tuple"
+    },
+    {
+      "code": "  green: \"#00ff00\",",
+      "explain": "Hex string"
+    },
+    {
+      "code": "} satisfies Record<string, string | number[]>;",
+      "explain": "Check shape, keep types"
+    },
+    {
+      "code": "const r: Role = \"editor\";",
+      "explain": "A valid role"
+    },
+    {
+      "code": "console.log(palette.red.length, palette.green.toUpperCase(), r);",
+      "explain": "Types stayed precise"
+    }
+  ]
+}

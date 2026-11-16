@@ -1,0 +1,36 @@
+{
+  "id": "swift-tuples-01",
+  "category": "Swift",
+  "topic": "Tuples",
+  "level": 1,
+  "tags": [
+    "tuple",
+    "types"
+  ],
+  "chunks": [
+    {
+      "code": "let point = (x: 3, y: 4)",
+      "explain": "A tuple with named parts"
+    },
+    {
+      "code": "print(point.x)",
+      "explain": "Read a part by name"
+    },
+    {
+      "code": "let (px, py) = point",
+      "explain": "Decompose into two constants"
+    },
+    {
+      "code": "let dist = Double(px * px + py * py).squareRoot()",
+      "explain": "Distance from origin"
+    },
+    {
+      "code": "let result = (code: 200, text: \"OK\")",
+      "explain": "Another named tuple"
+    },
+    {
+      "code": "print(px + py, dist, result.text)",
+      "explain": "Show some values"
+    }
+  ]
+}

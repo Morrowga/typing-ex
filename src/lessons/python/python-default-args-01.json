@@ -1,0 +1,32 @@
+{
+  "id": "python-default-args-01",
+  "category": "Python",
+  "topic": "Default Arguments",
+  "level": 1,
+  "tags": [
+    "functions",
+    "defaults"
+  ],
+  "chunks": [
+    {
+      "code": "def greet(name, greeting=\"Hello\"):",
+      "explain": "greeting has a default value"
+    },
+    {
+      "code": "    return f\"{greeting}, {name}!\"",
+      "explain": "Build the message"
+    },
+    {
+      "code": "print(greet(\"Mia\"))",
+      "explain": "Uses the default: Hello, Mia!"
+    },
+    {
+      "code": "print(greet(\"Leo\", \"Hi\"))",
+      "explain": "Override the default"
+    },
+    {
+      "code": "print(greet(name=\"Zoe\", greeting=\"Hey\"))",
+      "explain": "Pass arguments by keyword"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-whenrange-01",
+  "category": "Kotlin",
+  "topic": "When with Ranges",
+  "level": 1,
+  "tags": [
+    "when",
+    "range"
+  ],
+  "chunks": [
+    {
+      "code": "val score = 76",
+      "explain": "A test score"
+    },
+    {
+      "code": "val grade = when (score) {",
+      "explain": "Branch on the score"
+    },
+    {
+      "code": "    in 90..100 -> \"A\"",
+      "explain": "Between 90 and 100"
+    },
+    {
+      "code": "    in 70..89 -> \"B\"",
+      "explain": "Between 70 and 89"
+    },
+    {
+      "code": "    else -> \"C\"",
+      "explain": "Anything lower"
+    },
+    {
+      "code": "}",
+      "explain": "End of when"
+    },
+    {
+      "code": "println(grade)",
+      "explain": "Prints B"
+    }
+  ]
+}

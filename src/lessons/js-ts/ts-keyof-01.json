@@ -1,0 +1,50 @@
+{
+  "id": "ts-keyof-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "keyof and typeof",
+  "level": 2,
+  "tags": [
+    "keyof",
+    "typeof",
+    "generics"
+  ],
+  "chunks": [
+    {
+      "code": "const config = { host: \"localhost\", port: 8080 };",
+      "explain": "A plain object"
+    },
+    {
+      "code": "type Config = typeof config;",
+      "explain": "Type from a value"
+    },
+    {
+      "code": "type Key = keyof Config;",
+      "explain": "Union of key names"
+    },
+    {
+      "code": "function get<T, K extends keyof T>(obj: T, key: K): T[K] {",
+      "explain": "Safe property getter"
+    },
+    {
+      "code": "  return obj[key];",
+      "explain": "Typed lookup"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "const port = get(config, \"port\");",
+      "explain": "Typed as number"
+    },
+    {
+      "code": "const k: Key = \"host\";",
+      "explain": "A valid key"
+    },
+    {
+      "code": "console.log(port + 1, k);",
+      "explain": "Show values"
+    }
+  ]
+}

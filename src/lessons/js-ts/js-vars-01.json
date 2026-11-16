@@ -1,0 +1,34 @@
+{
+  "id": "js-vars-01",
+  "category": "JS / TS",
+  "lang": "js",
+  "topic": "Basics",
+  "level": 1,
+  "tags": [
+    "const",
+    "let",
+    "string"
+  ],
+  "chunks": [
+    {
+      "code": "const name = \"Ada\";",
+      "explain": "A constant: it cannot be reassigned"
+    },
+    {
+      "code": "let score = 0;",
+      "explain": "A variable: it can change"
+    },
+    {
+      "code": "score += 10;",
+      "explain": "Add 10 to score"
+    },
+    {
+      "code": "const message = `${name} has ${score} points`;",
+      "explain": "Template string: ${ } inserts values"
+    },
+    {
+      "code": "console.log(message);",
+      "explain": "Show: Ada has 10 points"
+    }
+  ]
+}

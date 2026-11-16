@@ -1,0 +1,32 @@
+{
+  "id": "python-counter-01",
+  "category": "Python",
+  "topic": "Counter",
+  "level": 2,
+  "tags": [
+    "collections",
+    "counting"
+  ],
+  "chunks": [
+    {
+      "code": "from collections import Counter",
+      "explain": "Import Counter"
+    },
+    {
+      "code": "words = \"to be or not to be\".split()",
+      "explain": "Split a sentence into words"
+    },
+    {
+      "code": "counts = Counter(words)",
+      "explain": "Count each word"
+    },
+    {
+      "code": "print(counts.most_common(2))",
+      "explain": "Top two: to and be, twice each"
+    },
+    {
+      "code": "print(counts[\"missing\"])",
+      "explain": "Absent keys count as 0"
+    }
+  ]
+}

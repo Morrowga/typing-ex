@@ -1,0 +1,40 @@
+{
+  "id": "kotlin-sealed-01",
+  "category": "Kotlin",
+  "topic": "Sealed Classes and When",
+  "level": 2,
+  "tags": [
+    "sealed",
+    "when"
+  ],
+  "chunks": [
+    {
+      "code": "sealed class Shape",
+      "explain": "A closed hierarchy"
+    },
+    {
+      "code": "class Circle(val r: Double) : Shape()",
+      "explain": "One subtype"
+    },
+    {
+      "code": "class Rect(val w: Double, val h: Double) : Shape()",
+      "explain": "Another subtype"
+    },
+    {
+      "code": "fun area(s: Shape): Double = when (s) {",
+      "explain": "when must cover all subtypes"
+    },
+    {
+      "code": "    is Circle -> Math.PI * s.r * s.r",
+      "explain": "Smart cast to Circle"
+    },
+    {
+      "code": "    is Rect -> s.w * s.h",
+      "explain": "Smart cast to Rect"
+    },
+    {
+      "code": "}",
+      "explain": "No else needed"
+    }
+  ]
+}

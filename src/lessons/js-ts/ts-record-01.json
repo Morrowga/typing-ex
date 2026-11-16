@@ -1,0 +1,50 @@
+{
+  "id": "ts-record-01",
+  "category": "JS / TS",
+  "lang": "ts",
+  "topic": "Record and ReturnType",
+  "level": 2,
+  "tags": [
+    "utility",
+    "Record",
+    "ReturnType"
+  ],
+  "chunks": [
+    {
+      "code": "type Role = \"admin\" | \"user\";",
+      "explain": "Allowed roles"
+    },
+    {
+      "code": "const perms: Record<Role, string[]> = {",
+      "explain": "Key for every role"
+    },
+    {
+      "code": "  admin: [\"read\", \"write\"],",
+      "explain": "Admin permissions"
+    },
+    {
+      "code": "  user: [\"read\"],",
+      "explain": "User permissions"
+    },
+    {
+      "code": "};",
+      "explain": "End of record"
+    },
+    {
+      "code": "function makeId() { return { id: 1, tag: \"x\" }; }",
+      "explain": "A plain function"
+    },
+    {
+      "code": "type Made = ReturnType<typeof makeId>;",
+      "explain": "Type from return value"
+    },
+    {
+      "code": "const m: Made = makeId();",
+      "explain": "Matches the result"
+    },
+    {
+      "code": "console.log(perms.admin, m.tag);",
+      "explain": "Show values"
+    }
+  ]
+}

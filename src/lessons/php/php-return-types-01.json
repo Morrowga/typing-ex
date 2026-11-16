@@ -1,0 +1,32 @@
+{
+  "id": "php-return-types-01",
+  "category": "PHP",
+  "topic": "Typed Functions",
+  "level": 1,
+  "tags": [
+    "function",
+    "types"
+  ],
+  "chunks": [
+    {
+      "code": "<?php",
+      "explain": "Start PHP mode"
+    },
+    {
+      "code": "function area(float $w, float $h): float {",
+      "explain": "Typed params and return type"
+    },
+    {
+      "code": "    return $w * $h;",
+      "explain": "Multiply the sides"
+    },
+    {
+      "code": "}",
+      "explain": "End of function"
+    },
+    {
+      "code": "echo area(3, 4.5);",
+      "explain": "Prints 13.5"
+    }
+  ]
+}

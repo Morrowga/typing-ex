@@ -1,0 +1,36 @@
+{
+  "id": "swift-operator-01",
+  "category": "Swift",
+  "topic": "Operator Overloading",
+  "level": 2,
+  "tags": [
+    "operator",
+    "struct"
+  ],
+  "chunks": [
+    {
+      "code": "struct Vec { var x: Int; var y: Int }",
+      "explain": "A 2D vector"
+    },
+    {
+      "code": "func + (a: Vec, b: Vec) -> Vec {",
+      "explain": "Define + for vectors"
+    },
+    {
+      "code": "    Vec(x: a.x + b.x, y: a.y + b.y)",
+      "explain": "Add the matching parts"
+    },
+    {
+      "code": "}",
+      "explain": "End the operator"
+    },
+    {
+      "code": "let sum = Vec(x: 1, y: 2) + Vec(x: 3, y: 4)",
+      "explain": "Use the new operator"
+    },
+    {
+      "code": "print(sum.x, sum.y)",
+      "explain": "Prints 4 6"
+    }
+  ]
+}
