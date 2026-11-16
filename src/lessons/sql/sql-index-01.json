@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "CREATE INDEX idx_orders_customer ON orders (customer_id);",
+      "code": "create index idx_orders_customer on orders (customer_id);",
       "explain": "Speed up lookups by customer_id"
     },
     {
-      "code": "EXPLAIN",
+      "code": "explain",
       "explain": "Show how the database plans to run the query"
     },
     {
-      "code": "SELECT * FROM orders WHERE customer_id = 3;",
+      "code": "select * from orders where customer_id = 3;",
       "explain": "The query whose plan we ask for"
     }
   ]

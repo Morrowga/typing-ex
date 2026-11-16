@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, department, salary,",
+      "code": "select name, department, salary,",
       "explain": "Choose the employee columns"
     },
     {
-      "code": "  AVG(salary) OVER (PARTITION BY department) AS dept_avg",
+      "code": "  avg(salary) over (partition by department) as dept_avg",
       "explain": "Department average beside each row"
     },
     {
-      "code": "FROM employees;",
+      "code": "from employees;",
       "explain": "Rows are kept, not collapsed"
     }
   ]

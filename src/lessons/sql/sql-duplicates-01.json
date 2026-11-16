@@ -10,19 +10,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT city, COUNT(*) AS n",
+      "code": "select city, count(*) as n",
       "explain": "Count rows for each city"
     },
     {
-      "code": "FROM customers",
+      "code": "from customers",
       "explain": "Read from the customers table"
     },
     {
-      "code": "GROUP BY city",
+      "code": "group by city",
       "explain": "One group per city"
     },
     {
-      "code": "HAVING COUNT(*) > 1;",
+      "code": "having count(*) > 1;",
       "explain": "Keep only values that appear more than once"
     }
   ]

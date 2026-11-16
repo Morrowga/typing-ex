@@ -10,23 +10,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT UPPER(name) AS shout,",
+      "code": "select upper(name) as shout,",
       "explain": "Convert the name to capitals"
     },
     {
-      "code": "  LENGTH(name) AS chars,",
+      "code": "  length(name) as chars,",
       "explain": "Count the characters in the name"
     },
     {
-      "code": "  name || ' <' || email || '>' AS label",
+      "code": "  name || ' <' || email || '>' as label",
       "explain": "Join text pieces with the || operator"
     },
     {
-      "code": "FROM customers",
+      "code": "from customers",
       "explain": "Read from the customers table"
     },
     {
-      "code": "WHERE email IS NOT NULL;",
+      "code": "where email is not null;",
       "explain": "Skip customers with no email"
     }
   ]

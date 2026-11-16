@@ -10,23 +10,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT substr(order_date, 1, 7) AS month,",
+      "code": "select substr(order_date, 1, 7) as month,",
       "explain": "Cut the date down to YYYY-MM"
     },
     {
-      "code": "  COUNT(*) AS orders",
+      "code": "  count(*) as orders",
       "explain": "Count orders in each month"
     },
     {
-      "code": "FROM orders",
+      "code": "from orders",
       "explain": "Read from the orders table"
     },
     {
-      "code": "GROUP BY month",
+      "code": "group by month",
       "explain": "One group per month"
     },
     {
-      "code": "ORDER BY month;",
+      "code": "order by month;",
       "explain": "Oldest month first"
     }
   ]

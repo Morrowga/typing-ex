@@ -9,11 +9,11 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, city",
+      "code": "select name, city",
       "explain": "Pick the name and city columns"
     },
     {
-      "code": "FROM customers;",
+      "code": "from customers;",
       "explain": "Read them from the customers table"
     }
   ]

@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "WITH customer_totals AS (",
+      "code": "with customer_totals as (",
       "explain": "Name a temporary result set"
     },
     {
-      "code": "  SELECT customer_id, SUM(total) AS spent",
+      "code": "  select customer_id, sum(total) as spent",
       "explain": "Sum the totals per customer"
     },
     {
-      "code": "  FROM orders",
+      "code": "  from orders",
       "explain": "Read from orders"
     },
     {
-      "code": "  GROUP BY customer_id",
+      "code": "  group by customer_id",
       "explain": "One row per customer"
     },
     {
@@ -29,11 +29,11 @@
       "explain": "End of the temporary result"
     },
     {
-      "code": "SELECT c.name, t.spent",
+      "code": "select c.name, t.spent",
       "explain": "Choose the name and amount spent"
     },
     {
-      "code": "FROM customer_totals t JOIN customers c ON c.id = t.customer_id;",
+      "code": "from customer_totals t join customers c on c.id = t.customer_id;",
       "explain": "Join the CTE back to customers"
     }
   ]

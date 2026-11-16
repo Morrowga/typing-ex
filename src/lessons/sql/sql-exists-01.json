@@ -9,23 +9,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT c.name",
+      "code": "select c.name",
       "explain": "Choose the customer name"
     },
     {
-      "code": "FROM customers c",
+      "code": "from customers c",
       "explain": "Read from customers as c"
     },
     {
-      "code": "WHERE EXISTS (",
+      "code": "where exists (",
       "explain": "Keep rows where the inner query finds a row"
     },
     {
-      "code": "  SELECT 1 FROM orders o",
+      "code": "  select 1 from orders o",
       "explain": "Look inside orders"
     },
     {
-      "code": "  WHERE o.customer_id = c.id AND o.status = 'pending'",
+      "code": "  where o.customer_id = c.id and o.status = 'pending'",
       "explain": "Same customer, pending status"
     },
     {

@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, department, salary,",
+      "code": "select name, department, salary,",
       "explain": "Choose the employee columns"
     },
     {
-      "code": "  RANK() OVER (ORDER BY salary DESC) AS rnk,",
+      "code": "  rank() over (order by salary desc) as rnk,",
       "explain": "Rank by salary, leaving gaps on ties"
     },
     {
-      "code": "  DENSE_RANK() OVER (ORDER BY salary DESC) AS dense",
+      "code": "  dense_rank() over (order by salary desc) as dense",
       "explain": "Same ranking but with no gaps"
     },
     {
-      "code": "FROM employees;",
+      "code": "from employees;",
       "explain": "Read from the employees table"
     }
   ]

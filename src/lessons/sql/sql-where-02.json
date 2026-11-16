@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT id, total",
+      "code": "select id, total",
       "explain": "Choose the order id and total"
     },
     {
-      "code": "FROM orders",
+      "code": "from orders",
       "explain": "Read from the orders table"
     },
     {
-      "code": "WHERE status <> 'cancelled';",
+      "code": "where status <> 'cancelled';",
       "explain": "Skip rows whose status is cancelled"
     }
   ]

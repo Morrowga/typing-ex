@@ -80,6 +80,8 @@ Every lesson is one JSON file under `src/lessons/<stack>/`. Adding content never
 | Kotlin | `kotlinc` (skipped if it is not installed) |
 | Git | no automatic check, so review commands by hand |
 
+SQL is written in **lowercase** (`select`, `from`, `where`), because SQL keywords are not case-sensitive and uppercase is hard to type mid-line. Capitals are allowed only inside quotes, such as `'USA'`; the validator enforces this.
+
 SQL lessons may use the sample tables in [`scripts/sql-schema.sql`](scripts/sql-schema.sql) without creating them. Write standard SQL that also runs on SQLite, and end the lesson with a semicolon.
 
 A syntax check only proves the code is valid. It does not prove an explanation is correct, so every lesson still needs a human read.

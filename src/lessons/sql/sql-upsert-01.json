@@ -10,19 +10,19 @@
   ],
   "chunks": [
     {
-      "code": "INSERT INTO customers (id, name, email, city, country)",
+      "code": "insert into customers (id, name, email, city, country)",
       "explain": "Try to insert a customer row"
     },
     {
-      "code": "VALUES (1, 'Ada King', 'ada@example.com', 'Leeds', 'UK')",
+      "code": "values (1, 'Ada King', 'ada@example.com', 'Leeds', 'UK')",
       "explain": "Its id already exists"
     },
     {
-      "code": "ON CONFLICT (id) DO UPDATE",
+      "code": "on conflict (id) do update",
       "explain": "On an id clash, update instead"
     },
     {
-      "code": "SET name = excluded.name, city = excluded.city;",
+      "code": "set name = excluded.name, city = excluded.city;",
       "explain": "Copy the new values into the old row"
     }
   ]

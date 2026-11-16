@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "WITH ranked AS (",
+      "code": "with ranked as (",
       "explain": "Name a temporary result"
     },
     {
-      "code": "  SELECT name, department, salary,",
+      "code": "  select name, department, salary,",
       "explain": "Choose the employee columns"
     },
     {
-      "code": "    ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rn",
+      "code": "    row_number() over (partition by department order by salary desc) as rn",
       "explain": "Rank within each department"
     },
     {
-      "code": "  FROM employees",
+      "code": "  from employees",
       "explain": "Read from employees"
     },
     {
@@ -29,7 +29,7 @@
       "explain": "End of the temporary result"
     },
     {
-      "code": "SELECT name, department, salary FROM ranked WHERE rn <= 2;",
+      "code": "select name, department, salary from ranked where rn <= 2;",
       "explain": "Keep the first two per department"
     }
   ]

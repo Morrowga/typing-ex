@@ -10,19 +10,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, country",
+      "code": "select name, country",
       "explain": "Choose the name and country"
     },
     {
-      "code": "FROM customers",
+      "code": "from customers",
       "explain": "Read from the customers table"
     },
     {
-      "code": "WHERE country = 'USA'",
+      "code": "where country = 'USA'",
       "explain": "First condition: country is USA"
     },
     {
-      "code": "  AND city = 'Boston';",
+      "code": "  and city = 'Boston';",
       "explain": "AND: city must also be Boston"
     }
   ]

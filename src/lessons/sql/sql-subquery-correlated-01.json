@@ -9,23 +9,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT e.name, e.department, e.salary",
+      "code": "select e.name, e.department, e.salary",
       "explain": "Choose the employee columns"
     },
     {
-      "code": "FROM employees e",
+      "code": "from employees e",
       "explain": "Read from employees as e"
     },
     {
-      "code": "WHERE e.salary > (",
+      "code": "where e.salary > (",
       "explain": "Salary must beat the inner value"
     },
     {
-      "code": "  SELECT AVG(x.salary) FROM employees x",
+      "code": "  select avg(x.salary) from employees x",
       "explain": "Average salary of..."
     },
     {
-      "code": "  WHERE x.department = e.department",
+      "code": "  where x.department = e.department",
       "explain": "...the same department as this row"
     },
     {

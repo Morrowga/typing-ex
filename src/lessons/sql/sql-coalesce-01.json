@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name,",
+      "code": "select name,",
       "explain": "Show the customer name"
     },
     {
-      "code": "  COALESCE(email, 'no email') AS contact",
+      "code": "  coalesce(email, 'no email') as contact",
       "explain": "Use the email, or the fallback if NULL"
     },
     {
-      "code": "FROM customers;",
+      "code": "from customers;",
       "explain": "Read from the customers table"
     }
   ]

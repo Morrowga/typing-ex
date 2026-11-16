@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT MIN(price) AS cheapest,",
+      "code": "select min(price) as cheapest,",
       "explain": "Smallest price in the table"
     },
     {
-      "code": "  MAX(price) AS priciest",
+      "code": "  max(price) as priciest",
       "explain": "Largest price in the table"
     },
     {
-      "code": "FROM products;",
+      "code": "from products;",
       "explain": "Read from the products table"
     }
   ]

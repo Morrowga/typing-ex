@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name",
+      "code": "select name",
       "explain": "Choose the customer name"
     },
     {
-      "code": "FROM customers",
+      "code": "from customers",
       "explain": "Read from the customers table"
     },
     {
-      "code": "WHERE id IN (",
+      "code": "where id in (",
       "explain": "Keep ids found in the inner result"
     },
     {
-      "code": "  SELECT customer_id FROM orders WHERE total > 100",
+      "code": "  select customer_id from orders where total > 100",
       "explain": "Customers with an order over 100"
     },
     {

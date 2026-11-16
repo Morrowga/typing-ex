@@ -10,23 +10,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT customer_id,",
+      "code": "select customer_id,",
       "explain": "One row per customer"
     },
     {
-      "code": "  SUM(CASE WHEN status = 'delivered' THEN total ELSE 0 END) AS delivered,",
+      "code": "  sum(case when status = 'delivered' then total else 0 end) as delivered,",
       "explain": "Add totals of delivered orders"
     },
     {
-      "code": "  SUM(CASE WHEN status = 'pending' THEN total ELSE 0 END) AS pending",
+      "code": "  sum(case when status = 'pending' then total else 0 end) as pending",
       "explain": "Add totals of pending orders"
     },
     {
-      "code": "FROM orders",
+      "code": "from orders",
       "explain": "Read from the orders table"
     },
     {
-      "code": "GROUP BY customer_id;",
+      "code": "group by customer_id;",
       "explain": "Group rows by customer"
     }
   ]

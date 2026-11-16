@@ -9,11 +9,11 @@
   ],
   "chunks": [
     {
-      "code": "INSERT INTO products (name, category, price)",
+      "code": "insert into products (name, category, price)",
       "explain": "Add rows, filling these three columns"
     },
     {
-      "code": "VALUES ('Mousepad', 'Accessories', 9.5),",
+      "code": "values ('Mousepad', 'Accessories', 9.5),",
       "explain": "First new product"
     },
     {

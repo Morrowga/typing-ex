@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, price",
+      "code": "select name, price",
       "explain": "Choose the product name and price"
     },
     {
-      "code": "FROM products",
+      "code": "from products",
       "explain": "Read from the products table"
     },
     {
-      "code": "WHERE price > (SELECT AVG(price) FROM products)",
+      "code": "where price > (select avg(price) from products)",
       "explain": "Compare against the average price"
     },
     {
-      "code": "ORDER BY price DESC;",
+      "code": "order by price desc;",
       "explain": "Most expensive first"
     }
   ]

@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "CREATE VIEW in_stock AS",
+      "code": "create view in_stock as",
       "explain": "Save a query under the name in_stock"
     },
     {
-      "code": "SELECT name, price",
+      "code": "select name, price",
       "explain": "Choose the name and price"
     },
     {
-      "code": "FROM products",
+      "code": "from products",
       "explain": "Read from the products table"
     },
     {
-      "code": "WHERE stock > 0;",
+      "code": "where stock > 0;",
       "explain": "Only items that are available"
     }
   ]

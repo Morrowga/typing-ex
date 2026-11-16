@@ -10,23 +10,23 @@
   ],
   "chunks": [
     {
-      "code": "CREATE TABLE big_orders (id INTEGER, total REAL);",
+      "code": "create table big_orders (id integer, total real);",
       "explain": "Make an empty table for the copy"
     },
     {
-      "code": "INSERT INTO big_orders (id, total)",
+      "code": "insert into big_orders (id, total)",
       "explain": "Insert into these two columns"
     },
     {
-      "code": "SELECT id, total",
+      "code": "select id, total",
       "explain": "Take them from a query..."
     },
     {
-      "code": "FROM orders",
+      "code": "from orders",
       "explain": "...over the orders table"
     },
     {
-      "code": "WHERE total > 100;",
+      "code": "where total > 100;",
       "explain": "Copy only the large orders"
     }
   ]

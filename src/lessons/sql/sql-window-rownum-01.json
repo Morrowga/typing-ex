@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, price,",
+      "code": "select name, price,",
       "explain": "Choose the name and price"
     },
     {
-      "code": "  ROW_NUMBER() OVER (ORDER BY price DESC) AS rn",
+      "code": "  row_number() over (order by price desc) as rn",
       "explain": "Number rows from highest price down"
     },
     {
-      "code": "FROM products;",
+      "code": "from products;",
       "explain": "Read from the products table"
     }
   ]

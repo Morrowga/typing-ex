@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, price",
+      "code": "select name, price",
       "explain": "Choose the name and price"
     },
     {
-      "code": "FROM products",
+      "code": "from products",
       "explain": "Read from the products table"
     },
     {
-      "code": "ORDER BY price DESC",
+      "code": "order by price desc",
       "explain": "Most expensive first"
     },
     {
-      "code": "LIMIT 3 OFFSET 2;",
+      "code": "limit 3 offset 2;",
       "explain": "Skip 2 rows, then return the next 3"
     }
   ]

@@ -10,15 +10,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, price, stock,",
+      "code": "select name, price, stock,",
       "explain": "Choose the product columns"
     },
     {
-      "code": "  price / NULLIF(stock, 0) AS price_per_unit",
+      "code": "  price / nullif(stock, 0) as price_per_unit",
       "explain": "NULLIF turns 0 into NULL, so no divide-by-zero error"
     },
     {
-      "code": "FROM products;",
+      "code": "from products;",
       "explain": "Read from the products table"
     }
   ]

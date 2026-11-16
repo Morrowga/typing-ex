@@ -9,23 +9,23 @@
   ],
   "chunks": [
     {
-      "code": "CREATE TABLE reviews (",
+      "code": "create table reviews (",
       "explain": "Start a new reviews table"
     },
     {
-      "code": "  id INTEGER PRIMARY KEY,",
+      "code": "  id integer primary key,",
       "explain": "Unique id for each review"
     },
     {
-      "code": "  product_id INTEGER NOT NULL",
+      "code": "  product_id integer not null",
       "explain": "Which product it belongs to"
     },
     {
-      "code": "    REFERENCES products(id) ON DELETE CASCADE,",
+      "code": "    references products(id) on delete cascade,",
       "explain": "Deleting a product deletes its reviews"
     },
     {
-      "code": "  body TEXT",
+      "code": "  body text",
       "explain": "The review text"
     },
     {

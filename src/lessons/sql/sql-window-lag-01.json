@@ -10,19 +10,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT id, order_date, total,",
+      "code": "select id, order_date, total,",
       "explain": "Choose the order columns"
     },
     {
-      "code": "  LAG(total) OVER (ORDER BY order_date) AS previous_total,",
+      "code": "  lag(total) over (order by order_date) as previous_total,",
       "explain": "Total from the previous row"
     },
     {
-      "code": "  LEAD(total) OVER (ORDER BY order_date) AS next_total",
+      "code": "  lead(total) over (order by order_date) as next_total",
       "explain": "Total from the next row"
     },
     {
-      "code": "FROM orders;",
+      "code": "from orders;",
       "explain": "Read from the orders table"
     }
   ]

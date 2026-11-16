@@ -10,19 +10,19 @@
   ],
   "chunks": [
     {
-      "code": "BEGIN;",
+      "code": "begin;",
       "explain": "Start a transaction"
     },
     {
-      "code": "UPDATE products SET stock = stock - 1 WHERE id = 1;",
+      "code": "update products set stock = stock - 1 where id = 1;",
       "explain": "Take one keyboard out of stock"
     },
     {
-      "code": "UPDATE orders SET status = 'shipped' WHERE id = 7;",
+      "code": "update orders set status = 'shipped' where id = 7;",
       "explain": "Mark the pending order as shipped"
     },
     {
-      "code": "COMMIT;",
+      "code": "commit;",
       "explain": "Save both changes together"
     }
   ]

@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT c.name, o.id AS order_id",
+      "code": "select c.name, o.id as order_id",
       "explain": "Pick the customer and order id"
     },
     {
-      "code": "FROM customers c",
+      "code": "from customers c",
       "explain": "Start from every customer"
     },
     {
-      "code": "LEFT JOIN orders o",
+      "code": "left join orders o",
       "explain": "Bring in orders, if any exist"
     },
     {
-      "code": "  ON o.customer_id = c.id;",
+      "code": "  on o.customer_id = c.id;",
       "explain": "Customers without orders show NULL"
     }
   ]

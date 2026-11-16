@@ -9,19 +9,19 @@
   ],
   "chunks": [
     {
-      "code": "SELECT o.id, c.name, o.total",
+      "code": "select o.id, c.name, o.total",
       "explain": "Pick columns from both tables"
     },
     {
-      "code": "FROM orders o",
+      "code": "from orders o",
       "explain": "Start from orders, nicknamed o"
     },
     {
-      "code": "INNER JOIN customers c",
+      "code": "inner join customers c",
       "explain": "Join in customers, nicknamed c"
     },
     {
-      "code": "  ON o.customer_id = c.id;",
+      "code": "  on o.customer_id = c.id;",
       "explain": "Match each order to its customer"
     }
   ]

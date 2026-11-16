@@ -9,11 +9,11 @@
   ],
   "chunks": [
     {
-      "code": "DELETE FROM orders",
+      "code": "delete from orders",
       "explain": "Remove rows from the orders table"
     },
     {
-      "code": "WHERE status = 'cancelled';",
+      "code": "where status = 'cancelled';",
       "explain": "Only rows whose status is cancelled"
     }
   ]

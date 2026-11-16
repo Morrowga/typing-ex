@@ -81,6 +81,12 @@ for (const file of files) {
         : "";
       const preludeLines = prelude ? prelude.split("\n").length - 1 : 0;
       const code = prelude + lessonCode;
+      if (key === "SQL") {
+        // lowercase keeps typing easy (no Shift mid-line); text inside quotes may keep its capitals
+        l.chunks.forEach((c, i) => {
+          if (/[A-Z]/.test(c.code.replace(/'[^']*'/g, ""))) err(file, `chunk ${i}: write SQL in lowercase (capitals only inside quotes)`);
+        });
+      }
       if (key === "SQL" && !lessonCode.trimEnd().endsWith(";")) {
         err(file, "SQL must end with a semicolon");
         continue;

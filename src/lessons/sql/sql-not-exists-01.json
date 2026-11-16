@@ -9,23 +9,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT p.name",
+      "code": "select p.name",
       "explain": "Choose the product name"
     },
     {
-      "code": "FROM products p",
+      "code": "from products p",
       "explain": "Read from products as p"
     },
     {
-      "code": "WHERE NOT EXISTS (",
+      "code": "where not exists (",
       "explain": "Keep rows where the inner query finds nothing"
     },
     {
-      "code": "  SELECT 1 FROM order_items oi",
+      "code": "  select 1 from order_items oi",
       "explain": "Look inside order_items"
     },
     {
-      "code": "  WHERE oi.product_id = p.id",
+      "code": "  where oi.product_id = p.id",
       "explain": "Rows that mention this product"
     },
     {

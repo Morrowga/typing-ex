@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT id, order_date",
+      "code": "select id, order_date",
       "explain": "Choose the order id and date"
     },
     {
-      "code": "FROM orders",
+      "code": "from orders",
       "explain": "Read from the orders table"
     },
     {
-      "code": "WHERE order_date BETWEEN '2024-02-01' AND '2024-02-29';",
+      "code": "where order_date between '2024-02-01' and '2024-02-29';",
       "explain": "Dates in the range, both ends included"
     }
   ]

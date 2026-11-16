@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "UPDATE products",
+      "code": "update products",
       "explain": "Change rows in the products table"
     },
     {
-      "code": "SET stock = stock + 50",
+      "code": "set stock = stock + 50",
       "explain": "Add 50 to the current stock"
     },
     {
-      "code": "WHERE name = 'Webcam';",
+      "code": "where name = 'Webcam';",
       "explain": "Only for the row named Webcam"
     }
   ]

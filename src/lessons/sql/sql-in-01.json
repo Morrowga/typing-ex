@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, city",
+      "code": "select name, city",
       "explain": "Choose the name and city"
     },
     {
-      "code": "FROM customers",
+      "code": "from customers",
       "explain": "Read from the customers table"
     },
     {
-      "code": "WHERE city IN ('London', 'Boston');",
+      "code": "where city in ('London', 'Boston');",
       "explain": "Match any city in the list"
     }
   ]

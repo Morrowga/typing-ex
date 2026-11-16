@@ -9,23 +9,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT category,",
+      "code": "select category,",
       "explain": "Show each category"
     },
     {
-      "code": "  SUM(stock * price) AS value,",
+      "code": "  sum(stock * price) as value,",
       "explain": "Stock value for the category"
     },
     {
-      "code": "  ROUND(100.0 * SUM(stock * price) / SUM(SUM(stock * price)) OVER (), 1) AS pct",
+      "code": "  round(100.0 * sum(stock * price) / sum(sum(stock * price)) over (), 1) as pct",
       "explain": "Its share of the grand total"
     },
     {
-      "code": "FROM products",
+      "code": "from products",
       "explain": "Read from the products table"
     },
     {
-      "code": "GROUP BY category;",
+      "code": "group by category;",
       "explain": "One row per category"
     }
   ]

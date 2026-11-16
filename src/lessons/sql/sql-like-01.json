@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name",
+      "code": "select name",
       "explain": "Choose the customer name"
     },
     {
-      "code": "FROM customers",
+      "code": "from customers",
       "explain": "Read from the customers table"
     },
     {
-      "code": "WHERE name LIKE 'A%';",
+      "code": "where name like 'A%';",
       "explain": "Names that start with A; % is any text"
     }
   ]

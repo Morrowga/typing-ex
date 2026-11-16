@@ -9,31 +9,31 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, price,",
+      "code": "select name, price,",
       "explain": "Show the name and price"
     },
     {
-      "code": "  CASE",
+      "code": "  case",
       "explain": "Start a multi-way choice"
     },
     {
-      "code": "    WHEN price >= 100 THEN 'premium'",
+      "code": "    when price >= 100 then 'premium'",
       "explain": "Premium when the price is 100 or more"
     },
     {
-      "code": "    WHEN price >= 30 THEN 'standard'",
+      "code": "    when price >= 30 then 'standard'",
       "explain": "Standard when the price is 30 or more"
     },
     {
-      "code": "    ELSE 'budget'",
+      "code": "    else 'budget'",
       "explain": "Budget for everything else"
     },
     {
-      "code": "  END AS tier",
+      "code": "  end as tier",
       "explain": "Finish the choice and name the column"
     },
     {
-      "code": "FROM products;",
+      "code": "from products;",
       "explain": "Read from the products table"
     }
   ]

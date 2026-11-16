@@ -9,23 +9,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT e.name AS employee, m.name AS manager",
+      "code": "select e.name as employee, m.name as manager",
       "explain": "Show each employee next to their manager"
     },
     {
-      "code": "FROM employees e",
+      "code": "from employees e",
       "explain": "Use employees as the staff side"
     },
     {
-      "code": "LEFT JOIN employees m",
+      "code": "left join employees m",
       "explain": "Use employees again as the manager side"
     },
     {
-      "code": "  ON e.manager_id = m.id",
+      "code": "  on e.manager_id = m.id",
       "explain": "Match manager_id to the manager's id"
     },
     {
-      "code": "ORDER BY m.name, e.name;",
+      "code": "order by m.name, e.name;",
       "explain": "Group staff under each manager"
     }
   ]

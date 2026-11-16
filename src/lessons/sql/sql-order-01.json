@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, price",
+      "code": "select name, price",
       "explain": "Choose the name and price"
     },
     {
-      "code": "FROM products",
+      "code": "from products",
       "explain": "Read from the products table"
     },
     {
-      "code": "ORDER BY price DESC;",
+      "code": "order by price desc;",
       "explain": "Sort from highest price to lowest"
     }
   ]

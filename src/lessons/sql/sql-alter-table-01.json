@@ -9,11 +9,11 @@
   ],
   "chunks": [
     {
-      "code": "ALTER TABLE customers",
+      "code": "alter table customers",
       "explain": "Change the customers table"
     },
     {
-      "code": "ADD COLUMN phone TEXT;",
+      "code": "add column phone text;",
       "explain": "Add a new text column called phone"
     }
   ]

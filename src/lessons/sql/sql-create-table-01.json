@@ -9,23 +9,23 @@
   ],
   "chunks": [
     {
-      "code": "CREATE TABLE tasks (",
+      "code": "create table tasks (",
       "explain": "Start defining a new table named tasks"
     },
     {
-      "code": "  id INTEGER PRIMARY KEY,",
+      "code": "  id integer primary key,",
       "explain": "A unique id that identifies each row"
     },
     {
-      "code": "  title TEXT NOT NULL,",
+      "code": "  title text not null,",
       "explain": "Text that must always be provided"
     },
     {
-      "code": "  status TEXT DEFAULT 'todo',",
+      "code": "  status text default 'todo',",
       "explain": "Falls back to todo when not given"
     },
     {
-      "code": "  points INTEGER CHECK (points >= 0)",
+      "code": "  points integer check (points >= 0)",
       "explain": "Rejects negative numbers"
     },
     {

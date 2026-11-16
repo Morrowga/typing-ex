@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name",
+      "code": "select name",
       "explain": "Choose the customer name"
     },
     {
-      "code": "FROM customers",
+      "code": "from customers",
       "explain": "Read from the customers table"
     },
     {
-      "code": "WHERE email IS NULL;",
+      "code": "where email is null;",
       "explain": "Customers with no email stored"
     }
   ]

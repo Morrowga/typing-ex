@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "INSERT INTO products (name, category, price, stock)",
+      "code": "insert into products (name, category, price, stock)",
       "explain": "Insert a new product"
     },
     {
-      "code": "VALUES ('Dock', 'Accessories', 79.0, 15)",
+      "code": "values ('Dock', 'Accessories', 79.0, 15)",
       "explain": "Its column values"
     },
     {
-      "code": "RETURNING id, name;",
+      "code": "returning id, name;",
       "explain": "Send back the new id and name"
     }
   ]

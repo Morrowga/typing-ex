@@ -9,27 +9,27 @@
   ],
   "chunks": [
     {
-      "code": "SELECT c.name, p.name AS product, oi.quantity",
+      "code": "select c.name, p.name as product, oi.quantity",
       "explain": "Customer, product and quantity columns"
     },
     {
-      "code": "FROM customers c",
+      "code": "from customers c",
       "explain": "Start from customers"
     },
     {
-      "code": "JOIN orders o ON o.customer_id = c.id",
+      "code": "join orders o on o.customer_id = c.id",
       "explain": "Link each customer to their orders"
     },
     {
-      "code": "JOIN order_items oi ON oi.order_id = o.id",
+      "code": "join order_items oi on oi.order_id = o.id",
       "explain": "Link each order to its line items"
     },
     {
-      "code": "JOIN products p ON p.id = oi.product_id",
+      "code": "join products p on p.id = oi.product_id",
       "explain": "Link each line item to its product"
     },
     {
-      "code": "ORDER BY c.name, p.name;",
+      "code": "order by c.name, p.name;",
       "explain": "Sort by customer, then product"
     }
   ]

@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, department, salary",
+      "code": "select name, department, salary",
       "explain": "Choose three employee columns"
     },
     {
-      "code": "FROM employees",
+      "code": "from employees",
       "explain": "Read from the employees table"
     },
     {
-      "code": "ORDER BY department ASC, salary DESC;",
+      "code": "order by department asc, salary desc;",
       "explain": "Sort by department, then salary high to low"
     }
   ]

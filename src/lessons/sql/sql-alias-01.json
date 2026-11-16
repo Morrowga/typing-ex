@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name AS product_name,",
+      "code": "select name as product_name,",
       "explain": "Show name under the label product_name"
     },
     {
-      "code": "  price AS cost",
+      "code": "  price as cost",
       "explain": "Show price under the label cost"
     },
     {
-      "code": "FROM products;",
+      "code": "from products;",
       "explain": "Read from the products table"
     }
   ]

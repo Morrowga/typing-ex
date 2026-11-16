@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT name, price",
+      "code": "select name, price",
       "explain": "Choose the name and price columns"
     },
     {
-      "code": "FROM products",
+      "code": "from products",
       "explain": "Read from the products table"
     },
     {
-      "code": "WHERE price > 100;",
+      "code": "where price > 100;",
       "explain": "Keep only rows with a price above 100"
     }
   ]

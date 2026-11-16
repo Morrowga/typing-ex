@@ -9,11 +9,11 @@
   ],
   "chunks": [
     {
-      "code": "INSERT INTO customers (name, email, city, country)",
+      "code": "insert into customers (name, email, city, country)",
       "explain": "Add a row, naming the columns to fill"
     },
     {
-      "code": "VALUES ('Ken Thompson', 'ken@example.com', 'Austin', 'USA');",
+      "code": "values ('Ken Thompson', 'ken@example.com', 'Austin', 'USA');",
       "explain": "The values, in the same column order"
     }
   ]

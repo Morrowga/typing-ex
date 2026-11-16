@@ -10,23 +10,23 @@
   ],
   "chunks": [
     {
-      "code": "SELECT c.country, COUNT(o.id) AS orders, SUM(o.total) AS revenue",
+      "code": "select c.country, count(o.id) as orders, sum(o.total) as revenue",
       "explain": "Per-country order count and revenue"
     },
     {
-      "code": "FROM customers c",
+      "code": "from customers c",
       "explain": "Start from customers"
     },
     {
-      "code": "JOIN orders o ON o.customer_id = c.id",
+      "code": "join orders o on o.customer_id = c.id",
       "explain": "Attach each customer's orders"
     },
     {
-      "code": "GROUP BY c.country",
+      "code": "group by c.country",
       "explain": "One group per country"
     },
     {
-      "code": "HAVING SUM(o.total) > 200;",
+      "code": "having sum(o.total) > 200;",
       "explain": "Keep countries with revenue above 200"
     }
   ]

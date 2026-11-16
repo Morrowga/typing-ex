@@ -9,15 +9,15 @@
   ],
   "chunks": [
     {
-      "code": "SELECT category, COUNT(*) AS items",
+      "code": "select category, count(*) as items",
       "explain": "Show each category with its row count"
     },
     {
-      "code": "FROM products",
+      "code": "from products",
       "explain": "Read from the products table"
     },
     {
-      "code": "GROUP BY category;",
+      "code": "group by category;",
       "explain": "Make one group per category"
     }
   ]
